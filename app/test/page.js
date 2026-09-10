@@ -42,7 +42,21 @@ export default function Test() {
             </div>
           </div>
 
-          <h3 style={{marginTop: '2rem'}}>Importante</h3>
+          <h3 style={{marginTop: '3rem'}}>Cómo se ve tu Mapa Estructural</h3>
+          <p>No es una pantalla de resultados. Es un documento de cuatro páginas en PDF que recibís por correo y podés guardar.</p>
+          <p>Esta es la primera página de un Mapa real. El patrón, los porcentajes y el texto cambian según lo que respondas.</p>
+
+          <img className="mapa-muestra" src="/mapa-1.jpg" width="880" height="1243" alt="Primera página del Mapa Estructural EJE®: la Huella Madre dominante, el Pulso con los porcentajes por Macrofamilia, y qué podés, qué te cuesta y qué movimiento es posible." />
+          <p className="muted" style={{textAlign: 'center'}}>Página 1 de 4 — lo que está activo hoy</p>
+
+          <div className="mapa-tiras">
+            <img src="/mapa-2.jpg" width="420" height="594" alt="Página 2 del Mapa, desenfocada" />
+            <img src="/mapa-3.jpg" width="420" height="594" alt="Página 3 del Mapa, desenfocada" />
+            <img src="/mapa-4.jpg" width="420" height="594" alt="Página 4 del Mapa, desenfocada" />
+          </div>
+          <p className="muted" style={{textAlign: 'center', marginTop: '0.75rem'}}>Las otras tres — cómo se organiza el patrón, dónde genera más fricción y por dónde empezar a intervenir — quedan para quien hace el Test.</p>
+
+          <h3 style={{marginTop: '3rem'}}>Importante</h3>
           <div style={{backgroundColor: 'var(--sand)', padding: '1.5rem', marginTop: '1rem', borderLeft: '4px solid var(--olive)'}}>
             <p><strong>El Test EJE® es una herramienta de autoconocimiento, no de diagnóstico clínico.</strong> Si estás atravesando una crisis emocional, si experimentás síntomas de patología, o si estás bajo cuidado profesional, mantenéte en ese camino. EJE® es un complemento, nunca un reemplazo.</p>
           </div>

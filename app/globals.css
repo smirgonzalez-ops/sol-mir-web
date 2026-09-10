@@ -242,6 +242,32 @@ footer a {
   border-left: 4px solid var(--terra);
 }
 
+.mapa-muestra {
+  width: 100%;
+  max-width: 620px;
+  height: auto;
+  display: block;
+  margin: 2rem auto 0.75rem;
+  border: 1px solid var(--light-grey);
+}
+
+.mapa-tiras {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 1.5rem;
+  max-width: 620px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mapa-tiras img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid var(--light-grey);
+}
+
 @media (max-width: 768px) {
   h1 { font-size: 2.5rem; }
   h2 { font-size: 1.75rem; }
