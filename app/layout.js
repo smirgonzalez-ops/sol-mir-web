@@ -1,9 +1,35 @@
 import "./globals.css";
 
+const title = "Sol Mir | EJE® - Sistema de Inteligencia Estructural Humana";
+const description =
+  "Metodología de autoconocimiento y transformación de patrones vinculares";
+
 export const metadata = {
   metadataBase: new URL("https://solmir.co"),
-  title: "Sol Mir | EJE® - Sistema de Inteligencia Estructural Humana",
-  description: "Metodología de autoconocimiento y transformación de patrones vinculares",
+  title,
+  description,
+  openGraph: {
+    title,
+    description,
+    url: "https://solmir.co",
+    siteName: "EJE®",
+    locale: "es_AR",
+    type: "website",
+    images: [
+      {
+        url: "/sol-home.jpg",
+        width: 760,
+        height: 760,
+        alt: "Sol Mir, creadora de la Metodología EJE®",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title,
+    description,
+    images: ["/sol-home.jpg"],
+  },
 };
 
 export default function RootLayout({ children }) {
