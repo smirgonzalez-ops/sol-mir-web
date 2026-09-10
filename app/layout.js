@@ -81,7 +81,7 @@ export default function RootLayout({ children }) {
             <div>
               <h4>Comunidad</h4>
               <a href="https://www.linkedin.com/in/soledadmirgonzalez" target="_blank" rel="noopener">LinkedIn</a>
-              <a href="https://www.instagram.com/solmircoach" target="_blank" rel="noopener">Instagram</a>
+              <a href="https://www.instagram.com/soy_solemir" target="_blank" rel="noopener">Instagram</a>
             </div>
           </div>
           <div className="footer-bottom">
