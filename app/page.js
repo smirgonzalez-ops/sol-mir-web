@@ -99,7 +99,7 @@ export default function Home() {
       <section className="accent">
         <div className="container" style={{maxWidth: '800px', textAlign: 'center'}}>
           <h2>Test EJE® — Lanzamiento 22 de septiembre</h2>
-          <p style={{fontSize: '1.1rem', marginTop: '1rem'}}>Descubrí tu Mapa Estructural: cómo tu sistema se organiza en los cinco lugares donde la vida te llama a actuar.</p>
+          <p style={{fontSize: '1.1rem', marginTop: '1rem'}}>Descubrí tu Mapa Estructural: cómo tu sistema se organiza en los cuatro territorios donde la vida te llama a actuar.</p>
           <a href="/test" className="btn btn-primary" style={{marginTop: '2rem'}}>Sumate a la lista de espera</a>
         </div>
       </section>

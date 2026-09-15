@@ -18,10 +18,10 @@ export default function QueEsEJE() {
         <div className="container" style={{maxWidth: '900px'}}>
           <h2>¿Qué es realmente EJE®?</h2>
           <p><strong>EJE® es un sistema que lee cómo tu estructura interna aprendió a responder ante el mundo.</strong> No diagnostica. No etiqueta. No patologiza.</p>
-          <p>Lo que hace es esto: te muestra la lógica exacta de cómo tu sistema se organiza en cinco lugares diferentes de tu vida — adentro tuyo, frente al otro, en el trabajo, con el dinero, en tus decisiones — y cómo esa organización genera los patrones que ves repetirse.</p>
+          <p>Lo que hace es mostrarte cómo tu sistema se organiza en cuatro territorios de tu vida —identidad, vínculos, trabajo y dinero—, cómo esa organización genera los patrones que se repiten y de qué manera atraviesa tus decisiones.</p>
           <p><strong>Y acá está lo importante:</strong> no promete borrar esos patrones. Promete algo más útil: que dejes de ser gobernada por ellos sin darte cuenta.</p>
 
-          <h3 style={{marginTop: '3rem'}}>Los cinco lugares de una experiencia</h3>
+          <h3 style={{marginTop: '3rem'}}>Los cuatro territorios de una experiencia</h3>
           <div className="grid grid-2" style={{marginTop: '2rem'}}>
             <div className="card">
               <h4>Dentro de vos</h4>
@@ -39,10 +39,11 @@ export default function QueEsEJE() {
               <h4>El dinero</h4>
               <p>Tu relación con la abundancia, el valor, la seguridad material.</p>
             </div>
-            <div className="card" style={{gridColumn: '1 / -1', marginLeft: 'auto', marginRight: 'auto', maxWidth: '400px'}}>
-              <h4 style={{textAlign: 'center'}}>Las decisiones</h4>
-              <p style={{textAlign: 'center'}}>Cómo elegís. O cómo el patrón elige por vos.</p>
-            </div>
+          </div>
+
+          <div className="card" style={{marginTop: '2rem'}}>
+            <h4>Las decisiones atraviesan los cuatro</h4>
+            <p>Cómo elegís en cada territorio. O cómo el patrón termina eligiendo por vos.</p>
           </div>
 
           <h3 style={{marginTop: '3rem'}}>Lo que EJE® NO es</h3>

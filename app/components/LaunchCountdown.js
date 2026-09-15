@@ -9,7 +9,7 @@ function getMessage() {
   if (days > 1) return `Faltan ${days} días para el lanzamiento`;
   if (days === 1) return "Falta 1 día para el lanzamiento";
   if (days === 0) return "El lanzamiento es hoy";
-  return "Lanzamiento anunciado para el 22 de septiembre de 2026";
+  return "La cuenta regresiva finalizó. Consultá la disponibilidad actual del Test.";
 }
 
 export default function LaunchCountdown() {

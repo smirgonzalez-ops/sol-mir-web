@@ -4,7 +4,7 @@ import LaunchCountdown from "../components/LaunchCountdown";
 
 export const metadata = {
   title: "Test EJE® y Mapa Estructural",
-  description: "Conocé el Test EJE® y descubrí cómo se organiza tu estructura en cinco áreas de tu vida.",
+  description: "Conocé el Test EJE® y descubrí cómo se organiza tu estructura en identidad, vínculos, trabajo y dinero.",
   alternates: { canonical: "/test" },
 };
 
@@ -28,13 +28,13 @@ export default function Test() {
         <div className="container" style={{maxWidth: '900px'}}>
           <h2>¿Qué es el Test EJE®?</h2>
           <p><strong>El Test EJE® es una herramienta de autoconocimiento que te devuelve tu Mapa Estructural.</strong> No es un diagnóstico clínico. No clasifica. No etiqueta.</p>
-          <p>Son 42 preguntas en dos etapas, que revelan cómo tu sistema se organiza en cinco lugares fundamentales: adentro tuyo, frente al otro, en el trabajo, con el dinero, y en tus decisiones.</p>
+          <p>Son 42 preguntas en dos etapas que revelan cómo tu sistema se organiza en cuatro territorios fundamentales: identidad, vínculos, trabajo y dinero. También muestran cómo esa estructura incide en tus decisiones.</p>
           
           <h3 style={{marginTop: '2rem'}}>Tu Mapa Estructural incluye</h3>
           <div className="grid grid-2" style={{marginTop: '1.5rem'}}>
             <div className="card">
               <h4>El Mapa completo</h4>
-              <p>Una visualización clara de tu estructura en los cinco lugares.</p>
+              <p>Una visualización clara de tu estructura en los cuatro territorios.</p>
             </div>
             <div className="card">
               <h4>Análisis detallado</h4>
