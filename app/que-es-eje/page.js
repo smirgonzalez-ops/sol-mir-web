@@ -24,20 +24,20 @@ export default function QueEsEJE() {
           <h3 style={{marginTop: '3rem'}}>Los cuatro territorios de una experiencia</h3>
           <div className="grid grid-2" style={{marginTop: '2rem'}}>
             <div className="card">
-              <h4>Dentro de vos</h4>
-              <p>Cómo experimentás, sentís y registrás lo que te pasa. Tu verdad emocional.</p>
+              <h4>Identidad</h4>
+              <p>Dentro de vos: cómo experimentás, sentís y registrás lo que te pasa. Tu verdad emocional.</p>
             </div>
             <div className="card">
-              <h4>Frente al otro</h4>
-              <p>Cómo te vinculás, cómo te presentás, qué sostenés en tus relaciones.</p>
+              <h4>Vínculos</h4>
+              <p>Frente al otro: cómo te vinculás, cómo te presentás y qué sostenés en tus relaciones.</p>
             </div>
             <div className="card">
-              <h4>El trabajo</h4>
-              <p>Cómo te ubicás en la productividad, el reconocimiento, la contribución.</p>
+              <h4>Trabajo</h4>
+              <p>Cómo te ubicás frente a la productividad, el reconocimiento y la contribución.</p>
             </div>
             <div className="card">
-              <h4>El dinero</h4>
-              <p>Tu relación con la abundancia, el valor, la seguridad material.</p>
+              <h4>Dinero</h4>
+              <p>Tu relación con la abundancia, el valor y la seguridad material.</p>
             </div>
           </div>
 
