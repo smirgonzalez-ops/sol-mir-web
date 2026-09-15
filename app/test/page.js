@@ -1,6 +1,14 @@
+import Image from "next/image";
+import KitSignupForm from "../components/KitSignupForm";
+import LaunchCountdown from "../components/LaunchCountdown";
+
+export const metadata = {
+  title: "Test EJE® y Mapa Estructural",
+  description: "Conocé el Test EJE® y descubrí cómo se organiza tu estructura en cinco áreas de tu vida.",
+  alternates: { canonical: "/test" },
+};
+
 export default function Test() {
-  const days = Math.ceil((new Date('2026-09-22').getTime() - Date.now()) / (1000 * 60 * 60 * 24));
-  
   return (
     <>
       <section className="hero">
@@ -11,7 +19,7 @@ export default function Test() {
             <div style={{fontSize: '3rem', fontWeight: '700', color: 'var(--terra)', fontFamily: "'Fraunces', serif"}}>
               22 de septiembre
             </div>
-            <p className="muted" style={{marginTop: '0.5rem'}}>Faltan {days} días para el lanzamiento</p>
+            <LaunchCountdown />
           </div>
         </div>
       </section>
@@ -46,13 +54,13 @@ export default function Test() {
           <p>No es una pantalla de resultados. Es un documento de cuatro páginas en PDF que recibís por correo y podés guardar.</p>
           <p>Esta es la primera página de un Mapa real. El patrón, los porcentajes y el texto cambian según lo que respondas.</p>
 
-          <img className="mapa-muestra" src="/mapa-1.jpg" width="880" height="1243" alt="Primera página del Mapa Estructural EJE®: la Huella Madre dominante, el Pulso con los porcentajes por Macrofamilia, y qué podés, qué te cuesta y qué movimiento es posible." />
+          <Image className="mapa-muestra" src="/mapa-1.jpg" width={880} height={1243} sizes="(max-width: 700px) 100vw, 620px" alt="Primera página del Mapa Estructural EJE®: la Huella Madre dominante, el Pulso con los porcentajes por Macrofamilia, y qué podés, qué te cuesta y qué movimiento es posible." />
           <p className="muted" style={{textAlign: 'center'}}>Página 1 de 4 — lo que está activo hoy</p>
 
           <div className="mapa-tiras">
-            <img src="/mapa-2.jpg" width="420" height="594" alt="Página 2 del Mapa, desenfocada" />
-            <img src="/mapa-3.jpg" width="420" height="594" alt="Página 3 del Mapa, desenfocada" />
-            <img src="/mapa-4.jpg" width="420" height="594" alt="Página 4 del Mapa, desenfocada" />
+            <Image src="/mapa-2.jpg" width={420} height={594} sizes="(max-width: 700px) 30vw, 196px" alt="Vista parcial de la página 2 del Mapa Estructural" />
+            <Image src="/mapa-3.jpg" width={420} height={594} sizes="(max-width: 700px) 30vw, 196px" alt="Vista parcial de la página 3 del Mapa Estructural" />
+            <Image src="/mapa-4.jpg" width={420} height={594} sizes="(max-width: 700px) 30vw, 196px" alt="Vista parcial de la página 4 del Mapa Estructural" />
           </div>
           <p className="muted" style={{textAlign: 'center', marginTop: '0.75rem'}}>Las otras tres — cómo se organiza el patrón, dónde genera más fricción y por dónde empezar a intervenir — quedan para quien hace el Test.</p>
 
@@ -74,25 +82,11 @@ export default function Test() {
         <div className="container" style={{maxWidth: '700px'}}>
           <h2>Sumate a la lista de espera</h2>
           <p style={{marginTop: '1rem'}}>Sé de las primeras en acceder al Test EJE®. Te avisamos el 22 de septiembre cuando esté disponible.</p>
-          <form action="https://app.kit.com/forms/9738047/subscriptions" method="post" style={{marginTop: '2rem'}}>
-            <div>
-              <input type="text" name="fields[first_name]" placeholder="Tu nombre" required style={{width: '100%', padding: '0.75rem', marginBottom: '1rem', border: '1px solid var(--light-grey)'}} />
-              <input type="email" name="email_address" placeholder="Tu correo" required style={{width: '100%', padding: '0.75rem', marginBottom: '1rem', border: '1px solid var(--light-grey)'}} />
-              <select name="fields[pais]" required style={{width: '100%', padding: '0.75rem', marginBottom: '1rem', border: '1px solid var(--light-grey)'}}>
-                <option value="">Seleccioná tu país</option>
-                <option value="AR">Argentina</option>
-                <option value="ES">España</option>
-                <option value="MX">México</option>
-                <option value="CO">Colombia</option>
-                <option value="CL">Chile</option>
-                <option value="UY">Uruguay</option>
-                <option value="US">Estados Unidos (Miami)</option>
-                <option value="OTHER">Otro país</option>
-              </select>
-            </div>
-            <input type="hidden" name="fields[origen]" value="lista_espera_test" />
-            <button type="submit" className="btn btn-primary" style={{width: '100%'}}>Quiero ser de las primeras</button>
-          </form>
+          <KitSignupForm
+            origin="lista_espera_test"
+            buttonLabel="Quiero ser de las primeras"
+            includeCountry
+          />
           <p className="muted" style={{marginTop: '1rem', textAlign: 'center'}}>Vas a recibir un correo para confirmar tu suscripción. Confirmalo y quedás en la lista.</p>
         </div>
       </section>

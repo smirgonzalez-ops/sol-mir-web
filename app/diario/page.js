@@ -1,3 +1,9 @@
+export const metadata = {
+  title: "Diario de Emociones EJE®",
+  description: "Una práctica guiada de 7 días, con cuadernillo y 11 audios, para observar tus patrones emocionales.",
+  alternates: { canonical: "/diario" },
+};
+
 export default function Diario() {
   return (
     <>
@@ -60,9 +66,9 @@ export default function Diario() {
         <div className="container" style={{maxWidth: '700px', textAlign: 'center'}}>
           <h2>Empezá a observar</h2>
           <p>El Diario es tu primera puerta. Después, el Test EJE® (22 de septiembre) te muestra toda tu estructura.</p>
-          <p className="muted" style={{marginTop: '1.5rem'}}>Escribime y te paso el acceso.</p>
+          <p className="muted" style={{marginTop: '1.5rem'}}>Escribime para recibir los medios de pago y el acceso.</p>
           <div className="cta-group" style={{justifyContent: 'center', marginTop: '1.5rem'}}>
-            <a href="/contacto" className="btn btn-primary">Quiero el Diario</a>
+            <a href="/contacto" className="btn btn-primary">Solicitar acceso al Diario</a>
           </div>
         </div>
       </section>
