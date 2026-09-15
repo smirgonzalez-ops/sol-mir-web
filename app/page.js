@@ -1,3 +1,6 @@
+import Image from "next/image";
+import KitSignupForm from "./components/KitSignupForm";
+
 export default function Home() {
   return (
     <>
@@ -57,7 +60,13 @@ export default function Home() {
         <div className="container" style={{maxWidth: '900px'}}>
           <h2>Sobre Sol Mir</h2>
           <div className="bio-grid">
-            <img src="/sol-home.jpg" width="760" height="760" alt="Sol Mir, creadora de la Metodología EJE®" />
+            <Image
+              src="/sol-home.jpg"
+              width={760}
+              height={760}
+              sizes="(max-width: 768px) 260px, 300px"
+              alt="Sol Mir, creadora de la Metodología EJE®"
+            />
             <div>
               <p><strong>Soy consultora, formadora en liderazgo y autora de EJE®.</strong> Durante más de una década trabajé en empresas como Coca-Cola y Citibank, donde observé algo que los currículos nunca mostraban: la mayoría de las personas entienden un problema, pero no pueden dejar de repetirlo.</p>
           <p>Esa pregunta me llevó a estudiar arquitectura humana y crear una metodología que nombrara lo que veía: <strong>estructuras aprendidas que gobiernan nuestras decisiones sin que nos demos cuenta.</strong></p>
@@ -73,14 +82,7 @@ export default function Home() {
         <div className="container" style={{maxWidth: '700px'}}>
           <h2>Ebook Gratuito</h2>
           <p>Una introducción clara a qué es EJE®.</p>
-          <form action="https://app.kit.com/forms/9738047/subscriptions" method="post" style={{marginTop: '2rem'}}>
-            <div style={{marginBottom: '1rem'}}>
-              <input type="text" name="fields[first_name]" placeholder="Tu nombre" required style={{width: '100%', padding: '0.75rem', marginBottom: '1rem', border: '1px solid var(--light-grey)'}} />
-              <input type="email" name="email_address" placeholder="Tu correo electrónico" required style={{width: '100%', padding: '0.75rem', border: '1px solid var(--light-grey)'}} />
-            </div>
-            <input type="hidden" name="fields[origen]" value="web_home" />
-            <button type="submit" className="btn btn-primary" style={{width: '100%'}}>Descargar ebook gratuito</button>
-          </form>
+          <KitSignupForm origin="web_home" buttonLabel="Descargar ebook gratuito" />
         </div>
       </section>
 
@@ -97,7 +99,7 @@ export default function Home() {
       <section className="accent">
         <div className="container" style={{maxWidth: '800px', textAlign: 'center'}}>
           <h2>Test EJE® — Lanzamiento 22 de septiembre</h2>
-          <p style={{fontSize: '1.1rem', marginTop: '1rem'}}>Descubrí tu Mapa Estructural: cómo tu sistema se organiza en los cinco lugares donde la vida te llama a actuar.</p>
+          <p style={{fontSize: '1.1rem', marginTop: '1rem'}}>Descubrí tu Mapa Estructural: cómo tu sistema se organiza en los cuatro territorios donde la vida te llama a actuar.</p>
           <a href="/test" className="btn btn-primary" style={{marginTop: '2rem'}}>Sumate a la lista de espera</a>
         </div>
       </section>

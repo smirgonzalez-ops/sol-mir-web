@@ -1,3 +1,11 @@
+import KitSignupForm from "../components/KitSignupForm";
+
+export const metadata = {
+  title: "Ebook gratuito sobre EJE®",
+  description: "Descargá una introducción gratuita a la Metodología EJE® y conocé cómo funciona.",
+  alternates: { canonical: "/ebook" },
+};
+
 export default function Ebook() {
   return (
     <>
@@ -13,14 +21,7 @@ export default function Ebook() {
           <h2>Descargá el ebook gratis</h2>
           <p>Un documento que te explica de forma directa qué es la Metodología EJE®, por qué funciona diferente a otras propuestas, y qué puertas se abren después.</p>
           
-          <form action="https://app.kit.com/forms/9738047/subscriptions" method="post" style={{marginTop: '2rem'}}>
-            <div>
-              <input type="text" name="fields[first_name]" placeholder="Tu nombre" required style={{width: '100%', padding: '0.75rem', marginBottom: '1rem', border: '1px solid var(--light-grey)'}} />
-              <input type="email" name="email_address" placeholder="Tu correo electrónico" required style={{width: '100%', padding: '0.75rem', marginBottom: '1rem', border: '1px solid var(--light-grey)'}} />
-            </div>
-            <input type="hidden" name="fields[origen]" value="web_ebook" />
-            <button type="submit" className="btn btn-primary" style={{width: '100%'}}>Descargar ebook</button>
-          </form>
+          <KitSignupForm origin="web_ebook" buttonLabel="Descargar ebook" />
 
           <p className="muted" style={{marginTop: '1.5rem', textAlign: 'center'}}>Vas a recibir un correo para confirmar tu suscripción. Al confirmarlo, te llega el ebook.</p>
         </div>

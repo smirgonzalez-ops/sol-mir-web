@@ -1,3 +1,11 @@
+import Image from "next/image";
+
+export const metadata = {
+  title: "Sobre Sol Mir",
+  description: "Conocé la trayectoria de Sol Mir, consultora, formadora en liderazgo y creadora de la Metodología EJE®.",
+  alternates: { canonical: "/sobre-sol" },
+};
+
 export default function SobreSol() {
   return (
     <>
@@ -12,9 +20,9 @@ export default function SobreSol() {
         <div className="container" style={{maxWidth: '900px'}}>
           <h2>Mi trayectoria</h2>
           <div className="bio-grid">
-            <img src="/sol-retrato.jpg" width="880" height="1100" alt="Retrato de Sol Mir, creadora de la Metodología EJE®" />
+            <Image src="/sol-retrato.jpg" width={880} height={1100} sizes="(max-width: 768px) 260px, 300px" alt="Retrato de Sol Mir, creadora de la Metodología EJE®" />
             <div>
-              <p><strong>Licenciada en Marketing y Administración de Empresas.</strong> Durante más de una década trabajé en grandes corporaciones — Coca-Cola y Citibank — donde mi rol fue siempre el mismo: ayudar a líderes y equipos a entender por qué hacen lo que hacen, y qué podría cambiar si decidieran hacerlo de otra forma.</p>
+              <p><strong>Licenciada en Marketing y Administración de Empresas.</strong> Durante más de una década trabajé en grandes corporaciones —Coca-Cola y Citibank—. Esa experiencia me permitió observar cómo las personas y los equipos pueden comprender un problema y, aun así, repetir la misma respuesta.</p>
           
             </div>
           </div>
@@ -26,7 +34,7 @@ export default function SobreSol() {
           
           <h3 style={{marginTop: '2rem'}}>El camino hacia EJE®</h3>
           <p>Esa pregunta me llevó a estudiar coaching ontológico bajo estándares internacionales (ACTP/ICF), a leer arquitectura humana desde perspectivas diversas, y finalmente a hacer algo que nunca había hecho antes: crear una metodología propia.</p>
-          <p>EJE® nace de años de trabajo real con personas que querían cambiar pero no sabían por dónde empezar. No es teórico porque viene de ahí: de espacios reales donde la pregunta "¿qué pasa si observamos exactamente CÓMO tu sistema funciona?" cambió algo.</p>
+          <p>EJE® nace de años de trabajo real con personas que querían cambiar pero no sabían por dónde empezar. No es teórico porque viene de ahí: de espacios reales donde la pregunta «¿qué pasa si observamos exactamente CÓMO tu sistema funciona?» cambió algo.</p>
 
           <h3 style={{marginTop: '2rem'}}>Mi convicción</h3>
           <p><strong>Creo que nadie repite lo que le hace daño porque quiera sufrir.</strong> Creo que cada estructura tiene su propia lógica, y que esa lógica puede leerse. Creo que entender la propia arquitectura es un acto de respeto, no de culpa.</p>
@@ -42,7 +50,10 @@ export default function SobreSol() {
         <div className="container" style={{maxWidth: '800px', textAlign: 'center'}}>
           <h2>Empecemos</h2>
           <p>Si sentís que algo en tu estructura quiere cambiar, están todas las puertas abiertas.</p>
-          <a href="/" className="btn btn-primary" style={{marginTop: '2rem'}}>Volver al inicio</a>
+          <div className="cta-group" style={{justifyContent: 'center', marginTop: '2rem'}}>
+            <a href="/ebook" className="btn btn-primary">Descargar el ebook gratuito</a>
+            <a href="/test" className="btn btn-secondary">Conocer el Test EJE®</a>
+          </div>
         </div>
       </section>
     </>

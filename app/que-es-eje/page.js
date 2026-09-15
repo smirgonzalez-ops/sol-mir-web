@@ -1,3 +1,9 @@
+export const metadata = {
+  title: "Qué es EJE®",
+  description: "Conocé la Metodología EJE®, un sistema de observación de patrones y estructura humana.",
+  alternates: { canonical: "/que-es-eje" },
+};
+
 export default function QueEsEJE() {
   return (
     <>
@@ -12,36 +18,37 @@ export default function QueEsEJE() {
         <div className="container" style={{maxWidth: '900px'}}>
           <h2>¿Qué es realmente EJE®?</h2>
           <p><strong>EJE® es un sistema que lee cómo tu estructura interna aprendió a responder ante el mundo.</strong> No diagnostica. No etiqueta. No patologiza.</p>
-          <p>Lo que hace es esto: te muestra la lógica exacta de cómo tu sistema se organiza en cinco lugares diferentes de tu vida — adentro tuyo, frente al otro, en el trabajo, con el dinero, en tus decisiones — y cómo esa organización genera los patrones que ves repetirse.</p>
+          <p>Lo que hace es mostrarte cómo tu sistema se organiza en cuatro territorios de tu vida —identidad, vínculos, trabajo y dinero—, cómo esa organización genera los patrones que se repiten y de qué manera atraviesa tus decisiones.</p>
           <p><strong>Y acá está lo importante:</strong> no promete borrar esos patrones. Promete algo más útil: que dejes de ser gobernada por ellos sin darte cuenta.</p>
 
-          <h3 style={{marginTop: '3rem'}}>Los cinco lugares de una experiencia</h3>
+          <h3 style={{marginTop: '3rem'}}>Los cuatro territorios de una experiencia</h3>
           <div className="grid grid-2" style={{marginTop: '2rem'}}>
             <div className="card">
-              <h4>Dentro de vos</h4>
-              <p>Cómo experimentás, sentís y registrás lo que te pasa. Tu verdad emocional.</p>
+              <h4>Identidad</h4>
+              <p>Dentro de vos: cómo experimentás, sentís y registrás lo que te pasa. Tu verdad emocional.</p>
             </div>
             <div className="card">
-              <h4>Frente al otro</h4>
-              <p>Cómo te vinculás, cómo te presentás, qué sostenés en tus relaciones.</p>
+              <h4>Vínculos</h4>
+              <p>Frente al otro: cómo te vinculás, cómo te presentás y qué sostenés en tus relaciones.</p>
             </div>
             <div className="card">
-              <h4>El trabajo</h4>
-              <p>Cómo te ubicás en la productividad, el reconocimiento, la contribución.</p>
+              <h4>Trabajo</h4>
+              <p>Cómo te ubicás frente a la productividad, el reconocimiento y la contribución.</p>
             </div>
             <div className="card">
-              <h4>El dinero</h4>
-              <p>Tu relación con la abundancia, el valor, la seguridad material.</p>
+              <h4>Dinero</h4>
+              <p>Tu relación con la abundancia, el valor y la seguridad material.</p>
             </div>
-            <div className="card" style={{gridColumn: '1 / -1', marginLeft: 'auto', marginRight: 'auto', maxWidth: '400px'}}>
-              <h4 style={{textAlign: 'center'}}>Las decisiones</h4>
-              <p style={{textAlign: 'center'}}>Cómo elegís. O cómo el patrón elige por vos.</p>
-            </div>
+          </div>
+
+          <div className="card" style={{marginTop: '2rem'}}>
+            <h4>Las decisiones atraviesan los cuatro</h4>
+            <p>Cómo elegís en cada territorio. O cómo el patrón termina eligiendo por vos.</p>
           </div>
 
           <h3 style={{marginTop: '3rem'}}>Lo que EJE® NO es</h3>
           <ul style={{listStyle: 'none', marginTop: '1.5rem'}}>
-            <li style={{marginBottom: '1rem'}}><strong>No es coaching.</strong> El coaching te motiva. EJE® te muestra.</li>
+            <li style={{marginBottom: '1rem'}}><strong>No es una sesión de coaching.</strong> EJE® tiene un mapa y un recorrido propios; puede complementar otros procesos sin reemplazarlos.</li>
             <li style={{marginBottom: '1rem'}}><strong>No es terapia.</strong> No tratamos patología ni reemplazamos atención profesional.</li>
             <li style={{marginBottom: '1rem'}}><strong>No es tarot ni astrología.</strong> Todo lo que ves en tu Mapa viene de lo que vos misma dijiste en el Test.</li>
             <li style={{marginBottom: '1rem'}}><strong>No es una fórmula rápida.</strong> No promete cambio en 7 días ni transformación garantizada.</li>
