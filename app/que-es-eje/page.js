@@ -27,6 +27,11 @@ export default function QueEsEJE() {
           <p>Ese margen puede ser grande, pequeño o inexistente. Reconocer las tres posibilidades es parte del valor del método.</p>
 
           <h3 style={{marginTop: '3rem'}}>Los cuatro territorios de una experiencia</h3>
+          <p>Los cuatro territorios funcionan como las patas de una silla.</p>
+          <p>Lo ideal no es que las cuatro sean idénticas. La vida no funciona así.</p>
+          <p>Pero para que la silla realmente sostenga, las cuatro patas necesitan conservar cierto equilibrio. Necesitan estar <strong>en eje</strong>.</p>
+          <p>Si tres empiezan a acortarse y una sola sostiene casi todo el peso, probablemente durante un tiempo igual puedas seguir sentándote.</p>
+          <p>Te acomodás. Compensás. Te acostumbrás.</p>
           <div className="grid grid-2" style={{marginTop: '2rem'}}>
             <div className="card">
               <h4>Vínculos</h4>
@@ -50,6 +55,7 @@ export default function QueEsEJE() {
             <h4>Las decisiones atraviesan los cuatro</h4>
             <p>Cómo elegís en cada territorio. O cómo el patrón termina eligiendo por vos.</p>
           </div>
+          <p style={{marginTop: '1.5rem'}}>La historia de la silla está en <a href="/sobre-sol">Sobre Sol</a>.</p>
 
           <h3 style={{marginTop: '3rem'}}>¿Cómo ayuda EJE®?</h3>
           <ul className="lista-eje">
