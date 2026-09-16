@@ -4,7 +4,7 @@ import LaunchCountdown from "../components/LaunchCountdown";
 
 export const metadata = {
   title: "Test EJE® y Mapa Estructural",
-  description: "Conocé el Test EJE® y descubrí cómo se organiza tu estructura en identidad, vínculos, trabajo y dinero.",
+  description: "Conocé el Test EJE® y descubrí cómo se organiza tu estructura en vínculos, trabajo, dinero e identidad.",
   alternates: { canonical: "/test" },
 };
 

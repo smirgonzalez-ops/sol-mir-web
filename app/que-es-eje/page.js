@@ -20,7 +20,7 @@ export default function QueEsEJE() {
           <p><strong>EJE® sirve para entender por qué, frente a determinadas situaciones, terminás respondiendo de maneras que a veces se repiten.</strong></p>
           <p>No parte de la idea de que siempre podés cambiar lo que te pasa.</p>
           <p>Primero distingue qué parte de una situación no depende de vos y después mira qué margen existe, si existe, para responder de otra forma.</p>
-          <p>Lo que hace es mostrarte cómo se organiza tu sistema en cuatro territorios de tu vida: identidad, vínculos, trabajo y dinero.</p>
+          <p>Lo que hace es mostrarte cómo se organiza tu sistema en cuatro territorios de tu vida: vínculos, trabajo, dinero e identidad.</p>
           <p>Y cómo esa organización genera los patrones que se repiten y de qué manera atraviesa tus decisiones.</p>
           <p>Hay situaciones en las que realmente no podés decir que no, negociar o pedir ayuda. EJE® no convierte una limitación real en culpa personal.</p>
           <p><strong>No siempre podés elegir lo que te pasa. El trabajo está en reconocer qué margen real existe dentro de eso que te pasa.</strong></p>
@@ -28,10 +28,6 @@ export default function QueEsEJE() {
 
           <h3 style={{marginTop: '3rem'}}>Los cuatro territorios de una experiencia</h3>
           <div className="grid grid-2" style={{marginTop: '2rem'}}>
-            <div className="card">
-              <h4>Identidad</h4>
-              <p>Dentro de vos: cómo experimentás, sentís y registrás lo que te pasa. Tu verdad emocional.</p>
-            </div>
             <div className="card">
               <h4>Vínculos</h4>
               <p>Frente al otro: cómo te vinculás, cómo te presentás y qué sostenés en tus relaciones.</p>
@@ -43,6 +39,10 @@ export default function QueEsEJE() {
             <div className="card">
               <h4>Dinero</h4>
               <p>Tu relación con la abundancia, el valor y la seguridad material.</p>
+            </div>
+            <div className="card">
+              <h4>Identidad</h4>
+              <p>Dentro de vos: cómo experimentás, sentís y registrás lo que te pasa. Tu verdad emocional.</p>
             </div>
           </div>
 
