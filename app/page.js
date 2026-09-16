@@ -6,8 +6,8 @@ export default function Home() {
     <>
       <section className="hero">
         <div className="container">
-          <h1>Entender lo que te pasa <span className="text-terra">no siempre alcanza</span> para dejar de repetirlo.</h1>
-          <p className="subtitle">Soy Sol Mir, creadora de la Metodología EJE®, un Sistema de Inteligencia Estructural Humana que reconoce los patrones que se repiten y te devuelve la capacidad de elegir.</p>
+          <h1>EJE® no te dice quién sos. <span className="text-terra">Te muestra cómo estás respondiendo hoy.</span></h1>
+          <p className="subtitle">Soy Sol Mir, creadora de EJE®, una metodología de Inteligencia Estructural Humana para distinguir lo que no podés cambiar de lo que sí puede tener margen y encontrar un punto más consciente desde donde decidir.</p>
           <div className="cta-group">
             <a href="/que-es-eje" className="btn btn-primary">Descubrí qué es EJE®</a>
             <a href="/ebook" className="btn btn-secondary">Descargá el ebook</a>
@@ -21,35 +21,18 @@ export default function Home() {
 
       <section>
         <div className="container" style={{maxWidth: '800px'}}>
-          <h2>El patrón que se repite</h2>
-          <p>Hay algo que sigue ocurriendo en tus vínculos, tu trabajo, tu relación con el dinero. Lo viste venir. Lo reconocés cada vez que aparece. Y aun así, volvés a reaccionar de la misma forma.</p>
-          <p>No es falta de comprensión racional. No es debilidad. Es arquitectura.</p>
-          <p><strong>Tu sistema aprendió a priorizar lo familiar sobre lo sano.</strong> Alguna vez eso te protegió. Hoy, limita tus decisiones.</p>
+          <h2>Son las diez de la noche.</h2>
+          <p>Terminaste el día agotada y mañana ya está lleno antes de empezar. Quizás pensás: «¿Por qué acepté todo esto?». Pero a veces no podías decir que no. Era tu trabajo, había una urgencia o simplemente no había otra opción.</p>
+          <p>Ahí cambia la pregunta. No es «¿qué hice mal?». Es: <strong>«Dentro de esto que no puedo cambiar, ¿qué margen sí tengo?»</strong></p>
+          <p>EJE® ayuda a distinguir qué no podés cambiar, qué podés negociar y dónde podrías responder de otra manera. No para controlar todo. Para encontrar tu margen real de elección.</p>
         </div>
       </section>
 
       <section className="accent">
-        <div className="container" style={{maxWidth: '900px'}}>
+        <div className="container" style={{maxWidth: '800px'}}>
           <h2>Metodología EJE®</h2>
-          <p><strong>EJE® es un Sistema de Inteligencia Estructural Humana</strong> que no promete borrar tu historia, sino cambiar su poder sobre vos.</p>
-          <div className="grid grid-2" style={{marginTop: '3rem'}}>
-            <div className="card">
-              <h3>Observación Precisa</h3>
-              <p>Leemos la estructura exacta de cómo aprendiste a responder ante el mundo.</p>
-            </div>
-            <div className="card">
-              <h3>Comprensión Profunda</h3>
-              <p>Entendemos dónde tu patrón funciona y cómo se sostiene.</p>
-            </div>
-            <div className="card">
-              <h3>Transformación Consciente</h3>
-              <p>Entre lo que se activa y lo que hacés, aparece un margen. En ese margen, decidís vos.</p>
-            </div>
-            <div className="card">
-              <h3>Acción Sostenible</h3>
-              <p>El cambio viene de una comprensión nueva de tu propia lógica.</p>
-            </div>
-          </div>
+          <p>EJE® sirve para entender por qué, frente a determinadas situaciones, terminás respondiendo de maneras que a veces se repiten.</p>
+          <p>En términos cotidianos: puede mostrarte cuándo te hacés cargo de más, cuándo evitás un conflicto, cuándo controlás, cuándo cedés, cuándo dudás o cuándo reaccionás antes de pensar. No para convertir eso en una identidad, sino para observarlo como una respuesta.</p>
           <div style={{marginTop: '3rem', textAlign: 'center'}}>
             <a href="/que-es-eje" className="btn btn-primary">Conocé la metodología completa</a>
           </div>
@@ -99,7 +82,7 @@ export default function Home() {
       <section className="accent">
         <div className="container" style={{maxWidth: '800px', textAlign: 'center'}}>
           <h2>Test EJE® — Lanzamiento 22 de septiembre</h2>
-          <p style={{fontSize: '1.1rem', marginTop: '1rem'}}>Descubrí tu Mapa Estructural: cómo tu sistema se organiza en los cuatro territorios donde la vida te llama a actuar.</p>
+          <p style={{fontSize: '1.1rem', marginTop: '1rem'}}>42 preguntas. Aproximadamente 15 minutos. Recibís tu Mapa Estructural EJE®: una fotografía personal, expresada en porcentajes, de cómo se combinan hoy tus respuestas en vínculos, trabajo, dinero e identidad. Tu punto de partida para verte con más claridad.</p>
           <a href="/test" className="btn btn-primary" style={{marginTop: '2rem'}}>Sumate a la lista de espera</a>
         </div>
       </section>

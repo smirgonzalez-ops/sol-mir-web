@@ -14,7 +14,7 @@ export default function Test() {
       <section className="hero">
         <div className="container">
           <h1>Test EJE®</h1>
-          <p className="subtitle">Descubrí tu Mapa Estructural: cómo tu sistema se organiza en los lugares donde la vida te llama a actuar.</p>
+          <p className="subtitle">42 preguntas. 15 minutos. Tu mapa personal de cómo estás respondiendo hoy.</p>
           <div style={{marginTop: '2rem', textAlign: 'center'}}>
             <div style={{fontSize: '3rem', fontWeight: '700', color: 'var(--terra)', fontFamily: "'Fraunces', serif"}}>
               22 de septiembre
@@ -27,28 +27,13 @@ export default function Test() {
       <section>
         <div className="container" style={{maxWidth: '900px'}}>
           <h2>¿Qué es el Test EJE®?</h2>
-          <p><strong>El Test EJE® es una herramienta de autoconocimiento que te devuelve tu Mapa Estructural.</strong> No es un diagnóstico clínico. No clasifica. No etiqueta.</p>
-          <p>Son 42 preguntas en dos etapas que revelan cómo tu sistema se organiza en cuatro territorios fundamentales: identidad, vínculos, trabajo y dinero. También muestran cómo esa estructura incide en tus decisiones.</p>
-          
-          <h3 style={{marginTop: '2rem'}}>Tu Mapa Estructural incluye</h3>
-          <div className="grid grid-2" style={{marginTop: '1.5rem'}}>
-            <div className="card">
-              <h4>El Mapa completo</h4>
-              <p>Una visualización clara de tu estructura en los cuatro territorios.</p>
-            </div>
-            <div className="card">
-              <h4>Análisis detallado</h4>
-              <p>Descripción precisa de cómo cada parte de tu sistema funciona.</p>
-            </div>
-            <div className="card">
-              <h4>Reconocimiento de patrones</h4>
-              <p>Qué patrón se repite y dónde adquiere más poder.</p>
-            </div>
-            <div className="card">
-              <h4>Próximos pasos</h4>
-              <p>Qué puede ser relevante para vos a partir de ahora.</p>
-            </div>
-          </div>
+          <p>Hay momentos en los que sentís que algo se te está repitiendo. Capaz es con una pareja. O con la plata. O te pasa que en el trabajo terminás haciéndote cargo de todo y después no entendés por qué llegaste otra vez agotada.</p>
+          <p>Y muchas veces ya sabés un montón de vos. Ese no es el problema. El tema es que una cosa es entenderte y otra es poder ver, bastante concretamente, cómo estás respondiendo hoy.</p>
+          <p><strong>Para eso está el Test EJE®.</strong> Son 42 preguntas. Las respondés en unos 15 minutos y con eso se arma tu Mapa Estructural EJE®.</p>
+          <p>¿Qué vas a ver? Tu propia combinación de porcentajes. Cómo aparecen hoy distintas formas de responder en tus vínculos, en el trabajo, con la plata y con vos misma.</p>
+          <p>Y esto es lo más importante: es una foto de este momento. No significa «vos sos así». Capaz dentro de seis meses lo volvés a hacer y tu mapa cambió. Esa es parte de la idea.</p>
+          <p className="remate">«Ah, mirá. Esto en mí está pesando muchísimo más de lo que pensaba.»</p>
+          <p>Ese es uno de los efectos que buscamos: poder ver algo con suficiente claridad como para dejar de trabajar «todo» y empezar por lo que hoy tiene más peso.</p>
 
           <h3 style={{marginTop: '3rem'}}>Cómo se ve tu Mapa Estructural</h3>
           <p>No es una pantalla de resultados. Es un documento de cuatro páginas en PDF que recibís por correo y podés guardar.</p>
@@ -75,6 +60,24 @@ export default function Test() {
 
           <h3 style={{marginTop: '2rem'}}>¿Qué sigue después del Test?</h3>
           <p>Muchas personas tienen más preguntas después de ver su Mapa. Para eso existe el trabajo personalizado asincrónico, donde podemos profundizar en tu estructura de forma específica.</p>
+
+          <h3 style={{marginTop: '3rem'}}>Preguntas frecuentes</h3>
+          <div className="faq">
+            <h4>¿Qué recibo?</h4>
+            <p>Tu Mapa Estructural EJE®, construido a partir de tus respuestas al Test. El mapa muestra porcentajes personales de distintas variables y cómo se presentan actualmente en vínculos, trabajo, dinero e identidad.</p>
+            <h4>¿Me dice qué tipo de persona soy?</h4>
+            <p>No. EJE® no busca decirte «sos este tipo de persona». Busca mostrarte cómo estás respondiendo hoy. Por eso hablamos de un mapa y no de una etiqueta.</p>
+            <h4>¿El resultado es para siempre?</h4>
+            <p>No. Es una fotografía de un momento específico. Tus respuestas pueden variar con el tiempo, con tus experiencias y con el trabajo que hagas sobre vos.</p>
+            <h4>¿Por qué son porcentajes?</h4>
+            <p>Porque distintas formas de respuesta pueden convivir en una misma persona. El mapa permite observar cuánto peso relativo tiene cada variable dentro de la combinación actual.</p>
+            <h4>¿Todos tenemos el mismo mapa?</h4>
+            <p>No necesariamente. Cada persona obtiene su propia combinación de porcentajes a partir de sus respuestas.</p>
+            <h4>¿Para qué me sirve saberlo?</h4>
+            <p>Para tener un punto de partida. Es difícil trabajar sobre algo que no podés identificar. El mapa permite observar qué respuestas están teniendo más peso actualmente y empezar a decidir cuáles te sirven, cuáles te cuestan y dónde querés trabajar.</p>
+            <h4>¿Es un test de personalidad?</h4>
+            <p>No está planteado para definir una personalidad fija. La pregunta no es «¿quién sos?», sino «¿cómo estás respondiendo hoy?».</p>
+          </div>
         </div>
       </section>
 

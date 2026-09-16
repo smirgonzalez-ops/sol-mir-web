@@ -403,6 +403,85 @@ footer .muted,
   border: 1px solid var(--light-grey);
 }
 
+.remate {
+  margin: 2rem 0;
+  padding-left: 1.25rem;
+  border-left: 3px solid var(--terra);
+  font-family: 'Fraunces', Georgia, serif;
+  font-size: 1.35rem;
+  line-height: 1.4;
+  color: var(--ink);
+}
+
+.lista-eje {
+  list-style: none;
+  margin-top: 1.5rem;
+}
+
+.lista-eje li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.lista-eje li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.65em;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background: var(--terra);
+}
+
+.tabla-scroll {
+  overflow-x: auto;
+  margin-top: 1.5rem;
+}
+
+.tabla-diferencial {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+.tabla-diferencial th,
+.tabla-diferencial td {
+  padding: 1rem 1.25rem;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid var(--light-grey);
+}
+
+.tabla-diferencial th {
+  font-family: 'Fraunces', Georgia, serif;
+  font-weight: 600;
+}
+
+.tabla-diferencial th:last-child,
+.tabla-diferencial td:last-child {
+  border-left: 4px solid var(--terra);
+}
+
+.tabla-diferencial td:first-child {
+  color: var(--grey);
+}
+
+.faq h4 {
+  margin-top: 1.75rem;
+}
+
+.faq p {
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .remate { font-size: 1.2rem; }
+  .tabla-diferencial th,
+  .tabla-diferencial td { padding: 0.75rem; }
+}
+
 @media (max-width: 768px) {
   h1 { font-size: 2.5rem; }
   h2 { font-size: 1.75rem; }

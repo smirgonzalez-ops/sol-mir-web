@@ -4,7 +4,7 @@ import SiteHeader from "./components/SiteHeader";
 
 const title = "Sol Mir | EJE® - Sistema de Inteligencia Estructural Humana";
 const description =
-  "Metodología de autoconocimiento y transformación de patrones vinculares";
+  "EJE® no te dice quién sos. Te muestra cómo estás respondiendo y dónde todavía puede existir elección.";
 
 export const metadata = {
   metadataBase: new URL("https://www.solmir.co"),
