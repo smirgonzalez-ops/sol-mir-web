@@ -168,6 +168,30 @@ export default function SobreSol() {
             <p>Somos estructuras.</p>
             <p>Y esas estructuras distribuyen peso de manera distinta según el área.</p>
             <hr className="separador" />
+            <p>Pero había algo más.</p>
+            <p>Nadie recibe una silla terminada.<br />La construimos a lo largo de la vida.</p>
+            <p>Con lo que vivimos.<br />Con lo que aprendimos.<br />Con aquello que nos dieron y con aquello que nos faltó.</p>
+            <p>Con las heridas que quedaron abiertas y con las que logramos reparar.<br />Con las huellas que dejaron las personas que pasaron por nuestra vida.<br />Con las veces que nos eligieron.<br />Y también con las veces que sentimos que no.</p>
+            <p>Con lo que vimos en casa.<br />Con lo que prometimos no repetir y terminamos repitiendo igual.<br />Con nuestros logros.<br />Con nuestros miedos.<br />Con cada decisión que fuimos tomando.</p>
+            <p>Algunas experiencias fortalecen una pata.<br />Otras la acortan.</p>
+            <p>Algunas hacen que construyamos una demasiado larga porque alguna vez necesitamos que sostuviera todo.</p>
+            <p>Y otras dejan marcas que años después seguimos compensando sin darnos cuenta.</p>
+            <p>Nuestra silla cuenta nuestra historia.<br />Pero no la sentencia.</p>
+            <p>Porque hay algo que para mí es fundamental:<br />no somos responsables de todas las heridas que recibimos.</p>
+            <p>Hay cosas que nos ocurrieron cuando ni siquiera teníamos herramientas para elegir.</p>
+            <p>Pero llega un momento en el que sí podemos hacernos responsables de lo que hacemos con esas huellas.</p>
+            <p>Podemos seguir construyendo la silla exactamente de la misma manera.</p>
+            <p>O podemos mirarla.<br />Revisarla.<br />Fortalecer una pata.<br />Acortar otra.<br />Reconstruir una parte.<br />Pedir ayuda.<br />Volver a aprender.<br />Cambiar la distribución del peso.</p>
+            <p>Y esto no ocurre una única vez.</p>
+            <p>Hasta el último momento de nuestra vida seguimos construyendo nuestra silla.</p>
+            <p>Porque nuestra historia no termina de escribirse mientras seguimos tomando decisiones.</p>
+            <p>Para mí ahí aparece algo esencial:<br />ser protagonistas de nuestra propia vida.</p>
+            <p>No significa controlar todo lo que sucede.<br />Eso no existe.</p>
+            <p>Significa dejar de vivir como si nuestra estructura dependiera exclusivamente de lo que hagan los demás.</p>
+            <p>Poder preguntarnos:</p>
+            <p>¿Qué estoy construyendo yo con lo que me pasó?<br />¿Qué estoy sosteniendo?<br />¿Qué estoy repitiendo?<br />¿Qué necesito modificar?<br />¿Qué pata necesita hoy mi atención?</p>
+            <p>Ser protagonista no es negar las heridas.<br />Es evitar que las heridas escriban solas el resto de la historia.</p>
+            <hr className="separador" />
             <p>También entendí algo más.</p>
             <p>Hay comportamientos que nos perjudican y, sin embargo, cumplen una función.</p>
             <p>A veces sostenemos un patrón porque ese patrón protege algo.</p>
@@ -251,9 +275,13 @@ export default function SobreSol() {
             <p>Después de repetir cosas que estaba convencida de haber entendido.</p>
             <p>Después de volver a empezar varias veces.</p>
             <p>Después de acompañar a otras personas y reconocer en ellas versiones distintas del mismo fenómeno.</p>
+            <p>Hoy entiendo que aquella silla nunca estuvo terminada.<br />Ni entonces.<br />Ni ahora.</p>
+            <p>Sigo construyéndola.<br />Todos lo hacemos.<br />Hasta el último día.</p>
+            <p>Porque mientras podamos mirar nuestra estructura y tomar una decisión diferente, todavía podemos intervenir en la forma en que estamos viviendo.</p>
+            <p>No podemos elegir todas las marcas que la vida deja sobre nosotros.<br />Pero sí podemos decidir qué construimos con ellas.</p>
             <p>Y quizás por eso EJE nació de una pregunta muy sencilla.</p>
             <p>Una pregunta que todavía hoy me importa más que cualquier teoría:</p>
-            <p className="remate">¿Y si pudiéramos verlo antes de caernos?</p>
+            <p className="remate">¿Y si pudiéramos mirar nuestra silla a tiempo y volver a ser protagonistas de cómo queremos construirla?</p>
           </div>
 
           <div style={{marginTop: '3rem', backgroundColor: 'var(--linen)', padding: '2rem', borderLeft: '4px solid var(--terra)'}}>
