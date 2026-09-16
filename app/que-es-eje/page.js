@@ -20,7 +20,8 @@ export default function QueEsEJE() {
           <p><strong>EJE® sirve para entender por qué, frente a determinadas situaciones, terminás respondiendo de maneras que a veces se repiten.</strong></p>
           <p>No parte de la idea de que siempre podés cambiar lo que te pasa.</p>
           <p>Primero distingue qué parte de una situación no depende de vos y después mira qué margen existe, si existe, para responder de otra forma.</p>
-          <p>Lo que hace es mostrarte cómo tu sistema se organiza en cuatro territorios de tu vida —identidad, vínculos, trabajo y dinero—, cómo esa organización genera los patrones que se repiten y de qué manera atraviesa tus decisiones.</p>
+          <p>Lo que hace es mostrarte cómo se organiza tu sistema en cuatro territorios de tu vida: identidad, vínculos, trabajo y dinero.</p>
+          <p>Y cómo esa organización genera los patrones que se repiten y de qué manera atraviesa tus decisiones.</p>
           <p>Hay situaciones en las que realmente no podés decir que no, negociar o pedir ayuda. EJE® no convierte una limitación real en culpa personal.</p>
           <p><strong>No siempre podés elegir lo que te pasa. El trabajo está en reconocer qué margen real existe dentro de eso que te pasa.</strong></p>
           <p>Ese margen puede ser grande, pequeño o inexistente. Reconocer las tres posibilidades es parte del valor del método.</p>

@@ -64,8 +64,12 @@ export default function Home() {
             />
             <div>
               <p><strong>Soy consultora, formadora en liderazgo y autora de EJE®.</strong></p>
-              <p>Durante más de una década trabajé en empresas como Coca-Cola y Citibank, donde observé algo que los currículos nunca mostraban: la mayoría de las personas entienden un problema, pero no pueden dejar de repetirlo.</p>
-          <p>Esa pregunta me llevó a estudiar arquitectura humana y crear una metodología que nombrara lo que veía: <strong>estructuras aprendidas que gobiernan nuestras decisiones sin que nos demos cuenta.</strong></p>
+              <p>Durante más de una década trabajé en empresas como Coca-Cola y Citibank.</p>
+              <p>Ahí observé algo que los currículos nunca mostraban.</p>
+              <p>La mayoría de las personas entienden un problema, pero no pueden dejar de repetirlo.</p>
+              <p>Esa distancia entre entender y dejar de repetir me llevó a leer sobre arquitectura humana.</p>
+              <p>Después creé EJE® para nombrar lo que veía.</p>
+              <p><strong>Estructuras aprendidas que gobiernan nuestras decisiones sin que nos demos cuenta.</strong></p>
           <div style={{marginTop: '2rem'}}>
             <a href="/sobre-sol" className="btn btn-secondary">Conocé mi trayectoria completa</a>
             </div>
