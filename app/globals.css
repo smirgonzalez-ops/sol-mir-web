@@ -482,6 +482,28 @@ footer .muted,
   scroll-margin-top: 6rem;
 }
 
+.relato {
+  max-width: 680px;
+}
+
+.relato p {
+  margin-bottom: 1rem;
+}
+
+.relato .dialogo {
+  color: var(--grey);
+  font-style: italic;
+}
+
+.separador {
+  width: 0.5rem;
+  height: 0.5rem;
+  margin: 2.5rem 0;
+  border: 0;
+  border-radius: 50%;
+  background: var(--terra);
+}
+
 @media (max-width: 768px) {
   .remate { font-size: 1.2rem; }
 }
