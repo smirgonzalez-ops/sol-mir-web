@@ -468,18 +468,72 @@ footer .muted,
   color: var(--grey);
 }
 
-.faq h4 {
+.faq h3 {
+  font-size: 1.2rem;
   margin-top: 1.75rem;
+  margin-bottom: 0.5rem;
 }
 
 .faq p {
-  margin-top: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.ancla {
+  scroll-margin-top: 6rem;
 }
 
 @media (max-width: 768px) {
   .remate { font-size: 1.2rem; }
+}
+
+@media (max-width: 600px) {
+  .tabla-diferencial,
+  .tabla-diferencial thead,
+  .tabla-diferencial tbody,
+  .tabla-diferencial tr,
   .tabla-diferencial th,
-  .tabla-diferencial td { padding: 0.75rem; }
+  .tabla-diferencial td {
+    display: block;
+    width: 100%;
+  }
+
+  .tabla-diferencial thead tr {
+    display: flex;
+    gap: 0.4rem;
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid var(--light-grey);
+  }
+
+  .tabla-diferencial thead th {
+    width: auto;
+    padding: 0;
+    border: 0;
+    font-size: 0.9rem;
+  }
+
+  .tabla-diferencial thead th:first-child { color: var(--grey); }
+  .tabla-diferencial thead th:first-child::after { content: " →"; }
+  .tabla-diferencial thead th:last-child { border-left: 0; }
+
+  .tabla-diferencial tbody tr {
+    padding: 0.85rem 1rem;
+    border-bottom: 1px solid var(--light-grey);
+  }
+
+  .tabla-diferencial tbody td {
+    padding: 0;
+    border: 0;
+  }
+
+  .tabla-diferencial tbody td:first-child {
+    font-size: 0.9rem;
+    margin-bottom: 0.35rem;
+  }
+
+  .tabla-diferencial tbody td:last-child {
+    border-left: 3px solid var(--terra);
+    padding-left: 0.75rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -546,8 +600,8 @@ footer .muted,
   }
 
   .container { padding: 0 1.25rem; }
-  .hero { padding: 3.5rem 1.25rem; }
-  section { padding: 3rem 1.25rem; }
+  .hero { padding: 3.5rem 0; }
+  section { padding: 3rem 0; }
   .hero .cta-group { flex-direction: column; }
   .card { padding: 1.5rem; }
 }

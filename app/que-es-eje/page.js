@@ -17,9 +17,13 @@ export default function QueEsEJE() {
       <section>
         <div className="container" style={{maxWidth: '900px'}}>
           <h2>¿Qué es realmente EJE®?</h2>
-          <p><strong>EJE® sirve para entender por qué, frente a determinadas situaciones, terminás respondiendo de maneras que a veces se repiten.</strong> No parte de la idea de que siempre podés cambiar lo que te pasa. Primero distingue qué parte de una situación no depende de vos y después mira qué margen existe, si existe, para responder de otra forma.</p>
+          <p><strong>EJE® sirve para entender por qué, frente a determinadas situaciones, terminás respondiendo de maneras que a veces se repiten.</strong></p>
+          <p>No parte de la idea de que siempre podés cambiar lo que te pasa.</p>
+          <p>Primero distingue qué parte de una situación no depende de vos y después mira qué margen existe, si existe, para responder de otra forma.</p>
           <p>Lo que hace es mostrarte cómo tu sistema se organiza en cuatro territorios de tu vida —identidad, vínculos, trabajo y dinero—, cómo esa organización genera los patrones que se repiten y de qué manera atraviesa tus decisiones.</p>
-          <p>Hay situaciones en las que realmente no podés decir que no, negociar o pedir ayuda. EJE® no convierte una limitación real en culpa personal. <strong>No siempre podés elegir lo que te pasa. El trabajo está en reconocer qué margen real existe dentro de eso que te pasa.</strong> Ese margen puede ser grande, pequeño o inexistente. Reconocer las tres posibilidades es parte del valor del método.</p>
+          <p>Hay situaciones en las que realmente no podés decir que no, negociar o pedir ayuda. EJE® no convierte una limitación real en culpa personal.</p>
+          <p><strong>No siempre podés elegir lo que te pasa. El trabajo está en reconocer qué margen real existe dentro de eso que te pasa.</strong></p>
+          <p>Ese margen puede ser grande, pequeño o inexistente. Reconocer las tres posibilidades es parte del valor del método.</p>
 
           <h3 style={{marginTop: '3rem'}}>Los cuatro territorios de una experiencia</h3>
           <div className="grid grid-2" style={{marginTop: '2rem'}}>
@@ -55,9 +59,11 @@ export default function QueEsEJE() {
             <li>Da un punto de partida para construir una respuesta más acorde con los recursos y necesidades actuales.</li>
           </ul>
           <p className="remate">EJE® no siempre cambia lo que te pasa. Te ayuda a cambiar cómo te parás frente a eso que te pasa.</p>
+          <p><a href="/test" className="btn btn-secondary">Conocé el Test EJE®</a></p>
 
           <h3 style={{marginTop: '3rem'}}>Qué diferencia a EJE®</h3>
-          <p>La diferencia de EJE® no está en hablar de patrones, decisiones o respuestas automáticas: esos conceptos existen en muchas propuestas. El diferencial está en cómo EJE® organiza la observación y evita convertir una respuesta en una identidad fija.</p>
+          <p>La diferencia de EJE® no está en hablar de patrones, decisiones o respuestas automáticas: esos conceptos existen en muchas propuestas.</p>
+          <p>El diferencial está en cómo EJE® organiza la observación y evita convertir una respuesta en una identidad fija.</p>
           <div className="tabla-scroll">
             <table className="tabla-diferencial">
               <thead>
