@@ -33,12 +33,14 @@ export default function SobreSol() {
           <p>No era falta de inteligencia, ni de compromiso, ni de motivación. Era algo diferente. Era como si entre saber QUÉ pasa y poder hacer ALGO diferente existiera una brecha que nadie mostraba cómo cruzar.</p>
           
           <h3 style={{marginTop: '2rem'}}>El camino hacia EJE®</h3>
-          <p>Esa pregunta me llevó a estudiar coaching ontológico bajo estándares internacionales (ACTP/ICF), a leer arquitectura humana desde perspectivas diversas, y finalmente a hacer algo que nunca había hecho antes: crear una metodología propia.</p>
+          <p>Esa pregunta me llevó a leer arquitectura humana desde perspectivas diversas.</p>
+          <p>Y, finalmente, a hacer algo que nunca había hecho antes: crear una metodología propia.</p>
           <p>EJE® nace de años de trabajo real con personas que querían cambiar pero no sabían por dónde empezar. No es teórico porque viene de ahí: de espacios reales donde la pregunta «¿qué pasa si observamos exactamente CÓMO tu sistema funciona?» cambió algo.</p>
 
           <h3 style={{marginTop: '2rem'}}>Mi convicción</h3>
           <p><strong>Creo que nadie repite lo que le hace daño porque quiera sufrir.</strong> Creo que cada estructura tiene su propia lógica, y que esa lógica puede leerse. Creo que entender la propia arquitectura es un acto de respeto, no de culpa.</p>
-          <p>Y creo profundamente que entre lo que se activa automáticamente en una persona y lo que elige hacer, siempre existe un margen. Ese margen es donde la libertad real vive.</p>
+          <p>Y creo profundamente que entre lo que se activa automáticamente en una persona y lo que elige hacer puede existir un margen.</p>
+          <p>Ese margen puede ser grande, pequeño o inexistente. Cuando existe, es donde vive la libertad real.</p>
 
           <div style={{marginTop: '3rem', backgroundColor: 'var(--linen)', padding: '2rem', borderLeft: '4px solid var(--terra)'}}>
             <p><strong>Hoy trabajo como autora y creadora de EJE®,</strong> acompañando a personas que quieren observar su propia estructura con precisión y elegir desde un lugar diferente. Ya no en consultoría corporativa, sino en el espacio donde realmente habita el cambio: en la relación de cada persona con sus propios patrones.</p>
