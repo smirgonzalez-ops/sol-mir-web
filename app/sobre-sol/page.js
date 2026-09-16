@@ -219,6 +219,7 @@ export default function SobreSol() {
             <p>Y dentro de unos meses puede ser distinto.</p>
             <p>Porque cambió tu trabajo.<br />Porque terminó una relación.<br />Porque apareció una nueva.<br />Porque empezaste a administrar tu dinero de otra manera.<br />Porque aprendiste a poner límites.<br />Porque atravesaste algo importante.<br />Porque trabajaste sobre aquello que viste.</p>
             <p>Por eso EJE no busca etiquetar.<br />Busca hacer visible.</p>
+            <p style={{marginTop: '1.5rem', marginBottom: '2rem'}}><a href="/test" className="btn btn-secondary">Conocé el Test EJE®</a></p>
             <hr className="separador" />
             <p>La pregunta deja de ser:<br />«¿Qué tengo mal?»</p>
             <p>Y empieza a ser otra.</p>
@@ -256,7 +257,7 @@ export default function SobreSol() {
           </div>
 
           <div style={{marginTop: '3rem', backgroundColor: 'var(--linen)', padding: '2rem', borderLeft: '4px solid var(--terra)'}}>
-            <p><strong>Hoy trabajo como autora y creadora de EJE®,</strong> acompañando a personas que quieren observar su propia estructura con precisión y elegir desde un lugar diferente. Ya no en consultoría corporativa, sino en el espacio donde realmente habita el cambio: en la relación de cada persona con sus propios patrones.</p>
+            <p><strong>Hoy trabajo como autora y creadora de EJE®,</strong> acompañando a personas que quieren observar su propia estructura con precisión y elegir desde un lugar diferente.</p>
           </div>
         </div>
       </section>
