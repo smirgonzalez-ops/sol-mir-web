@@ -6,8 +6,8 @@ import { useState } from "react";
 const links = [
   ["/", "Inicio"],
   ["/que-es-eje", "Qué es EJE®"],
+  ["/ebook", "Ebook gratis"],
   ["/sobre-sol", "Sobre Sol"],
-  ["/diario", "Diario"],
 ];
 
 export default function SiteHeader() {
