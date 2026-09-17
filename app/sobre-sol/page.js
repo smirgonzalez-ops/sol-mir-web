@@ -56,7 +56,7 @@ export default function SobreSol() {
             <p>Ésa fue una de las trampas más sofisticadas de mi vida.</p>
             <p>Yo no parecía dependiente.<br />Por eso tardé tanto en descubrir dónde lo era.</p>
             <hr className="separador" />
-            <p>Me casé joven.<br />Construí una familia.<br />Fui madre de tres hijas.</p>
+            <p>Me casé.<br />Construí una familia.<br />Fui madre de tres hijas.</p>
             <p>Y a partir de ahí la vida se convirtió en una mezcla bastante caótica de amor, trabajo, horarios, colegios, cumpleaños, enfermedades, decisiones, proyectos y esa sensación permanente de que siempre había algo más por resolver.</p>
             <p>Durante muchos años fui muchas mujeres al mismo tiempo.</p>
             <p>La madre.<br />La profesional.<br />La esposa.<br />La emprendedora.<br />La que organizaba.<br />La que solucionaba.<br />La que podía.</p>
