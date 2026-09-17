@@ -15,7 +15,7 @@ export default function QueEsEJE() {
       </section>
 
       <section>
-        <div className="container" style={{maxWidth: '900px'}}>
+        <div className="container" style={{maxWidth: '760px'}}>
           <h2>¿Qué es realmente EJE®?</h2>
           <p>Para explicarlo, una imagen: <strong>una silla común. Cuatro patas.</strong></p>
           <p>Esas cuatro patas son los cuatro territorios de tu vida.</p>
@@ -129,7 +129,7 @@ export default function QueEsEJE() {
       </section>
 
       <section className="accent">
-        <div className="container" style={{maxWidth: '800px', textAlign: 'center'}}>
+        <div className="container centrado" style={{maxWidth: '800px', textAlign: 'center'}}>
           <h2>Mirá cómo estás respondiendo antes de intentar cambiarlo.</h2>
           <p style={{marginTop: '1rem'}}>El Test EJE® es una foto de cómo estás respondiendo hoy: te muestra en porcentajes tu combinación personal y dónde puede haber algo para mirar o trabajar.</p>
           <a href="/test" className="btn btn-primary" style={{marginTop: '2rem'}}>Conocé el Test EJE®</a>

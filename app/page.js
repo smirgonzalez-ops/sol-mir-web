@@ -97,7 +97,7 @@ export default function Home() {
       </section>
 
       <section className="accent">
-        <div className="container" style={{maxWidth: '800px', textAlign: 'center'}}>
+        <div className="container centrado" style={{maxWidth: '800px', textAlign: 'center'}}>
           <h2>Test EJE® — Lanzamiento 22 de septiembre</h2>
           <p style={{fontSize: '1.1rem', marginTop: '1rem'}}><strong>42 preguntas. Aproximadamente 15 minutos.</strong></p>
           <p>Recibís tu Mapa Estructural EJE®: una fotografía personal, expresada en porcentajes, de cómo se combinan hoy tus respuestas en vínculos, trabajo, dinero e identidad.</p>
