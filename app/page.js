@@ -100,7 +100,7 @@ export default function Home() {
         <div className="container" style={{maxWidth: '800px', textAlign: 'center'}}>
           <h2>Test EJE® — Lanzamiento 22 de septiembre</h2>
           <p style={{fontSize: '1.1rem', marginTop: '1rem'}}><strong>42 preguntas. Aproximadamente 15 minutos.</strong></p>
-          <p>Recibís tu Mapa Estructural EJE®: una fotografía personal, expresada en porcentajes, de las respuestas que hoy tienen más peso en vos y de cómo se expresan en vínculos, trabajo, dinero e identidad.</p>
+          <p>Recibís tu Mapa Estructural EJE®: una fotografía personal, expresada en porcentajes, de cómo se combinan hoy tus respuestas en vínculos, trabajo, dinero e identidad.</p>
           <p>Tu punto de partida para verte con más claridad.</p>
           <a href="/test" className="btn btn-primary" style={{marginTop: '2rem'}}>Sumate a la lista de espera</a>
         </div>

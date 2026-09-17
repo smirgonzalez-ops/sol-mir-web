@@ -236,7 +236,7 @@ export default function SobreSol() {
             <p><strong>El resultado es profundamente personal.</strong></p>
             <p>Dos personas pueden responder el mismo test y recibir combinaciones completamente diferentes.</p>
             <p>Porque no buscamos meter a alguien dentro de una categoría.</p>
-            <p>Buscamos ver en qué proporción aparecen determinados patrones y cómo se expresan en cada una de sus áreas en ese momento concreto.</p>
+            <p>Buscamos ver en qué proporción aparecen determinados patrones en cada una de sus áreas en ese momento concreto.</p>
             <p>Tu combinación.<br />Tu distribución.<br />Tu estructura actual.</p>
             <p>No significa:<br />«Vos sos esto.»</p>
             <p>Significa:<br /><strong>«Hoy estás funcionando así.»</strong></p>
