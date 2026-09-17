@@ -17,7 +17,7 @@ export default function SobreSol() {
       </section>
 
       <section>
-        <div className="container" style={{maxWidth: '900px'}}>
+        <div className="container" style={{maxWidth: '760px'}}>
           <h2>Mi trayectoria</h2>
           <div className="bio-grid">
             <Image src="/sol-retrato.jpg" width={880} height={1100} sizes="(max-width: 768px) 260px, 300px" alt="Retrato de Sol Mir, creadora de la Metodología EJE®" />
@@ -291,7 +291,7 @@ export default function SobreSol() {
       </section>
 
       <section className="accent">
-        <div className="container" style={{maxWidth: '800px', textAlign: 'center'}}>
+        <div className="container centrado" style={{maxWidth: '800px', textAlign: 'center'}}>
           <h2>Empecemos</h2>
           <p>Si sentís que algo en tu estructura quiere cambiar, están todas las puertas abiertas.</p>
           <div className="cta-group" style={{justifyContent: 'center', marginTop: '2rem'}}>

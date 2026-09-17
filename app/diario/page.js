@@ -63,7 +63,7 @@ export default function Diario() {
       </section>
 
       <section className="accent">
-        <div className="container" style={{maxWidth: '700px', textAlign: 'center'}}>
+        <div className="container centrado" style={{maxWidth: '700px', textAlign: 'center'}}>
           <h2>Empezá a observar</h2>
           <p>El Diario es tu primera puerta. Después, el Test EJE® (22 de septiembre) te muestra toda tu estructura.</p>
           <p className="muted" style={{marginTop: '1.5rem'}}>Escribime para recibir los medios de pago y el acceso.</p>

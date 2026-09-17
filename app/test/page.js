@@ -25,7 +25,7 @@ export default function Test() {
       </section>
 
       <section>
-        <div className="container" style={{maxWidth: '900px'}}>
+        <div className="container" style={{maxWidth: '760px'}}>
           <h2>¿Qué es el Test EJE®?</h2>
           <p>Hay momentos en los que sentís que algo se te está repitiendo. Capaz es con una pareja. O con la plata.</p>
           <p>O te pasa que en el trabajo terminás haciéndote cargo de todo y después no entendés por qué llegaste otra vez agotada.</p>
@@ -85,7 +85,7 @@ export default function Test() {
       </section>
 
       <section>
-        <div className="container" style={{maxWidth: '900px'}}>
+        <div className="container" style={{maxWidth: '760px'}}>
           <h2>Preguntas frecuentes</h2>
           <div className="faq">
             <h3>¿Qué recibo?</h3>
@@ -112,7 +112,7 @@ export default function Test() {
       </section>
 
       <section>
-        <div className="container" style={{maxWidth: '800px', textAlign: 'center'}}>
+        <div className="container centrado" style={{maxWidth: '800px', textAlign: 'center'}}>
           <h2>Mientras esperás</h2>
           <p>Podés explorar el Ebook gratuito o conocer el Diario de Emociones para empezar a observar desde hoy.</p>
           <div className="cta-group" style={{justifyContent: 'center', marginTop: '2rem'}}>
