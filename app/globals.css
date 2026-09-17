@@ -622,6 +622,12 @@ footer .muted,
     font-size: 0.95rem;
   }
 
+  footer a {
+    display: inline-block;
+    min-height: 44px;
+    line-height: 44px;
+  }
+
   .btn-nav {
     margin-top: 0.35rem;
     padding: 0.7rem 1.4rem;
