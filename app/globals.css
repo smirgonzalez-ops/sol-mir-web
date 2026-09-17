@@ -11,6 +11,7 @@
   --ink: #221F1B;
   --grey: #696459;
   --light-grey: #CBB99C;
+  --marron: #5A4334;
 }
 
 * {
@@ -410,6 +411,14 @@ footer .muted,
   height: auto;
   display: block;
   border: 1px solid var(--light-grey);
+}
+
+.silla {
+  display: block;
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  margin: 2rem 0;
 }
 
 .remate {

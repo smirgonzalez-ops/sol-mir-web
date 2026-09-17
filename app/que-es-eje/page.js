@@ -18,6 +18,25 @@ export default function QueEsEJE() {
         <div className="container" style={{maxWidth: '760px'}}>
           <h2>¿Qué es realmente EJE®?</h2>
           <p>Para explicarlo, una imagen: <strong>una silla común. Cuatro patas.</strong></p>
+          <svg className="silla" viewBox="0 0 460 420" role="img" aria-labelledby="silla-titulo">
+            <title id="silla-titulo">Una silla de cuatro patas: vínculos, trabajo, dinero e identidad. El eje marca el punto donde se apoya el peso.</title>
+            <rect width="460" height="420" fill="var(--cream)" />
+            <g fill="none" stroke="var(--marron)" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M166 205 L166 74" />
+              <path d="M346 205 L346 74" />
+              <path d="M166 74 L346 74" />
+              <path d="M166 116 L346 116" />
+              <path d="M120 235 L300 235 L346 205 L166 205 Z" />
+              <path d="M120 235 L120 356" />
+              <path d="M300 235 L300 356" />
+              <path d="M166 205 L166 326" />
+              <path d="M346 205 L346 326" />
+              <path d="M120 316 L300 316" />
+              <path d="M166 286 L346 286" />
+            </g>
+            <path d="M256 74 L256 218" stroke="var(--terra)" strokeWidth="1.9" strokeLinecap="round" />
+            <circle cx="256" cy="218" r="6" fill="var(--terra)" />
+          </svg>
           <p>Esas cuatro patas son los cuatro territorios de tu vida.</p>
           <div className="grid grid-2" style={{marginTop: '2rem'}}>
             <div className="card">
