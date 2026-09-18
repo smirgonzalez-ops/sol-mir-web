@@ -19,8 +19,8 @@ export default function PoliticaCompra() {
         <h2 style={{marginTop: '1.5rem'}}>2. Devoluciones y reembolsos</h2>
         <p>Dado que son productos digitales descargables, no ofrecemos reembolsos estándar. Si experimentás un problema técnico, contactanos para asistencia.</p>
         
-        <h2 style={{marginTop: '1.5rem'}}>3. Acceso continuo</h2>
-        <p>Tu acceso a los productos comprados es de por vida. Podés descargar el material en cualquier momento desde tu correo de confirmación.</p>
+        <h2 style={{marginTop: '1.5rem'}}>3. Acceso</h2>
+        <p>Después de pagar, entrás al Test desde el botón “View content” del recibo de Gumroad. Tu Mapa llega en PDF: guardalo, es tuyo.</p>
         
         <h2 style={{marginTop: '1.5rem'}}>4. Soporte técnico</h2>
         <p>Si tenés problemas descargando o accediendo a tu compra, escribinos y te ayudamos.</p>
