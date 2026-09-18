@@ -1,10 +1,11 @@
 import KitSignupForm from "../components/KitSignupForm";
+import { pagina } from "../compartir";
 
-export const metadata = {
+export const metadata = pagina({
   title: "Ebook gratuito: Tu Huella en el amor, el trabajo y la plata",
   description: "Once páginas para ver si eso que se repite en el amor, en el trabajo y con la plata es el mismo patrón. Gratis, a cambio de tu correo.",
-  alternates: { canonical: "/ebook" },
-};
+  path: "/ebook",
+});
 
 export default function Ebook() {
   return (

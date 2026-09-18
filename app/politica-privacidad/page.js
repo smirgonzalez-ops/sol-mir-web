@@ -1,8 +1,10 @@
-export const metadata = {
+import { pagina } from "../compartir";
+
+export const metadata = pagina({
   title: "Política de Privacidad",
   description: "Cómo se recopilan, utilizan y protegen los datos personales en solmir.co.",
-  alternates: { canonical: "/politica-privacidad" },
-};
+  path: "/politica-privacidad",
+});
 
 export default function PoliticaPrivacidad() {
   return (

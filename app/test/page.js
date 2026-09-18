@@ -3,6 +3,7 @@ import Image from "next/image";
 import JsonLd from "../components/JsonLd";
 import KitSignupForm from "../components/KitSignupForm";
 import LaunchCountdown from "../components/LaunchCountdown";
+import { pagina } from "../compartir";
 
 // Una sola lista para lo que se ve y para los buscadores: no pueden quedar distintas.
 const PREGUNTAS = [
@@ -79,11 +80,11 @@ const FAQ = {
   })),
 };
 
-export const metadata = {
+export const metadata = pagina({
   title: "Test EJE® y Mapa Estructural",
   description: "Conocé el Test EJE® y descubrí cómo se organiza tu estructura en vínculos, trabajo, dinero e identidad.",
-  alternates: { canonical: "/test" },
-};
+  path: "/test",
+});
 
 export default function Test() {
   return (

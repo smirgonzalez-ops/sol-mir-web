@@ -1,8 +1,10 @@
-export const metadata = {
+import { pagina } from "../compartir";
+
+export const metadata = pagina({
   title: "Contacto",
   description: "Escribirle a Sol Mir por el Test EJE®, por llevar EJE® a una organización o por prensa. Los mensajes los lee y responde ella.",
-  alternates: { canonical: "/contacto" },
-};
+  path: "/contacto",
+});
 
 export default function Contacto() {
   return (

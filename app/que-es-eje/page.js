@@ -1,4 +1,5 @@
 import JsonLd from "../components/JsonLd";
+import { pagina } from "../compartir";
 
 // La categoría como término definido: ayuda a que el nombre quede asociado a EJE®.
 const TERMINO = {
@@ -13,11 +14,11 @@ const TERMINO = {
   }
 };
 
-export const metadata = {
+export const metadata = pagina({
   title: "Qué es EJE®",
   description: "EJE® te ayuda a distinguir lo que no podés cambiar de aquello a lo que sí podrías responder de otra manera.",
-  alternates: { canonical: "/que-es-eje" },
-};
+  path: "/que-es-eje",
+});
 
 export default function QueEsEJE() {
   return (

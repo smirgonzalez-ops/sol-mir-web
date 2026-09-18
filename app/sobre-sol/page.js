@@ -1,10 +1,11 @@
 import Image from "next/image";
+import { pagina } from "../compartir";
 
-export const metadata = {
+export const metadata = pagina({
   title: "Sobre Sol Mir",
   description: "Conocé la trayectoria de Sol Mir, consultora, formadora en liderazgo y creadora de la Metodología EJE®.",
-  alternates: { canonical: "/sobre-sol" },
-};
+  path: "/sobre-sol",
+});
 
 export default function SobreSol() {
   return (
