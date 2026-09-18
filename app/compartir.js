@@ -7,11 +7,13 @@
 // página arma su tarjeta acá, con la imagen y el nombre del sitio en un solo
 // lugar.
 
+// 1200 × 630, el formato apaisado de las tarjetas: la foto entra entera y no
+// se recorta. Frase de Sol, aprobada el 18/09.
 const IMAGEN = {
-  url: "/sol-home.jpg",
-  width: 760,
-  height: 760,
-  alt: "Sol Mir, creadora de la Metodología EJE®",
+  url: "/solmir-compartir.jpg",
+  width: 1200,
+  height: 630,
+  alt: "Sol Mir, creadora de EJE®, junto a la frase «Podés sostener a todos y no saber qué necesitás vos. EJE® te muestra qué conviene mirar primero.»",
 };
 
 export function tarjeta({ title, description, path }) {
