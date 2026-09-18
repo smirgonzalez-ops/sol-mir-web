@@ -168,106 +168,10 @@ export default function SobreSol() {
             <p>Somos estructuras.</p>
             <p>Y esas estructuras distribuyen peso de manera distinta según el área.</p>
             <hr className="separador" />
-            <p>Pero había algo más.</p>
-            <p>Nadie recibe una silla terminada.<br />La construimos a lo largo de la vida.</p>
-            <p>Con lo que vivimos.<br />Con lo que aprendimos.<br />Con aquello que nos dieron y con aquello que nos faltó.</p>
-            <p>Con las heridas que quedaron abiertas y con las que logramos reparar.<br />Con las huellas que dejaron las personas que pasaron por nuestra vida.<br />Con las veces que nos eligieron.<br />Y también con las veces que sentimos que no.</p>
-            <p>Con lo que vimos en casa.<br />Con lo que prometimos no repetir y terminamos repitiendo igual.<br />Con nuestros logros.<br />Con nuestros miedos.<br />Con cada decisión que fuimos tomando.</p>
-            <p>Algunas experiencias fortalecen una pata.<br />Otras la acortan.</p>
-            <p>Algunas hacen que construyamos una demasiado larga porque alguna vez necesitamos que sostuviera todo.</p>
-            <p>Y otras dejan marcas que años después seguimos compensando sin darnos cuenta.</p>
-            <p>Nuestra silla cuenta nuestra historia.<br />Pero no la sentencia.</p>
-            <p>Porque hay algo que para mí es fundamental:<br />no somos responsables de todas las heridas que recibimos.</p>
-            <p>Hay cosas que nos ocurrieron cuando ni siquiera teníamos herramientas para elegir.</p>
-            <p>Pero llega un momento en el que sí podemos hacernos responsables de lo que hacemos con esas huellas.</p>
-            <p>Podemos seguir construyendo la silla exactamente de la misma manera.</p>
-            <p>O podemos mirarla.<br />Revisarla.<br />Fortalecer una pata.<br />Acortar otra.<br />Reconstruir una parte.<br />Pedir ayuda.<br />Volver a aprender.<br />Cambiar la distribución del peso.</p>
-            <p>Y esto no ocurre una única vez.</p>
-            <p>Hasta el último momento de nuestra vida seguimos construyendo nuestra silla.</p>
-            <p>Porque nuestra historia no termina de escribirse mientras seguimos tomando decisiones.</p>
-            <p>Para mí ahí aparece algo esencial:<br />ser protagonistas de nuestra propia vida.</p>
-            <p>No significa controlar todo lo que sucede.<br />Eso no existe.</p>
-            <p>Significa dejar de vivir como si nuestra estructura dependiera exclusivamente de lo que hagan los demás.</p>
-            <p>Poder preguntarnos:</p>
-            <p>¿Qué estoy construyendo yo con lo que me pasó?<br />¿Qué estoy sosteniendo?<br />¿Qué estoy repitiendo?<br />¿Qué necesito modificar?<br />¿Qué pata necesita hoy mi atención?</p>
-            <p>Ser protagonista no es negar las heridas.<br />Es evitar que las heridas escriban solas el resto de la historia.</p>
-            <hr className="separador" />
-            <p>También entendí algo más.</p>
-            <p>Hay comportamientos que nos perjudican y, sin embargo, cumplen una función.</p>
-            <p>A veces sostenemos un patrón porque ese patrón protege algo.</p>
-            <p>Una identidad.<br />Una pertenencia.<br />Una relación.<br />Una forma conocida de sentir seguridad.<br />Una manera de evitar conflicto.</p>
-            <p>Entonces cambiar no consiste solamente en eliminar una conducta.</p>
-            <p>Primero hay que entender qué estaba sosteniendo.</p>
-            <p>Porque si sacás una pata sin mirar el resto de la estructura, la silla vuelve a caerse.</p>
-            <hr className="separador" />
-            <p>Hubo otra cosa que empecé a observar.</p>
-            <p>No solamente importaba cómo estaban las cuatro patas.<br />Importaba cómo trabajaban juntas.</p>
-            <p>Porque una silla puede tener cuatro patas y seguir siendo incómoda.</p>
-            <p>Puede estar torcida.<br />Puede cargar demasiado sobre un lado.<br />Puede hacerte sentar siempre compensando.</p>
-            <p>Y ahí apareció una idea todavía más importante.</p>
-            <p>Lo ideal no es que las cuatro patas sean exactamente iguales.</p>
-            <p>Lo ideal es que estén <strong>en eje y trabajen en armonía</strong>.</p>
-            <p>Vínculos.<br />Trabajo.<br />Dinero.<br />Yo.</p>
-            <p>Que ninguna tenga que sostener sola todo el peso.</p>
-            <p>Que ninguna desaparezca sin que lo veamos.</p>
-            <p>Que podamos detectar cuándo tres empiezan a quedar demasiado cortas y una se vuelve desproporcionadamente larga.</p>
-            <p>Que podamos observar el desequilibrio antes de convertirlo en caída.</p>
-            <p>Y entonces aparece algo más.</p>
-            <p>El respaldo.</p>
-            <hr className="separador" />
-            <p>Durante mucho tiempo yo había pensado solamente en las patas.</p>
-            <p>Hasta que entendí que el respaldo también importaba.</p>
-            <p>Porque cuando las cuatro patas están realmente en eje, el respaldo de la silla pasa a ser un respaldo de verdad.</p>
-            <p>Un lugar donde apoyarte.<br />Descansar.<br />Atravesar una crisis.<br />Tomar una decisión difícil.<br />Perder algo sin perderte vos.</p>
-            <p>El respaldo no puede compensar una silla mal armada.</p>
-            <p>No puede sostener cuatro patas completamente desbalanceadas.</p>
-            <p>Pero cuando la estructura está en eje, sí cumple su función.</p>
-            <p>Te permite apoyarte.<br />No depender.<br />Apoyarte.</p>
-            <p>Para mí esa diferencia es enorme.</p>
-            <hr className="separador" />
             <p>De ahí empezó a nacer EJE®.</p>
             <p>No como una fórmula.<br />No como una manera de decirle a una persona quién es.<br />Y mucho menos como una etiqueta definitiva.</p>
-            <p>EJE parte de otra pregunta:</p>
-            <p><strong>¿Cómo está tu estructura hoy?</strong></p>
-            <p>No quién sos para siempre.<br />No qué patrón «tenés».<br />No qué diagnóstico te define.</p>
-            <p>Hoy.<br />En este momento de tu vida.</p>
-            <p>Porque las personas cambian.<br />Los contextos cambian.<br />Los vínculos cambian.<br />El trabajo cambia.<br />La relación con el dinero cambia.<br />Nosotros cambiamos.</p>
-            <p>Por eso el Test EJE® busca obtener una fotografía estructural de ese momento.</p>
-            <p><strong>El resultado es profundamente personal.</strong></p>
-            <p>Dos personas pueden responder el mismo test y recibir combinaciones completamente diferentes.</p>
-            <p>Porque no buscamos meter a alguien dentro de una categoría.</p>
-            <p>Buscamos ver en qué proporción aparecen determinados patrones en cada una de sus áreas en ese momento concreto.</p>
-            <p>Tu combinación.<br />Tu distribución.<br />Tu estructura actual.</p>
-            <p>No significa:<br />«Vos sos esto.»</p>
-            <p>Significa:<br /><strong>«Hoy estás funcionando así.»</strong></p>
-            <p>Y dentro de unos meses puede ser distinto.</p>
-            <p>Porque cambió tu trabajo.<br />Porque terminó una relación.<br />Porque apareció una nueva.<br />Porque empezaste a administrar tu dinero de otra manera.<br />Porque aprendiste a poner límites.<br />Porque atravesaste algo importante.<br />Porque trabajaste sobre aquello que viste.</p>
-            <p>Por eso EJE no busca etiquetar.<br />Busca hacer visible.</p>
+            <p>Cómo se convirtió en método está contado en <a href="/que-es-eje">Qué es EJE®</a>.</p>
             <p style={{marginTop: '1.5rem', marginBottom: '2rem'}}><a href="/test" className="btn btn-secondary">Conocé el Test EJE®</a></p>
-            <hr className="separador" />
-            <p>La pregunta deja de ser:<br />«¿Qué tengo mal?»</p>
-            <p>Y empieza a ser otra.</p>
-            <p><strong>¿Dónde estoy poniendo demasiado peso hoy?</strong></p>
-            <p>¿Dónde estoy compensando?<br />¿Qué pata está quedando corta?<br />¿Cuál está ocupando demasiado espacio?<br />¿Qué área está sosteniendo sola a las demás?<br />¿Dónde estoy empezando a desaparecer yo?</p>
-            <p>¿Cómo aparece hoy mi patrón en Vínculos?<br />¿Y en Trabajo?<br />¿Qué pasa con Dinero?<br />¿Y qué está pasando conmigo?</p>
-            <p>Ahí empieza el trabajo.</p>
-            <p>Porque no podemos modificar aquello que todavía no vemos.</p>
-            <hr className="separador" />
-            <p>Durante muchos años yo miré mi vida como si cada problema fuera independiente.</p>
-            <p>Una relación.<br />Un trabajo.<br />Dinero.<br />Una decisión.<br />Una crisis.</p>
-            <p>Con el tiempo entendí que había algo debajo conectándolo todo.</p>
-            <p>La estructura.</p>
-            <p>Y también entendí algo que me hubiera gustado saber mucho antes:<br />el objetivo no es construir una vida donde nunca se rompa ninguna pata.</p>
-            <p>Eso sería imposible.</p>
-            <p>La vida se mueve.</p>
-            <p>Hay pérdidas.<br />Cambios.<br />Crisis.<br />Relaciones que terminan.<br />Trabajos que desaparecen.<br />Dinero que va y viene.<br />Momentos donde una misma deja de reconocerse.</p>
-            <p>El desafío es otro.</p>
-            <p>Poder verlo.</p>
-            <p>Detectar cuándo estamos empezando a perder el eje.<br />Redistribuir el peso.<br />Trabajar la pata que quedó débil.<br />Fortalecer la que venimos ignorando.</p>
-            <p>Evitar que toda nuestra identidad termine apoyada sobre una única parte de nuestra vida.</p>
-            <p>Y conseguir que las cuatro vuelvan a trabajar en armonía.</p>
-            <p>Porque cuando eso ocurre, pasa algo que para mí es central:<br /><strong>no necesitás que una sola cosa te sostenga.</strong></p>
-            <p>Podés apoyarte en tu propia estructura.</p>
             <hr className="separador" />
             <p>Yo aprendí a mirar la silla después de caerme.</p>
             <p>Después de descubrir que algunas patas que yo creía fuertes no lo eran tanto.</p>
