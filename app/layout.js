@@ -2,6 +2,7 @@ import "./globals.css";
 import Link from "next/link";
 import SiteHeader from "./components/SiteHeader";
 import JsonLd from "./components/JsonLd";
+import { tarjeta } from "./compartir";
 
 const title = "Sol Mir | EJE® - Sistema de Inteligencia Estructural Humana";
 const description =
@@ -51,28 +52,7 @@ export const metadata = {
   description,
   alternates: { canonical: "/" },
   robots: { index: true, follow: true },
-  openGraph: {
-    title,
-    description,
-    url: "https://www.solmir.co",
-    siteName: "EJE®",
-    locale: "es_AR",
-    type: "website",
-    images: [
-      {
-        url: "/sol-home.jpg",
-        width: 760,
-        height: 760,
-        alt: "Sol Mir, creadora de la Metodología EJE®",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title,
-    description,
-    images: ["/sol-home.jpg"],
-  },
+  ...tarjeta({ title, description, path: "/" }),
 };
 
 export default function RootLayout({ children }) {

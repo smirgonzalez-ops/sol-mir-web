@@ -1,8 +1,10 @@
-export const metadata = {
+import { pagina } from "../compartir";
+
+export const metadata = pagina({
   title: "Términos y Condiciones",
   description: "Términos de uso del sitio, sus contenidos y los productos de EJE®.",
-  alternates: { canonical: "/terminos" },
-};
+  path: "/terminos",
+});
 
 export default function Terminos() {
   return (

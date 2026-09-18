@@ -3,6 +3,7 @@ import Image from "next/image";
 import JsonLd from "../components/JsonLd";
 import KitSignupForm from "../components/KitSignupForm";
 import LaunchCountdown from "../components/LaunchCountdown";
+import { pagina } from "../compartir";
 
 // Una sola lista para lo que se ve y para los buscadores: no pueden quedar distintas.
 const PREGUNTAS = [
@@ -79,11 +80,11 @@ const FAQ = {
   })),
 };
 
-export const metadata = {
+export const metadata = pagina({
   title: "Test EJE® y Mapa Estructural",
   description: "Conocé el Test EJE® y descubrí cómo se organiza tu estructura en vínculos, trabajo, dinero e identidad.",
-  alternates: { canonical: "/test" },
-};
+  path: "/test",
+});
 
 export default function Test() {
   return (
@@ -142,7 +143,7 @@ export default function Test() {
 
           <h3 style={{marginTop: '2rem'}}>Precio</h3>
           <p style={{fontSize: '1.1rem', fontWeight: '600', marginTop: '1rem'}}>USD 27</p>
-          <p className="muted">Acceso de por vida | Descarga de tu Mapa | Actualizable</p>
+          <p className="muted">Pago único · Resultado inmediato · Tu Mapa en PDF</p>
 
           <h3 style={{marginTop: '2rem'}}>¿Qué sigue después del Test?</h3>
           <p>Muchas personas tienen más preguntas después de ver su Mapa.</p>

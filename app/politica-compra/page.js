@@ -1,8 +1,10 @@
-export const metadata = {
+import { pagina } from "../compartir";
+
+export const metadata = pagina({
   title: "Política de Compra y Devolución",
   description: "Condiciones de compra, acceso y soporte para los productos digitales de EJE®.",
-  alternates: { canonical: "/politica-compra" },
-};
+  path: "/politica-compra",
+});
 
 export default function PoliticaCompra() {
   return (

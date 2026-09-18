@@ -1,8 +1,10 @@
-export const metadata = {
+import { pagina } from "../compartir";
+
+export const metadata = pagina({
   title: "Diario de Emociones EJE®",
   description: "Una práctica guiada de 7 días, con cuadernillo y 11 audios, para observar tus patrones emocionales.",
-  alternates: { canonical: "/diario" },
-};
+  path: "/diario",
+});
 
 export default function Diario() {
   return (
