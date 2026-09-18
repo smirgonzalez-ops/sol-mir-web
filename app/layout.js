@@ -1,11 +1,47 @@
 import "./globals.css";
 import Link from "next/link";
 import SiteHeader from "./components/SiteHeader";
+import JsonLd from "./components/JsonLd";
 
 const title = "Sol Mir | EJE® - Sistema de Inteligencia Estructural Humana";
 const description =
   "EJE® no te dice quién sos. Te muestra cómo estás respondiendo y dónde todavía puede existir elección.";
 
+// Quién es Sol y qué es el sitio, para buscadores. Va en todas las páginas.
+const SITIO = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://www.solmir.co/#sol",
+      "name": "Sol Mir",
+      "jobTitle": "Creadora de EJE®",
+      "description": "Creadora de EJE®, una metodología de Inteligencia Estructural Humana.",
+      "url": "https://www.solmir.co/sobre-sol",
+      "image": "https://www.solmir.co/sol-retrato.jpg",
+      "knowsAbout": [
+        "Inteligencia Estructural Humana",
+        "EJE®"
+      ],
+      "sameAs": [
+        "https://www.instagram.com/soy_solmir",
+        "https://www.linkedin.com/in/soledadmirgonzalez",
+        "https://www.linkedin.com/company/eje-inteligencia-estructural-humana"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.solmir.co/#sitio",
+      "url": "https://www.solmir.co",
+      "name": "Sol Mir · EJE®",
+      "inLanguage": "es-AR",
+      "publisher": {
+        "@id": "https://www.solmir.co/#sol"
+      }
+    }
+  ]
+};
+
 export const metadata = {
   metadataBase: new URL("https://www.solmir.co"),
   title: {
@@ -47,6 +83,7 @@ export default function RootLayout({ children }) {
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
       </head>
       <body>
+        <JsonLd data={SITIO} />
         <a className="skip-link" href="#contenido">Saltar al contenido</a>
         <SiteHeader />
 

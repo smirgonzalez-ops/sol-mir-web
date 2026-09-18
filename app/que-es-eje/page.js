@@ -1,3 +1,18 @@
+import JsonLd from "../components/JsonLd";
+
+// La categoría como término definido: ayuda a que el nombre quede asociado a EJE®.
+const TERMINO = {
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "name": "Inteligencia Estructural Humana",
+  "description": "La categoría de EJE®: observar cómo se organiza tu sistema en cuatro territorios —vínculos, trabajo, dinero e identidad— y qué margen real existe para responder de otra manera.",
+  "url": "https://www.solmir.co/que-es-eje",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "EJE®"
+  }
+};
+
 export const metadata = {
   title: "Qué es EJE®",
   description: "EJE® te ayuda a distinguir lo que no podés cambiar de aquello a lo que sí podrías responder de otra manera.",
@@ -7,6 +22,7 @@ export const metadata = {
 export default function QueEsEJE() {
   return (
     <>
+      <JsonLd data={TERMINO} />
       <section className="hero">
         <div className="container">
           <h1>EJE® — Sistema de <span className="text-terra">Inteligencia Estructural Humana</span></h1>

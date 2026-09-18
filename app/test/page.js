@@ -1,7 +1,84 @@
-import Image from "next/image";
+import { Fragment } from "react";
+import Image from "next/image";
+import JsonLd from "../components/JsonLd";
 import KitSignupForm from "../components/KitSignupForm";
 import LaunchCountdown from "../components/LaunchCountdown";
 
+// Una sola lista para lo que se ve y para los buscadores: no pueden quedar distintas.
+const PREGUNTAS = [
+  {
+    "q": "¿Qué recibo?",
+    "a": [
+      "Tu Mapa Estructural EJE®, construido a partir de tus respuestas al Test.",
+      "El mapa muestra porcentajes personales de distintas variables y cómo se presentan actualmente en vínculos, trabajo, dinero e identidad."
+    ]
+  },
+  {
+    "q": "¿Me dice qué tipo de persona soy?",
+    "a": [
+      "No. EJE® no busca decirte «sos este tipo de persona».",
+      "Busca mostrarte cómo estás respondiendo hoy. Por eso hablamos de un mapa y no de una etiqueta."
+    ]
+  },
+  {
+    "q": "¿El resultado es para siempre?",
+    "a": [
+      "No. Es una fotografía de un momento específico.",
+      "Tus respuestas pueden variar con el tiempo, con tus experiencias y con el trabajo que hagas sobre vos."
+    ]
+  },
+  {
+    "q": "¿Por qué son porcentajes?",
+    "a": [
+      "Porque distintas formas de respuesta pueden convivir en una misma persona.",
+      "El mapa permite observar cuánto peso relativo tiene cada variable dentro de la combinación actual."
+    ]
+  },
+  {
+    "q": "¿Todos tenemos el mismo mapa?",
+    "a": [
+      "No necesariamente. Cada persona obtiene su propia combinación de porcentajes a partir de sus respuestas."
+    ]
+  },
+  {
+    "q": "¿Para qué me sirve saberlo?",
+    "a": [
+      "Para tener un punto de partida. Es difícil trabajar sobre algo que no podés identificar.",
+      "El mapa permite observar qué respuestas están teniendo más peso actualmente y empezar a decidir cuáles te sirven, cuáles te cuestan y dónde querés trabajar."
+    ]
+  },
+  {
+    "q": "¿Es un test de personalidad?",
+    "a": [
+      "No está planteado para definir una personalidad fija. La pregunta no es «¿quién sos?», sino «¿cómo estás respondiendo hoy?»."
+    ]
+  }
+];
+
+// Sin precio hasta el 22/09: antes de esa fecha el Test no se puede comprar.
+const PRODUCTO = {
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Test EJE®",
+  "description": "42 preguntas, unos 15 minutos. Devuelve el Mapa Estructural EJE®: en qué proporción aparecen hoy determinados patrones y cómo se expresan en vínculos, trabajo, dinero e identidad.",
+  "image": "https://www.solmir.co/mapa-1.jpg",
+  "url": "https://www.solmir.co/test",
+  "brand": {
+    "@type": "Brand",
+    "name": "EJE®"
+  }
+};
+
+const FAQ = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: PREGUNTAS.map(({ q, a }) => ({
+    "@type": "Question",
+    name: q,
+    acceptedAnswer: { "@type": "Answer", text: a.join(" ") },
+  })),
+};
+
 export const metadata = {
   title: "Test EJE® y Mapa Estructural",
   description: "Conocé el Test EJE® y descubrí cómo se organiza tu estructura en vínculos, trabajo, dinero e identidad.",
@@ -11,6 +88,8 @@ export const metadata = {
 export default function Test() {
   return (
     <>
+      <JsonLd data={PRODUCTO} />
+      <JsonLd data={FAQ} />
       <section className="hero">
         <div className="container">
           <h1>Test EJE®</h1>
@@ -88,25 +167,12 @@ export default function Test() {
         <div className="container" style={{maxWidth: '760px'}}>
           <h2>Preguntas frecuentes</h2>
           <div className="faq">
-            <h3>¿Qué recibo?</h3>
-            <p>Tu Mapa Estructural EJE®, construido a partir de tus respuestas al Test.</p>
-            <p>El mapa muestra porcentajes personales de distintas variables y cómo se presentan actualmente en vínculos, trabajo, dinero e identidad.</p>
-            <h3>¿Me dice qué tipo de persona soy?</h3>
-            <p>No. EJE® no busca decirte «sos este tipo de persona».</p>
-            <p>Busca mostrarte cómo estás respondiendo hoy. Por eso hablamos de un mapa y no de una etiqueta.</p>
-            <h3>¿El resultado es para siempre?</h3>
-            <p>No. Es una fotografía de un momento específico.</p>
-            <p>Tus respuestas pueden variar con el tiempo, con tus experiencias y con el trabajo que hagas sobre vos.</p>
-            <h3>¿Por qué son porcentajes?</h3>
-            <p>Porque distintas formas de respuesta pueden convivir en una misma persona.</p>
-            <p>El mapa permite observar cuánto peso relativo tiene cada variable dentro de la combinación actual.</p>
-            <h3>¿Todos tenemos el mismo mapa?</h3>
-            <p>No necesariamente. Cada persona obtiene su propia combinación de porcentajes a partir de sus respuestas.</p>
-            <h3>¿Para qué me sirve saberlo?</h3>
-            <p>Para tener un punto de partida. Es difícil trabajar sobre algo que no podés identificar.</p>
-            <p>El mapa permite observar qué respuestas están teniendo más peso actualmente y empezar a decidir cuáles te sirven, cuáles te cuestan y dónde querés trabajar.</p>
-            <h3>¿Es un test de personalidad?</h3>
-            <p>No está planteado para definir una personalidad fija. La pregunta no es «¿quién sos?», sino «¿cómo estás respondiendo hoy?».</p>
+            {PREGUNTAS.map(({ q, a }) => (
+              <Fragment key={q}>
+                <h3>{q}</h3>
+                {a.map((parrafo) => <p key={parrafo}>{parrafo}</p>)}
+              </Fragment>
+            ))}
           </div>
         </div>
       </section>
