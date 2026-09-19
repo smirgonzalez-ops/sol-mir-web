@@ -86,7 +86,7 @@ export default function KitSignupForm({
       <button type="submit" className="btn btn-primary form-submit">{buttonLabel}</button>
       {showPrivacy && (
         <p className="muted" style={{fontSize: "0.9rem", marginTop: "1rem"}}>
-          Al continuar, aceptás nuestra <a href="/politica-privacidad">Política de Privacidad</a>.
+          Al continuar, aceptás la <a href="/politica-privacidad">Política de Privacidad</a>.
         </p>
       )}
     </form>
