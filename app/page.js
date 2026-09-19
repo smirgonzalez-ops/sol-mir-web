@@ -7,15 +7,13 @@ export default function Home() {
       <section className="hero">
         <div className="container">
           <h1>EJE® no te dice quién sos. <span className="text-terra">Te muestra cómo estás respondiendo hoy.</span></h1>
-          <p className="subtitle">Soy Sol Mir, creadora de EJE® · Inteligencia Estructural Humana</p>
+          <p className="subtitle">El Test EJE® organiza en un mapa personal cómo se combinan hoy tus respuestas.</p>
           <div className="cta-group">
-            <a href="/test" className="btn btn-primary">Conocé el Test EJE®</a>
-            <a href="/que-es-eje" className="btn btn-secondary">Descubrí qué es EJE®</a>
+            <a href="/test" className="btn btn-primary">Hacé el Test EJE® · USD 27</a>
+            <a href="/ebook" className="btn btn-secondary">Descargá el ebook gratuito</a>
           </div>
-          <div style={{marginTop: '3rem', padding: '2rem', backgroundColor: 'rgba(190, 110, 75, 0.1)', borderLeft: '4px solid var(--terra)'}}>
-            <p style={{marginBottom: '0.5rem'}}><strong>Ya disponible: Test EJE®</strong></p>
-            <p className="muted">42 preguntas · unos 15 minutos · USD 27 | <a href="/test">Conocé el Test</a></p>
-          </div>
+          <p className="muted" style={{marginTop: '1rem'}}>42 preguntas · unos 15 minutos · Mapa Estructural en PDF · pago único</p>
+          <p className="muted" style={{marginTop: '2rem'}}>Soy Sol Mir, creadora de EJE® · Inteligencia Estructural Humana. <a href="/que-es-eje">Conocé la metodología</a>.</p>
         </div>
       </section>
 
