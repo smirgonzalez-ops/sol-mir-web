@@ -145,7 +145,7 @@ export default function Test() {
           <p><a href={comprar("test_cuerpo")} className="btn btn-primary">Hacé el Test · USD 27</a></p>
 
           <h3 style={{marginTop: '3rem'}}>Cómo se ve tu Mapa Estructural</h3>
-          <p>No es una pantalla de resultados. Es un documento de cuatro páginas en PDF que recibís por correo y podés guardar.</p>
+          <p>No es una pantalla de resultados. Es un documento de cuatro páginas en PDF que descargás apenas terminás y podés guardar.</p>
           <p>Esta es la primera página de un Mapa real. El patrón, los porcentajes y el texto cambian según lo que respondas.</p>
 
           <Image className="mapa-muestra" src="/mapa-1.jpg" width={880} height={1243} sizes="(max-width: 700px) 100vw, 620px" alt="Primera página del Mapa Estructural EJE®: la Huella Madre dominante, el Pulso con los porcentajes por Macrofamilia, y qué podés, qué te cuesta y qué movimiento es posible." />
