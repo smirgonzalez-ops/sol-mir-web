@@ -23,10 +23,11 @@ export default function Home() {
         <div className="container" style={{maxWidth: '800px'}}>
           <h2>Son las diez de la noche.</h2>
           <p>Terminaste el día agotada y mañana ya está lleno antes de empezar. Quizás pensás: «¿Por qué acepté todo esto?».</p>
-          <p>Pero a veces no podías decir que no. Era tu trabajo, había una urgencia o simplemente no había otra opción.</p>
+          <p>No siempre podías decir que no. Era tu trabajo, había una urgencia o simplemente no había otra opción.</p>
+          <p>Pero hay algo que se repite. Cambia la situación y, aun entendiendo lo que pasó, volvés a responder de una forma parecida.</p>
           <p>Ahí cambia la pregunta. No es «¿qué hice mal?». Es:</p>
           <p className="remate">«Dentro de esto que no puedo cambiar, ¿qué margen sí tengo?»</p>
-          <p>EJE® ayuda a distinguir qué no podés cambiar, qué podés negociar y dónde podrías responder de otra manera.</p>
+          <p>Ese es el lugar que EJE® ayuda a mirar: el margen que todavía existe dentro de una situación real.</p>
           <p>No para controlar todo. Para encontrar tu margen real de elección.</p>
         </div>
       </section>
