@@ -155,7 +155,6 @@ export default function QueEsEJE() {
 
           <h3 style={{marginTop: '3rem'}}>Lo que EJE® NO es</h3>
           <ul style={{listStyle: 'none', marginTop: '1.5rem'}}>
-            <li style={{marginBottom: '1rem'}}><strong>No es una sesión de coaching.</strong> EJE® tiene un mapa y un recorrido propios; puede complementar otros procesos sin reemplazarlos.</li>
             <li style={{marginBottom: '1rem'}}><strong>No es terapia.</strong> No trata patología ni reemplaza atención profesional.</li>
             <li style={{marginBottom: '1rem'}}><strong>No es tarot ni astrología.</strong> Todo lo que ves en tu Mapa viene de lo que vos misma dijiste en el Test.</li>
             <li style={{marginBottom: '1rem'}}><strong>No es una fórmula rápida.</strong> No promete cambio en 7 días ni transformación garantizada.</li>

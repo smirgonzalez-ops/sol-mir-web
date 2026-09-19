@@ -9,8 +9,8 @@ export default function Home() {
           <h1>EJE® no te dice quién sos. <span className="text-terra">Te muestra cómo estás respondiendo hoy.</span></h1>
           <p className="subtitle">Soy Sol Mir, creadora de EJE® · Inteligencia Estructural Humana</p>
           <div className="cta-group">
-            <a href="/que-es-eje" className="btn btn-primary">Descubrí qué es EJE®</a>
-            <a href="/ebook" className="btn btn-secondary">Descargá el ebook</a>
+            <a href="/test" className="btn btn-primary">Conocé el Test EJE®</a>
+            <a href="/que-es-eje" className="btn btn-secondary">Descubrí qué es EJE®</a>
           </div>
           <div style={{marginTop: '3rem', padding: '2rem', backgroundColor: 'rgba(190, 110, 75, 0.1)', borderLeft: '4px solid var(--terra)'}}>
             <p style={{marginBottom: '0.5rem'}}><strong>Ya disponible: Test EJE®</strong></p>
@@ -85,7 +85,7 @@ export default function Home() {
           <h2>Ebook Gratuito</h2>
           <p><strong>Tu Huella en el amor, el trabajo y la plata</strong></p>
           <p>Once páginas para ver si eso que se repite en estas tres áreas puede ser el mismo patrón. Incluye un ejercicio para armar tu primer mapa.</p>
-          <p>Te enviaremos un correo para confirmar que sos vos. Después recibís el ebook. Sin secuencia de ventas.</p>
+          <p>Te llega un correo para confirmar que sos vos. Después recibís el ebook. Sin secuencia de ventas.</p>
           <KitSignupForm
             origin="web_home"
             buttonLabel="Quiero recibir el ebook"
