@@ -172,6 +172,8 @@ export default function Test() {
           </div>
           <p className="muted" style={{textAlign: 'center', marginTop: '0.75rem'}}>Las otras tres — cómo se organiza el patrón, dónde genera más fricción y por dónde empezar a intervenir — quedan para quien hace el Test.</p>
 
+          <p style={{marginTop: '2rem'}}><a href={comprar("test_cuerpo")} className="btn btn-primary">Quiero descubrir mi Mapa</a></p>
+
           <h3 className="section-subheading">Qué es —y qué no es— el Test</h3>
           <div className="responsible-note">
             <p><strong>El Test EJE® es una herramienta de autoconocimiento, no de diagnóstico clínico.</strong></p>
@@ -191,7 +193,7 @@ export default function Test() {
       <section className="accent ancla test-closing" id="comprar">
         <div className="container reading-width">
           <p className="choice-eyebrow">Tu punto de partida</p>
-          <h2>No necesitás seguir sosteniendo una estructura que todavía no podés ver.</h2>
+          <h2>Ver la estructura antes de seguir sosteniéndola.</h2>
           <p>Tu Mapa no decide por vos ni te encierra en una etiqueta. Te muestra qué está pesando hoy para que puedas empezar por algo concreto.</p>
           <a href={comprar("test_cierre")} className="btn btn-primary">Quiero descubrir mi Mapa</a>
           <p className="hero-meta">42 preguntas · 15 minutos · 4 páginas en PDF<br />USD 27 · pago único · resultado inmediato</p>
