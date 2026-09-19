@@ -46,7 +46,7 @@ export default function Ebook() {
         <div className="container" style={{maxWidth: '760px'}}>
           <h2>Después del ebook</h2>
           <p>El ebook mira tres lugares: el amor, el trabajo y la plata. El cuarto territorio, la identidad, aparece en el Test.</p>
-          <p>El Test EJE® sale el 22 de septiembre y te devuelve tu Mapa Estructural: en qué proporción aparecen hoy determinados patrones y cómo se expresan en cada área de tu vida.</p>
+          <p>El Test EJE® te devuelve tu Mapa Estructural: en qué proporción aparecen hoy determinados patrones y cómo se expresan en cada área de tu vida.</p>
           <p style={{marginTop: '1.5rem'}}><a href="/test" className="btn btn-secondary">Conocé el Test EJE®</a></p>
         </div>
       </section>

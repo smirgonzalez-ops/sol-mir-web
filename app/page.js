@@ -13,8 +13,8 @@ export default function Home() {
             <a href="/ebook" className="btn btn-secondary">Descargá el ebook</a>
           </div>
           <div style={{marginTop: '3rem', padding: '2rem', backgroundColor: 'rgba(190, 110, 75, 0.1)', borderLeft: '4px solid var(--terra)'}}>
-            <p style={{marginBottom: '0.5rem'}}><strong>Lanzamiento próximo: Test EJE®</strong></p>
-            <p className="muted">22 de septiembre de 2026 | <a href="/test">Sumate a la lista de espera</a></p>
+            <p style={{marginBottom: '0.5rem'}}><strong>Ya disponible: Test EJE®</strong></p>
+            <p className="muted">42 preguntas · unos 15 minutos · USD 27 | <a href="/test">Conocé el Test</a></p>
           </div>
         </div>
       </section>
@@ -98,11 +98,11 @@ export default function Home() {
 
       <section className="accent">
         <div className="container centrado" style={{maxWidth: '800px', textAlign: 'center'}}>
-          <h2>Test EJE® — Lanzamiento 22 de septiembre</h2>
+          <h2>Test EJE®</h2>
           <p style={{fontSize: '1.1rem', marginTop: '1rem'}}><strong>42 preguntas. Aproximadamente 15 minutos.</strong></p>
           <p>Recibís tu Mapa Estructural EJE®: una fotografía personal, expresada en porcentajes, de cómo se combinan hoy tus respuestas en vínculos, trabajo, dinero e identidad.</p>
           <p>Tu punto de partida para verte con más claridad.</p>
-          <a href="/test" className="btn btn-primary" style={{marginTop: '2rem'}}>Sumate a la lista de espera</a>
+          <a href="/test" className="btn btn-primary" style={{marginTop: '2rem'}}>Conocé el Test EJE®</a>
         </div>
       </section>
     </>
