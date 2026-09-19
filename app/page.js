@@ -86,23 +86,32 @@ export default function Home() {
         </div>
       </section>
 
-      <section>
-        <div className="container" style={{maxWidth: '900px'}}>
-          <h2>Diario de Emociones EJE®</h2>
-          <p>Un cuadernillo de 7 días con 11 audios guiados para observar tus patrones emocionales desde hoy.</p>
-          <div style={{marginTop: '2rem', textAlign: 'center'}}>
-            <a href="/diario" className="btn btn-primary">Conocé el Diario de Emociones</a>
+      <section className="choice-section">
+        <div className="container centrado" style={{maxWidth: '1000px'}}>
+          <div className="choice-heading">
+            <h2>Elegí tu punto de partida</h2>
+            <p>No necesitás hacer los dos. Depende de qué querés ver hoy.</p>
           </div>
-        </div>
-      </section>
 
-      <section className="accent">
-        <div className="container centrado" style={{maxWidth: '800px', textAlign: 'center'}}>
-          <h2>Test EJE®</h2>
-          <p style={{fontSize: '1.1rem', marginTop: '1rem'}}><strong>42 preguntas. Aproximadamente 15 minutos.</strong></p>
-          <p>Recibís tu Mapa Estructural EJE®: una fotografía personal, expresada en porcentajes, de cómo se combinan hoy tus respuestas en vínculos, trabajo, dinero e identidad.</p>
-          <p>Tu punto de partida para verte con más claridad.</p>
-          <a href="/test" className="btn btn-primary" style={{marginTop: '2rem'}}>Conocé el Test EJE®</a>
+          <div className="choice-grid">
+            <article className="choice-card">
+              <p className="choice-eyebrow">Para empezar a observarte</p>
+              <h3>Diario de Emociones EJE®</h3>
+              <p>Elegilo si querés una práctica breve para registrar lo que sentís y empezar a reconocer patrones en el momento.</p>
+              <p className="choice-meta">Resultado: 7 días de registros guiados · cuadernillo de 31 páginas · 11 audios</p>
+              <a href="/diario" className="btn btn-secondary">Conocé el Diario</a>
+            </article>
+
+            <article className="choice-card choice-card-featured">
+              <p className="choice-eyebrow">Para ordenar una lectura más completa</p>
+              <h3>Test EJE®</h3>
+              <p>Elegilo si querés una fotografía personal, expresada en porcentajes, de cómo se combinan hoy tus respuestas.</p>
+              <p className="choice-meta">42 preguntas · 15 minutos · Mapa en PDF · USD 27</p>
+              <a href="/test" className="btn btn-primary">Conocé el Test</a>
+            </article>
+          </div>
+
+          <p className="choice-note">El Diario acompaña la observación cotidiana. El Test organiza lo que aparece en un mapa personal.</p>
         </div>
       </section>
     </>
