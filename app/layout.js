@@ -3,6 +3,7 @@ import Link from "next/link";
 import SiteHeader from "./components/SiteHeader";
 import JsonLd from "./components/JsonLd";
 import { tarjeta } from "./compartir";
+import { Analytics } from "@vercel/analytics/next";
 
 const title = "Sol Mir | EJE® - Sistema de Inteligencia Estructural Humana";
 const description =
@@ -106,6 +107,8 @@ export default function RootLayout({ children }) {
             <p>&copy; 2026 Sol Mir. EJE® es una marca registrada.</p>
           </div>
         </footer>
+        {/* Visitas por página, sin cookies (Vercel Web Analytics). */}
+        <Analytics />
       </body>
     </html>
   );
