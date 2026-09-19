@@ -28,7 +28,7 @@ export default function PoliticaPrivacidad() {
           <li><strong>Cuando comprás el Test:</strong> la compra y el pago se hacen en Gumroad, no en este sitio. Gumroad me informa tu correo y, si lo cargaste, tu nombre; los datos de tu tarjeta quedan en Gumroad y yo no los recibo.</li>
           <li><strong>Cuando hacés el Test:</strong> tus respuestas y tu resultado se guardan sólo en el navegador de tu dispositivo, no en un servidor. Si borrás los datos de navegación o cambiás de dispositivo, se pierden.</li>
           <li><strong>Si pedís tu Mapa por correo:</strong> tu correo y el PDF de tu Mapa pasan por el servidor del Test y salen por Resend, el servicio que manda ese correo. No los guardo en ninguna base propia.</li>
-          <li><strong>Estadísticas:</strong> en el Test cuento, sin ningún dato que te identifique, cuántas personas lo empiezan y lo terminan y qué Macrofamilia aparece más. No incluye tu nombre, tu correo ni tus respuestas.</li>
+          <li><strong>Estadísticas:</strong> en este sitio cuento las visitas de cada página, sin cookies (Vercel Web Analytics). En el Test cuento cuántas personas lo empiezan y lo terminan y qué Macrofamilia aparece más. Nada de eso incluye tu nombre, tu correo ni tus respuestas.</li>
         </ul>
 
         <h2 style={{marginTop: '1.5rem'}}>3. Quién más procesa tus datos</h2>
