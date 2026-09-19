@@ -28,7 +28,7 @@ export default function Home() {
           <p>No es falta de voluntad. Hay respuestas que aprendiste en algún momento y que hoy pueden aparecer antes de que llegues a elegir.</p>
           <p>Ahí cambia la pregunta. No es «¿qué hice mal?». Es:</p>
           <p className="remate">«Dentro de esto que no puedo cambiar, ¿qué margen sí tengo?»</p>
-          <p>EJE® ayuda a reconocer qué se activa en vos y a construir un margen entre esa activación y lo que hacés.</p>
+          <p>EJE® ayuda a reconocer qué se activa en vos —por ejemplo, hacerte cargo de más, evitar el conflicto o reaccionar antes de pensar— y a construir un margen entre esa activación y lo que hacés.</p>
           <p>El objetivo no es que el patrón nunca vuelva a activarse. Es que deje de tener la última palabra.</p>
         </div>
       </section>
