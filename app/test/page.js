@@ -1,8 +1,6 @@
 import { Fragment } from "react";
 import Image from "next/image";
 import JsonLd from "../components/JsonLd";
-import KitSignupForm from "../components/KitSignupForm";
-import LaunchCountdown from "../components/LaunchCountdown";
 import { pagina } from "../compartir";
 
 // Una sola lista para lo que se ve y para los buscadores: no pueden quedar distintas.
@@ -53,10 +51,17 @@ const PREGUNTAS = [
     "a": [
       "No está planteado para definir una personalidad fija. La pregunta no es «¿quién sos?», sino «¿cómo estás respondiendo hoy?»."
     ]
+  },
+  {
+    "q": "¿Qué pasa después de pagar?",
+    "a": [
+      "Gumroad te manda un recibo en inglés: tu acceso está en el botón «View content». Si no lo ves, buscalo en Notificaciones o en Promociones.",
+      "En el resumen de tu tarjeta, el cargo figura como GUMRD.COM*."
+    ]
   }
 ];
 
-// Sin precio hasta el 22/09: antes de esa fecha el Test no se puede comprar.
+// Precio desde el lanzamiento del 22/09, el mismo que en Gumroad (USD 27, en venta).
 const PRODUCTO = {
   "@context": "https://schema.org",
   "@type": "Product",
@@ -67,6 +72,13 @@ const PRODUCTO = {
   "brand": {
     "@type": "Brand",
     "name": "EJE®"
+  },
+  "offers": {
+    "@type": "Offer",
+    "price": "27",
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock",
+    "url": "https://smirgo.gumroad.com/l/ozvrmy"
   }
 };
 
@@ -80,6 +92,11 @@ const FAQ = {
   })),
 };
 
+// Enlace de compra con UTM (Marketing/UTM_Instagram_EJE.md): cada botón
+// dice desde dónde vino la venta.
+const comprar = (lugar) =>
+  `https://smirgo.gumroad.com/l/ozvrmy?utm_source=web&utm_medium=organic&utm_campaign=lanzamiento_22_9&utm_content=${lugar}`;
+
 export const metadata = pagina({
   title: "Test EJE® y Mapa Estructural",
   description: "Conocé el Test EJE® y descubrí cómo se organiza tu estructura en vínculos, trabajo, dinero e identidad.",
@@ -95,12 +112,19 @@ export default function Test() {
         <div className="container">
           <h1>Test EJE®</h1>
           <p className="subtitle">42 preguntas. 15 minutos. Tu mapa personal de cómo estás respondiendo hoy.</p>
-          <div style={{marginTop: '2rem', textAlign: 'center'}}>
-            <div style={{fontSize: '3rem', fontWeight: '700', color: 'var(--terra)', fontFamily: "'Fraunces', serif"}}>
-              22 de septiembre
-            </div>
-            <LaunchCountdown />
+          <div style={{marginTop: '2rem'}}>
+            <a href={comprar("test_hero")} className="btn btn-primary">Hacé el Test · USD 27</a>
+            <p className="muted" style={{marginTop: '0.75rem'}}>Pago único · Resultado inmediato · Tu Mapa en PDF</p>
           </div>
+        </div>
+      </section>
+
+      <section>
+        <div className="container" style={{maxWidth: '760px'}}>
+          <p style={{fontFamily: "'Fraunces', serif", fontSize: '1.3rem', lineHeight: 1.4}}>Podés ser muy clara trabajando y perderte cuando alguien te importa.</p>
+          <p style={{fontFamily: "'Fraunces', serif", fontSize: '1.3rem', lineHeight: 1.4}}>Podés tener el dinero ordenado y vivir desde el control.</p>
+          <p style={{fontFamily: "'Fraunces', serif", fontSize: '1.3rem', lineHeight: 1.4}}>Podés sostener a todos y no saber qué necesitás vos.</p>
+          <p style={{marginTop: '1.5rem'}}>El Test EJE® organiza lo que hoy está pasando entre vínculos, trabajo, dinero e identidad. Te muestra dónde podés estar perdiendo el eje, qué patrón está pesando más y qué conviene mirar primero.</p>
         </div>
       </section>
 
@@ -118,7 +142,7 @@ export default function Test() {
           <p>Capaz dentro de seis meses lo volvés a hacer y tu mapa cambió. Esa es parte de la idea.</p>
           <p className="remate">«Ah, mirá. Esto en mí está pesando muchísimo más de lo que pensaba.»</p>
           <p>Ese es uno de los efectos que busco: poder ver algo con suficiente claridad como para dejar de trabajar «todo» y empezar por lo que hoy tiene más peso.</p>
-          <p><a href="#lista-espera" className="btn btn-primary">Sumate a la lista de espera</a></p>
+          <p><a href={comprar("test_cuerpo")} className="btn btn-primary">Hacé el Test · USD 27</a></p>
 
           <h3 style={{marginTop: '3rem'}}>Cómo se ve tu Mapa Estructural</h3>
           <p>No es una pantalla de resultados. Es un documento de cuatro páginas en PDF que recibís por correo y podés guardar.</p>
@@ -151,16 +175,12 @@ export default function Test() {
         </div>
       </section>
 
-      <section className="accent ancla" id="lista-espera">
+      <section className="accent ancla" id="comprar">
         <div className="container" style={{maxWidth: '700px'}}>
-          <h2>Sumate a la lista de espera</h2>
-          <p style={{marginTop: '1rem'}}>Sé de las primeras en acceder al Test EJE®. Te aviso el 22 de septiembre cuando esté disponible.</p>
-          <KitSignupForm
-            origin="lista_espera_test"
-            buttonLabel="Quiero ser de las primeras"
-            includeCountry
-          />
-          <p className="muted" style={{marginTop: '1rem', textAlign: 'center'}}>Vas a recibir un correo para confirmar tu suscripción. Confirmalo y quedás en la lista.</p>
+          <h2>Hacé el Test EJE®</h2>
+          <p style={{marginTop: '1rem'}}>42 preguntas, unos 15 minutos. USD 27, pago único. Tu Mapa Estructural EJE® en PDF, apenas terminás.</p>
+          <p><a href={comprar("test_cierre")} className="btn btn-primary">Hacé el Test · USD 27</a></p>
+          <p className="muted" style={{marginTop: '1rem'}}>Después de pagar, Gumroad te manda un recibo en inglés: tu acceso está en el botón «View content».</p>
         </div>
       </section>
 
@@ -174,17 +194,6 @@ export default function Test() {
                 {a.map((parrafo) => <p key={parrafo}>{parrafo}</p>)}
               </Fragment>
             ))}
-          </div>
-        </div>
-      </section>
-
-      <section>
-        <div className="container centrado" style={{maxWidth: '800px', textAlign: 'center'}}>
-          <h2>Mientras esperás</h2>
-          <p>Podés explorar el Ebook gratuito o conocer el Diario de Emociones para empezar a observar desde hoy.</p>
-          <div className="cta-group" style={{justifyContent: 'center', marginTop: '2rem'}}>
-            <a href="/ebook" className="btn btn-secondary">Descargar ebook</a>
-            <a href="/diario" className="btn btn-secondary">Ver Diario</a>
           </div>
         </div>
       </section>
