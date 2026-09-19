@@ -104,7 +104,7 @@ export default function RootLayout({ children }) {
             </div>
           </div>
           <div className="footer-bottom">
-            <p>&copy; 2026 Sol Mir. EJE® es una marca registrada.</p>
+            <p>&copy; 2026 Sol Mir.</p>
           </div>
         </footer>
         {/* Visitas por página, sin cookies (Vercel Web Analytics). */}
