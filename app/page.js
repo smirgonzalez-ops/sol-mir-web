@@ -5,7 +5,8 @@ export default function Home() {
   return (
     <>
       <section className="hero home-hero">
-        <div className="container">
+        <div className="container home-hero-grid">
+          <div className="home-hero-copy">
           <p className="choice-eyebrow">Test EJE® · Tu Mapa Estructural personal</p>
           <h1>Todo sigue en pie <span className="text-terra">porque vos no aflojás.</span></h1>
           <p className="subtitle">Te anticipás. Controlás. Evitás el conflicto. Sostenés a los demás, incluso cuando ya no das más.</p>
@@ -14,7 +15,12 @@ export default function Home() {
           <div className="cta-group">
             <a href="/test" className="btn btn-primary">Quiero ver mi Mapa personal</a>
           </div>
-          <p className="hero-meta">42 preguntas · 15 minutos · Mapa inmediato en PDF<br />USD 27 · pago único</p>
+            <p className="hero-meta">42 preguntas · 15 minutos · Mapa inmediato en PDF<br />USD 27 · pago único</p>
+          </div>
+          <figure className="home-map-proof">
+            <Image src="/mapa-1.jpg" width={880} height={1243} sizes="(max-width: 768px) 78vw, 430px" priority alt="Ejemplo de Mapa Estructural EJE® con porcentajes personales." />
+            <figcaption>Ejemplo de Mapa Estructural · Página 1 de 4</figcaption>
+          </figure>
         </div>
       </section>
 

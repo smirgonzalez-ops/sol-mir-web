@@ -4,10 +4,10 @@ import Link from "next/link";
 import { useState } from "react";
 
 const links = [
-  ["/", "Inicio"],
   ["/que-es-eje", "Qué es EJE®"],
-  ["/ebook", "Ebook gratis"],
   ["/sobre-sol", "Sobre Sol"],
+  ["/ebook", "Ebook"],
+  ["/contacto", "Contacto"],
 ];
 
 export default function SiteHeader() {
@@ -16,9 +16,10 @@ export default function SiteHeader() {
   return (
     <header>
       <div className="container header-inner">
-        <Link className="logo" href="/" aria-label="EJE®, ir al inicio">
-          EJE®
-        </Link>
+        <div className="brand-lockup">
+          <Link className="logo" href="/" aria-label="EJE®, ir al inicio">EJE®</Link>
+          <span className="brand-descriptor">Sistema de Inteligencia<br />Estructural Humana</span>
+        </div>
         <button
           className="menu-toggle"
           type="button"
@@ -42,7 +43,7 @@ export default function SiteHeader() {
             ))}
             <li>
               <Link href="/test" className="btn btn-primary btn-nav" onClick={() => setOpen(false)}>
-                Test
+                Test EJE®
               </Link>
             </li>
           </ul>

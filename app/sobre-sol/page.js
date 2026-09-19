@@ -10,18 +10,21 @@ export const metadata = pagina({
 export default function SobreSol() {
   return (
     <>
-      <section className="hero">
-        <div className="container">
-          <h1>Sol Mir</h1>
-          <p className="subtitle">Consultora, formadora en liderazgo, y creadora de la Metodología EJE®</p>
+      <section className="hero profile-hero">
+        <div className="container profile-hero-grid">
+          <div>
+            <p className="choice-eyebrow">Autora y creadora de EJE®</p>
+            <h1>Sol Mir</h1>
+            <p className="subtitle">Consultora y formadora en liderazgo. Creadora de la Metodología EJE®.</p>
+          </div>
+          <Image className="profile-hero-image" src="/sol-retrato.jpg" width={880} height={1100} sizes="(max-width: 768px) 72vw, 340px" priority alt="Retrato de Sol Mir, creadora de la Metodología EJE®" />
         </div>
       </section>
 
       <section>
         <div className="container" style={{maxWidth: '760px'}}>
           <h2>Mi trayectoria</h2>
-          <div className="bio-grid">
-            <Image src="/sol-retrato.jpg" width={880} height={1100} sizes="(max-width: 768px) 260px, 300px" alt="Retrato de Sol Mir, creadora de la Metodología EJE®" />
+          <div className="bio-intro">
             <div>
               <p><strong>Licenciada en Marketing y Administración de Empresas.</strong> Durante más de una década trabajé en grandes corporaciones —Coca-Cola y Citibank—. Esa experiencia me permitió observar cómo las personas y los equipos pueden comprender un problema y, aun así, repetir la misma respuesta.</p>
           
