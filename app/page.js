@@ -83,8 +83,15 @@ export default function Home() {
       <section className="accent">
         <div className="container" style={{maxWidth: '700px'}}>
           <h2>Ebook Gratuito</h2>
-          <p>Una introducción clara a qué es EJE®.</p>
-          <KitSignupForm origin="web_home" buttonLabel="Descargar ebook gratuito" />
+          <p><strong>Tu Huella en el amor, el trabajo y la plata</strong></p>
+          <p>Once páginas para ver si eso que se repite en estas tres áreas puede ser el mismo patrón. Incluye un ejercicio para armar tu primer mapa.</p>
+          <p>Te enviaremos un correo para confirmar que sos vos. Después recibís el ebook. Sin secuencia de ventas.</p>
+          <KitSignupForm
+            origin="web_home"
+            buttonLabel="Quiero recibir el ebook"
+            nameOptional
+            showPrivacy
+          />
         </div>
       </section>
 

@@ -20,7 +20,13 @@ function showSpanishValidation(event) {
   }
 }
 
-export default function KitSignupForm({ origin, buttonLabel, includeCountry = false }) {
+export default function KitSignupForm({
+  origin,
+  buttonLabel,
+  includeCountry = false,
+  nameOptional = false,
+  showPrivacy = false,
+}) {
   const prefix = `kit-${origin}`;
 
   return (
@@ -30,14 +36,16 @@ export default function KitSignupForm({ origin, buttonLabel, includeCountry = fa
       className="signup-form"
     >
       <div className="form-field">
-        <label className="form-label" htmlFor={`${prefix}-name`}>Nombre</label>
+        <label className="form-label" htmlFor={`${prefix}-name`}>
+          Nombre{nameOptional ? " (opcional)" : ""}
+        </label>
         <input
           className="form-control"
           id={`${prefix}-name`}
           type="text"
           name="fields[first_name]"
           autoComplete="given-name"
-          required
+          required={!nameOptional}
           onInvalid={showSpanishValidation}
           onInput={(event) => event.currentTarget.setCustomValidity("")}
         />
@@ -76,6 +84,11 @@ export default function KitSignupForm({ origin, buttonLabel, includeCountry = fa
       )}
       <input type="hidden" name="fields[origen]" value={origin} />
       <button type="submit" className="btn btn-primary form-submit">{buttonLabel}</button>
+      {showPrivacy && (
+        <p className="muted" style={{fontSize: "0.9rem", marginTop: "1rem"}}>
+          Al continuar, aceptás nuestra <a href="/politica-privacidad">Política de Privacidad</a>.
+        </p>
+      )}
     </form>
   );
 }
