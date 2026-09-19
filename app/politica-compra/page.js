@@ -19,7 +19,7 @@ export default function PoliticaCompra() {
         <p>El Diario de Emociones y el Test EJE® son productos digitales. El Test se paga en Gumroad, y recibís el acceso apenas se confirma el pago.</p>
         
         <h2 style={{marginTop: '1.5rem'}}>2. Devoluciones y reembolsos</h2>
-        <p>Dado que son productos digitales descargables, no ofrezco reembolsos estándar. Si tenés un problema técnico, escribime a <a href={`mailto:${CORREO}`}>{CORREO}</a> y lo resolvemos.</p>
+        <p>Dado que son productos digitales descargables, no ofrezco reembolsos estándar. Si tenés un problema técnico, escribime a <a href={`mailto:${CORREO}`}>{CORREO}</a> y te ayudo a resolverlo.</p>
         
         <h2 style={{marginTop: '1.5rem'}}>3. Acceso</h2>
         <p>Después de pagar, entrás al Test desde el botón “View content” del recibo de Gumroad. Tu Mapa llega en PDF: guardalo, es tuyo.</p>
