@@ -6,7 +6,7 @@ import { useState } from "react";
 const links = [
   ["/que-es-eje", "Qué es EJE®"],
   ["/sobre-sol", "Sobre Sol"],
-  ["/ebook", "Ebook"],
+  ["/ebook", "Ebook gratis"],
   ["/contacto", "Contacto"],
 ];
 

@@ -353,7 +353,7 @@ section.accent {
   margin-top: 0.7rem;
   color: var(--grey);
   font-family: 'JetBrains Mono', monospace;
-  font-size: 0.68rem;
+  font-size: 0.82rem;
   letter-spacing: 0.04em;
 }
 
@@ -576,7 +576,7 @@ section.accent {
   margin-bottom: 0.75rem;
   color: var(--grey);
   font-family: 'JetBrains Mono', monospace;
-  font-size: 0.76rem;
+  font-size: 0.85rem;
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;

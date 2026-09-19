@@ -8,9 +8,9 @@ export default function Home() {
         <div className="container home-hero-grid">
           <div className="home-hero-copy">
           <p className="choice-eyebrow">Test EJE® · Tu Mapa Estructural personal</p>
-          <h1>Todo sigue en pie <span className="text-terra">porque vos no aflojás.</span></h1>
-          <p className="subtitle">Te anticipás. Controlás. Evitás el conflicto. Sostenés a los demás, incluso cuando ya no das más.</p>
-          <p>Como la silla no se cae, parece firme. Hasta que entendés que no te está sosteniendo: sos vos quien lleva años sosteniéndola.</p>
+          <h1>¿Todo sigue en pie <span className="text-terra">porque vos no aflojás?</span></h1>
+          <p className="subtitle">Podés anticiparte. Controlar. Evitar el conflicto. Sostener a todos, incluso cuando ya no das más.</p>
+          <p>Como la silla no se cae, parece firme. Hasta que aparece otra pregunta: ¿te sostiene a vos, o la sostenés vos?</p>
           <p>El Test EJE® te muestra qué patrones están sosteniendo hoy tu estructura, cuánto pesa cada uno y por dónde conviene empezar a mirar.</p>
           <div className="cta-group">
             <a href="/test" className="btn btn-primary">Quiero ver mi Mapa personal</a>
