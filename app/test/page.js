@@ -108,43 +108,57 @@ export default function Test() {
     <>
       <JsonLd data={PRODUCTO} />
       <JsonLd data={FAQ} />
-      <section className="hero">
-        <div className="container">
-          <h1>Test EJE®</h1>
-          <p className="subtitle">42 preguntas. 15 minutos. Tu mapa personal de cómo estás respondiendo hoy.</p>
-          <div style={{marginTop: '2rem'}}>
-            <a href={comprar("test_hero")} className="btn btn-primary">Hacé el Test · USD 27</a>
-            <p className="muted" style={{marginTop: '0.75rem'}}>Pago único · Resultado inmediato · Tu Mapa en PDF</p>
+      <section className="hero test-hero">
+        <div className="container test-hero-grid">
+          <div className="test-hero-copy">
+            <p className="choice-eyebrow">Test EJE® · Tu Mapa Estructural personal</p>
+            <h1>Descubrí qué patrón está sosteniendo hoy tu estructura.</h1>
+            <p className="subtitle">Una interpretación de este momento, construida a partir de tus respuestas y expresada en una combinación de porcentajes propia.</p>
+            <p>No elegís entre perfiles armados. El Test identifica qué respuestas están más activas en vos, cuánto pesa cada una y cómo aparecen en tus vínculos, el trabajo, el dinero y tu identidad.</p>
+            <a href={comprar("test_hero")} className="btn btn-primary">Quiero descubrir mi Mapa</a>
+            <p className="hero-meta">42 preguntas · 15 minutos · 4 páginas en PDF<br />USD 27 · pago único · resultado inmediato</p>
           </div>
+          <figure className="mapa-hero">
+            <Image src="/mapa-1.jpg" width={880} height={1243} sizes="(max-width: 768px) 82vw, 390px" priority alt="Ejemplo de la primera página de un Mapa Estructural EJE®, con un patrón dominante y porcentajes personales." />
+            <figcaption>Ejemplo de Mapa Estructural. Tu contenido y tus porcentajes serán diferentes.</figcaption>
+          </figure>
         </div>
       </section>
 
-      <section>
-        <div className="container" style={{maxWidth: '760px'}}>
-          <p style={{fontFamily: "'Fraunces', serif", fontSize: '1.3rem', lineHeight: 1.4}}>Podés ser muy clara trabajando y perderte cuando alguien te importa.</p>
-          <p style={{fontFamily: "'Fraunces', serif", fontSize: '1.3rem', lineHeight: 1.4}}>Podés tener el dinero ordenado y vivir desde el control.</p>
-          <p style={{fontFamily: "'Fraunces', serif", fontSize: '1.3rem', lineHeight: 1.4}}>Podés sostener a todos y no saber qué necesitás vos.</p>
-          <p style={{marginTop: '1.5rem'}}>El Test EJE® organiza lo que hoy está pasando entre vínculos, trabajo, dinero e identidad. Te muestra dónde podés estar perdiendo el eje, qué patrón está pesando más y qué conviene mirar primero.</p>
-        </div>
-      </section>
-
-      <section>
-        <div className="container" style={{maxWidth: '760px'}}>
-          <h2>¿Qué es el Test EJE®?</h2>
-          <p>Hay momentos en los que sentís que algo se te está repitiendo. Capaz es con una pareja. O con la plata.</p>
-          <p>O te pasa que en el trabajo terminás haciéndote cargo de todo y después no entendés por qué llegaste otra vez agotada.</p>
-          <p>Y muchas veces ya sabés un montón de vos. Ese no es el problema.</p>
-          <p>El tema es que una cosa es entenderte y otra es poder ver, bastante concretamente, cómo estás respondiendo hoy.</p>
-          <p><strong>Para eso está el Test EJE®.</strong> Son 42 preguntas. Las respondés en unos 15 minutos y con eso se arma tu Mapa Estructural EJE®.</p>
-          <p>¿Qué vas a ver? Tu propia combinación de porcentajes.</p>
-          <p>Cómo aparecen hoy distintas formas de responder en tus vínculos, en el trabajo, con la plata y con vos misma.</p>
-          <p>Y esto es lo más importante: es una foto de este momento. No significa «vos sos así».</p>
-          <p>Capaz dentro de seis meses lo volvés a hacer y tu mapa cambió. Esa es parte de la idea.</p>
+      <section className="test-recognition">
+        <div className="container reading-width">
+          <h2>Entender lo que te pasa no siempre alcanza para dejar de repetirlo.</h2>
+          <div className="recognition-lines">
+            <p>Podés ser muy clara trabajando y perderte cuando alguien te importa.</p>
+            <p>Podés tener el dinero ordenado y vivir desde el control.</p>
+            <p>Podés sostener a todos y no saber qué necesitás vos.</p>
+          </div>
+          <p>El Mapa ordena lo que hoy puede sentirse mezclado. Te permite reconocer qué respuesta está cargando más peso para dejar de intentar trabajar «todo» al mismo tiempo.</p>
           <p className="remate">«Ah, mirá. Esto en mí está pesando muchísimo más de lo que pensaba.»</p>
-          <p>Ese es uno de los efectos que busco: poder ver algo con suficiente claridad como para dejar de trabajar «todo» y empezar por lo que hoy tiene más peso.</p>
-          <p><a href={comprar("test_cuerpo")} className="btn btn-primary">Hacé el Test · USD 27</a></p>
+        </div>
+      </section>
 
-          <h3 style={{marginTop: '3rem'}}>Cómo se ve tu Mapa Estructural</h3>
+      <section className="accent">
+        <div className="container reading-width">
+          <p className="choice-eyebrow">Por qué el resultado es personal</p>
+          <h2>Nadie responde exactamente como vos.</h2>
+          <p>El Test interpreta tus 42 respuestas y calcula el peso relativo de distintos patrones. No te asigna un tipo de personalidad ni te acomoda dentro de un resultado prediseñado.</p>
+          <p>Recibís tu propia combinación de porcentajes y una lectura de cómo se expresa hoy en cuatro áreas: vínculos, trabajo, dinero e identidad.</p>
+          <p><strong>Es una fotografía de este momento, no una definición de quién sos.</strong> Si tu manera de responder cambia, tu Mapa también puede cambiar.</p>
+        </div>
+      </section>
+
+      <section>
+        <div className="container reading-width">
+          <p className="choice-eyebrow">Lo que recibís</p>
+          <h2>Un punto concreto desde donde empezar a mirar.</h2>
+          <div className="value-grid">
+            <article><span>01</span><h3>Qué está activo</h3><p>Los patrones que aparecen hoy y el porcentaje que ocupa cada uno.</p></article>
+            <article><span>02</span><h3>Dónde se expresa</h3><p>Cómo puede mostrarse la combinación en tus vínculos, trabajo, dinero e identidad.</p></article>
+            <article><span>03</span><h3>Qué mirar primero</h3><p>Una referencia para dejar de abordar todo junto y observar lo que hoy tiene más peso.</p></article>
+          </div>
+
+          <h3 className="section-subheading">Cómo se ve tu Mapa Estructural</h3>
           <p>No es una pantalla de resultados. Es un documento de cuatro páginas en PDF que descargás apenas terminás y podés guardar.</p>
           <p>Esta es la primera página de un Mapa real. El patrón, los porcentajes y el texto cambian según lo que respondas.</p>
 
@@ -158,29 +172,30 @@ export default function Test() {
           </div>
           <p className="muted" style={{textAlign: 'center', marginTop: '0.75rem'}}>Las otras tres — cómo se organiza el patrón, dónde genera más fricción y por dónde empezar a intervenir — quedan para quien hace el Test.</p>
 
-          <h3 style={{marginTop: '3rem'}}>Importante</h3>
-          <div style={{backgroundColor: 'var(--sand)', padding: '1.5rem', marginTop: '1rem', borderLeft: '4px solid var(--olive)'}}>
+          <h3 className="section-subheading">Qué es —y qué no es— el Test</h3>
+          <div className="responsible-note">
             <p><strong>El Test EJE® es una herramienta de autoconocimiento, no de diagnóstico clínico.</strong></p>
             <p>Si estás atravesando una crisis emocional, si experimentás síntomas de patología, o si estás bajo cuidado profesional, mantenete en ese camino.</p>
             <p style={{marginBottom: 0}}>EJE® es un complemento, nunca un reemplazo.</p>
           </div>
 
-          <h3 style={{marginTop: '2rem'}}>Precio</h3>
-          <p style={{fontSize: '1.1rem', fontWeight: '600', marginTop: '1rem'}}>USD 27</p>
-          <p className="muted">Pago único · Resultado inmediato · Tu Mapa en PDF</p>
-
-          <h3 style={{marginTop: '2rem'}}>¿Qué sigue después del Test?</h3>
-          <p>Muchas personas tienen más preguntas después de ver su Mapa.</p>
-          <p>Para eso existe el trabajo personalizado asincrónico, donde podemos profundizar en tu estructura de forma específica.</p>
+          <div className="test-authority">
+            <p className="choice-eyebrow">Creado por Sol Mir</p>
+            <h3>Una metodología nacida de observar la distancia entre entender y dejar de repetir.</h3>
+            <p>Soy consultora, formadora en liderazgo y autora de EJE®. Durante más de una década trabajé en empresas como Coca-Cola y Citibank. Creé EJE® para nombrar estructuras aprendidas que pueden gobernar nuestras decisiones sin que nos demos cuenta.</p>
+            <a href="/sobre-sol" className="text-link">Conocé mi trayectoria</a>
+          </div>
         </div>
       </section>
 
-      <section className="accent ancla" id="comprar">
-        <div className="container" style={{maxWidth: '700px'}}>
-          <h2>Hacé el Test EJE®</h2>
-          <p style={{marginTop: '1rem'}}>42 preguntas, unos 15 minutos. USD 27, pago único. Tu Mapa Estructural EJE® en PDF, apenas terminás.</p>
-          <p><a href={comprar("test_cierre")} className="btn btn-primary">Hacé el Test · USD 27</a></p>
-          <p className="muted" style={{marginTop: '1rem'}}>Después de pagar, Gumroad te manda un recibo en inglés: tu acceso está en el botón «View content».</p>
+      <section className="accent ancla test-closing" id="comprar">
+        <div className="container reading-width">
+          <p className="choice-eyebrow">Tu punto de partida</p>
+          <h2>No necesitás seguir sosteniendo una estructura que todavía no podés ver.</h2>
+          <p>Tu Mapa no decide por vos ni te encierra en una etiqueta. Te muestra qué está pesando hoy para que puedas empezar por algo concreto.</p>
+          <a href={comprar("test_cierre")} className="btn btn-primary">Quiero descubrir mi Mapa</a>
+          <p className="hero-meta">42 preguntas · 15 minutos · 4 páginas en PDF<br />USD 27 · pago único · resultado inmediato</p>
+          <aside className="purchase-note" aria-label="Información sobre el acceso después del pago">Después de pagar, Gumroad te envía un recibo en inglés. Encontrás el acceso en el botón «View content».</aside>
         </div>
       </section>
 

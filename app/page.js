@@ -4,16 +4,26 @@ import KitSignupForm from "./components/KitSignupForm";
 export default function Home() {
   return (
     <>
-      <section className="hero">
+      <section className="hero home-hero">
         <div className="container">
-          <h1>EJE® no te dice quién sos. <span className="text-terra">Te muestra cómo estás respondiendo hoy.</span></h1>
-          <p className="subtitle">El Test EJE® organiza en un mapa personal cómo se combinan hoy tus respuestas.</p>
+          <p className="choice-eyebrow">Test EJE® · Tu Mapa Estructural personal</p>
+          <h1>Todo sigue en pie <span className="text-terra">porque vos no aflojás.</span></h1>
+          <p className="subtitle">Te anticipás. Controlás. Evitás el conflicto. Sostenés a los demás, incluso cuando ya no das más.</p>
+          <p>Como la silla no se cae, parece firme. Hasta que entendés que no te está sosteniendo: sos vos quien lleva años sosteniéndola.</p>
+          <p>El Test EJE® te muestra qué patrones están sosteniendo hoy tu estructura, cuánto pesa cada uno y por dónde conviene empezar a mirar.</p>
           <div className="cta-group">
-            <a href="/test" className="btn btn-primary">Hacé el Test EJE® · USD 27</a>
-            <a href="/ebook" className="btn btn-secondary">Descargá el ebook gratuito</a>
+            <a href="/test" className="btn btn-primary">Quiero ver mi Mapa personal</a>
           </div>
-          <p className="muted" style={{marginTop: '1rem'}}>42 preguntas · unos 15 minutos · Mapa Estructural en PDF · pago único</p>
-          <p className="muted" style={{marginTop: '2rem'}}>Soy Sol Mir, creadora de EJE® · Inteligencia Estructural Humana. <a href="/que-es-eje">Conocé la metodología</a>.</p>
+          <p className="hero-meta">42 preguntas · 15 minutos · Mapa inmediato en PDF<br />USD 27 · pago único</p>
+        </div>
+      </section>
+
+      <section className="accent">
+        <div className="container" style={{maxWidth: '800px'}}>
+          <h2>Un Mapa tan personal como tus respuestas</h2>
+          <p>El Test EJE® interpreta tus 42 respuestas y construye una fotografía de este momento: qué patrones están activos, qué porcentaje ocupa cada uno y cómo se expresan en tus vínculos, el trabajo, el dinero y tu identidad.</p>
+          <p>No elegís entre resultados armados. Recibís tu propia combinación, con sus proporciones particulares.</p>
+          <p>No define quién sos. Muestra cómo estás respondiendo hoy. Por eso, si tu manera de responder cambia, tu Mapa también puede cambiar.</p>
         </div>
       </section>
 
