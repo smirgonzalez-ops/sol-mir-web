@@ -19,7 +19,7 @@ export default function Terminos() {
         <p>Este sitio es de Sol Mir, creadora de EJE®, en Argentina. Para cualquier consulta sobre estos términos, escribime a <a href={`mailto:${CORREO}`}>{CORREO}</a>.</p>
 
         <h2 style={{marginTop: '1.5rem'}}>2. Uso del contenido</h2>
-        <p>Los textos, la metodología, los materiales y las marcas de este sitio —EJE®, Huella Madre® y las demás— son de Sol Mir. Podés leerlos y compartir los enlaces. No podés copiarlos, venderlos ni usarlos para ofrecer servicios sin autorización por escrito.</p>
+        <p>Los textos, la metodología y los materiales de este sitio son de Sol Mir. Podés leerlos y compartir los enlaces. No podés copiarlos, venderlos ni usarlos para ofrecer servicios sin autorización por escrito.</p>
 
         <h2 style={{marginTop: '1.5rem'}}>3. Qué es y qué no es el Test EJE®</h2>
         <p>El Test EJE® es una herramienta de autoconocimiento. No es un diagnóstico clínico y no reemplaza la atención de un profesional de la salud mental.</p>
