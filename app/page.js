@@ -24,11 +24,12 @@ export default function Home() {
           <h2>Son las diez de la noche.</h2>
           <p>Terminaste el día agotada y mañana ya está lleno antes de empezar. Quizás pensás: «¿Por qué acepté todo esto?».</p>
           <p>No siempre podías decir que no. Era tu trabajo, había una urgencia o simplemente no había otra opción.</p>
-          <p>Pero hay algo que se repite. Cambia la situación y, aun entendiendo lo que pasó, volvés a responder de una forma parecida.</p>
+          <p>Pero hay algo que se repite. Cambia la situación y, aun entendiendo lo que pasó, volvés a responder desde el mismo lugar.</p>
+          <p>No es falta de voluntad. Hay respuestas que aprendiste en algún momento y que hoy pueden aparecer antes de que llegues a elegir.</p>
           <p>Ahí cambia la pregunta. No es «¿qué hice mal?». Es:</p>
           <p className="remate">«Dentro de esto que no puedo cambiar, ¿qué margen sí tengo?»</p>
-          <p>Ese es el lugar que EJE® ayuda a mirar: el margen que todavía existe dentro de una situación real.</p>
-          <p>No para controlar todo. Para encontrar tu margen real de elección.</p>
+          <p>EJE® ayuda a reconocer qué se activa en vos y a construir un margen entre esa activación y lo que hacés.</p>
+          <p>El objetivo no es que el patrón nunca vuelva a activarse. Es que deje de tener la última palabra.</p>
         </div>
       </section>
 
