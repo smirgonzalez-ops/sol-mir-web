@@ -18,7 +18,7 @@ const PREGUNTAS = [
     "q": "¿Me dice qué tipo de persona soy?",
     "a": [
       "No. EJE® no busca decirte «sos este tipo de persona».",
-      "Busca mostrarte cómo estás respondiendo hoy. Por eso hablamos de un mapa y no de una etiqueta."
+      "Busca mostrarte cómo estás respondiendo hoy. Por eso hablo de un mapa y no de una etiqueta."
     ]
   },
   {
@@ -117,7 +117,7 @@ export default function Test() {
           <p>Y esto es lo más importante: es una foto de este momento. No significa «vos sos así».</p>
           <p>Capaz dentro de seis meses lo volvés a hacer y tu mapa cambió. Esa es parte de la idea.</p>
           <p className="remate">«Ah, mirá. Esto en mí está pesando muchísimo más de lo que pensaba.»</p>
-          <p>Ese es uno de los efectos que buscamos: poder ver algo con suficiente claridad como para dejar de trabajar «todo» y empezar por lo que hoy tiene más peso.</p>
+          <p>Ese es uno de los efectos que busco: poder ver algo con suficiente claridad como para dejar de trabajar «todo» y empezar por lo que hoy tiene más peso.</p>
           <p><a href="#lista-espera" className="btn btn-primary">Sumate a la lista de espera</a></p>
 
           <h3 style={{marginTop: '3rem'}}>Cómo se ve tu Mapa Estructural</h3>
@@ -154,7 +154,7 @@ export default function Test() {
       <section className="accent ancla" id="lista-espera">
         <div className="container" style={{maxWidth: '700px'}}>
           <h2>Sumate a la lista de espera</h2>
-          <p style={{marginTop: '1rem'}}>Sé de las primeras en acceder al Test EJE®. Te avisamos el 22 de septiembre cuando esté disponible.</p>
+          <p style={{marginTop: '1rem'}}>Sé de las primeras en acceder al Test EJE®. Te aviso el 22 de septiembre cuando esté disponible.</p>
           <KitSignupForm
             origin="lista_espera_test"
             buttonLabel="Quiero ser de las primeras"
