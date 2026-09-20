@@ -26,7 +26,14 @@ const PREGUNTAS = [
     ]
   },
   {
-    "q": "¿Para qué me sirve saberlo?",
+    "q": "¿Cómo se construyen los porcentajes?",
+    "a": [
+      "El Test asigna un peso relativo a cada patrón según tus respuestas. Los porcentajes muestran cómo se distribuye ese peso dentro de tu combinación actual: no son una probabilidad ni un diagnóstico clínico."
+    ]
+  },
+  {
+
+    "q": "¿Para qué me sirve saberlo?",
     "a": [
       "Para tener un punto de partida. Es difícil trabajar sobre algo que no podés identificar.",
       "El mapa permite observar qué respuestas están teniendo más peso actualmente y empezar a decidir cuáles te sirven, cuáles te cuestan y dónde querés trabajar."
@@ -97,6 +104,7 @@ export default function Test() {
             <p>No elegís entre perfiles armados. El Test identifica qué respuestas están más activas en vos, cuánto pesa cada una y cómo aparecen en tus vínculos, el trabajo, el dinero y tu identidad.</p>
             <a href={comprar("test_hero")} className="btn btn-primary">Quiero descubrir mi Mapa</a>
             <p className="hero-meta">42 preguntas · 15 minutos · 4 páginas en PDF<br />USD 27 · pago único · resultado inmediato</p>
+            <p className="hero-trust">Pago seguro por Gumroad. Tus respuestas quedan en tu dispositivo; Sol no recibe los datos de tu tarjeta.</p>
           </div>
           <figure className="mapa-hero">
             <Image src="/mapa-1.jpg" width={880} height={1243} sizes="(max-width: 768px) 82vw, 390px" priority alt="Ejemplo de la primera página de un Mapa Estructural EJE®, con un patrón dominante y porcentajes personales." />
@@ -176,7 +184,7 @@ export default function Test() {
           <p>Tu Mapa no decide por vos ni te encierra en una etiqueta. Te muestra qué está pesando hoy para que puedas empezar por algo concreto.</p>
           <a href={comprar("test_cierre")} className="btn btn-primary">Quiero descubrir mi Mapa</a>
           <p className="hero-meta">42 preguntas · 15 minutos · 4 páginas en PDF<br />USD 27 · pago único · resultado inmediato</p>
-          <aside className="purchase-note" aria-label="Información sobre el acceso después del pago">Después de pagar, Gumroad te envía un recibo en inglés. Encontrás el acceso en el botón «View content».</aside>
+          <aside className="purchase-note" aria-label="Información sobre el pago y el acceso">El pago seguro se procesa en Gumroad. Tus respuestas quedan en tu dispositivo y Sol no recibe los datos de tu tarjeta. Después de pagar, Gumroad te envía un recibo en inglés; el acceso está en «View content».</aside>
         </div>
       </section>
 

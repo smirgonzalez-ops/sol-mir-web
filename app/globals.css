@@ -304,6 +304,14 @@ section.accent {
   line-height: 1.55;
 }
 
+.hero-trust {
+  max-width: 34rem;
+  margin-top: 0.65rem;
+  color: var(--grey);
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+
 .home-hero {
   padding-top: 3.25rem;
   padding-bottom: 3.25rem;
