@@ -1,8 +1,14 @@
 import { pagina } from "../compartir";
 
+// Escrita el 19/09/2026 a partir de lo que la web y el Test hacen de verdad,
+// verificado en el código: formularios que van a Kit, compra en Gumroad,
+// respuestas del Test guardadas sólo en el navegador, Mapa por correo vía
+// Resend, contadores anónimos. Si cambia algo de eso, cambia esta página.
+const CORREO = "hola@solmir.co";
+
 export const metadata = pagina({
   title: "Política de Privacidad",
-  description: "Cómo se recopilan, utilizan y protegen los datos personales en solmir.co.",
+  description: "Qué datos se juntan en solmir.co y en el Test EJE®, para qué, quién los procesa y cómo pedir verlos, corregirlos o borrarlos.",
   path: "/politica-privacidad",
 });
 
@@ -12,21 +18,42 @@ export default function PoliticaPrivacidad() {
       <div className="container legal-content" style={{maxWidth: '900px'}}>
         <h1>Política de Privacidad</h1>
         <p><strong>Última actualización: septiembre 2026</strong></p>
-        
-        <h2 style={{marginTop: '2rem'}}>1. Información que recopilamos</h2>
-        <p>Recopilamos información que vos voluntariamente proporcionás en formularios: nombre, correo electrónico, país.</p>
-        
-        <h2 style={{marginTop: '1.5rem'}}>2. Cómo usamos tu información</h2>
-        <p>Usamos tu correo para enviarte el ebook, actualizaciones sobre el Test, y comunicaciones sobre EJE®. No vendemos ni compartimos tu información con terceros.</p>
-        
-        <h2 style={{marginTop: '1.5rem'}}>3. Seguridad</h2>
-        <p>Tu información se almacena de forma segura. Usamos encriptación en todas las transacciones.</p>
-        
-        <h2 style={{marginTop: '1.5rem'}}>4. Derecho a borrar tus datos</h2>
-        <p>Podés solicitar en cualquier momento que borremos tu información de nuestros registros.</p>
-        
-        <h2 style={{marginTop: '1.5rem'}}>5. Contacto</h2>
-        <p>Si tenés preguntas sobre esta política, escribinos por los canales indicados en la página de contacto.</p>
+
+        <h2 style={{marginTop: '2rem'}}>1. Quién es responsable</h2>
+        <p>Soy Sol Mir, creadora de EJE®, y vivo en Argentina. Soy la responsable de los datos que dejás en este sitio y en el Test EJE®. Para cualquier consulta o pedido sobre tus datos, escribime a <a href={`mailto:${CORREO}`}>{CORREO}</a>.</p>
+
+        <h2 style={{marginTop: '1.5rem'}}>2. Qué datos junto y para qué</h2>
+        <ul className="lista-eje">
+          <li><strong>Cuando dejás tu correo en un formulario</strong> —el del ebook o el de la lista de espera—: tu nombre, tu correo y, en algunos formularios, tu país. También queda registrado desde qué formulario te anotaste. Los uso para mandarte lo que pediste y para escribirte sobre EJE® y el Test.</li>
+          <li><strong>Cuando comprás el Test:</strong> la compra y el pago se hacen en Gumroad, no en este sitio. Gumroad me informa tu correo y, si lo cargaste, tu nombre; los datos de tu tarjeta quedan en Gumroad y yo no los recibo.</li>
+          <li><strong>Cuando hacés el Test:</strong> tus respuestas y tu resultado se guardan sólo en el navegador de tu dispositivo, no en un servidor. Si borrás los datos de navegación o cambiás de dispositivo, se pierden.</li>
+          <li><strong>Si pedís tu Mapa por correo:</strong> tu correo y el PDF de tu Mapa pasan por el servidor del Test y salen por Resend, el servicio que manda ese correo. No los guardo en ninguna base propia.</li>
+          <li><strong>Estadísticas:</strong> en este sitio cuento las visitas de cada página, sin cookies (Vercel Web Analytics). En el Test cuento cuántas personas lo empiezan y lo terminan y qué Macrofamilia aparece más. Nada de eso incluye tu nombre, tu correo ni tus respuestas.</li>
+        </ul>
+
+        <h2 style={{marginTop: '1.5rem'}}>3. Quién más procesa tus datos</h2>
+        <p>No vendo tus datos. Para que el sitio y el Test funcionen, los procesan estas empresas, con servidores en Estados Unidos:</p>
+        <ul className="lista-eje">
+          <li><strong>Kit:</strong> la lista de correo.</li>
+          <li><strong>Gumroad:</strong> la compra y el pago.</li>
+          <li><strong>Resend:</strong> el envío del Mapa por correo.</li>
+          <li><strong>Vercel:</strong> el alojamiento del sitio y del Test.</li>
+          <li><strong>Google:</strong> las tipografías del sitio se cargan desde sus servidores, que reciben la dirección de conexión de tu dispositivo.</li>
+        </ul>
+        <p>Cada una trata los datos según su propia política de privacidad.</p>
+
+        <h2 style={{marginTop: '1.5rem'}}>4. Cuánto tiempo los guardo</h2>
+        <p>Tus datos de la lista de correo quedan hasta que te des de baja o me pidas que los borre.</p>
+
+        <h2 style={{marginTop: '1.5rem'}}>5. Tus derechos</h2>
+        <p>Podés pedirme en cualquier momento ver qué datos tengo tuyos, corregirlos o borrarlos. Escribime a <a href={`mailto:${CORREO}`}>{CORREO}</a> y te respondo yo.</p>
+        <p>Para dejar de recibir correos, alcanza con el enlace para darte de baja que está al pie de cada uno.</p>
+
+        <h2 style={{marginTop: '1.5rem'}}>6. Cookies</h2>
+        <p>Este sitio no usa cookies propias ni píxeles de seguimiento.</p>
+
+        <h2 style={{marginTop: '1.5rem'}}>7. Cambios</h2>
+        <p>Si cambio esta política, actualizo la fecha de arriba. La versión vigente es siempre la que está en esta página.</p>
       </div>
     </section>
   );
