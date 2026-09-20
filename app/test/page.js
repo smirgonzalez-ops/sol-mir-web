@@ -104,7 +104,7 @@ export default function Test() {
             <p>No elegís entre perfiles armados. El Test identifica qué respuestas están más activas en vos, cuánto pesa cada una y cómo aparecen en tus vínculos, el trabajo, el dinero y tu identidad.</p>
             <a href={comprar("test_hero")} className="btn btn-primary">Quiero descubrir mi Mapa</a>
             <p className="hero-meta">42 preguntas · 15 minutos · 4 páginas en PDF<br />USD 27 · pago único · resultado inmediato</p>
-            <p className="hero-trust">Pago seguro por Gumroad. Tus respuestas quedan en tu dispositivo; Sol no recibe los datos de tu tarjeta.</p>
+            <p className="hero-trust">Pago procesado de forma segura por Gumroad y sus proveedores de pago. Tus respuestas quedan en tu dispositivo; Sol no recibe el número completo de tu tarjeta.</p>
           </div>
           <figure className="mapa-hero">
             <Image src="/mapa-1.jpg" width={880} height={1243} sizes="(max-width: 768px) 82vw, 390px" priority alt="Ejemplo de la primera página de un Mapa Estructural EJE®, con un patrón dominante y porcentajes personales." />
@@ -184,7 +184,7 @@ export default function Test() {
           <p>Tu Mapa no decide por vos ni te encierra en una etiqueta. Te muestra qué está pesando hoy para que puedas empezar por algo concreto.</p>
           <a href={comprar("test_cierre")} className="btn btn-primary">Quiero descubrir mi Mapa</a>
           <p className="hero-meta">42 preguntas · 15 minutos · 4 páginas en PDF<br />USD 27 · pago único · resultado inmediato</p>
-          <aside className="purchase-note" aria-label="Información sobre el pago y el acceso">El pago seguro se procesa en Gumroad. Tus respuestas quedan en tu dispositivo y Sol no recibe los datos de tu tarjeta. Después de pagar, Gumroad te envía un recibo en inglés; el acceso está en «View content».</aside>
+          <aside className="purchase-note" aria-label="Información sobre el pago y el acceso">El pago se procesa de forma segura por Gumroad y sus proveedores de pago. Tus respuestas quedan en tu dispositivo y Sol no recibe el número completo de tu tarjeta. Después de pagar, Gumroad te envía un recibo en inglés; el acceso está en «View content».</aside>
         </div>
       </section>
 
