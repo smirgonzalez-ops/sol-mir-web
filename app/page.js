@@ -36,7 +36,7 @@ export default function Home() {
       <section>
         <div className="container" style={{maxWidth: '800px'}}>
           <h2>Son las diez de la noche.</h2>
-          <p>Terminaste el día agotada y mañana ya está lleno antes de empezar. Quizás pensás: «¿Por qué acepté todo esto?».</p>
+          <p>Terminaste el día sin energía y mañana ya está lleno antes de empezar. Quizás pensás: «¿Por qué acepté todo esto?».</p>
           <p>No siempre podías decir que no. Era tu trabajo, había una urgencia o simplemente no había otra opción.</p>
           <p>Pero cambia la situación y, aun entendiendo lo que pasó, volvés a responder desde el mismo lugar. No es falta de voluntad: hay respuestas aprendidas que aparecen antes de que llegues a elegir.</p>
           <p className="remate">«Dentro de esto que no puedo cambiar, ¿qué margen sí tengo?»</p>

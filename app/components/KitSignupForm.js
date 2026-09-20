@@ -21,6 +21,7 @@ function showSpanishValidation(event) {
 }
 
 export default function KitSignupForm({
+  id,
   origin,
   buttonLabel,
   includeCountry = false,
@@ -31,6 +32,7 @@ export default function KitSignupForm({
 
   return (
     <form
+      id={id}
       action="https://app.kit.com/forms/9738047/subscriptions"
       method="post"
       className="signup-form"

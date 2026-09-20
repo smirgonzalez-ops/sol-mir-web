@@ -1054,6 +1054,17 @@ footer .muted,
   .value-grid { grid-template-columns: 1fr; gap: 1rem; margin-bottom: 3rem; }
 }
 
+.diario-contact-note {
+  max-width: none;
+  margin: 0 0 3rem;
+  padding: 1.5rem;
+  border-top: 0;
+  border-left: 3px solid var(--olive);
+  background: var(--cream);
+  color: var(--ink);
+}
+.diario-contact-note p:last-of-type { margin-bottom: 1.25rem; }
+
 @media (max-width: 480px) {
   .authority-grid { grid-template-columns: 1fr; }
 }

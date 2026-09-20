@@ -6,18 +6,29 @@ export const metadata = pagina({
   path: "/contacto",
 });
 
-export default function Contacto() {
+export default async function Contacto({ searchParams }) {
+  const params = await searchParams;
+  const esDiario = params?.motivo === "diario";
+  const asuntoDiario = "Quiero acceder al Diario de Emociones EJE®";
+  const mailDiario = `mailto:hola@solmir.co?subject=${encodeURIComponent(asuntoDiario)}`;
   return (
     <>
       <section className="hero">
         <div className="container">
-          <h1>Contacto</h1>
-          <p className="subtitle">Los mensajes los leo y los respondo yo.</p>
+          <h1>{esDiario ? "Acceso al Diario EJE®" : "Contacto"}</h1>
+          <p className="subtitle">{esDiario ? "Escribime con el motivo ya identificado para recibir los medios de pago y el acceso." : "Los mensajes los leo y los respondo yo."}</p>
         </div>
       </section>
 
       <section>
         <div className="container" style={{maxWidth: '760px'}}>
+          {esDiario && (
+            <aside className="purchase-note diario-contact-note" aria-label="Solicitar acceso al Diario">
+              <p><strong>Diario de Emociones EJE® · USD 15</strong></p>
+              <p>Cuadernillo de 31 páginas + 11 audios guiados. La entrega se realiza después de confirmar el pago.</p>
+              <a href={mailDiario} className="btn btn-primary">Escribir por el Diario</a>
+            </aside>
+          )}
           <h2>Para qué escribirme</h2>
           <ul className="lista-eje">
             <li><strong>Por el Test EJE® o tu Mapa.</strong> Si algo no funcionó, no llegó o no se entiende.</li>
@@ -31,7 +42,7 @@ export default function Contacto() {
 
           <h3 style={{marginTop: '3rem'}}>Por dónde</h3>
           <p>Los tres canales son míos y los leo yo. No hay un equipo detrás respondiendo.</p>
-          <p style={{marginTop: '1.5rem'}}><strong>Por correo:</strong> <a href="mailto:hola@solmir.co">hola@solmir.co</a></p>
+          <p style={{marginTop: '1.5rem'}}><strong>Por correo:</strong> <a href={esDiario ? mailDiario : "mailto:hola@solmir.co"}>hola@solmir.co</a></p>
           <div className="cta-group" style={{marginTop: '1.5rem'}}>
             <a href="https://www.linkedin.com/in/soledadmirgonzalez" target="_blank" rel="noopener noreferrer" className="btn btn-primary">Escribirme por LinkedIn</a>
             <a href="https://www.instagram.com/soy_solmir" target="_blank" rel="noopener noreferrer" className="btn btn-secondary">Escribirme por Instagram</a>

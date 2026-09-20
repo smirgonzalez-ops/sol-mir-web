@@ -18,7 +18,7 @@ export default function Ebook() {
             <h1>Tu Huella en el amor, el trabajo y <span className="text-terra">la plata</span></h1>
             <p className="subtitle">Tal vez no son tres problemas distintos.</p>
             <p>Descubrí cómo una misma forma de responder puede aparecer en escenas distintas y armá el primer mapa de una repetición tuya.</p>
-            <KitSignupForm origin="web_ebook" buttonLabel="Quiero recibir el ebook" />
+            <KitSignupForm id="ebook-form" origin="web_ebook" buttonLabel="Quiero recibir el ebook" nameOptional />
             <p className="hero-trust">Primero confirmás tu correo. Después recibís el ebook. Sin secuencia de ventas.</p>
           </div>
           <figure className="product-visual">
@@ -48,7 +48,7 @@ export default function Ebook() {
           <div className="ebook-reminder">
             <h3>¿Querés hacer el ejercicio con una situación tuya?</h3>
             <p>El formulario está al comienzo de esta página. Confirmás tu correo y recibís el ebook, sin secuencia de ventas.</p>
-            <a href="#contenido" className="text-link">Volver al formulario</a>
+            <a href="#ebook-form" className="text-link">Volver al formulario</a>
           </div>
         </div>
       </section>
