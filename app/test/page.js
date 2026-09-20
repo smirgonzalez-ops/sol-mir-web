@@ -122,7 +122,7 @@ export default function Test() {
         <div className="container reading-width">
           <h2>Entender lo que te pasa no siempre alcanza para dejar de repetirlo.</h2>
           <div className="recognition-lines">
-            <p>Podés ser muy clara trabajando y perderte cuando alguien te importa.</p>
+            <p>Podés tener todo clarísimo en el trabajo y perderte cuando alguien te importa.</p>
             <p>Podés tener el dinero ordenado y vivir desde el control.</p>
             <p>Podés sostener a todos y no saber qué necesitás vos.</p>
           </div>
