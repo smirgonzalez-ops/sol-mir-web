@@ -82,7 +82,7 @@ const FAQ = {
 // Enlace de compra con UTM (Marketing/UTM_Instagram_EJE.md): cada botón
 // dice desde dónde vino la venta.
 const comprar = (lugar) =>
-  `https://smirgo.gumroad.com/l/ozvrmy?utm_source=web&utm_medium=organic&utm_campaign=lanzamiento_22_9&utm_content=${lugar}`;
+  `https://gumroad.com/checkout?product=ozvrmy&quantity=1&utm_source=web&utm_medium=organic&utm_campaign=lanzamiento_22_9&utm_content=${lugar}`;
 
 export const metadata = pagina({
   title: "Test EJE® y Mapa Estructural",
