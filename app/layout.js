@@ -98,6 +98,7 @@ export default function RootLayout({ children }) {
             <div>
               <p className="footer-heading">Comunidad</p>
               <div className="footer-links">
+                <a href="mailto:hola@solmir.co">hola@solmir.co</a>
                 <a href="https://www.linkedin.com/in/soledadmirgonzalez" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                 <a href="https://www.instagram.com/soy_solmir" target="_blank" rel="noopener noreferrer">Instagram</a>
               </div>

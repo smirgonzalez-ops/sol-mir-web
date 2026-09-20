@@ -30,8 +30,9 @@ export default function Contacto() {
           <p>Y si estás atravesando una crisis, EJE® no reemplaza atención profesional. Buscá ayuda con alguien que pueda acompañarte de cerca.</p>
 
           <h3 style={{marginTop: '3rem'}}>Por dónde</h3>
-          <p>Los dos canales son míos y los leo yo. No hay un equipo detrás respondiendo.</p>
-          <div className="cta-group" style={{marginTop: '2rem'}}>
+          <p>Los tres canales son míos y los leo yo. No hay un equipo detrás respondiendo.</p>
+          <p style={{marginTop: '1.5rem'}}><strong>Por correo:</strong> <a href="mailto:hola@solmir.co">hola@solmir.co</a></p>
+          <div className="cta-group" style={{marginTop: '1.5rem'}}>
             <a href="https://www.linkedin.com/in/soledadmirgonzalez" target="_blank" rel="noopener noreferrer" className="btn btn-primary">Escribirme por LinkedIn</a>
             <a href="https://www.instagram.com/soy_solmir" target="_blank" rel="noopener noreferrer" className="btn btn-secondary">Escribirme por Instagram</a>
           </div>
