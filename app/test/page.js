@@ -105,10 +105,15 @@ export default function Test() {
             <a href={comprar("test_hero")} className="btn btn-primary">Quiero descubrir mi Mapa</a>
             <p className="hero-meta">42 preguntas · 15 minutos · 4 páginas en PDF<br />USD 27 · pago único · resultado inmediato</p>
             <p className="hero-trust">Pago procesado de forma segura por Gumroad y sus proveedores de pago. Tus respuestas quedan en tu dispositivo; Sol no recibe el número completo de tu tarjeta.</p>
+            <div className="test-proof" aria-label="Qué ocurre después de comprar">
+              <span>1 · Comprás en Gumroad</span>
+              <span>2 · Respondés el Test</span>
+              <span>3 · Descargás tu Mapa</span>
+            </div>
           </div>
           <figure className="mapa-hero">
             <Image src="/mapa-1.jpg" width={880} height={1243} sizes="(max-width: 768px) 82vw, 390px" priority alt="Ejemplo de la primera página de un Mapa Estructural EJE®, con un patrón dominante y porcentajes personales." />
-            <figcaption>Ejemplo de Mapa Estructural. Tu contenido y tus porcentajes serán diferentes.</figcaption>
+            <figcaption>Muestra real del formato que descargás. Tu contenido y tus porcentajes serán diferentes.</figcaption>
           </figure>
         </div>
       </section>

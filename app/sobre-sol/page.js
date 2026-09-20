@@ -21,6 +21,15 @@ export default function SobreSol() {
         </div>
       </section>
 
+      <section className="authority-strip" aria-label="Trayectoria profesional de Sol Mir">
+        <div className="container authority-grid">
+          <div><strong>+10 años</strong><span>en empresas y liderazgo</span></div>
+          <div><strong>Coca-Cola · Citibank</strong><span>experiencia corporativa</span></div>
+          <div><strong>Marketing + Administración</strong><span>formación profesional</span></div>
+          <div><strong>Autora de EJE®</strong><span>metodología propia</span></div>
+        </div>
+      </section>
+
       <section>
         <div className="container" style={{maxWidth: "760px"}}>
           <p className="choice-eyebrow">Mi trayectoria</p>

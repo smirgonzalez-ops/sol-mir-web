@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { pagina } from "../compartir";
 
 export const metadata = pagina({
@@ -9,10 +10,21 @@ export const metadata = pagina({
 export default function Diario() {
   return (
     <>
-      <section className="hero">
-        <div className="container">
-          <h1>Diario de Emociones EJE®</h1>
-          <p className="subtitle">7 días para observar, registrar y comprender lo que sentís. Con 11 audios guiados.</p>
+      <section className="hero product-hero">
+        <div className="container product-hero-grid">
+          <div>
+            <p className="choice-eyebrow">Una práctica breve para empezar a verte</p>
+            <h1>Diario de Emociones EJE®</h1>
+            <p className="subtitle">Siete días para reconocer qué se activa en vos antes de que la reacción vuelva a decidir.</p>
+            <p>Recibís un cuadernillo de 31 páginas y 11 audios guiados. No necesitás haber hecho el Test ni saber nada de EJE®.</p>
+            <a href="/contacto?motivo=diario" className="btn btn-primary">Quiero empezar el Diario</a>
+            <p className="hero-meta">USD 15 · acceso de por vida · empezás cuando vos decidís</p>
+            <p className="hero-trust">Te respondo con los medios de pago y el acceso. La entrega se realiza apenas se confirma el pago.</p>
+          </div>
+          <figure className="product-visual">
+            <Image src="/diario-producto.png" width={1024} height={1536} sizes="(max-width: 768px) 82vw, 390px" priority alt="Presentación del Diario de Emociones EJE y sus audios guiados" />
+            <figcaption>Cuadernillo de 31 páginas + 11 audios guiados</figcaption>
+          </figure>
         </div>
       </section>
 
@@ -68,9 +80,9 @@ export default function Diario() {
         <div className="container centrado" style={{maxWidth: '700px', textAlign: 'center'}}>
           <h2>Empezá a observar</h2>
           <p>El Diario es tu primera puerta. Después, el Test EJE® te muestra toda tu estructura.</p>
-          <p className="muted" style={{marginTop: '1.5rem'}}>Escribime para recibir los medios de pago y el acceso.</p>
+          <p className="muted" style={{marginTop: '1.5rem'}}>Te respondo con los medios de pago y el acceso. La entrega se realiza apenas se confirma el pago.</p>
           <div className="cta-group" style={{justifyContent: 'center', marginTop: '1.5rem'}}>
-            <a href="/contacto" className="btn btn-primary">Solicitar acceso al Diario</a>
+            <a href="/contacto?motivo=diario" className="btn btn-primary">Solicitar acceso al Diario</a>
           </div>
         </div>
       </section>

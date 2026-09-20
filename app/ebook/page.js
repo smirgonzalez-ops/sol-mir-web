@@ -1,4 +1,5 @@
 import KitSignupForm from "../components/KitSignupForm";
+import Image from "next/image";
 import { pagina } from "../compartir";
 
 export const metadata = pagina({
@@ -10,10 +11,20 @@ export const metadata = pagina({
 export default function Ebook() {
   return (
     <>
-      <section className="hero">
-        <div className="container">
-          <h1>Tu Huella en el amor, el trabajo y <span className="text-terra">la plata</span></h1>
-          <p className="subtitle">Tal vez no son tres problemas distintos.</p>
+      <section className="hero product-hero">
+        <div className="container product-hero-grid">
+          <div>
+            <p className="choice-eyebrow">Ebook gratuito · 11 páginas + ejercicio</p>
+            <h1>Tu Huella en el amor, el trabajo y <span className="text-terra">la plata</span></h1>
+            <p className="subtitle">Tal vez no son tres problemas distintos.</p>
+            <p>Descubrí cómo una misma forma de responder puede aparecer en escenas distintas y armá el primer mapa de una repetición tuya.</p>
+            <KitSignupForm origin="web_ebook" buttonLabel="Quiero recibir el ebook" />
+            <p className="hero-trust">Primero confirmás tu correo. Después recibís el ebook. Sin secuencia de ventas.</p>
+          </div>
+          <figure className="product-visual">
+            <Image src="/ebook-tu-huella.png" width={1024} height={1536} sizes="(max-width: 768px) 82vw, 390px" priority alt="Presentación del ebook Tu Huella en el amor, el trabajo y la plata" />
+            <figcaption>Recurso gratuito · incluye un ejercicio para armar tu primer mapa</figcaption>
+          </figure>
         </div>
       </section>
 
@@ -34,11 +45,11 @@ export default function Ebook() {
           <p>No es un test ni un diagnóstico. Es un material para mirar, con un ejercicio al final.</p>
           <p className="remate">«Yo tardé años en entender que reconocer un patrón no era lo mismo que dejar de obedecerlo.»</p>
 
-          <h3 style={{marginTop: '3rem'}}>Qué pasa cuando dejás tu correo</h3>
-          <p>Te llega un correo para confirmar que sos vos. Lo confirmás y te llega el ebook.</p>
-          <p>Nada más: no hay secuencia de ventas esperándote del otro lado.</p>
-
-          <KitSignupForm origin="web_ebook" buttonLabel="Quiero el ebook" />
+          <div className="ebook-reminder">
+            <h3>¿Querés hacer el ejercicio con una situación tuya?</h3>
+            <p>El formulario está al comienzo de esta página. Confirmás tu correo y recibís el ebook, sin secuencia de ventas.</p>
+            <a href="#contenido" className="text-link">Volver al formulario</a>
+          </div>
         </div>
       </section>
 
