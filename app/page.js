@@ -38,12 +38,9 @@ export default function Home() {
           <h2>Son las diez de la noche.</h2>
           <p>Terminaste el día agotada y mañana ya está lleno antes de empezar. Quizás pensás: «¿Por qué acepté todo esto?».</p>
           <p>No siempre podías decir que no. Era tu trabajo, había una urgencia o simplemente no había otra opción.</p>
-          <p>Pero hay algo que se repite. Cambia la situación y, aun entendiendo lo que pasó, volvés a responder desde el mismo lugar.</p>
-          <p>No es falta de voluntad. Hay respuestas que aprendiste en algún momento y que hoy pueden aparecer antes de que llegues a elegir.</p>
-          <p>Ahí cambia la pregunta. No es «¿qué hice mal?». Es:</p>
+          <p>Pero cambia la situación y, aun entendiendo lo que pasó, volvés a responder desde el mismo lugar. No es falta de voluntad: hay respuestas aprendidas que aparecen antes de que llegues a elegir.</p>
           <p className="remate">«Dentro de esto que no puedo cambiar, ¿qué margen sí tengo?»</p>
-          <p>EJE® ayuda a reconocer qué se activa en vos —por ejemplo, hacerte cargo de más, evitar el conflicto o reaccionar antes de pensar— y a construir un margen entre esa activación y lo que hacés.</p>
-          <p>El objetivo no es que el patrón nunca vuelva a activarse. Es que deje de tener la última palabra.</p>
+          <p>EJE® ayuda a reconocer qué se activa en vos y a construir un margen entre esa activación y lo que hacés.</p>
         </div>
       </section>
 
@@ -51,16 +48,8 @@ export default function Home() {
         <div className="container" style={{maxWidth: '800px'}}>
           <h2>Metodología EJE®</h2>
           <p>EJE® es una metodología para distinguir lo que no podés cambiar de lo que sí puede tener margen y encontrar un punto más consciente desde donde decidir.</p>
-          <p>En términos cotidianos, puede mostrarte cuándo:</p>
-          <ul className="lista-eje">
-            <li>te hacés cargo de más</li>
-            <li>evitás un conflicto</li>
-            <li>controlás</li>
-            <li>cedés</li>
-            <li>dudás</li>
-            <li>reaccionás antes de pensar</li>
-          </ul>
-          <p>No para convertir eso en una identidad, sino para observarlo como una respuesta.</p>
+          <p>Organiza la observación en cuatro territorios —vínculos, trabajo, dinero e identidad— para mostrarte dónde estás poniendo demasiado peso y qué margen real existe hoy.</p>
+          <p>No construye una etiqueta. Construye un mapa.</p>
           <div style={{marginTop: '3rem', textAlign: 'center'}}>
             <a href="/que-es-eje" className="btn btn-primary">Conocé la metodología completa</a>
           </div>
@@ -80,12 +69,9 @@ export default function Home() {
             />
             <div>
               <p><strong>Soy consultora, formadora en liderazgo y autora de EJE®.</strong></p>
-              <p>Durante más de una década trabajé en empresas como Coca-Cola y Citibank.</p>
-              <p>Ahí observé algo que los currículos nunca mostraban.</p>
-              <p>La mayoría de las personas entienden un problema, pero no pueden dejar de repetirlo.</p>
-              <p>Esa distancia entre entender y dejar de repetir me llevó a leer sobre arquitectura humana.</p>
-              <p>Después creé EJE® para nombrar lo que veía.</p>
-              <p><strong>Estructuras aprendidas que gobiernan nuestras decisiones sin que nos demos cuenta.</strong></p>
+              <p>Durante más de una década trabajé en empresas como Coca-Cola y Citibank. Después acompañé a personas, equipos y líderes.</p>
+              <p>Ahí observé una distancia que los currículos no mostraban: podemos entender un problema y, aun así, seguir respondiendo desde el mismo lugar.</p>
+              <p>Creé EJE® para hacer visible esa estructura.</p>
           <div style={{marginTop: '2rem'}}>
             <a href="/sobre-sol" className="btn btn-secondary">Conocé mi trayectoria completa</a>
             </div>

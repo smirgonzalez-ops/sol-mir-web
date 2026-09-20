@@ -12,20 +12,12 @@ const PREGUNTAS = [
       "El mapa muestra porcentajes personales de distintas variables y cómo se presentan actualmente en vínculos, trabajo, dinero e identidad."
     ]
   },
-  {
-    "q": "¿Me dice qué tipo de persona soy?",
-    "a": [
-      "No. EJE® no busca decirte «sos este tipo de persona».",
-      "Busca mostrarte cómo estás respondiendo hoy. Por eso hablo de un mapa y no de una etiqueta."
-    ]
-  },
-  {
-    "q": "¿El resultado es para siempre?",
-    "a": [
-      "No. Es una fotografía de un momento específico.",
-      "Tus respuestas pueden variar con el tiempo, con tus experiencias y con el trabajo que hagas sobre vos."
-    ]
-  },
+  {
+    "q": "¿Me dice qué tipo de persona soy?",
+    "a": [
+      "No. Es una fotografía de cómo estás respondiendo en este momento, no una personalidad fija. Si tus respuestas cambian, tu Mapa también puede cambiar."
+    ]
+  },
   {
     "q": "¿Por qué son porcentajes?",
     "a": [
@@ -34,22 +26,10 @@ const PREGUNTAS = [
     ]
   },
   {
-    "q": "¿Todos tenemos el mismo mapa?",
-    "a": [
-      "No necesariamente. Cada persona obtiene su propia combinación de porcentajes a partir de sus respuestas."
-    ]
-  },
-  {
     "q": "¿Para qué me sirve saberlo?",
     "a": [
       "Para tener un punto de partida. Es difícil trabajar sobre algo que no podés identificar.",
       "El mapa permite observar qué respuestas están teniendo más peso actualmente y empezar a decidir cuáles te sirven, cuáles te cuestan y dónde querés trabajar."
-    ]
-  },
-  {
-    "q": "¿Es un test de personalidad?",
-    "a": [
-      "No está planteado para definir una personalidad fija. La pregunta no es «¿quién sos?», sino «¿cómo estás respondiendo hoy?»."
     ]
   },
   {
@@ -142,9 +122,8 @@ export default function Test() {
         <div className="container reading-width">
           <p className="choice-eyebrow">Por qué el resultado es personal</p>
           <h2>Nadie responde exactamente como vos.</h2>
-          <p>El Test interpreta tus 42 respuestas y calcula el peso relativo de distintos patrones. No te asigna un tipo de personalidad ni te acomoda dentro de un resultado prediseñado.</p>
-          <p>Recibís tu propia combinación de porcentajes y una lectura de cómo se expresa hoy en cuatro áreas: vínculos, trabajo, dinero e identidad.</p>
-          <p><strong>Es una fotografía de este momento, no una definición de quién sos.</strong> Si tu manera de responder cambia, tu Mapa también puede cambiar.</p>
+          <p>El Test interpreta tus 42 respuestas y calcula el peso relativo de distintos patrones. Recibís una combinación propia y una lectura de cómo se expresa hoy en vínculos, trabajo, dinero e identidad.</p>
+          <p><strong>Es una fotografía de este momento, no una definición de quién sos.</strong></p>
         </div>
       </section>
 
@@ -160,7 +139,7 @@ export default function Test() {
 
           <h3 className="section-subheading">Cómo se ve tu Mapa Estructural</h3>
           <p>No es una pantalla de resultados. Es un documento de cuatro páginas en PDF que descargás apenas terminás y podés guardar.</p>
-          <p>Esta es la primera página de un Mapa real. El patrón, los porcentajes y el texto cambian según lo que respondas.</p>
+          <p>El patrón, los porcentajes y el texto cambian según lo que respondas.</p>
 
           <Image className="mapa-muestra" src="/mapa-1.jpg" width={880} height={1243} sizes="(max-width: 700px) 100vw, 620px" alt="Primera página del Mapa Estructural EJE®: la Huella Madre dominante, el Pulso con los porcentajes por Macrofamilia, y qué podés, qué te cuesta y qué movimiento es posible." />
           <p className="muted" style={{textAlign: 'center'}}>Página 1 de 4 — lo que está activo hoy</p>
@@ -170,7 +149,7 @@ export default function Test() {
             <Image src="/mapa-3.jpg" width={420} height={594} sizes="(max-width: 700px) 30vw, 196px" alt="Vista parcial de la página 3 del Mapa Estructural" />
             <Image src="/mapa-4.jpg" width={420} height={594} sizes="(max-width: 700px) 30vw, 196px" alt="Vista parcial de la página 4 del Mapa Estructural" />
           </div>
-          <p className="muted" style={{textAlign: 'center', marginTop: '0.75rem'}}>Las otras tres — cómo se organiza el patrón, dónde genera más fricción y por dónde empezar a intervenir — quedan para quien hace el Test.</p>
+          <p className="muted" style={{textAlign: 'center', marginTop: '0.75rem'}}>Las otras tres muestran cómo se organiza el patrón, dónde genera más fricción y por dónde empezar a intervenir.</p>
 
           <p style={{marginTop: '2rem'}}><a href={comprar("test_cuerpo")} className="btn btn-primary">Quiero descubrir mi Mapa</a></p>
 
