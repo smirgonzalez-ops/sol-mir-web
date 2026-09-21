@@ -1,6 +1,8 @@
 import Image from "next/image";
 import { pagina } from "../compartir";
 
+const COMPRA_DIARIO = "https://smirgo.gumroad.com/l/diario-emociones-eje";
+
 export const metadata = pagina({
   title: "Diario de Emociones EJE®",
   description: "Una práctica guiada de 7 días, con cuadernillo y 11 audios, para observar tus patrones emocionales.",
@@ -17,9 +19,9 @@ export default function Diario() {
             <h1>Diario de Emociones EJE®</h1>
             <p className="subtitle">Siete días para reconocer qué se activa en vos antes de que la reacción vuelva a decidir.</p>
             <p>Recibís un cuadernillo de 31 páginas y 11 audios guiados. No necesitás haber hecho el Test ni saber nada de EJE®.</p>
-            <a href="/contacto?motivo=diario" className="btn btn-primary">Quiero empezar el Diario</a>
+            <a href={COMPRA_DIARIO} className="btn btn-primary">Quiero empezar el Diario</a>
             <p className="hero-meta">USD 15 · acceso de por vida · empezás cuando vos decidís</p>
-            <p className="hero-trust">Te respondo con los medios de pago y el acceso. La entrega se realiza apenas se confirma el pago.</p>
+            <p className="hero-trust">Compra segura y acceso inmediato al cuadernillo y los 11 audios.</p>
           </div>
           <figure className="product-visual">
             <Image src="/diario-producto.png" width={1024} height={1536} sizes="(max-width: 768px) 82vw, 390px" priority alt="Presentación del Diario de Emociones EJE y sus audios guiados" />
@@ -80,9 +82,9 @@ export default function Diario() {
         <div className="container centrado" style={{maxWidth: '700px', textAlign: 'center'}}>
           <h2>Empezá a observar</h2>
           <p>El Diario es tu primera puerta. Después, el Test EJE® te muestra toda tu estructura.</p>
-          <p className="muted" style={{marginTop: '1.5rem'}}>Te respondo con los medios de pago y el acceso. La entrega se realiza apenas se confirma el pago.</p>
+          <p className="muted" style={{marginTop: '1.5rem'}}>Compra segura y acceso inmediato al cuadernillo y los 11 audios.</p>
           <div className="cta-group" style={{justifyContent: 'center', marginTop: '1.5rem'}}>
-            <a href="/contacto?motivo=diario" className="btn btn-primary">Solicitar acceso al Diario</a>
+            <a href={COMPRA_DIARIO} className="btn btn-primary">Comprar el Diario</a>
           </div>
         </div>
       </section>
