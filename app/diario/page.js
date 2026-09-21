@@ -20,7 +20,7 @@ export default function Diario() {
             <p className="subtitle">Siete días para reconocer qué se activa en vos antes de que la reacción vuelva a decidir.</p>
             <p>Recibís un cuadernillo de 31 páginas y 11 audios guiados. No necesitás haber hecho el Test ni saber nada de EJE®.</p>
             <a href={COMPRA_DIARIO} className="btn btn-primary">Quiero empezar el Diario</a>
-            <p className="hero-meta">USD 15 · acceso de por vida · empezás cuando vos decidís</p>
+            <p className="hero-meta">USD 15 · lo descargás y queda tuyo · empezás cuando vos decidís</p>
             <p className="hero-trust">Compra segura y acceso inmediato al cuadernillo y los 11 audios.</p>
           </div>
           <figure className="product-visual">
@@ -74,7 +74,7 @@ export default function Diario() {
 
           <h3 style={{marginTop: '2rem'}}>Precio</h3>
           <p style={{fontSize: '1.1rem', fontWeight: '600', marginTop: '1rem'}}>USD 15</p>
-          <p className="muted">Acceso de por vida | Descarga permanente</p>
+          <p className="muted">Pago único · El cuadernillo y los 11 audios se descargan y quedan tuyos</p>
         </div>
       </section>
 
