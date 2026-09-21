@@ -619,6 +619,23 @@ section.accent {
   margin-top: auto;
 }
 
+.choice-product-image {
+  width: min(100%, 360px);
+  height: 240px;
+  object-fit: cover;
+  object-position: center 38%;
+  border-radius: 2px;
+  margin-bottom: 1.25rem;
+}
+
+.choice-detail-link {
+  margin-top: 1rem;
+  color: var(--ink);
+  font-size: 0.9rem;
+  text-decoration: underline;
+  text-underline-offset: 0.25rem;
+}
+
 .choice-eyebrow {
   margin-bottom: 0.75rem;
   color: var(--grey);

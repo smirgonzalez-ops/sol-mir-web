@@ -83,6 +83,7 @@ export default function RootLayout({ children }) {
                 <Link href="/">Inicio</Link>
                 <Link href="/que-es-eje">Qué es EJE®</Link>
                 <Link href="/sobre-sol">Sobre Sol</Link>
+                <Link href="/diario">Diario</Link>
                 <Link href="/ebook">Ebook</Link>
                 <Link href="/contacto">Contacto</Link>
               </div>

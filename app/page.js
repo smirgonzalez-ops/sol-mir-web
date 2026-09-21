@@ -105,14 +105,31 @@ export default function Home() {
           <div className="choice-grid">
             <article className="choice-card">
               <p className="choice-eyebrow">Para empezar a observarte</p>
+              <Image
+                className="choice-product-image"
+                src="/diario-producto.png"
+                width={1024}
+                height={1536}
+                sizes="(max-width: 768px) 76vw, 360px"
+                alt="Diario de Emociones EJE® con cuadernillo y audios guiados"
+              />
               <h3>Diario de Emociones EJE®</h3>
               <p>Elegilo si querés una práctica breve para registrar lo que sentís y empezar a reconocer patrones en el momento.</p>
-              <p className="choice-meta">Resultado: 7 días de registros guiados · cuadernillo de 31 páginas · 11 audios</p>
-              <a href="/diario" className="btn btn-secondary">Conocé el Diario</a>
+              <p className="choice-meta">7 días · cuadernillo de 31 páginas · 11 audios · USD 15</p>
+              <a href="https://smirgo.gumroad.com/l/diario-emociones-eje" className="btn btn-primary">Comprar el Diario · USD 15</a>
+              <a href="/diario" className="choice-detail-link">Ver qué incluye</a>
             </article>
 
             <article className="choice-card choice-card-featured">
               <p className="choice-eyebrow">Para ordenar una lectura más completa</p>
+              <Image
+                className="choice-product-image"
+                src="/mapa-1.jpg"
+                width={880}
+                height={1243}
+                sizes="(max-width: 768px) 76vw, 360px"
+                alt="Ejemplo del Mapa Estructural personal del Test EJE®"
+              />
               <h3>Test EJE®</h3>
               <p>Elegilo si querés una fotografía personal, expresada en porcentajes, de cómo se combinan hoy tus respuestas.</p>
               <p className="choice-meta">42 preguntas · 15 minutos · Mapa en PDF · USD 27</p>
