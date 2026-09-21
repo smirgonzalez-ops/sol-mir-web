@@ -15,7 +15,7 @@ export default function Home() {
           <div className="cta-group">
             <a href="/test" className="btn btn-primary">Quiero ver mi Mapa personal</a>
           </div>
-            <p className="hero-meta">42 preguntas · 15 minutos · Mapa inmediato en PDF<br />USD 27 · pago único</p>
+            <p className="hero-meta">USD 27 · pago único · acceso inmediato<br />42 preguntas · 15 minutos · Mapa de 4 páginas al terminar</p>
           </div>
           <figure className="home-map-proof">
             <Image src="/mapa-1.jpg" width={880} height={1243} sizes="(max-width: 768px) 78vw, 430px" priority alt="Ejemplo de Mapa Estructural EJE® con porcentajes personales." />

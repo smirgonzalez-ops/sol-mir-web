@@ -102,9 +102,10 @@ export default function Test() {
             <h1>Descubrí qué patrón está sosteniendo hoy tu estructura.</h1>
             <p className="subtitle">Una interpretación de este momento, construida a partir de tus respuestas y expresada en una combinación de porcentajes propia.</p>
             <p>No elegís entre perfiles armados. El Test identifica qué respuestas están más activas en vos, cuánto pesa cada una y cómo aparecen en tus vínculos, el trabajo, el dinero y tu identidad.</p>
+            <p><strong>No necesitás preparar nada.</strong> Respondé pensando en cómo estás hoy, no en cómo creés que deberías estar.</p>
             <a href={comprar("test_hero")} className="btn btn-primary">Quiero descubrir mi Mapa</a>
-            <p className="hero-meta">42 preguntas · 15 minutos · 4 páginas en PDF<br />USD 27 · pago único · resultado inmediato</p>
-            <p className="hero-trust">Pago procesado de forma segura por Gumroad y sus proveedores de pago. Tus respuestas quedan en tu dispositivo; Sol no recibe el número completo de tu tarjeta.</p>
+            <p className="hero-meta">USD 27 · pago único · acceso inmediato<br />Completás 42 preguntas y descargás tu Mapa de 4 páginas al terminar.</p>
+            <p className="hero-trust">Vas a completar el pago seguro en Gumroad. Después, tocá «View content» para acceder al Test. Tus respuestas quedan en tu dispositivo; Sol no recibe el número completo de tu tarjeta.</p>
             <div className="test-proof" aria-label="Qué ocurre después de comprar">
               <span>1 · Comprás en Gumroad</span>
               <span>2 · Respondés el Test</span>
@@ -188,8 +189,8 @@ export default function Test() {
           <h2>Ver la estructura antes de seguir sosteniéndola.</h2>
           <p>Tu Mapa no decide por vos ni te encierra en una etiqueta. Te muestra qué está pesando hoy para que puedas empezar por algo concreto.</p>
           <a href={comprar("test_cierre")} className="btn btn-primary">Quiero descubrir mi Mapa</a>
-          <p className="hero-meta">42 preguntas · 15 minutos · 4 páginas en PDF<br />USD 27 · pago único · resultado inmediato</p>
-          <aside className="purchase-note" aria-label="Información sobre el pago y el acceso">El pago se procesa de forma segura por Gumroad y sus proveedores de pago. Tus respuestas quedan en tu dispositivo y Sol no recibe el número completo de tu tarjeta. Después de pagar, Gumroad te envía un recibo en inglés; el acceso está en «View content».</aside>
+          <p className="hero-meta">USD 27 · pago único · acceso inmediato<br />Completás 42 preguntas y descargás tu Mapa de 4 páginas al terminar.</p>
+          <aside className="purchase-note" aria-label="Información sobre el pago y el acceso">Vas a completar el pago seguro en Gumroad. Después, tocá «View content» para acceder al Test. Tus respuestas quedan en tu dispositivo y Sol no recibe el número completo de tu tarjeta. Gumroad también te envía un recibo en inglés con el mismo acceso.</aside>
         </div>
       </section>
 
