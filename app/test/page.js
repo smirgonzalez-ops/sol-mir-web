@@ -86,7 +86,7 @@ const comprar = (lugar) =>
 
 export const metadata = pagina({
   title: "Test EJE® y Mapa Estructural",
-  description: "Conocé el Test EJE® y descubrí cómo se organiza tu estructura en vínculos, trabajo, dinero e identidad.",
+  description: "42 preguntas, unos 15 minutos. Te llevás tu Mapa Estructural en PDF, la lectura de tu resultado en voz grabada por Sol, tu certificado y la imagen de tu resultado. USD 27, pago único.",
   path: "/test",
   imagen: IMAGEN_TEST,
 });
