@@ -8,8 +8,8 @@ const PREGUNTAS = [
   {
     "q": "¿Qué recibo?",
     "a": [
-      "Tu Mapa Estructural EJE®, construido a partir de tus respuestas al Test.",
-      "El mapa muestra porcentajes personales de distintas variables y cómo se presentan actualmente en vínculos, trabajo, dinero e identidad."
+      "Tu Mapa Estructural EJE® en PDF, de cuatro páginas, construido a partir de tus respuestas al Test.",
+      "El mapa muestra porcentajes personales de distintas variables y cómo se presentan actualmente en vínculos, trabajo, dinero e identidad.",      "Además te llevás la lectura de tu resultado en voz, tu certificado en PDF con tu nombre y la imagen de tu resultado. Si preferís tenerlo en tu correo, podés enviártelo desde la misma pantalla."
     ]
   },
   {
@@ -53,7 +53,7 @@ const PRODUCTO = {
   "@context": "https://schema.org",
   "@type": "Product",
   "name": "Test EJE®",
-  "description": "42 preguntas, unos 15 minutos. Devuelve el Mapa Estructural EJE®: en qué proporción aparecen hoy determinados patrones y cómo se expresan en vínculos, trabajo, dinero e identidad.",
+  "description": "42 preguntas, unos 15 minutos. Devuelve el Mapa Estructural EJE® en PDF: en qué proporción aparecen hoy determinados patrones y cómo se expresan en vínculos, trabajo, dinero e identidad. Incluye la lectura del resultado en voz, el certificado y la imagen del resultado.",
   "image": "https://www.solmir.co/mapa-1.jpg",
   "url": "https://www.solmir.co/test",
   "brand": {
@@ -104,7 +104,7 @@ export default function Test() {
             <p>No elegís entre perfiles armados. El Test identifica qué respuestas están más activas en vos, cuánto pesa cada una y cómo aparecen en tus vínculos, el trabajo, el dinero y tu identidad.</p>
             <p><strong>No necesitás preparar nada.</strong> Respondé pensando en cómo estás hoy, no en cómo creés que deberías estar.</p>
             <a href={comprar("test_hero")} className="btn btn-primary">Quiero descubrir mi Mapa</a>
-            <p className="hero-meta">USD 27 · pago único · acceso inmediato<br />Completás 42 preguntas y descargás tu Mapa de 4 páginas al terminar.</p>
+            <p className="hero-meta">USD 27 · pago único · acceso inmediato<br />Completás 42 preguntas y descargás tu Mapa de 4 páginas, tu lectura en voz y tu certificado.</p>
             <p className="hero-trust">Vas a completar el pago seguro en Gumroad. Después, tocá «View content» para acceder al Test. Tus respuestas quedan en tu dispositivo; Sol no recibe el número completo de tu tarjeta.</p>
             <div className="test-proof" aria-label="Qué ocurre después de comprar">
               <span>1 · Comprás en Gumroad</span>
@@ -165,6 +165,17 @@ export default function Test() {
           </div>
           <p className="muted" style={{textAlign: 'center', marginTop: '0.75rem'}}>Las otras tres muestran cómo se organiza el patrón, dónde genera más fricción y por dónde empezar a intervenir.</p>
 
+          <h3 className="section-subheading">Todo lo que te llevás</h3>
+          <p>El Mapa es la pieza central, pero no es lo único que queda en tu poder cuando terminás.</p>
+          <ul className="lista-eje">
+            <li><strong>Tu Mapa Estructural EJE® en PDF.</strong> Cuatro páginas que descargás apenas terminás: qué patrón está sosteniendo hoy tu estructura y con cuánto peso, cómo se arma el loop que se repite, dónde genera más fricción y por dónde es posible empezar.</li>
+            <li><strong>Tu lectura en voz.</strong> La narración de tu resultado, de alrededor de un minuto, para escuchar en la misma pantalla.</li>
+            <li><strong>Tu certificado.</strong> Un PDF con tu nombre que deja constancia de que completaste el Test.</li>
+            <li><strong>La imagen de tu resultado.</strong> Para guardarla o compartirla, si querés.</li>
+            <li><strong>Tu Mapa en tu correo.</strong> Desde la misma pantalla podés enviártelo por email y tenerlo también ahí.</li>
+          </ul>
+          <p>Todo se descarga y queda tuyo.</p>
+
           <p style={{marginTop: '2rem'}}><a href={comprar("test_cuerpo")} className="btn btn-primary">Quiero descubrir mi Mapa</a></p>
 
           <h3 className="section-subheading">Qué es —y qué no es— el Test</h3>
@@ -189,7 +200,7 @@ export default function Test() {
           <h2>Ver la estructura antes de seguir sosteniéndola.</h2>
           <p>Tu Mapa no decide por vos ni te encierra en una etiqueta. Te muestra qué está pesando hoy para que puedas empezar por algo concreto.</p>
           <a href={comprar("test_cierre")} className="btn btn-primary">Quiero descubrir mi Mapa</a>
-          <p className="hero-meta">USD 27 · pago único · acceso inmediato<br />Completás 42 preguntas y descargás tu Mapa de 4 páginas al terminar.</p>
+          <p className="hero-meta">USD 27 · pago único · acceso inmediato<br />Completás 42 preguntas y descargás tu Mapa de 4 páginas, tu lectura en voz y tu certificado.</p>
           <aside className="purchase-note" aria-label="Información sobre el pago y el acceso">Vas a completar el pago seguro en Gumroad. Después, tocá «View content» para acceder al Test. Tus respuestas quedan en tu dispositivo y Sol no recibe el número completo de tu tarjeta. Gumroad también te envía un recibo en inglés con el mismo acceso.</aside>
         </div>
       </section>
