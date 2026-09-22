@@ -9,7 +9,7 @@ const PREGUNTAS = [
     "q": "¿Qué recibo?",
     "a": [
       "Tu Mapa Estructural EJE® en PDF, de cuatro páginas, construido a partir de tus respuestas al Test.",
-      "El mapa muestra porcentajes personales de distintas variables y cómo se presentan actualmente en vínculos, trabajo, dinero e identidad.",      "Además te llevás la lectura de tu resultado en voz, tu certificado en PDF con tu nombre y la imagen de tu resultado. Si preferís tenerlo en tu correo, podés enviártelo desde la misma pantalla."
+      "El mapa muestra porcentajes personales de distintas variables y cómo se presentan actualmente en vínculos, trabajo, dinero e identidad.",      "Además te llevás la lectura de tu resultado en voz, grabada por Sol, tu certificado en PDF con tu nombre y la imagen de tu resultado. Si preferís tenerlo en tu correo, podés enviártelo desde la misma pantalla."
     ]
   },
   {
@@ -53,7 +53,7 @@ const PRODUCTO = {
   "@context": "https://schema.org",
   "@type": "Product",
   "name": "Test EJE®",
-  "description": "42 preguntas, unos 15 minutos. Devuelve el Mapa Estructural EJE® en PDF: en qué proporción aparecen hoy determinados patrones y cómo se expresan en vínculos, trabajo, dinero e identidad. Incluye la lectura del resultado en voz, el certificado y la imagen del resultado.",
+  "description": "42 preguntas, unos 15 minutos. Devuelve el Mapa Estructural EJE® en PDF: en qué proporción aparecen hoy determinados patrones y cómo se expresan en vínculos, trabajo, dinero e identidad. Incluye la lectura del resultado con la voz de Sol Mir, el certificado y la imagen del resultado.",
   "image": "https://www.solmir.co/mapa-1.jpg",
   "url": "https://www.solmir.co/test",
   "brand": {
@@ -169,7 +169,7 @@ export default function Test() {
           <p>El Mapa es la pieza central, pero no es lo único que queda en tu poder cuando terminás.</p>
           <ul className="lista-eje">
             <li><strong>Tu Mapa Estructural EJE® en PDF.</strong> Cuatro páginas que descargás apenas terminás: qué patrón está sosteniendo hoy tu estructura y con cuánto peso, cómo se arma el loop que se repite, dónde genera más fricción y por dónde es posible empezar.</li>
-            <li><strong>Tu lectura en voz.</strong> La narración de tu resultado, de alrededor de un minuto, para escuchar en la misma pantalla.</li>
+            <li><strong>Tu lectura en voz.</strong> La narración de tu resultado, grabada por mí, de alrededor de un minuto, para escuchar en la misma pantalla.</li>
             <li><strong>Tu certificado.</strong> Un PDF con tu nombre que deja constancia de que completaste el Test.</li>
             <li><strong>La imagen de tu resultado.</strong> Para guardarla o compartirla, si querés.</li>
             <li><strong>Tu Mapa en tu correo.</strong> Desde la misma pantalla podés enviártelo por email y tenerlo también ahí.</li>
