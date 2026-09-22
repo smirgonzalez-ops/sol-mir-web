@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 import Image from "next/image";
 import JsonLd from "../components/JsonLd";
-import { pagina } from "../compartir";
+import { pagina, IMAGEN_TEST } from "../compartir";
 
 // Una sola lista para lo que se ve y para los buscadores: no pueden quedar distintas.
 const PREGUNTAS = [
@@ -88,6 +88,7 @@ export const metadata = pagina({
   title: "Test EJE® y Mapa Estructural",
   description: "Conocé el Test EJE® y descubrí cómo se organiza tu estructura en vínculos, trabajo, dinero e identidad.",
   path: "/test",
+  imagen: IMAGEN_TEST,
 });
 
 export default function Test() {

@@ -16,7 +16,15 @@ const IMAGEN = {
   alt: "Sol Mir, creadora de EJE®, junto a la frase «Podés sostener a todos y no saber qué necesitás vos. EJE® te muestra qué conviene mirar primero.»",
 };
 
-export function tarjeta({ title, description, path }) {
+// El Test tiene la suya: es el único enlace que se comparte para vender.
+export const IMAGEN_TEST = {
+  url: "/test-compartir.jpg",
+  width: 1200,
+  height: 630,
+  alt: "Sol Mir junto al Test EJE®: 42 preguntas, tu Mapa Estructural en PDF, tu lectura en voz grabada por Sol y tu certificado.",
+};
+
+export function tarjeta({ title, description, path, imagen = IMAGEN }) {
   return {
     openGraph: {
       title,
@@ -25,13 +33,13 @@ export function tarjeta({ title, description, path }) {
       siteName: "EJE®",
       locale: "es_AR",
       type: "website",
-      images: [IMAGEN],
+      images: [imagen],
     },
     twitter: {
       card: "summary_large_image",
       title,
       description,
-      images: [IMAGEN.url],
+      images: [imagen.url],
     },
   };
 }
@@ -39,12 +47,12 @@ export function tarjeta({ title, description, path }) {
 // Metadatos completos de una página: título, descripción, dirección canónica
 // y su propia tarjeta. La pestaña del navegador y la tarjeta dicen lo mismo
 // («Contacto | Sol Mir»); si el título ya nombra a Sol, no se repite la firma.
-export function pagina({ title, description, path }) {
+export function pagina({ title, description, path, imagen }) {
   const completo = title.includes("Sol Mir") ? title : `${title} | Sol Mir`;
   return {
     title: { absolute: completo },
     description,
     alternates: { canonical: path },
-    ...tarjeta({ title: completo, description, path }),
+    ...tarjeta({ title: completo, description, path, imagen }),
   };
 }
