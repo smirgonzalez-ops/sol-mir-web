@@ -79,10 +79,13 @@ const FAQ = {
   })),
 };
 
-// Enlace de compra con UTM (Marketing/UTM_Instagram_EJE.md): cada botón
-// dice desde dónde vino la venta.
+// Enlace de compra (Marketing/UTM_Instagram_EJE.md). Va a la página del
+// producto, no al carrito: está en castellano, dice qué recibe y aparece en
+// las estadísticas de Gumroad, que sólo cuentan visitas al producto. Con el
+// enlace directo al carrito, el tramo entre esta página y la compra no se
+// podía medir — 134 visitas el 22 y 23/09 y ningún dato de cuántas tocaron.
 const comprar = (lugar) =>
-  `https://gumroad.com/checkout?product=ozvrmy&quantity=1&utm_source=web&utm_medium=organic&utm_campaign=lanzamiento_22_9&utm_content=${lugar}`;
+  `https://smirgo.gumroad.com/l/ozvrmy?utm_source=web&utm_medium=organic&utm_campaign=lanzamiento_22_9&utm_content=${lugar}`;
 
 export const metadata = pagina({
   title: "Test EJE® y Mapa Estructural",
