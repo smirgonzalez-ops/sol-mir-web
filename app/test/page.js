@@ -230,7 +230,7 @@ export default function Test() {
           <p>No es una pantalla de resultados. Es un documento de cuatro páginas en PDF que descargás apenas terminás y podés guardar.</p>
           <p>El patrón, los porcentajes y el texto cambian según lo que respondas.</p>
 
-          <Image className="mapa-muestra" src="/mapa-1.jpg" width={880} height={1243} sizes="(max-width: 700px) 100vw, 620px" alt="Primera página del Mapa Estructural EJE®: la Huella Madre dominante, el Pulso con los porcentajes por Macrofamilia, y qué podés, qué te cuesta y qué movimiento es posible." />
+          <Image className="mapa-muestra" src="/mapa-1.jpg" width={880} height={1243} sizes="(max-width: 700px) 100vw, 620px" alt="Primera página del Mapa Estructural EJE®: el patrón dominante con su nombre, tu Pulso con los cinco porcentajes, y lo que podés, lo que te cuesta y qué movimiento es posible." />
           <p className="muted" style={{textAlign: 'center'}}>Página 1 de 4 — lo que está activo hoy</p>
 
           <div className="mapa-tiras">
@@ -238,7 +238,7 @@ export default function Test() {
             <Image src="/mapa-3.jpg" width={420} height={594} sizes="(max-width: 700px) 30vw, 196px" alt="Vista parcial de la página 3 del Mapa Estructural" />
             <Image src="/mapa-4.jpg" width={420} height={594} sizes="(max-width: 700px) 30vw, 196px" alt="Vista parcial de la página 4 del Mapa Estructural" />
           </div>
-          <p className="muted" style={{textAlign: 'center', marginTop: '0.75rem'}}>Las otras tres muestran cómo se organiza el patrón, dónde genera más fricción y por dónde empezar a intervenir.</p>
+          <p className="muted" style={{textAlign: 'center', marginTop: '0.75rem'}}>Las otras tres muestran cómo se organiza el patrón, tu silla con las cuatro áreas, y por dónde empezar.</p>
 
           {/* Entre el botón del comienzo y el del cuerpo había seis pantallas
               de teléfono sin ninguno, y acá adentro estaba lo único que muestra
