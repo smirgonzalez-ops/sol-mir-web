@@ -9,41 +9,76 @@ const title = "Sol Mir | EJE® - Sistema de Inteligencia Estructural Humana";
 const description =
   "EJE® no te dice quién sos. Te muestra cómo estás respondiendo y dónde todavía puede existir elección.";
 
-// Quién es Sol y qué es el sitio, para buscadores. Va en todas las páginas.
-const SITIO = {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Person",
-      "@id": "https://www.solmir.co/#sol",
-      "name": "Sol Mir",
-      "jobTitle": "Creadora de EJE®",
-      "description": "Creadora de EJE®, una metodología de Inteligencia Estructural Humana.",
-      "url": "https://www.solmir.co/sobre-sol",
-      "image": "https://www.solmir.co/sol-retrato.jpg",
-      "knowsAbout": [
-        "Inteligencia Estructural Humana",
-        "EJE®"
-      ],
-      "sameAs": [
-        "https://www.instagram.com/soy_solmir",
-        "https://www.linkedin.com/in/soledadmirgonzalez",
-        "https://www.linkedin.com/company/eje-inteligencia-estructural-humana"
-      ]
-    },
-    {
-      "@type": "WebSite",
-      "@id": "https://www.solmir.co/#sitio",
-      "url": "https://www.solmir.co",
-      "name": "Sol Mir · EJE®",
-      "inLanguage": "es-AR",
-      "publisher": {
-        "@id": "https://www.solmir.co/#sol"
-      }
-    }
-  ]
-};
-
+// Quién es Sol y qué es el sitio, para buscadores. Va en todas las páginas.
+
+const SITIO = {
+
+  "@context": "https://schema.org",
+
+  "@graph": [
+
+    {
+
+      "@type": "Person",
+
+      "@id": "https://www.solmir.co/#sol",
+
+      "name": "Sol Mir",
+
+      "jobTitle": "Creadora de EJE®",
+
+      "description": "Creadora de EJE®, una metodología de Inteligencia Estructural Humana.",
+
+      "url": "https://www.solmir.co/sobre-sol",
+
+      "image": "https://www.solmir.co/sol-retrato.jpg",
+
+      "knowsAbout": [
+
+        "Inteligencia Estructural Humana",
+
+        "EJE®"
+
+      ],
+
+      "sameAs": [
+
+        "https://www.instagram.com/soy_solmir",
+
+        "https://www.linkedin.com/in/soledadmirgonzalez",
+
+        "https://www.linkedin.com/company/eje-inteligencia-estructural-humana"
+
+      ]
+
+    },
+
+    {
+
+      "@type": "WebSite",
+
+      "@id": "https://www.solmir.co/#sitio",
+
+      "url": "https://www.solmir.co",
+
+      "name": "Sol Mir · EJE®",
+
+      "inLanguage": "es-AR",
+
+      "publisher": {
+
+        "@id": "https://www.solmir.co/#sol"
+
+      }
+
+    }
+
+  ]
+
+};
+
+
+
 export const metadata = {
   metadataBase: new URL("https://www.solmir.co"),
   title: {

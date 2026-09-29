@@ -1,32 +1,53 @@
-import { Fragment } from "react";
-import Image from "next/image";
+import { Fragment } from "react";
+
+import Image from "next/image";
+
 import JsonLd from "../components/JsonLd";
-import OrigenCompra from "../components/OrigenCompra";
+import OrigenCompra from "../components/OrigenCompra";
+
 import { pagina, IMAGEN_TEST } from "../compartir";
 
-// Una sola lista para lo que se ve y para los buscadores: no pueden quedar distintas.
-const PREGUNTAS = [
-  {
-    "q": "¿Qué recibo?",
-    "a": [
-      "Tu Mapa Estructural EJE® en PDF, de cuatro páginas, construido a partir de tus respuestas al Test.",
-      "El mapa muestra porcentajes personales de distintas variables y cómo se presentan actualmente en vínculos, trabajo, dinero e identidad.",      "Además te llevás la lectura de tu resultado en voz, grabada por Sol, tu certificado en PDF con tu nombre y la imagen de tu resultado. Si preferís tenerlo en tu correo, podés enviártelo desde la misma pantalla."
-    ]
-  },
+// Una sola lista para lo que se ve y para los buscadores: no pueden quedar distintas.
+
+const PREGUNTAS = [
+
+  {
+
+    "q": "¿Qué recibo?",
+
+    "a": [
+
+      "Tu Mapa Estructural EJE® en PDF, de cuatro páginas, construido a partir de tus respuestas al Test.",
+
+      "El mapa muestra porcentajes personales de distintas variables y cómo se presentan actualmente en vínculos, trabajo, dinero e identidad.",
+      "Además te llevás la lectura de tu resultado en voz, grabada por Sol, tu certificado en PDF con tu nombre y la imagen de tu resultado. Si preferís tenerlo en tu correo, podés enviártelo desde la misma pantalla."
+
+    ]
+
+  },
+
   {
     "q": "¿Me dice qué tipo de persona soy?",
     "a": [
       "No. Es una fotografía de cómo estás respondiendo en este momento, no una personalidad fija. Si tus respuestas cambian, tu Mapa también puede cambiar."
     ]
   },
-  {
-    "q": "¿Por qué son porcentajes?",
-    "a": [
-      "Porque distintas formas de respuesta pueden convivir en una misma persona.",
-      "El mapa permite observar cuánto peso relativo tiene cada variable dentro de la combinación actual."
-    ]
-  },
-  {
+  {
+
+    "q": "¿Por qué son porcentajes?",
+
+    "a": [
+
+      "Porque distintas formas de respuesta pueden convivir en una misma persona.",
+
+      "El mapa permite observar cuánto peso relativo tiene cada variable dentro de la combinación actual."
+
+    ]
+
+  },
+
+  {
+
     "q": "¿Cómo se construyen los porcentajes?",
     "a": [
       "El Test asigna un peso relativo a cada patrón según tus respuestas. Los porcentajes muestran cómo se distribuye ese peso dentro de tu combinación actual: no son una probabilidad ni un diagnóstico clínico."
@@ -35,51 +56,96 @@ const PREGUNTAS = [
   {
 
     "q": "¿Para qué me sirve saberlo?",
-    "a": [
-      "Para tener un punto de partida. Es difícil trabajar sobre algo que no podés identificar.",
-      "El mapa permite observar qué respuestas están teniendo más peso actualmente y empezar a decidir cuáles te sirven, cuáles te cuestan y dónde querés trabajar."
-    ]
-  },
-  {
-    "q": "¿Qué pasa después de pagar?",
-    "a": [
-      "Gumroad te manda un recibo en inglés: tu acceso está en el botón «View content». Si no lo ves, buscalo en Notificaciones o en Promociones.",
-      "En el resumen de tu tarjeta, el cargo figura como GUMRD.COM*."
-    ]
-  }
-];
-
-// Precio desde el lanzamiento del 22/09, el mismo que en Gumroad (USD 27, en venta).
-const PRODUCTO = {
-  "@context": "https://schema.org",
-  "@type": "Product",
-  "name": "Test EJE®",
-  "description": "42 preguntas, unos 15 minutos. Devuelve el Mapa Estructural EJE® en PDF: en qué proporción aparecen hoy determinados patrones y cómo se expresan en vínculos, trabajo, dinero e identidad. Incluye la lectura del resultado con la voz de Sol Mir, el certificado y la imagen del resultado.",
-  "image": "https://www.solmir.co/mapa-1.jpg",
-  "url": "https://www.solmir.co/test",
-  "brand": {
-    "@type": "Brand",
-    "name": "EJE®"
-  },
-  "offers": {
-    "@type": "Offer",
-    "price": "27",
-    "priceCurrency": "USD",
-    "availability": "https://schema.org/InStock",
-    "url": "https://smirgo.gumroad.com/l/ozvrmy"
-  }
-};
-
-const FAQ = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: PREGUNTAS.map(({ q, a }) => ({
-    "@type": "Question",
-    name: q,
-    acceptedAnswer: { "@type": "Answer", text: a.join(" ") },
-  })),
-};
-
+    "a": [
+
+      "Para tener un punto de partida. Es difícil trabajar sobre algo que no podés identificar.",
+
+      "El mapa permite observar qué respuestas están teniendo más peso actualmente y empezar a decidir cuáles te sirven, cuáles te cuestan y dónde querés trabajar."
+
+    ]
+
+  },
+
+  {
+
+    "q": "¿Qué pasa después de pagar?",
+
+    "a": [
+
+      "Gumroad te manda un recibo en inglés: tu acceso está en el botón «View content». Si no lo ves, buscalo en Notificaciones o en Promociones.",
+
+      "En el resumen de tu tarjeta, el cargo figura como GUMRD.COM*."
+
+    ]
+
+  }
+
+];
+
+
+
+// Precio desde el lanzamiento del 22/09, el mismo que en Gumroad (USD 27, en venta).
+
+const PRODUCTO = {
+
+  "@context": "https://schema.org",
+
+  "@type": "Product",
+
+  "name": "Test EJE®",
+
+  "description": "42 preguntas, unos 15 minutos. Devuelve el Mapa Estructural EJE® en PDF: en qué proporción aparecen hoy determinados patrones y cómo se expresan en vínculos, trabajo, dinero e identidad. Incluye la lectura del resultado con la voz de Sol Mir, el certificado y la imagen del resultado.",
+
+  "image": "https://www.solmir.co/mapa-1.jpg",
+
+  "url": "https://www.solmir.co/test",
+
+  "brand": {
+
+    "@type": "Brand",
+
+    "name": "EJE®"
+
+  },
+
+  "offers": {
+
+    "@type": "Offer",
+
+    "price": "27",
+
+    "priceCurrency": "USD",
+
+    "availability": "https://schema.org/InStock",
+
+    "url": "https://smirgo.gumroad.com/l/ozvrmy"
+
+  }
+
+};
+
+
+
+const FAQ = {
+
+  "@context": "https://schema.org",
+
+  "@type": "FAQPage",
+
+  mainEntity: PREGUNTAS.map(({ q, a }) => ({
+
+    "@type": "Question",
+
+    name: q,
+
+    acceptedAnswer: { "@type": "Answer", text: a.join(" ") },
+
+  })),
+
+};
+
+
+
 // Enlace de compra (Marketing/UTM_Instagram_EJE.md). Va a la página del
 // producto, no al carrito: está en castellano, dice qué recibe y aparece en
 // las estadísticas de Gumroad, que sólo cuentan visitas al producto. Con el
