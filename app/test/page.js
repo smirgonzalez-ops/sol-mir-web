@@ -158,8 +158,8 @@ const comprar = (lugar) =>
   `https://smirgo.gumroad.com/l/ozvrmy?utm_source=web&utm_medium=organic&utm_campaign=lanzamiento_22_9&utm_content=${lugar}`;
 
 export const metadata = pagina({
-  title: "Test EJE® y Mapa Estructural",
-  description: "42 preguntas, unos 15 minutos. Te llevás tu Mapa Estructural en PDF, la lectura de tu resultado en voz grabada por Sol, tu certificado y la imagen de tu resultado. USD 27, pago único.",
+  title: "Test de patrones: qué área carga con el resto",
+  description: "42 preguntas, unos 15 minutos. Al final ves cuál de tus cuatro áreas —vínculos, trabajo, dinero e identidad— está haciendo el trabajo de las otras. USD 27.",
   path: "/test",
   imagen: IMAGEN_TEST,
 });

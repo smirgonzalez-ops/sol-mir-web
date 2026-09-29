@@ -4,7 +4,7 @@ import { pagina } from "../compartir";
 const COMPRA_DIARIO = "https://smirgo.gumroad.com/l/diario-emociones-eje";
 
 export const metadata = pagina({
-  title: "Diario de Emociones EJE®",
+  title: "Diario de emociones: 7 días para ver tus patrones",
   description: "Una práctica guiada de 7 días, con cuadernillo y 11 audios, para observar tus patrones emocionales.",
   path: "/diario",
 });

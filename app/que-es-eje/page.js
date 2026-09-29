@@ -11,8 +11,8 @@ const TERMINO = {
 };
 
 export const metadata = pagina({
-  title: "Qué es EJE®",
-  description: "EJE® te ayuda a distinguir lo que no podés cambiar de aquello a lo que sí podrías responder de otra manera.",
+  title: "Por qué se repiten los patrones — Qué es EJE®",
+  description: "Lo que se repite no es mala suerte: es una forma de responder que se armó antes. EJE® la mira en cuatro áreas: vínculos, trabajo, dinero e identidad.",
   path: "/que-es-eje",
 });
 

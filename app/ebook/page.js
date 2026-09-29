@@ -3,7 +3,7 @@ import Image from "next/image";
 import { pagina } from "../compartir";
 
 export const metadata = pagina({
-  title: "Ebook gratuito: Tu Huella en el amor, el trabajo y la plata",
+  title: "Ebook gratis: tu huella en amor, trabajo y plata",
   description: "Once páginas para ver si eso que se repite en el amor, en el trabajo y con la plata es el mismo patrón. Gratis, a cambio de tu correo.",
   path: "/ebook",
 });

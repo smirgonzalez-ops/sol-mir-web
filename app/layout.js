@@ -5,9 +5,9 @@ import JsonLd from "./components/JsonLd";
 import { tarjeta } from "./compartir";
 import { Analytics } from "@vercel/analytics/next";
 
-const title = "Sol Mir | EJE® - Sistema de Inteligencia Estructural Humana";
+const title = "Entendés lo que te pasa y lo seguís repitiendo | EJE®";
 const description =
-  "EJE® no te dice quién sos. Te muestra cómo estás respondiendo y dónde todavía puede existir elección.";
+  "EJE® no te dice quién sos: te muestra cómo respondés hoy en vínculos, trabajo, dinero e identidad. El sistema de Inteligencia Estructural Humana de Sol Mir.";
 
 // Quién es Sol y qué es el sitio, para buscadores. Va en todas las páginas.
 
