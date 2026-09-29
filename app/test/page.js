@@ -240,6 +240,14 @@ export default function Test() {
           </div>
           <p className="muted" style={{textAlign: 'center', marginTop: '0.75rem'}}>Las otras tres muestran cómo se organiza el patrón, dónde genera más fricción y por dónde empezar a intervenir.</p>
 
+          {/* Entre el botón del comienzo y el del cuerpo había seis pantallas
+              de teléfono sin ninguno, y acá adentro estaba lo único que muestra
+              qué se compra. Quien se convence mirando el Mapa tenía que seguir
+              bajando tres pantallas más para encontrar dónde tocar. */}
+          <p style={{textAlign: 'center', marginTop: '2rem'}}>
+            <a href={comprar("test_muestra")} className="btn btn-primary">Quiero descubrir mi Mapa</a>
+          </p>
+
           <h3 className="section-subheading">Todo lo que te llevás</h3>
           <p>El Mapa es la pieza central, pero no es lo único que queda en tu poder cuando terminás.</p>
           <ul className="lista-eje">
