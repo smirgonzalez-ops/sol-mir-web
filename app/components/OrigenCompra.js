@@ -22,6 +22,9 @@ export default function OrigenCompra() {
         source: parametros.get("utm_source"),
         medium: parametros.get("utm_medium") || "sin_medio",
         campaign: parametros.get("utm_campaign") || "sin_campana",
+        // Meta lo completa con el nombre del anuncio. Si no viene, no se
+        // inventa: el enlace sale sin term, como hasta ahora.
+        term: parametros.get("utm_term") || null,
       };
     } else {
       // Sin UTM, el referrer es lo único que queda. Se le saca el prefijo
@@ -58,6 +61,7 @@ export default function OrigenCompra() {
         destino.searchParams.set("utm_source", origen.source);
         destino.searchParams.set("utm_medium", origen.medium);
         destino.searchParams.set("utm_campaign", origen.campaign);
+        if (origen.term) destino.searchParams.set("utm_term", origen.term);
         enlace.href = destino.toString();
       } catch (e) {
         // Si un enlace no se puede reescribir, queda el original.
