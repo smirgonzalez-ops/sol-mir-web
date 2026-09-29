@@ -225,6 +225,14 @@ export default function Test() {
               </Fragment>
             ))}
           </div>
+          {/* Las preguntas cerraban la página sin nada para tocar. Medido en
+              un teléfono: la página tiene 12,8 pantallas, el último botón
+              queda en la 8,9 y las preguntas terminan en la 11. Quien las lee
+              es quien tenía dudas y se las resolvió — y no tenía dónde. */}
+          <p style={{marginTop: '2.5rem'}}>
+            <a href={comprar("test_faq")} className="btn btn-primary">Quiero descubrir mi Mapa</a>
+          </p>
+          <p className="hero-meta">USD 27 · pago único · acceso inmediato</p>
         </div>
       </section>
     </>
