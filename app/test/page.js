@@ -1,6 +1,7 @@
 import { Fragment } from "react";
 import Image from "next/image";
-import JsonLd from "../components/JsonLd";
+import JsonLd from "../components/JsonLd";
+import OrigenCompra from "../components/OrigenCompra";
 import { pagina, IMAGEN_TEST } from "../compartir";
 
 // Una sola lista para lo que se ve y para los buscadores: no pueden quedar distintas.
@@ -84,6 +85,9 @@ const FAQ = {
 // las estadísticas de Gumroad, que sólo cuentan visitas al producto. Con el
 // enlace directo al carrito, el tramo entre esta página y la compra no se
 // podía medir — 134 visitas el 22 y 23/09 y ningún dato de cuántas tocaron.
+// utm_medium=organic es el valor por defecto, para quien llega sin origen.
+// OrigenCompra lo reescribe en el navegador cuando la visita trae UTM o
+// viene de otro sitio, así el tramo hasta Gumroad se puede atribuir.
 const comprar = (lugar) =>
   `https://smirgo.gumroad.com/l/ozvrmy?utm_source=web&utm_medium=organic&utm_campaign=lanzamiento_22_9&utm_content=${lugar}`;
 
@@ -98,6 +102,7 @@ export default function Test() {
   return (
     <>
       <JsonLd data={PRODUCTO} />
+      <OrigenCompra />
       <JsonLd data={FAQ} />
       <section className="hero test-hero">
         <div className="container test-hero-grid">
