@@ -18,7 +18,7 @@ export default function Home() {
             <p className="hero-meta">USD 27 · pago único · acceso inmediato<br />42 preguntas · 15 minutos · Mapa de 4 páginas al terminar</p>
           </div>
           <figure className="home-map-proof">
-            <Image src="/mapa-1.jpg" width={880} height={1243} sizes="(max-width: 768px) 78vw, 430px" priority alt="Ejemplo de Mapa Estructural EJE® con porcentajes personales." />
+            <Image src="/mapa-1b.jpg" width={880} height={1243} sizes="(max-width: 768px) 78vw, 430px" priority alt="Ejemplo de Mapa Estructural EJE® con porcentajes personales." />
             <figcaption>Ejemplo de Mapa Estructural · Página 1 de 4</figcaption>
           </figure>
         </div>
@@ -124,7 +124,7 @@ export default function Home() {
               <p className="choice-eyebrow">Para ordenar una lectura más completa</p>
               <Image
                 className="choice-product-image"
-                src="/mapa-1.jpg"
+                src="/mapa-1b.jpg"
                 width={880}
                 height={1243}
                 sizes="(max-width: 768px) 76vw, 360px"

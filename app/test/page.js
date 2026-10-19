@@ -110,7 +110,7 @@ const PRODUCTO = {
 
   "description": "42 preguntas, unos 15 minutos. Devuelve el Mapa Estructural EJE® en PDF: en qué proporción aparecen hoy determinados patrones y cómo se expresan en vínculos, trabajo, dinero e identidad. Incluye la lectura del resultado con la voz de Sol Mir, el certificado y la imagen del resultado.",
 
-  "image": "https://www.solmir.co/mapa-1.jpg",
+  "image": "https://www.solmir.co/mapa-1b.jpg",
 
   "url": "https://www.solmir.co/test",
 
@@ -214,7 +214,7 @@ export default function Test() {
             </div>
           </div>
           <figure className="mapa-hero">
-            <Image src="/mapa-1.jpg" width={880} height={1243} sizes="(max-width: 768px) 82vw, 390px" priority alt="Ejemplo de la primera página de un Mapa Estructural EJE®, con un patrón dominante y porcentajes personales." />
+            <Image src="/mapa-1b.jpg" width={880} height={1243} sizes="(max-width: 768px) 82vw, 390px" priority alt="Ejemplo de la primera página de un Mapa Estructural EJE®, con un patrón dominante y porcentajes personales." />
             <figcaption>Muestra real del formato que descargás. Tu contenido y tus porcentajes serán diferentes.</figcaption>
           </figure>
         </div>
@@ -256,11 +256,11 @@ export default function Test() {
           <p>No es una pantalla de resultados. Es un documento de cuatro páginas en PDF que descargás apenas terminás y podés guardar.</p>
           <p>El patrón, los porcentajes y el texto cambian según lo que respondas.</p>
 
-          <Image className="mapa-muestra" src="/mapa-1.jpg" width={880} height={1243} sizes="(max-width: 700px) 100vw, 620px" alt="Primera página del Mapa Estructural EJE®: el patrón dominante con su nombre, tu Pulso con los cinco porcentajes, y lo que podés, lo que te cuesta y qué movimiento es posible." />
+          <Image className="mapa-muestra" src="/mapa-1b.jpg" width={880} height={1243} sizes="(max-width: 700px) 100vw, 620px" alt="Primera página del Mapa Estructural EJE®: el patrón dominante con su nombre, tu Pulso con los cinco porcentajes, y lo que podés, lo que te cuesta y qué movimiento es posible." />
           <p className="muted" style={{textAlign: 'center'}}>Página 1 de 4 — lo que está activo hoy</p>
 
           <div className="mapa-tiras">
-            <Image src="/mapa-2.jpg" width={420} height={594} sizes="(max-width: 700px) 30vw, 196px" alt="Vista parcial de la página 2 del Mapa Estructural" />
+            <Image src="/mapa-2b.jpg" width={420} height={594} sizes="(max-width: 700px) 30vw, 196px" alt="Vista parcial de la página 2 del Mapa Estructural" />
             <Image src="/mapa-3.jpg" width={420} height={594} sizes="(max-width: 700px) 30vw, 196px" alt="Vista parcial de la página 3 del Mapa Estructural" />
             <Image src="/mapa-4.jpg" width={420} height={594} sizes="(max-width: 700px) 30vw, 196px" alt="Vista parcial de la página 4 del Mapa Estructural" />
           </div>
