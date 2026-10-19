@@ -78,6 +78,20 @@ const PREGUNTAS = [
 
     ]
 
+  },
+
+  {
+
+    "q": "¿Puedo pagar en pesos?",
+
+    "a": [
+
+      "Sí, si estás en Argentina: pagás $ 40.000 con Mercado Pago, con tarjeta o en efectivo por Pago Fácil o Rapipago.",
+
+      "En ese caso el acceso no llega solo: te lo mando yo por correo cuando se acredita el pago. Si pagás de noche, te llega a la mañana siguiente."
+
+    ]
+
   }
 
 ];
@@ -157,6 +171,17 @@ const FAQ = {
 const comprar = (lugar) =>
   `https://smirgo.gumroad.com/l/ozvrmy?utm_source=web&utm_medium=organic&utm_campaign=lanzamiento_22_9&utm_content=${lugar}`;
 
+// Gumroad no cobra en pesos argentinos (verificado el 12/10 en el checkout
+// real) y la audiencia propia es argentina. Link de Mercado Pago creado por
+// Sol el 19/10. Ese pago no entrega el acceso solo: Sol lo manda a mano.
+// No lleva UTM porque Mercado Pago no los muestra; estas ventas se cuentan
+// desde el panel de Mercado Pago, no desde Gumroad.
+const PESOS = "https://mpago.la/1Gjzh2t";
+
+const PagoEnPesos = () => (
+  <p className="pago-pesos">¿Estás en Argentina? <a href={PESOS}>Pagá en pesos con Mercado Pago</a> · $ 40.000.<br />El acceso te lo mando yo por correo cuando se acredita el pago.</p>
+);
+
 export const metadata = pagina({
   title: "Test de patrones: qué área carga con el resto",
   description: "42 preguntas, unos 15 minutos. Al final ves cuál de tus cuatro áreas —vínculos, trabajo, dinero e identidad— está haciendo el trabajo de las otras. USD 27.",
@@ -181,6 +206,7 @@ export default function Test() {
             <a href={comprar("test_hero")} className="btn btn-primary">Quiero descubrir mi Mapa</a>
             <p className="hero-meta">USD 27 · pago único · acceso inmediato<br />Completás 42 preguntas y descargás tu Mapa de 4 páginas, tu lectura en voz y tu certificado.</p>
             <p className="hero-trust">Vas a completar el pago seguro en Gumroad. Después, tocá «View content» para acceder al Test. Tus respuestas quedan en tu dispositivo; Sol no recibe el número completo de tu tarjeta.</p>
+            <PagoEnPesos />
             <div className="test-proof" aria-label="Qué ocurre después de comprar">
               <span>1 · Comprás en Gumroad</span>
               <span>2 · Respondés el Test</span>
@@ -285,6 +311,7 @@ export default function Test() {
           <a href={comprar("test_cierre")} className="btn btn-primary">Quiero descubrir mi Mapa</a>
           <p className="hero-meta">USD 27 · pago único · acceso inmediato<br />Completás 42 preguntas y descargás tu Mapa de 4 páginas, tu lectura en voz y tu certificado.</p>
           <aside className="purchase-note" aria-label="Información sobre el pago y el acceso">Vas a completar el pago seguro en Gumroad. Después, tocá «View content» para acceder al Test. Tus respuestas quedan en tu dispositivo y Sol no recibe el número completo de tu tarjeta. Gumroad también te envía un recibo en inglés con el mismo acceso.</aside>
+          <PagoEnPesos />
         </div>
       </section>
 

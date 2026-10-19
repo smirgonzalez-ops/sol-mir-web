@@ -304,6 +304,21 @@ section.accent {
   line-height: 1.55;
 }
 
+.pago-pesos {
+  max-width: 34rem;
+  margin-top: 0.65rem;
+  color: var(--ink);
+  font-size: 0.92rem;
+  line-height: 1.6;
+}
+
+.pago-pesos a {
+  color: inherit;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 .hero-trust {
   max-width: 34rem;
   margin-top: 0.65rem;
