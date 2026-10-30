@@ -204,7 +204,9 @@ export default function Test() {
                 preparar nada» pasaron al bloque de compra (#comprar). */}
             <p className="choice-eyebrow">Test EJE® · 42 preguntas · unos 15 minutos</p>
             <h1>Entendés por qué lo hacés. Igual volvés a hacerlo.</h1>
-            <p className="subtitle">El Test EJE® ordena tus respuestas y te muestra cómo se reparte hoy el peso entre tus vínculos, tu trabajo, el dinero y tu identidad: cuatro porcentajes que suman 100%. Recibís tu Mapa Estructural en un PDF de cuatro páginas.</p>
+            {/* Frase del posicionamiento aprobado (Plan 8.2): no se saca nunca. */}
+            <p className="subtitle">Lo que repetís no necesariamente aparece igual en toda tu vida.</p>
+            <p>El Test EJE® ordena tus respuestas y te devuelve una lectura personalizada de cómo se reparten hoy entre tus vínculos, tu trabajo, el dinero y tu identidad. Recibís tu Mapa Estructural en un PDF de cuatro páginas.</p>
             <a href={comprar("test_hero")} className="btn btn-primary">Quiero conocer mi Mapa</a>
             <p className="hero-meta">USD 27 · pago único</p>
             <p className="hero-trust">Pagás en Gumroad; la pantalla de pago está en inglés. ¿Estás en Argentina? También podés <a href={PESOS}>pagar en pesos con Mercado Pago</a>.</p>
