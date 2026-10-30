@@ -207,7 +207,7 @@ export default function Test() {
             {/* Frase del posicionamiento aprobado (Plan 8.2): no se saca nunca. */}
             <p className="subtitle">Lo que repetís no necesariamente aparece igual en toda tu vida.</p>
             <p>El Test EJE® ordena tus respuestas y te devuelve una lectura personalizada de cómo se reparten hoy entre tus vínculos, tu trabajo, el dinero y tu identidad. Recibís tu Mapa Estructural en un PDF de cuatro páginas.</p>
-            <a href={comprar("test_hero")} className="btn btn-primary">Quiero conocer mi Mapa</a>
+            <a href={comprar("test_hero")} className="btn btn-primary">Comprar el Test EJE®</a>
             <p className="hero-meta">USD 27 · pago único</p>
             <p className="hero-trust">Pagás en Gumroad; la pantalla de pago está en inglés. ¿Estás en Argentina? También podés <a href={PESOS}>pagar en pesos con Mercado Pago</a>.</p>
           </div>
@@ -269,7 +269,7 @@ export default function Test() {
               qué se compra. Quien se convence mirando el Mapa tenía que seguir
               bajando tres pantallas más para encontrar dónde tocar. */}
           <p style={{textAlign: 'center', marginTop: '2rem'}}>
-            <a href={comprar("test_muestra")} className="btn btn-primary">Quiero conocer mi Mapa</a>
+            <a href={comprar("test_muestra")} className="btn btn-primary">Comprar el Test EJE®</a>
           </p>
 
           <h3 className="section-subheading">Todo lo que te llevás</h3>
@@ -283,7 +283,7 @@ export default function Test() {
           </ul>
           <p>Todo se descarga y queda tuyo.</p>
 
-          <p style={{marginTop: '2rem'}}><a href={comprar("test_cuerpo")} className="btn btn-primary">Quiero conocer mi Mapa</a></p>
+          <p style={{marginTop: '2rem'}}><a href={comprar("test_cuerpo")} className="btn btn-primary">Comprar el Test EJE®</a></p>
 
           <h3 className="section-subheading">Qué es —y qué no es— el Test</h3>
           <div className="responsible-note">
@@ -312,7 +312,7 @@ export default function Test() {
             <span>2 · Respondés el Test</span>
             <span>3 · Descargás tu Mapa</span>
           </div>
-          <a href={comprar("test_cierre")} className="btn btn-primary">Quiero conocer mi Mapa</a>
+          <a href={comprar("test_cierre")} className="btn btn-primary">Comprar el Test EJE®</a>
           <p className="hero-meta">USD 27 · pago único · acceso inmediato<br />Completás 42 preguntas y descargás tu Mapa de 4 páginas, tu lectura en voz y tu certificado.</p>
           <aside className="purchase-note" aria-label="Información sobre el pago y el acceso">Vas a completar el pago seguro en Gumroad. Después, tocá «View content» para acceder al Test. Tus respuestas quedan en tu dispositivo y Sol no recibe el número completo de tu tarjeta. Gumroad también te envía un recibo en inglés con el mismo acceso.</aside>
           <PagoEnPesos />
@@ -335,7 +335,7 @@ export default function Test() {
               queda en la 8,9 y las preguntas terminan en la 11. Quien las lee
               es quien tenía dudas y se las resolvió — y no tenía dónde. */}
           <p style={{marginTop: '2.5rem'}}>
-            <a href={comprar("test_faq")} className="btn btn-primary">Quiero conocer mi Mapa</a>
+            <a href={comprar("test_faq")} className="btn btn-primary">Comprar el Test EJE®</a>
           </p>
           <p className="hero-meta">USD 27 · pago único · acceso inmediato</p>
         </div>
