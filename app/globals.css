@@ -312,7 +312,8 @@ section.accent {
   line-height: 1.6;
 }
 
-.pago-pesos a {
+.pago-pesos a,
+.hero-trust a {
   color: inherit;
   font-weight: 600;
   text-decoration: underline;

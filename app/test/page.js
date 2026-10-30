@@ -198,20 +198,16 @@ export default function Test() {
       <section className="hero test-hero">
         <div className="container test-hero-grid">
           <div className="test-hero-copy">
-            <p className="choice-eyebrow">Test EJE® · Tu Mapa Estructural personal</p>
-            <h1>Descubrí qué patrón está sosteniendo hoy tu estructura.</h1>
-            <p className="subtitle">Una interpretación de este momento, construida a partir de tus respuestas y expresada en una combinación de porcentajes propia.</p>
-            <p>No elegís entre perfiles armados. El Test identifica qué respuestas están más activas en vos, cuánto pesa cada una y cómo aparecen en tus vínculos, el trabajo, el dinero y tu identidad.</p>
-            <p><strong>No necesitás preparar nada.</strong> Respondé pensando en cómo estás hoy, no en cómo creés que deberías estar.</p>
-            <a href={comprar("test_hero")} className="btn btn-primary">Quiero descubrir mi Mapa</a>
-            <p className="hero-meta">USD 27 · pago único · acceso inmediato<br />Completás 42 preguntas y descargás tu Mapa de 4 páginas, tu lectura en voz y tu certificado.</p>
-            <p className="hero-trust">Vas a completar el pago seguro en Gumroad. Después, tocá «View content» para acceder al Test. Tus respuestas quedan en tu dispositivo; Sol no recibe el número completo de tu tarjeta.</p>
-            <PagoEnPesos />
-            <div className="test-proof" aria-label="Qué ocurre después de comprar">
-              <span>1 · Comprás en Gumroad</span>
-              <span>2 · Respondés el Test</span>
-              <span>3 · Descargás tu Mapa</span>
-            </div>
+            {/* Portada aprobada por Sol el 30/10/2026: titular del eBook, las
+                cuatro áreas en la bajada y el botón con el precio en la primera
+                pantalla del teléfono. Los pasos de compra y «No necesitás
+                preparar nada» pasaron al bloque de compra (#comprar). */}
+            <p className="choice-eyebrow">Test EJE® · 42 preguntas · unos 15 minutos</p>
+            <h1>Entendés por qué lo hacés. Igual volvés a hacerlo.</h1>
+            <p className="subtitle">El Test EJE® ordena tus respuestas y te muestra cómo se reparte hoy el peso entre tus vínculos, tu trabajo, el dinero y tu identidad: cuatro porcentajes que suman 100%. Recibís tu Mapa Estructural en un PDF de cuatro páginas.</p>
+            <a href={comprar("test_hero")} className="btn btn-primary">Quiero conocer mi Mapa</a>
+            <p className="hero-meta">USD 27 · pago único</p>
+            <p className="hero-trust">Pagás en Gumroad; la pantalla de pago está en inglés. ¿Estás en Argentina? También podés <a href={PESOS}>pagar en pesos con Mercado Pago</a>.</p>
           </div>
           <figure className="mapa-hero">
             <Image src="/mapa-1b.jpg" width={880} height={1243} sizes="(max-width: 768px) 82vw, 390px" priority alt="Ejemplo de la primera página de un Mapa Estructural EJE®, con un patrón dominante y porcentajes personales." />
@@ -271,7 +267,7 @@ export default function Test() {
               qué se compra. Quien se convence mirando el Mapa tenía que seguir
               bajando tres pantallas más para encontrar dónde tocar. */}
           <p style={{textAlign: 'center', marginTop: '2rem'}}>
-            <a href={comprar("test_muestra")} className="btn btn-primary">Quiero descubrir mi Mapa</a>
+            <a href={comprar("test_muestra")} className="btn btn-primary">Quiero conocer mi Mapa</a>
           </p>
 
           <h3 className="section-subheading">Todo lo que te llevás</h3>
@@ -285,7 +281,7 @@ export default function Test() {
           </ul>
           <p>Todo se descarga y queda tuyo.</p>
 
-          <p style={{marginTop: '2rem'}}><a href={comprar("test_cuerpo")} className="btn btn-primary">Quiero descubrir mi Mapa</a></p>
+          <p style={{marginTop: '2rem'}}><a href={comprar("test_cuerpo")} className="btn btn-primary">Quiero conocer mi Mapa</a></p>
 
           <h3 className="section-subheading">Qué es —y qué no es— el Test</h3>
           <div className="responsible-note">
@@ -308,7 +304,13 @@ export default function Test() {
           <p className="choice-eyebrow">Tu punto de partida</p>
           <h2>Ver la estructura antes de seguir sosteniéndola.</h2>
           <p>Tu Mapa no decide por vos ni te encierra en una etiqueta. Te muestra qué está pesando hoy para que puedas empezar por algo concreto.</p>
-          <a href={comprar("test_cierre")} className="btn btn-primary">Quiero descubrir mi Mapa</a>
+          <p><strong>No necesitás preparar nada.</strong> Respondé pensando en cómo estás hoy, no en cómo creés que deberías estar.</p>
+          <div className="test-proof" style={{marginBottom: '1.5rem'}} aria-label="Qué ocurre después de comprar">
+            <span>1 · Comprás en Gumroad</span>
+            <span>2 · Respondés el Test</span>
+            <span>3 · Descargás tu Mapa</span>
+          </div>
+          <a href={comprar("test_cierre")} className="btn btn-primary">Quiero conocer mi Mapa</a>
           <p className="hero-meta">USD 27 · pago único · acceso inmediato<br />Completás 42 preguntas y descargás tu Mapa de 4 páginas, tu lectura en voz y tu certificado.</p>
           <aside className="purchase-note" aria-label="Información sobre el pago y el acceso">Vas a completar el pago seguro en Gumroad. Después, tocá «View content» para acceder al Test. Tus respuestas quedan en tu dispositivo y Sol no recibe el número completo de tu tarjeta. Gumroad también te envía un recibo en inglés con el mismo acceso.</aside>
           <PagoEnPesos />
@@ -331,7 +333,7 @@ export default function Test() {
               queda en la 8,9 y las preguntas terminan en la 11. Quien las lee
               es quien tenía dudas y se las resolvió — y no tenía dónde. */}
           <p style={{marginTop: '2.5rem'}}>
-            <a href={comprar("test_faq")} className="btn btn-primary">Quiero descubrir mi Mapa</a>
+            <a href={comprar("test_faq")} className="btn btn-primary">Quiero conocer mi Mapa</a>
           </p>
           <p className="hero-meta">USD 27 · pago único · acceso inmediato</p>
         </div>
