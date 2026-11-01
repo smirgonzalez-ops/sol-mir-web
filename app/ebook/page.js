@@ -22,7 +22,7 @@ export default function Ebook() {
             <h1>Tu vida, tus respuestas, tu mapa.</h1>
             <p className="subtitle">Sabés lo que te pasa. Sabés lo que querés cambiar. Pero seguís haciendo lo mismo.</p>
             <p>No siempre repetís las mismas situaciones. A veces, lo que repetís es tu forma de responder.</p>
-            <KitSignupForm id="ebook-form" origin="web_ebook" buttonLabel="Quiero recibir mi guía gratuita" nameOptional />
+            <KitSignupForm id="ebook-form" origin="web_ebook" buttonLabel="Quiero recibir mi guía gratuita" nameOptional showPrivacy />
             <p className="hero-trust">14 páginas gratuitas. Primero confirmás tu correo y después te llega la guía. Tu primer paso para reconocer lo que repetís.</p>
           </div>
           <figure className="product-visual">
@@ -59,7 +59,7 @@ export default function Ebook() {
 
       <section>
         <div className="container" style={{maxWidth: '760px'}}>
-          <p className="muted">EJE® es una herramienta de autoconocimiento. No es un test psicológico validado ni un diagnóstico, y no reemplaza la atención profesional de salud.</p>
+          <p className="muted">EJE® es una herramienta de autoconocimiento. No es un test psicológico validado ni un diagnóstico, y no reemplaza la atención profesional de salud. Si estás atravesando una crisis, buscá ayuda profesional.</p>
         </div>
       </section>
     </>

@@ -88,7 +88,7 @@ export default function Home() {
           <p>Te llega un correo para confirmar que sos vos. Después recibís el ebook. Sin secuencia de ventas.</p>
           <KitSignupForm
             origin="web_home"
-            buttonLabel="Quiero recibir el ebook"
+            buttonLabel="Quiero recibir mi guía gratuita"
             nameOptional
             showPrivacy
           />
