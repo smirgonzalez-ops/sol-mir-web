@@ -2,9 +2,13 @@ import KitSignupForm from "../components/KitSignupForm";
 import Image from "next/image";
 import { pagina } from "../compartir";
 
+// Página del eBook «Tu vida, tus respuestas, tu mapa» (14 páginas), que
+// reemplazó a «Tu Huella en el amor, el trabajo y la plata». Texto de Sol,
+// ajustado el 01/11/2026 al Canon: cuatro porcentajes que suman 100%, una
+// lectura grabada, pago único con repeticiones y sin prometer comparación.
 export const metadata = pagina({
-  title: "Ebook gratis: tu huella en amor, trabajo y plata",
-  description: "Once páginas para ver si eso que se repite en el amor, en el trabajo y con la plata es el mismo patrón. Gratis, a cambio de tu correo.",
+  title: "Ebook gratis: Tu vida, tus respuestas, tu mapa",
+  description: "Una guía gratuita de 14 páginas para mirar cómo respondés en tus vínculos, tu trabajo, el dinero y tu identidad. Te llega por correo.",
   path: "/ebook",
 });
 
@@ -14,57 +18,48 @@ export default function Ebook() {
       <section className="hero product-hero">
         <div className="container product-hero-grid">
           <div>
-            <p className="choice-eyebrow">Ebook gratuito · 11 páginas + ejercicio</p>
-            <h1>Tu Huella en el amor, el trabajo y <span className="text-terra">la plata</span></h1>
-            <p className="subtitle">Tal vez no son tres problemas distintos.</p>
-            <p>Descubrí cómo una misma forma de responder puede aparecer en escenas distintas y armá el primer mapa de una repetición tuya.</p>
-            <KitSignupForm id="ebook-form" origin="web_ebook" buttonLabel="Quiero recibir el ebook" nameOptional />
-            <p className="hero-trust">Primero confirmás tu correo. Después recibís el ebook. Sin secuencia de ventas.</p>
+            <p className="choice-eyebrow">Guía gratuita · 14 páginas</p>
+            <h1>Tu vida, tus respuestas, tu mapa.</h1>
+            <p className="subtitle">Sabés lo que te pasa. Sabés lo que querés cambiar. Pero seguís haciendo lo mismo.</p>
+            <p>No siempre repetís las mismas situaciones. A veces, lo que repetís es tu forma de responder.</p>
+            <KitSignupForm id="ebook-form" origin="web_ebook" buttonLabel="Quiero recibir mi guía gratuita" nameOptional />
+            <p className="hero-trust">14 páginas gratuitas. Primero confirmás tu correo y después te llega la guía. Tu primer paso para reconocer lo que repetís.</p>
           </div>
           <figure className="product-visual">
-            <Image src="/ebook-tu-huella.png" width={1024} height={1536} sizes="(max-width: 768px) 82vw, 390px" priority alt="Presentación del ebook Tu Huella en el amor, el trabajo y la plata" />
-            <figcaption>Recurso gratuito · incluye un ejercicio para armar tu primer mapa</figcaption>
+            <Image src="/ebook-tu-vida.jpg" width={1024} height={1280} sizes="(max-width: 768px) 82vw, 390px" priority alt="Tapa del ebook Tu vida, tus respuestas, tu mapa: «Entendés por qué lo hacés. Igual volvés a hacerlo.»" />
+            <figcaption>Guía gratuita de EJE® · Vínculos, Trabajo, Dinero e Identidad</figcaption>
           </figure>
         </div>
       </section>
 
       <section>
         <div className="container" style={{maxWidth: '760px'}}>
-          <h2>Qué vas a ver adentro</h2>
-          <p>Son once páginas. Esto es lo que hay en cada una:</p>
+          <p>EJE® te propone mirar tu vida de una manera diferente: no solo qué te pasa, sino cómo respondés en tus vínculos, tu trabajo, el dinero y tu identidad, y cómo aparecen esas respuestas cuando decidís.</p>
+          <h2 style={{marginTop: '2.5rem'}}>Qué vas a encontrar en la guía</h2>
           <ul className="lista-eje">
-            <li><strong>Qué es una Huella.</strong> No es lo que te pasó: es lo que quedó organizando cómo respondés hoy.</li>
-            <li><strong>Por qué entender no alcanza.</strong> Podés saber perfectamente por qué hacés algo y volver a hacerlo igual.</li>
-            <li><strong>El mismo patrón en tres escenas:</strong> el amor, el trabajo y la plata.</li>
-            <li><strong>El mapa de una repetición</strong>, paso por paso: algo pasa, interpretás, se activa una emoción, respondés, hay una consecuencia y el circuito se refuerza.</li>
-            <li><strong>Tu primer mapa.</strong> Un ejercicio para armarlo con una situación tuya, reciente, de esas en las que pensaste «otra vez hice lo mismo».</li>
+            <li>Una explicación sencilla de cómo funciona la mirada de EJE®.</li>
+            <li>Ejemplos cotidianos para reconocer respuestas que repetís.</li>
+            <li>Preguntas para observar cómo aparecen en tu propia vida.</li>
+            <li>Una primera aproximación a lo que sostenés, postergás o podrías empezar a elegir diferente.</li>
           </ul>
-
-          <h3 style={{marginTop: '3rem'}}>Para quién es</h3>
-          <p>Para vos, si entendés bastante bien lo que te pasa y aun así seguís respondiendo igual.</p>
-          <p>No es un test ni un diagnóstico. Es un material para mirar, con un ejercicio al final.</p>
-          <p className="remate">«Yo tardé años en entender que reconocer un patrón no era lo mismo que dejar de obedecerlo.»</p>
-
-          <div className="ebook-reminder">
-            <h3>¿Querés hacer el ejercicio con una situación tuya?</h3>
-            <p>El formulario está al comienzo de esta página. Confirmás tu correo y recibís el ebook, sin secuencia de ventas.</p>
-            <a href="#ebook-form" className="text-link">Volver al formulario</a>
-          </div>
+          <p style={{marginTop: '2rem'}}><a href="#ebook-form" className="btn btn-primary">Quiero recibir mi guía gratuita</a></p>
         </div>
       </section>
 
       <section className="accent">
         <div className="container" style={{maxWidth: '760px'}}>
-          <h2>Después del ebook</h2>
-          <p>El ebook mira tres lugares: el amor, el trabajo y la plata. El cuarto territorio, la identidad, aparece en el Test.</p>
-          <p>El Test EJE® te devuelve tu Mapa Estructural: en qué proporción aparecen hoy determinados patrones y cómo se expresan en cada área de tu vida.</p>
+          <h2>¿Y si querés ver cómo aparece todo esto en vos?</h2>
+          <p>Ahí entra el Test EJE®. La guía te ayuda a comprender la mirada de EJE®; el Test te da una lectura personalizada de tus respuestas actuales.</p>
+          <p>A partir de tus respuestas recibís tu propio Mapa Estructural: cuatro porcentajes, uno por área, que juntos suman 100%, patrones que podés reconocer y posibles puntos ciegos.</p>
+          <p>Descargás tu Mapa en PDF y escuchás la lectura de tu resultado, grabada con la voz de Sol. Pagás una sola vez y podés volver a hacer el Test cuando quieras.</p>
+          <p><strong>Primero conocés EJE®. Después, si querés, conocés tu propio Mapa.</strong></p>
           <p style={{marginTop: '1.5rem'}}><a href="/test" className="btn btn-secondary">Conocé el Test EJE®</a></p>
         </div>
       </section>
 
       <section>
         <div className="container" style={{maxWidth: '760px'}}>
-          <p className="muted">Este material es un recurso de autoconocimiento. No reemplaza psicoterapia ni atención profesional.</p>
+          <p className="muted">EJE® es una herramienta de autoconocimiento. No es un test psicológico validado ni un diagnóstico, y no reemplaza la atención profesional de salud.</p>
         </div>
       </section>
     </>

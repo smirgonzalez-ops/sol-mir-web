@@ -83,8 +83,8 @@ export default function Home() {
       <section className="accent">
         <div className="container" style={{maxWidth: '700px'}}>
           <h2>Ebook Gratuito</h2>
-          <p><strong>Tu Huella en el amor, el trabajo y la plata</strong></p>
-          <p>Once páginas para ver si eso que se repite en estas tres áreas puede ser el mismo patrón. Incluye un ejercicio para armar tu primer mapa.</p>
+          <p><strong>Tu vida, tus respuestas, tu mapa</strong></p>
+          <p>Catorce páginas para mirar cómo respondés en tus vínculos, tu trabajo, el dinero y tu identidad. Incluye un ejercicio para armar tu primer mapa.</p>
           <p>Te llega un correo para confirmar que sos vos. Después recibís el ebook. Sin secuencia de ventas.</p>
           <KitSignupForm
             origin="web_home"
