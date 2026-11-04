@@ -294,7 +294,7 @@ section.accent {
   background: var(--linen);
   padding: 2rem;
   border: 1px solid var(--light-grey);
-  border-left: 4px solid var(--olive-soft);
+  border-left: 4px solid var(--light-grey);
 }
 
 .hero-meta {
@@ -432,9 +432,6 @@ section.accent {
   line-height: 1.5;
 }
 .product-hero .signup-form { max-width: 34rem; margin-top: 1.5rem; }
-.ebook-reminder { margin-top: 3rem; padding: 1.5rem; border-left: 3px solid var(--olive); background: var(--cream); }
-.ebook-reminder h3 { font-size: 1.35rem; }
-.ebook-reminder p { margin-bottom: 0.6rem; }
 
 .authority-strip { padding: 1.5rem 2rem; background: var(--cream); border-bottom: 1px solid var(--light-grey); }
 .authority-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1.5rem; }
@@ -524,12 +521,12 @@ section.accent {
 
 .value-grid article {
   padding: 1.5rem;
-  border-top: 3px solid var(--olive-soft);
+  border-top: 3px solid var(--light-grey);
   background: var(--cream);
 }
 
 .value-grid span {
-  color: var(--terra-dark);
+  color: var(--grey);
   font-size: 0.78rem;
   font-weight: 700;
   letter-spacing: 0.08em;
@@ -552,7 +549,7 @@ section.accent {
 .responsible-note {
   margin-top: 1rem;
   padding: 1.5rem;
-  border-left: 4px solid var(--olive);
+  border-left: 4px solid var(--ink);
   background: var(--sand);
 }
 
@@ -621,7 +618,7 @@ section.accent {
   padding: 2.25rem;
   background: var(--linen);
   border: 1px solid var(--light-grey);
-  border-top: 4px solid var(--olive-soft);
+  border-top: 4px solid var(--light-grey);
 }
 
 .choice-card-featured {
@@ -731,7 +728,7 @@ footer .muted,
 }
 
 .text-terra {
-  color: var(--olive);
+  color: var(--terra);
 }
 
 .muted {
@@ -839,7 +836,7 @@ footer .muted,
 .remate {
   margin: 2rem 0;
   padding-left: 1.25rem;
-  border-left: 2px solid var(--olive-soft);
+  border-left: 2px solid var(--terra);
   font-family: 'Fraunces', Georgia, serif;
   font-size: 1.35rem;
   line-height: 1.4;
@@ -865,7 +862,7 @@ footer .muted,
   width: 0.5rem;
   height: 0.5rem;
   border-radius: 50%;
-  background: var(--olive-soft);
+  background: var(--terra);
 }
 
 .tabla-scroll {
@@ -894,7 +891,7 @@ footer .muted,
 
 .tabla-diferencial th:last-child,
 .tabla-diferencial td:last-child {
-  border-left: 3px solid var(--olive-soft);
+  border-left: 3px solid var(--light-grey);
 }
 
 .tabla-diferencial td:first-child {
@@ -934,7 +931,7 @@ footer .muted,
   margin: 2.5rem 0;
   border: 0;
   border-radius: 50%;
-  background: var(--olive-soft);
+  background: var(--terra);
 }
 
 @media (max-width: 768px) {
@@ -986,7 +983,7 @@ footer .muted,
   }
 
   .tabla-diferencial tbody td:last-child {
-    border-left: 3px solid var(--terra);
+    border-left: 3px solid var(--light-grey);
     padding-left: 0.75rem;
   }
 }
