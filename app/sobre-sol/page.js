@@ -3,7 +3,7 @@ import { pagina } from "../compartir";
 
 export const metadata = pagina({
   title: "Sobre Sol Mir",
-  description: "Conocé la trayectoria de Sol Mir, consultora, formadora en liderazgo y creadora de la Metodología EJE®.",
+  description: "De la carrera corporativa a una inmobiliaria propia en Chile, y de una separación a la Metodología EJE®. La historia de Sol Mir.",
   path: "/sobre-sol",
 });
 
@@ -13,9 +13,9 @@ export default function SobreSol() {
       <section className="hero profile-hero">
         <div className="container profile-hero-grid">
           <div>
-            <p className="choice-eyebrow">Autora y creadora de EJE®</p>
+            <p className="choice-eyebrow">Creadora de EJE®</p>
             <h1>Sol Mir</h1>
-            <p className="subtitle">Consultora y formadora en liderazgo. Creadora de la Metodología EJE®.</p>
+            <p className="subtitle">Creadora de la Metodología EJE®.</p>
           </div>
           <Image className="profile-hero-image" src="/sol-retrato.jpg" width={880} height={1100} sizes="(max-width: 768px) 72vw, 340px" priority alt="Retrato de Sol Mir, creadora de la Metodología EJE®" />
         </div>
@@ -25,51 +25,67 @@ export default function SobreSol() {
         <div className="container authority-grid">
           <div><strong>+10 años</strong><span>en empresas y liderazgo</span></div>
           <div><strong>Coca-Cola · Citibank</strong><span>experiencia corporativa</span></div>
-          <div><strong>Marketing + Administración</strong><span>formación profesional</span></div>
-          <div><strong>Autora de EJE®</strong><span>metodología propia</span></div>
+          <div><strong>Inmobiliaria propia</strong><span>fundada en Chile</span></div>
+          <div><strong>PCC</strong><span>International Coaching Federation</span></div>
         </div>
       </section>
 
       <section>
         <div className="container" style={{maxWidth: "760px"}}>
-          <p className="choice-eyebrow">Mi trayectoria</p>
-          <h2>Entender no siempre alcanza para dejar de repetir.</h2>
+          <p className="choice-eyebrow">Mi historia</p>
+          <h2>Creía que era independiente. Hasta que tuve que empezar de nuevo.</h2>
           <div className="relato">
-            <p><strong>Soy licenciada en Marketing y Administración de Empresas.</strong> Durante más de una década trabajé en grandes corporaciones, entre ellas Coca-Cola y Citibank. Aprendí a resolver, negociar, liderar y volver a empezar.</p>
-            <p>Durante años me pensé como una mujer independiente. Y en muchos aspectos lo era.</p>
-            <p>Lo que no veía era que una persona puede ser muy autónoma en un área de su vida y depender demasiado en otra.</p>
-            <p className="remate">Yo no parecía dependiente. Por eso tardé tanto en descubrir dónde lo era.</p>
+            <p><strong>Estudié Marketing y Administración de Empresas.</strong> Trabajé en Coca-Cola y Citibank, lideré equipos y aprendí a resolver problemas.</p>
+            <p>Después me fui a vivir a Chile y fundé mi propia inmobiliaria.</p>
+            <p>Me iba muy bien. Tenía mi negocio, mis proyectos y algo que me encantaba: la tranquilidad de saber que podía construir mi propio camino.</p>
+            <p>Hasta que trasladaron a mi entonces marido a Argentina.</p>
+            <p>Cerré la inmobiliaria y volvimos.</p>
+            <p>Dejar atrás algo que había construido con tanto esfuerzo fue durísimo. Pero seguí adelante, ocupándome de mi familia y de mis tres hijas.</p>
+            <p>Lo que no imaginaba era que, años después, iba a tener que empezar de nuevo. Y esta vez sería muy distinto.</p>
 
-            <h3 style={{marginTop: "3rem"}}>La silla apareció cuando mi vida cambió</h3>
-            <p>Después de muchos años de matrimonio, la relación terminó. No se desarmó solamente una pareja: hubo que reorganizar rutinas, dinero, decisiones, una familia y una idea de futuro.</p>
-            <p>Ahí descubrí cuánto había delegado y en qué estado estaban las áreas de mi vida que parecían funcionar.</p>
-            <p>En la práctica, significó volver a ocuparme del dinero, tomar decisiones que antes no tomaba y reconstruir una identidad que no dependiera de una pareja.</p>
-            <p>Con los años apareció una imagen que explicaba lo que me había pasado: una silla común, con cuatro patas.</p>
-            <p><strong>Vínculos. Trabajo. Dinero. Yo.</strong></p>
-            <p>Yo había desarrollado muchísimo algunas y había cargado demasiado peso sobre otra. Como la silla no se caía, asumía que estaba bien construida. En realidad, era yo quien llevaba años compensándola.</p>
-            <p>Tuve que volver a mirar mi estructura. No para negar mi historia ni culparme por ella, sino para reconocer qué margen tenía y qué podía empezar a construir de otra manera.</p>
+            <h3 style={{marginTop: "3rem"}}>¿En qué momento me había pasado esto?</h3>
+            <p>Cuando me separé, me encontré con tres hijas, poca plata y la autoestima por el piso.</p>
+            <p>Y no podía entenderlo.</p>
+            <p className="remate">¿Cómo podía haber sido tan capaz en el trabajo y sentirme tan perdida en mi propia vida?</p>
+            <p>Había dirigido equipos, administrado un negocio y tomado decisiones importantes.</p>
+            <p>Pero ahora me costaba confiar en mí.</p>
+            <p>Necesitaba recuperar mi independencia económica, volver a trabajar y descubrir qué quería hacer con mi vida.</p>
+            <p>Y había algo que me resultaba todavía más difícil: después de tantos años ocupándome de los demás, me costaba reconocer qué necesitaba yo.</p>
 
-            <h3 style={{marginTop: "3rem"}}>De una experiencia personal a una metodología</h3>
-            <p>Después trabajé con personas, equipos y líderes. Empecé a ver versiones distintas del mismo fenómeno: gente brillante en el trabajo que desaparecía dentro de una relación; personas afectivamente seguras que se desorganizaban con el dinero; líderes capaces de sostener equipos enteros que no podían poner un límite.</p>
-            <p>Ahí entendí que no funcionamos de una única manera. No somos simplemente fuertes o débiles, dependientes o independientes. <strong>Somos estructuras, y distribuimos el peso de manera distinta según el área.</strong></p>
-            <p>De esa observación nació EJE®: no como una fórmula ni como una etiqueta, sino como una manera de mirar cómo estamos respondiendo hoy.</p>
-            <p>Yo aprendí a mirar la silla después de caerme. Creé EJE® para que otras personas puedan mirarla antes.</p>
-            <p className="remate">No podemos elegir todas las marcas que la vida deja sobre nosotros. Pero sí podemos decidir qué construimos con ellas.</p>
-          </div>
+            <h3 style={{marginTop: "3rem"}}>Lo que tardé años en ver</h3>
+            <p>Al principio pensaba que tenía varios problemas separados.</p>
+            <p>La separación. La plata. El trabajo. Mi confianza.</p>
+            <p>Pero empecé a darme cuenta de que lo que pasaba en un área afectaba a las demás.</p>
+            <p>Podía sentirme muy segura trabajando y completamente insegura en mis vínculos.</p>
+            <p>Podía saber administrar una empresa y tener miedo de mirar mis propias cuentas.</p>
+            <p>Con el tiempo encontré una manera muy sencilla de explicarlo: <strong>una silla.</strong></p>
+            <p>Cuatro patas: <strong>Vínculos, Trabajo, Dinero e Identidad.</strong></p>
+            <p>Y un respaldo: <strong>eso en lo que te podés apoyar de verdad, lo que ya tenés y hoy funciona sin que lo empujes.</strong></p>
+            <p>Porque podemos estar muy bien en una parte de nuestra vida y necesitar mucho más apoyo en otra.</p>
+            <p>Y, a veces, estamos tan acostumbrados a sostener todo que ni siquiera nos damos cuenta de cuánto nos está costando.</p>
 
-          <div style={{marginTop: "3rem", backgroundColor: "var(--linen)", padding: "2rem", borderLeft: "2px solid var(--olive-soft)"}}>
-            <p style={{marginBottom: 0}}><strong>Hoy trabajo como autora y creadora de EJE®</strong>, acompañando a personas que quieren observar su estructura con precisión y elegir desde un lugar diferente.</p>
+            <h3 style={{marginTop: "3rem"}}>Lo que empezó como una pregunta terminó convirtiéndose en EJE®</h3>
+            <p>Después, acompañando a otras personas, empecé a encontrarme con algo parecido.</p>
+            <p>Personas capaces, inteligentes, con vidas que desde afuera parecían funcionar muy bien, pero que seguían tropezando con las mismas dificultades.</p>
+            <p>Y volví a una pregunta que yo misma me había hecho:</p>
+            <p className="remate">¿Por qué podemos saber perfectamente lo que nos conviene y, aun así, seguir haciendo lo mismo?</p>
+            <p>A partir de todo eso —lo que me pasó, lo que estudié y los años acompañando a personas— desarrollé <strong>EJE®</strong>.</p>
+            <p>Un sistema de <strong>Inteligencia Estructural Humana</strong> para observar cómo respondemos en Vínculos, Trabajo, Dinero e Identidad, y cómo esas respuestas aparecen en nuestras decisiones.</p>
+            <p>No para decirte cómo tenés que vivir.</p>
+            <p>Sino para ayudarte a reconocer algo que quizás todavía no estás viendo.</p>
           </div>
         </div>
       </section>
 
       <section className="accent">
-        <div className="container centrado" style={{maxWidth: "800px", textAlign: "center"}}>
-          <h2>Empecemos</h2>
-          <p>Si querés mirar cómo está organizada hoy tu estructura, podés empezar por el Test EJE®.</p>
+        <div className="container centrado" style={{maxWidth: "740px", textAlign: "center"}}>
+          <h2>Ahora te pregunto a vos</h2>
+          <p style={{fontFamily: "'Fraunces', Georgia, serif", fontSize: "1.35rem", lineHeight: 1.4, marginBottom: "1.75rem"}}>¿En qué parte de tu vida te sentís fuerte y en cuál te está costando mucho más de lo que mostrás?</p>
+          <p>Para empezar a descubrirlo, creé el <strong>Test EJE®</strong>. Son 42 preguntas, unos 15 minutos. Al final te llevás tu Mapa Estructural en PDF, la lectura de tu resultado en mi voz, tu certificado y la imagen de tu resultado. Te lo mando todo por correo.</p>
+          <p style={{fontSize: "0.9rem", color: "var(--grey)"}}>No es un diagnóstico psicológico ni reemplaza una terapia. Es una manera de mirar — y podés volver a usarla más adelante para ver qué se movió.</p>
           <div className="cta-group" style={{justifyContent: "center", marginTop: "2rem"}}>
             <a href="/test" className="btn btn-primary">Conocer el Test EJE®</a>
-            <a href="/que-es-eje" className="btn btn-secondary">Entender la metodología</a>
+            <a href="/que-es-eje" className="btn btn-secondary">Descubrir qué es EJE®</a>
           </div>
         </div>
       </section>
