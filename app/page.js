@@ -68,7 +68,7 @@ export default function Home() {
               alt="Sol Mir, creadora de la Metodología EJE®"
             />
             <div>
-              <p><strong>Soy consultora, formadora en liderazgo y autora de EJE®.</strong></p>
+              <p><strong>Soy Sol Mir, creadora de la Metodología EJE®.</strong></p>
               <p>Durante más de una década trabajé en empresas como Coca-Cola y Citibank. Después acompañé a personas, equipos y líderes.</p>
               <p>Ahí observé una distancia que los currículos no mostraban: podemos entender un problema y, aun así, seguir respondiendo desde el mismo lugar.</p>
               <p>Creé EJE® para hacer visible esa estructura.</p>

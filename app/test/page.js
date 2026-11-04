@@ -295,7 +295,7 @@ export default function Test() {
           <div className="test-authority">
             <p className="choice-eyebrow">Creado por Sol Mir</p>
             <h3>Una metodología nacida de observar la distancia entre entender y dejar de repetir.</h3>
-            <p>Soy consultora, formadora en liderazgo y autora de EJE®. Durante más de una década trabajé en empresas como Coca-Cola y Citibank. Creé EJE® para nombrar estructuras aprendidas que pueden gobernar nuestras decisiones sin que nos demos cuenta.</p>
+            <p>Durante más de una década trabajé en empresas como Coca-Cola y Citibank, y después fundé mi propia inmobiliaria en Chile. Creé EJE® para nombrar estructuras aprendidas que pueden gobernar nuestras decisiones sin que nos demos cuenta.</p>
             <a href="/sobre-sol" className="text-link">Conocé mi trayectoria</a>
           </div>
         </div>
