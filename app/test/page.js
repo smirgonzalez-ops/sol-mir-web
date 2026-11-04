@@ -86,7 +86,7 @@ const PREGUNTAS = [
 
     "a": [
 
-      "Sí, si estás en Argentina: pagás $ 40.000 con Mercado Pago, con tarjeta o en efectivo por Pago Fácil o Rapipago.",
+      "Sí: $ 40.000 por Mercado Pago, con tarjeta o en efectivo por Pago Fácil o Rapipago. El botón está junto al de la tarjeta internacional, arriba y al final de esta página.",
 
       "En ese caso el acceso no llega solo: te lo mando yo por correo cuando se acredita el pago. Si pagás de noche, te llega a la mañana siguiente."
 
@@ -178,8 +178,46 @@ const comprar = (lugar) =>
 // desde el panel de Mercado Pago, no desde Gumroad.
 const PESOS = "https://mpago.la/1Gjzh2t";
 
-const PagoEnPesos = () => (
-  <p className="pago-pesos">¿Estás en Argentina? <a href={PESOS}>Pagá en pesos con Mercado Pago</a> · $ 40.000.<br />El acceso te lo mando yo por correo cuando se acredita el pago.</p>
+// Los dos caminos de pago, del mismo peso y los dos tocables.
+//
+// Antes Gumroad tenía cinco botones de 58 px y Mercado Pago dos enlaces de
+// texto de 18 y 42 px —por debajo del mínimo táctil de 44—, detrás de la
+// pregunta «¿Estás en Argentina?». El 29/09 entraron 418 personas a esta
+// página: Paraguay 132, Colombia 97, Perú 84, Chile 60, Uruguay 27, Costa
+// Rica 14 y Argentina 3. Esa pregunta excluía de entrada al 99% de quienes
+// llegaban, y el único pago con forma de botón es el que no cobra en la
+// moneda de casi ninguno de esos países.
+//
+// Por eso ahora se nombran por la MONEDA y no por el país: cada quien elige
+// sin que la página le diga antes si es para él.
+const BotonesDePago = ({ lugar, titulo = "Comprar y empezar ahora · USD 27" }) => (
+  <div className="pagos">
+    <a href={comprar(lugar)} className="btn btn-primary btn-pago">
+      <span className="btn-pago-titulo">{titulo}</span>
+      <span className="btn-pago-nota">Tarjeta internacional · la pantalla de pago está en inglés</span>
+    </a>
+    <a href={PESOS} className="btn btn-secondary btn-pago">
+      <span className="btn-pago-titulo">Pagar en pesos · $ 40.000</span>
+      <span className="btn-pago-nota">Mercado Pago · te mando el acceso por correo</span>
+    </a>
+  </div>
+);
+
+// Los cinco componentes estaban en la pantalla 5,8 de 13,4 y el precio en la
+// 0,7: quien llegaba sin conocer la marca veía cuánto cuesta antes de saber
+// que recibe cinco cosas y no una. La lectura en voz va en negrita porque es
+// el único componente que nadie puede copiar.
+const LoQueTeLlevas = () => (
+  <div className="llevas">
+    <p className="llevas-titulo">Te llevás cinco cosas</p>
+    <ul className="lista-eje">
+      <li>Tu Mapa Estructural en PDF, de cuatro páginas</li>
+      <li><strong>La lectura de tu resultado en mi voz</strong></li>
+      <li>Tu certificado con tu nombre</li>
+      <li>La imagen de tu resultado</li>
+      <li>Todo, a tu correo</li>
+    </ul>
+  </div>
 );
 
 export const metadata = pagina({
@@ -206,10 +244,10 @@ export default function Test() {
             <h1>Entendés por qué lo hacés. Igual volvés a hacerlo.</h1>
             {/* Frase del posicionamiento aprobado (Plan 8.2): no se saca nunca. */}
             <p className="subtitle">Lo que repetís no necesariamente aparece igual en toda tu vida.</p>
-            <p>El Test EJE® ordena tus respuestas y te devuelve una lectura personalizada de cómo se reparten hoy entre tus vínculos, tu trabajo, el dinero y tu identidad. Recibís tu Mapa Estructural en un PDF de cuatro páginas.</p>
-            <a href={comprar("test_hero")} className="btn btn-primary">Comprar el Test EJE®</a>
-            <p className="hero-meta">USD 27 · pago único</p>
-            <p className="hero-trust">Pagás en Gumroad; la pantalla de pago está en inglés. ¿Estás en Argentina? También podés <a href={PESOS}>pagar en pesos con Mercado Pago</a>.</p>
+            <p>El Test EJE® ordena tus respuestas y te devuelve una lectura personalizada de cómo se reparten hoy entre tus vínculos, tu trabajo, el dinero y tu identidad.</p>
+            <LoQueTeLlevas />
+            <BotonesDePago lugar="test_hero" />
+            <p className="hero-meta">Pago único, sin suscripción. Acceso inmediato.</p>
           </div>
           <figure className="mapa-hero">
             <Image src="/mapa-1b.jpg" width={880} height={1243} sizes="(max-width: 768px) 82vw, 390px" priority alt="Ejemplo de la primera página de un Mapa Estructural EJE®, con un patrón dominante y porcentajes personales." />
@@ -268,9 +306,9 @@ export default function Test() {
               de teléfono sin ninguno, y acá adentro estaba lo único que muestra
               qué se compra. Quien se convence mirando el Mapa tenía que seguir
               bajando tres pantallas más para encontrar dónde tocar. */}
-          <p style={{textAlign: 'center', marginTop: '2rem'}}>
-            <a href={comprar("test_muestra")} className="btn btn-primary">Comprar el Test EJE®</a>
-          </p>
+          <div style={{marginTop: '2rem'}}>
+            <BotonesDePago lugar="test_muestra" />
+          </div>
 
           <h3 className="section-subheading">Todo lo que te llevás</h3>
           <p>El Mapa es la pieza central, pero no es lo único que queda en tu poder cuando terminás.</p>
@@ -283,7 +321,7 @@ export default function Test() {
           </ul>
           <p>Todo se descarga y queda tuyo.</p>
 
-          <p style={{marginTop: '2rem'}}><a href={comprar("test_cuerpo")} className="btn btn-primary">Comprar el Test EJE®</a></p>
+          <div style={{marginTop: '2rem'}}><BotonesDePago lugar="test_cuerpo" /></div>
 
           <h3 className="section-subheading">Qué es —y qué no es— el Test</h3>
           <div className="responsible-note">
@@ -312,10 +350,9 @@ export default function Test() {
             <span>2 · Respondés el Test</span>
             <span>3 · Descargás tu Mapa</span>
           </div>
-          <a href={comprar("test_cierre")} className="btn btn-primary">Comprar el Test EJE®</a>
-          <p className="hero-meta">USD 27 · pago único · acceso inmediato<br />Completás 42 preguntas y descargás tu Mapa de 4 páginas, tu lectura en voz y tu certificado.</p>
+          <BotonesDePago lugar="test_cierre" />
+          <p className="hero-meta">Pago único, acceso inmediato. Completás 42 preguntas y descargás tu Mapa de 4 páginas, tu lectura en voz y tu certificado.</p>
           <aside className="purchase-note" aria-label="Información sobre el pago y el acceso">Vas a completar el pago seguro en Gumroad. Después, tocá «View content» para acceder al Test. Tus respuestas quedan en tu dispositivo y Sol no recibe el número completo de tu tarjeta. Gumroad también te envía un recibo en inglés con el mismo acceso.</aside>
-          <PagoEnPesos />
         </div>
       </section>
 
@@ -334,10 +371,10 @@ export default function Test() {
               un teléfono: la página tiene 12,8 pantallas, el último botón
               queda en la 8,9 y las preguntas terminan en la 11. Quien las lee
               es quien tenía dudas y se las resolvió — y no tenía dónde. */}
-          <p style={{marginTop: '2.5rem'}}>
-            <a href={comprar("test_faq")} className="btn btn-primary">Comprar el Test EJE®</a>
-          </p>
-          <p className="hero-meta">USD 27 · pago único · acceso inmediato</p>
+          <div style={{marginTop: '2.5rem'}}>
+            <BotonesDePago lugar="test_faq" titulo="Ya entendí, quiero el mío · USD 27" />
+          </div>
+          <p className="hero-meta">Pago único, acceso inmediato.</p>
         </div>
       </section>
     </>

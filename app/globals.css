@@ -1117,3 +1117,70 @@ footer .muted,
     transition-duration: 0.01ms !important;
   }
 }
+
+/* ── LOS DOS CAMINOS DE PAGO ───────────────────────────────────────────
+   Mercado Pago era un enlace de texto de 18 px, por debajo del mínimo
+   táctil de 44, mientras Gumroad tenía cinco botones de 58. Ahora los dos
+   son botones del mismo peso y se nombran por la moneda, no por el país.
+   En teléfono se apilan; desde 700 px van lado a lado. */
+.pagos {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  max-width: 34rem;
+  margin-top: 1.4rem;
+}
+
+.btn-pago {
+  display: block;
+  padding: 0.85rem 1.1rem;
+  line-height: 1.3;
+}
+
+.btn-pago-titulo {
+  display: block;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.btn-pago-nota {
+  display: block;
+  margin-top: 0.2rem;
+  font-size: 0.76rem;
+  font-weight: 400;
+}
+
+/* La nota del botón oliva va en linen: 4,78:1 sobre #6B6D54. Un blanco
+   apagado daba 4,26:1 y no alcanza para texto de 12 px. La jerarquía con
+   el título la hace el tamaño, no el color. */
+.btn-primary .btn-pago-nota { color: var(--linen); }
+.btn-secondary .btn-pago-nota { color: var(--grey); }
+
+@media (min-width: 700px) {
+  .pagos { flex-direction: row; }
+  .btn-pago { flex: 1 1 0; }
+}
+
+/* ── LO QUE TE LLEVÁS ──────────────────────────────────────────────────
+   Los cinco componentes del Test estaban en la pantalla 5,8 de 13,4 y el
+   precio en la 0,7: se veía cuánto cuesta antes de saber qué incluye.
+   Este bloque los sube al encabezado, compacto. */
+.llevas {
+  max-width: 34rem;
+  margin-top: 1.4rem;
+  padding: 1.1rem 1.3rem;
+  background: var(--cream);
+}
+
+.llevas-titulo {
+  margin: 0;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--grey);
+}
+
+.llevas .lista-eje { margin-top: 0.75rem; margin-bottom: 0; }
+.llevas .lista-eje li { margin-bottom: 0.45rem; font-size: 0.94rem; line-height: 1.45; }
+.llevas .lista-eje li:last-child { margin-bottom: 0; }
