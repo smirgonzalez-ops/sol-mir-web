@@ -45,12 +45,13 @@ export default function SobreSol() {
 
             <h3 style={{marginTop: "3rem"}}>¿En qué momento me había pasado esto?</h3>
             <p>Cuando me separé, me encontré con tres hijas, poca plata y la autoestima por el piso.</p>
-            <p>Y no podía entenderlo.</p>
-            <p className="remate">¿Cómo podía haber sido tan capaz en el trabajo y sentirme tan perdida en mi propia vida?</p>
-            <p>Había dirigido equipos, administrado un negocio y tomado decisiones importantes.</p>
-            <p>Pero ahora me costaba confiar en mí.</p>
-            <p>Necesitaba recuperar mi independencia económica, volver a trabajar y descubrir qué quería hacer con mi vida.</p>
-            <p>Y había algo que me resultaba todavía más difícil: después de tantos años ocupándome de los demás, me costaba reconocer qué necesitaba yo.</p>
+            <p>Y había algo que me costaba todavía más: no entendía cómo había llegado hasta ahí.</p>
+            <p>Durante años había estado pendiente de mi familia, de que todo funcionara, de resolver lo que hiciera falta.</p>
+            <p>Pero cuando tuve que empezar de nuevo, me di cuenta de que había dejado muchas cosas mías para después.</p>
+            <p>Necesitaba volver a trabajar, ganar mi propia plata y recuperar la confianza en mí.</p>
+            <p>Lo que no esperaba era que me costara tanto.</p>
+            <p>Porque después de tantos años ocupándome de los demás, había una pregunta bastante sencilla que ya no sabía responder:</p>
+            <p className="remate">¿Y yo qué quería?</p>
 
             <h3 style={{marginTop: "3rem"}}>Lo que tardé años en ver</h3>
             <p>Al principio pensaba que tenía varios problemas separados.</p>
