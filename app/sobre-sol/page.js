@@ -85,7 +85,7 @@ export default function SobreSol() {
       <section className="accent">
         <div className="container centrado" style={{maxWidth: "740px", textAlign: "center"}}>
           <h2>¿Y vos, cómo estás hoy?</h2>
-          <p>Quizás en el trabajo te sentís seguro, pero en tus relaciones te cuesta poner límites.</p>
+          <p>Quizás en el trabajo te sentís firme, pero en tus relaciones te cuesta poner límites.</p>
           <p>O tal vez ganás bien, pero la plata nunca te alcanza. O estás tan pendiente de los demás que hace mucho no te preguntás qué querés vos.</p>
           <p style={{fontFamily: "'Fraunces', Georgia, serif", fontSize: "1.35rem", lineHeight: 1.4, marginBottom: "1.75rem"}}>¿En qué parte de tu vida te sentís bien y en cuál te está costando más de lo que mostrás?</p>
           <p>Para empezar a descubrirlo, creé el <strong>Test EJE®</strong>.</p>
