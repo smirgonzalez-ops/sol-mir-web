@@ -65,15 +65,19 @@ export default function SobreSol() {
             <p>Porque a veces estamos tan ocupados intentando que todo funcione que ni siquiera nos preguntamos cómo estamos nosotros.</p>
             <p>De esa experiencia y de todo lo que fui aprendiendo nació EJE®.</p>
 
-            <h3 style={{marginTop: "3rem"}}>Lo que empezó como una pregunta terminó convirtiéndose en EJE®</h3>
-            <p>Después, acompañando a otras personas, empecé a encontrarme con algo parecido.</p>
-            <p>Personas capaces, inteligentes, con vidas que desde afuera parecían funcionar muy bien, pero que seguían tropezando con las mismas dificultades.</p>
-            <p>Y volví a una pregunta que yo misma me había hecho:</p>
-            <p className="remate">¿Por qué podemos saber perfectamente lo que nos conviene y, aun así, seguir haciendo lo mismo?</p>
-            <p>A partir de todo eso —lo que me pasó, lo que estudié y los años acompañando a personas— desarrollé <strong>EJE®</strong>.</p>
-            <p>Un sistema de <strong>Inteligencia Estructural Humana</strong> para observar cómo respondemos en Vínculos, Trabajo, Dinero e Identidad, y cómo esas respuestas aparecen en nuestras decisiones.</p>
-            <p>No para decirte cómo tenés que vivir.</p>
-            <p>Sino para ayudarte a reconocer algo que quizás todavía no estás viendo.</p>
+            <h3 style={{marginTop: "3rem"}}>Así nació EJE®</h3>
+            <p>Con los años, acompañando a otras personas, empecé a escuchar historias que me resultaban muy familiares.</p>
+            <p>Personas que se habían perdido a sí mismas intentando sostener una relación.</p>
+            <p>Otras que se endeudaban para mantener un estilo de vida que, en el fondo, ni siquiera necesitaban.</p>
+            <p>Personas que habían perdido su estabilidad económica y, de golpe, tenían que empezar de nuevo. No solo con la plata, también con la confianza en sí mismas.</p>
+            <p>Y otras que parecían tener todo resuelto, pero vivían con miedo de tomar una decisión y equivocarse.</p>
+            <p>Historias distintas, pero había algo que se repetía: lo que les pasaba en una parte de su vida terminaba afectando a las demás.</p>
+            <p>A mí también me había pasado.</p>
+            <p>Y había una pregunta que seguía dando vueltas:</p>
+            <p className="remate">¿Por qué, aunque sabemos lo que nos hace mal, a veces seguimos haciendo lo mismo?</p>
+            <p>De esa pregunta, de mi propia experiencia y de mis años de formación y trabajo con personas nació <strong>EJE®</strong>.</p>
+            <p>Una manera de observar cómo estamos en Vínculos, Trabajo, Dinero e Identidad, y cómo eso influye en las decisiones que tomamos.</p>
+            <p>Porque entender lo que nos pasa es importante. Pero también necesitamos reconocer qué nos está impidiendo hacer algo diferente.</p>
           </div>
         </div>
       </section>
