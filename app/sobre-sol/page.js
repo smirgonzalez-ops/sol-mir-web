@@ -35,49 +35,37 @@ export default function SobreSol() {
           <p className="choice-eyebrow">Mi historia</p>
           <h2>Creía que era independiente. Hasta que tuve que empezar de nuevo.</h2>
           <div className="relato">
-            <p><strong>Estudié Marketing y Administración de Empresas.</strong> Trabajé en Coca-Cola y Citibank, lideré equipos y aprendí a resolver problemas.</p>
-            <p>Después me fui a vivir a Chile y fundé mi propia inmobiliaria.</p>
-            <p>Me iba muy bien. Tenía mi negocio, mis proyectos y algo que me encantaba: la tranquilidad de saber que podía construir mi propio camino.</p>
-            <p>Hasta que trasladaron a mi entonces marido a Argentina.</p>
-            <p>Cerré la inmobiliaria y volvimos.</p>
-            <p>Dejar atrás algo que había construido con tanto esfuerzo fue durísimo. Pero seguí adelante, ocupándome de mi familia y de mis tres hijas.</p>
-            <p>Lo que no imaginaba era que, años después, iba a tener que empezar de nuevo. Y esta vez sería muy distinto.</p>
+            <p><strong>Estudié Marketing y Administración de Empresas.</strong> Trabajé en Coca-Cola y Citibank, lideré equipos y después abrí mi propia inmobiliaria en Chile.</p>
+            <p>Me iba muy bien. Tenía mi negocio, mis clientes y la satisfacción de haber construido algo mío.</p>
+            <p>Hasta que trasladaron a mi entonces marido a Argentina y tuve que cerrar la inmobiliaria.</p>
+            <p>Me dolió muchísimo, pero seguí adelante, ocupándome de mi familia y de mis tres hijas.</p>
+            <p>Años después me separé. Y ahí sí, sentí que se me venía todo encima.</p>
 
             <h3 style={{marginTop: "3rem"}}>¿En qué momento me había pasado esto?</h3>
-            <p>Cuando me separé, me encontré con tres hijas, poca plata y la autoestima por el piso.</p>
-            <p>Y había algo que me costaba todavía más: no entendía cómo había llegado hasta ahí.</p>
-            <p>Durante años había estado pendiente de mi familia, de que todo funcionara, de resolver lo que hiciera falta.</p>
-            <p>Pero cuando tuve que empezar de nuevo, me di cuenta de que había dejado muchas cosas mías para después.</p>
-            <p>Necesitaba volver a trabajar, ganar mi propia plata y recuperar la confianza en mí.</p>
-            <p>Lo que no esperaba era que me costara tanto.</p>
-            <p>Porque después de tantos años ocupándome de los demás, había una pregunta bastante sencilla que ya no sabía responder:</p>
+            <p>Me encontré con poca plata, la autoestima por el piso y un montón de decisiones que tenía miedo de tomar.</p>
+            <p>No entendía cómo había llegado hasta ahí.</p>
+            <p>Había trabajado, estudiado, manejado una empresa. ¿Cómo podía sentirme tan insegura?</p>
+            <p>Durante años me había ocupado de que todo funcionara para los demás. Pero cuando tuve que volver a pensar en mí, había una pregunta que ya no sabía responder:</p>
             <p className="remate">¿Y yo qué quería?</p>
 
             <h3 style={{marginTop: "3rem"}}>Lo que tardé años en ver</h3>
-            <p>Después de separarme, me costó mucho volver a encontrarme.</p>
-            <p>Había cosas que antes resolvía sin pensarlo y que de pronto me parecían enormes.</p>
-            <p>Me daba bronca. Había trabajado, estudiado, criado a mis hijas. ¿Cómo podía sentirme tan perdida?</p>
-            <p>En el trabajo sabía qué hacer. Pero cuando se trataba de mí, de mi plata, de mis miedos o de lo que quería para mi vida, todo era distinto.</p>
-            <p>Y seguía haciendo lo que podía, como hacemos tantas veces. Ocupándome de todo, menos de mí.</p>
-            <p>Con el tiempo empecé a entender que lo que me pasaba en una parte de mi vida también afectaba a las demás.</p>
-            <p>Así apareció la idea de una silla con cuatro patas: <strong>Vínculos, Trabajo, Dinero e Identidad.</strong></p>
-            <p>Y un respaldo: <strong>nuestro eje, ese lugar desde donde podemos tomar decisiones con más claridad cuando las distintas partes de nuestra vida están mejor sostenidas.</strong></p>
-            <p>Porque a veces estamos tan ocupados intentando que todo funcione que ni siquiera nos preguntamos cómo estamos nosotros.</p>
-            <p>De esa experiencia y de todo lo que fui aprendiendo nació EJE®.</p>
+            <p>Había algo que me llamaba la atención.</p>
+            <p>Podía resolver problemas enormes en el trabajo, pero me costaba poner límites en mis relaciones.</p>
+            <p>Había sabido administrar una empresa, pero me daba miedo mirar mis propias cuentas.</p>
+            <p>Con el tiempo entendí que lo que pasaba en una parte de mi vida también afectaba a las demás.</p>
+            <p>Y encontré una manera sencilla de explicarlo: <strong>una silla con cuatro patas.</strong></p>
+            <p><strong>Vínculos, Trabajo, Dinero e Identidad.</strong></p>
+            <p>Y un respaldo: <strong>nuestro eje, desde donde podemos tomar decisiones con más claridad cuando esas cuatro partes están mejor sostenidas.</strong></p>
 
             <h3 style={{marginTop: "3rem"}}>Así nació EJE®</h3>
-            <p>Con los años, acompañando a otras personas, empecé a escuchar historias que me resultaban muy familiares.</p>
-            <p>Personas que se habían perdido a sí mismas intentando sostener una relación.</p>
-            <p>Otras que se endeudaban para mantener un estilo de vida que, en el fondo, ni siquiera necesitaban.</p>
-            <p>Personas que habían perdido su estabilidad económica y, de golpe, tenían que empezar de nuevo. No solo con la plata, también con la confianza en sí mismas.</p>
-            <p>Y otras que parecían tener todo resuelto, pero vivían con miedo de tomar una decisión y equivocarse.</p>
-            <p>Historias distintas, pero había algo que se repetía: lo que les pasaba en una parte de su vida terminaba afectando a las demás.</p>
-            <p>A mí también me había pasado.</p>
-            <p>Y había una pregunta que seguía dando vueltas:</p>
+            <p>Cuando empecé a acompañar a otras personas, escuché historias que me resultaban muy familiares.</p>
+            <p>Personas que se perdían a sí mismas intentando sostener una relación.</p>
+            <p>Otras que se endeudaban para mantener una vida que ni siquiera disfrutaban.</p>
+            <p>Y personas que, después de una separación o un problema económico, tenían que empezar de nuevo y no sabían cómo recuperar la confianza.</p>
+            <p>Eran situaciones diferentes, pero muchas veces pasaba algo parecido: lo que les costaba en una parte de su vida terminaba afectando a las demás.</p>
+            <p>Y había una pregunta que seguía apareciendo:</p>
             <p className="remate">¿Por qué, aunque sabemos lo que nos hace mal, a veces seguimos haciendo lo mismo?</p>
-            <p>De esa pregunta, de mi propia experiencia y de mis años de formación y trabajo con personas nació <strong>EJE®</strong>.</p>
-            <p>Una manera de observar cómo estamos en Vínculos, Trabajo, Dinero e Identidad, y cómo eso influye en las decisiones que tomamos.</p>
-            <p>Porque entender lo que nos pasa es importante. Pero también necesitamos reconocer qué nos está impidiendo hacer algo diferente.</p>
+            <p>De mi experiencia, mis estudios y los años acompañando a personas nació <strong>EJE®</strong>, un sistema para observar cómo respondemos en Vínculos, Trabajo, Dinero e Identidad, y cómo eso influye en nuestras decisiones.</p>
           </div>
         </div>
       </section>
@@ -86,15 +74,15 @@ export default function SobreSol() {
         <div className="container centrado" style={{maxWidth: "740px", textAlign: "center"}}>
           <h2>¿Y vos, cómo estás hoy?</h2>
           <p>Quizás en el trabajo te sentís firme, pero en tus relaciones te cuesta poner límites.</p>
-          <p>O tal vez ganás bien, pero la plata nunca te alcanza. O estás tan pendiente de los demás que hace mucho no te preguntás qué querés vos.</p>
+          <p>O ganás bien, pero la plata nunca te alcanza.</p>
+          <p>Tal vez estás tan pendiente de los demás que hace mucho no te preguntás qué querés para vos.</p>
           <p style={{fontFamily: "'Fraunces', Georgia, serif", fontSize: "1.35rem", lineHeight: 1.4, marginBottom: "1.75rem"}}>¿En qué parte de tu vida te sentís bien y en cuál te está costando más de lo que mostrás?</p>
           <p>Para empezar a descubrirlo, creé el <strong>Test EJE®</strong>.</p>
-          <p>Son 42 preguntas que respondés en unos 15 minutos.</p>
-          <p>Con tus respuestas recibís un mapa propio, con cuatro porcentajes independientes que te muestran cómo estás hoy en Vínculos, Trabajo, Dinero e Identidad.</p>
-          <p>También vas a poder reconocer qué respuestas se repiten, cómo pueden influir en tus decisiones y qué podrías empezar a mirar de otra manera.</p>
+          <p>Son 42 preguntas que respondés en unos 15 minutos. Recibís tu propio Mapa Estructural, con cuatro porcentajes independientes basados en tus respuestas, uno por cada área de tu vida.</p>
+          <p>También podés observar qué respuestas se repiten y cómo pueden influir en tus decisiones.</p>
           <p>Te llevás tu informe en PDF, audios grabados por mí, una imagen de tu resultado y un certificado.</p>
-          <p>Y podés volver a hacerlo cuando quieras, para comparar tus respuestas y ver qué cambió.</p>
-          <p style={{fontSize: "0.9rem", color: "var(--grey)"}}>No es un diagnóstico psicológico. Es una herramienta de autoconocimiento para conocerte mejor.</p>
+          <p>Y podés volver a hacerlo cuando quieras para comparar tus respuestas y ver qué cambió.</p>
+          <p style={{fontSize: "0.9rem", color: "var(--grey)"}}>Es una herramienta de autoconocimiento, no un diagnóstico psicológico.</p>
           <div className="cta-group" style={{justifyContent: "center", marginTop: "2rem"}}>
             <a href="/test" className="btn btn-primary">Conocer el Test EJE®</a>
             <a href="/que-es-eje" className="btn btn-secondary">Descubrir qué es EJE®</a>
