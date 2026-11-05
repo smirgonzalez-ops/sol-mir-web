@@ -54,16 +54,16 @@ export default function SobreSol() {
             <p className="remate">¿Y yo qué quería?</p>
 
             <h3 style={{marginTop: "3rem"}}>Lo que tardé años en ver</h3>
-            <p>Al principio pensaba que tenía varios problemas separados.</p>
-            <p>La separación. La plata. El trabajo. Mi confianza.</p>
-            <p>Pero empecé a darme cuenta de que lo que pasaba en un área afectaba a las demás.</p>
-            <p>Podía sentirme muy segura trabajando y completamente insegura en mis vínculos.</p>
-            <p>Podía saber administrar una empresa y tener miedo de mirar mis propias cuentas.</p>
-            <p>Con el tiempo encontré una manera muy sencilla de explicarlo: <strong>una silla.</strong></p>
-            <p>Cuatro patas: <strong>Vínculos, Trabajo, Dinero e Identidad.</strong></p>
-            <p>Y un respaldo: <strong>eso en lo que te podés apoyar de verdad, lo que ya tenés y hoy funciona sin que lo empujes.</strong></p>
-            <p>Porque podemos estar muy bien en una parte de nuestra vida y necesitar mucho más apoyo en otra.</p>
-            <p>Y, a veces, estamos tan acostumbrados a sostener todo que ni siquiera nos damos cuenta de cuánto nos está costando.</p>
+            <p>Después de separarme, me costó mucho volver a encontrarme.</p>
+            <p>Había cosas que antes resolvía sin pensarlo y que de pronto me parecían enormes.</p>
+            <p>Me daba bronca. Había trabajado, estudiado, criado a mis hijas. ¿Cómo podía sentirme tan perdida?</p>
+            <p>En el trabajo sabía qué hacer. Pero cuando se trataba de mí, de mi plata, de mis miedos o de lo que quería para mi vida, todo era distinto.</p>
+            <p>Y seguía haciendo lo que podía, como hacemos tantas veces. Ocupándome de todo, menos de mí.</p>
+            <p>Con el tiempo empecé a entender que lo que me pasaba en una parte de mi vida también afectaba a las demás.</p>
+            <p>Así apareció la idea de una silla con cuatro patas: <strong>Vínculos, Trabajo, Dinero e Identidad.</strong></p>
+            <p>Y un respaldo: <strong>nuestro eje, ese lugar desde donde podemos tomar decisiones con más claridad cuando las distintas partes de nuestra vida están mejor sostenidas.</strong></p>
+            <p>Porque a veces estamos tan ocupados intentando que todo funcione que ni siquiera nos preguntamos cómo estamos nosotros.</p>
+            <p>De esa experiencia y de todo lo que fui aprendiendo nació EJE®.</p>
 
             <h3 style={{marginTop: "3rem"}}>Lo que empezó como una pregunta terminó convirtiéndose en EJE®</h3>
             <p>Después, acompañando a otras personas, empecé a encontrarme con algo parecido.</p>
