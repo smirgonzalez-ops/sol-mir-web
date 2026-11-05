@@ -84,10 +84,17 @@ export default function SobreSol() {
 
       <section className="accent">
         <div className="container centrado" style={{maxWidth: "740px", textAlign: "center"}}>
-          <h2>Ahora te pregunto a vos</h2>
-          <p style={{fontFamily: "'Fraunces', Georgia, serif", fontSize: "1.35rem", lineHeight: 1.4, marginBottom: "1.75rem"}}>¿En qué parte de tu vida te sentís fuerte y en cuál te está costando mucho más de lo que mostrás?</p>
-          <p>Para empezar a descubrirlo, creé el <strong>Test EJE®</strong>. Son 42 preguntas, unos 15 minutos. Al final te llevás tu Mapa Estructural en PDF, la lectura de tu resultado en mi voz, tu certificado y la imagen de tu resultado. Te lo mando todo por correo.</p>
-          <p style={{fontSize: "0.9rem", color: "var(--grey)"}}>No es un diagnóstico psicológico ni reemplaza una terapia. Es una manera de mirar — y podés volver a usarla más adelante para ver qué se movió.</p>
+          <h2>¿Y vos, cómo estás hoy?</h2>
+          <p>Quizás en el trabajo te sentís seguro, pero en tus relaciones te cuesta poner límites.</p>
+          <p>O tal vez ganás bien, pero la plata nunca te alcanza. O estás tan pendiente de los demás que hace mucho no te preguntás qué querés vos.</p>
+          <p style={{fontFamily: "'Fraunces', Georgia, serif", fontSize: "1.35rem", lineHeight: 1.4, marginBottom: "1.75rem"}}>¿En qué parte de tu vida te sentís bien y en cuál te está costando más de lo que mostrás?</p>
+          <p>Para empezar a descubrirlo, creé el <strong>Test EJE®</strong>.</p>
+          <p>Son 42 preguntas que respondés en unos 15 minutos.</p>
+          <p>Con tus respuestas recibís un mapa propio, con cuatro porcentajes independientes que te muestran cómo estás hoy en Vínculos, Trabajo, Dinero e Identidad.</p>
+          <p>También vas a poder reconocer qué respuestas se repiten, cómo pueden influir en tus decisiones y qué podrías empezar a mirar de otra manera.</p>
+          <p>Te llevás tu informe en PDF, audios grabados por mí, una imagen de tu resultado y un certificado.</p>
+          <p>Y podés volver a hacerlo cuando quieras, para comparar tus respuestas y ver qué cambió.</p>
+          <p style={{fontSize: "0.9rem", color: "var(--grey)"}}>No es un diagnóstico psicológico. Es una herramienta de autoconocimiento para conocerte mejor.</p>
           <div className="cta-group" style={{justifyContent: "center", marginTop: "2rem"}}>
             <a href="/test" className="btn btn-primary">Conocer el Test EJE®</a>
             <a href="/que-es-eje" className="btn btn-secondary">Descubrir qué es EJE®</a>
