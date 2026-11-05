@@ -1184,3 +1184,27 @@ footer .muted,
 .llevas .lista-eje { margin-top: 0.75rem; margin-bottom: 0; }
 .llevas .lista-eje li { margin-bottom: 0.45rem; font-size: 0.94rem; line-height: 1.45; }
 .llevas .lista-eje li:last-child { margin-bottom: 0; }
+
+/* ── CIERRE DE /sobre-sol ─────────────────────────────────────────────
+   El bloque del Test eran seis párrafos centrados y sueltos, y los dos
+   botones quedaban pegados y de distinto ancho en el teléfono. */
+.cierre-test {
+  max-width: 34rem;
+  margin: 0 auto;
+}
+.cierre-test p { margin-bottom: 0.85rem; }
+.cierre .cta-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .cierre .cta-group {
+    flex-direction: column;
+    align-items: stretch;
+    max-width: 22rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

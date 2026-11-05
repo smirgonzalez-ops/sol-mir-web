@@ -70,18 +70,22 @@ export default function SobreSol() {
         </div>
       </section>
 
-      <section className="accent">
+      <section className="accent cierre">
         <div className="container centrado" style={{maxWidth: "740px", textAlign: "center"}}>
           <h2>¿Y vos, cómo estás hoy?</h2>
-          <p>Quizás en el trabajo te sentís firme, pero en tus relaciones te cuesta poner límites.</p>
-          <p>O ganás bien, pero la plata nunca te alcanza.</p>
-          <p>Tal vez estás tan pendiente de los demás que hace mucho no te preguntás qué querés para vos.</p>
-          <p style={{fontFamily: "'Fraunces', Georgia, serif", fontSize: "1.35rem", lineHeight: 1.4, marginBottom: "1.75rem"}}>¿En qué parte de tu vida te sentís bien y en cuál te está costando más de lo que mostrás?</p>
-          <p>Para empezar a descubrirlo, creé el <strong>Test EJE®</strong>.</p>
-          <p>Son 42 preguntas que respondés en unos 15 minutos. Recibís tu propio Mapa Estructural, con cuatro porcentajes independientes basados en tus respuestas, uno por cada área de tu vida.</p>
-          <p>También podés observar qué respuestas se repiten y cómo pueden influir en tus decisiones.</p>
-          <p>Te llevás tu informe en PDF, audios grabados por mí, una imagen de tu resultado y un certificado.</p>
-          <p>Y podés volver a hacerlo cuando quieras para comparar tus respuestas y ver qué cambió.</p>
+          <div className="cierre-test">
+            <p>Quizás en el trabajo te sentís firme, pero en tus relaciones te cuesta poner límites.</p>
+            <p>O ganás bien, pero la plata nunca te alcanza.</p>
+            <p>Tal vez estás tan pendiente de los demás que hace mucho no te preguntás qué querés para vos.</p>
+          </div>
+          <p style={{fontFamily: "'Fraunces', Georgia, serif", fontSize: "1.35rem", lineHeight: 1.4, margin: "1.75rem 0"}}>¿En qué parte de tu vida te sentís bien y en cuál te está costando más de lo que mostrás?</p>
+          <div className="cierre-test">
+            <p>Para empezar a descubrirlo, creé el <strong>Test EJE®</strong>.</p>
+            <p>Son 42 preguntas que respondés en unos 15 minutos. Recibís tu propio Mapa Estructural, con cuatro porcentajes independientes basados en tus respuestas, uno por cada área de tu vida.</p>
+            <p>También podés observar qué respuestas se repiten y cómo pueden influir en tus decisiones.</p>
+            <p>Te llevás tu informe en PDF, audios grabados por mí, una imagen de tu resultado y un certificado.</p>
+            <p>Y podés volver a hacerlo cuando quieras para comparar tus respuestas y ver qué cambió.</p>
+          </div>
           <p style={{fontSize: "0.9rem", color: "var(--grey)"}}>Es una herramienta de autoconocimiento, no un diagnóstico psicológico.</p>
           <div className="cta-group" style={{justifyContent: "center", marginTop: "2rem"}}>
             <a href="/test" className="btn btn-primary">Conocer el Test EJE®</a>
