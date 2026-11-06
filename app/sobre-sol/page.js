@@ -55,7 +55,7 @@ export default function SobreSol() {
             <p>Con el tiempo entendí que lo que pasaba en una parte de mi vida también afectaba a las demás.</p>
             <p>Y encontré una manera sencilla de explicarlo: <strong>una silla con cuatro patas.</strong></p>
             <p><strong>Vínculos, Trabajo, Dinero e Identidad.</strong></p>
-            <p>Y un respaldo: <strong>nuestro eje, desde donde podemos tomar decisiones con más claridad cuando esas cuatro partes están mejor sostenidas.</strong></p>
+            <p>Y un respaldo: <strong>nuestro eje</strong>. Eso en lo que te podés apoyar de verdad, lo que ya tenés y hoy funciona sin que lo empujes.</p>
 
             <h3 style={{marginTop: "3rem"}}>Así nació EJE®</h3>
             <p>Cuando empecé a acompañar a otras personas, escuché historias que me resultaban muy familiares.</p>
@@ -81,12 +81,12 @@ export default function SobreSol() {
           <p style={{fontFamily: "'Fraunces', Georgia, serif", fontSize: "1.35rem", lineHeight: 1.4, margin: "1.75rem 0"}}>¿En qué parte de tu vida te sentís bien y en cuál te está costando más de lo que mostrás?</p>
           <div className="cierre-test">
             <p>Para empezar a descubrirlo, creé el <strong>Test EJE®</strong>.</p>
-            <p>Son 42 preguntas que respondés en unos 15 minutos. Recibís tu propio Mapa Estructural, con cuatro porcentajes independientes basados en tus respuestas, uno por cada área de tu vida.</p>
+            <p>Son 42 preguntas que respondés en unos 15 minutos. Recibís tu propio Mapa Estructural: el patrón que más se repite en tus respuestas y cuánto pesa en cada una de las cuatro áreas de tu vida.</p>
             <p>También podés observar qué respuestas se repiten y cómo pueden influir en tus decisiones.</p>
-            <p>Te llevás tu informe en PDF, audios grabados por mí, una imagen de tu resultado y un certificado.</p>
-            <p>Y podés volver a hacerlo cuando quieras para comparar tus respuestas y ver qué cambió.</p>
+            <p>Te llevás tu Mapa en PDF, la lectura de tu resultado grabada con mi voz, una imagen de tu resultado y un certificado.</p>
+            <p>Y podés volver a hacerlo más adelante para comparar con tu lectura anterior y ver qué se movió.</p>
           </div>
-          <p style={{fontSize: "0.9rem", color: "var(--grey)"}}>Es una herramienta de autoconocimiento, no un diagnóstico psicológico.</p>
+          <p style={{fontSize: "0.9rem", color: "var(--grey)"}}>Es una herramienta de autoconocimiento, no un diagnóstico psicológico ni un reemplazo de la terapia.</p>
           <div className="cta-group" style={{justifyContent: "center", marginTop: "2rem"}}>
             <a href="/test" className="btn btn-primary">Conocer el Test EJE®</a>
             <a href="/que-es-eje" className="btn btn-secondary">Descubrir qué es EJE®</a>

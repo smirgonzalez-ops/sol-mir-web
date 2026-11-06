@@ -4,8 +4,15 @@ import { pagina } from "../compartir";
 
 // Página del eBook «Tu vida, tus respuestas, tu mapa» (14 páginas), que
 // reemplazó a «Tu Huella en el amor, el trabajo y la plata». Texto de Sol,
-// ajustado el 01/11/2026 al Canon: cuatro porcentajes que suman 100%, una
-// lectura grabada, pago único con repeticiones y sin prometer comparación.
+// ajustado el 01/11/2026 al Canon: una lectura grabada, pago único con
+// repeticiones y sin prometer comparación.
+//
+// Corregido el 06/11: decía «cuatro porcentajes, uno por área, que juntos
+// suman 100%». El Test tiene DOS juegos de porcentajes y esa frase fusionaba
+// los dos. El Pulso son CINCO —uno por Macrofamilia— y apportionPercentages
+// (App.jsx:1186) los fuerza a sumar 100. El Mapa de Impacto son CUATRO —uno
+// por área— y NO suman 100: cada uno es qué parte de tus respuestas en esa
+// área coincide con el mismo patrón dominante (App.jsx:1279).
 export const metadata = pagina({
   title: "Ebook gratis: Tu vida, tus respuestas, tu mapa",
   description: "Una guía gratuita de 14 páginas para mirar cómo respondés en tus vínculos, tu trabajo, el dinero y tu identidad. Te llega por correo.",
@@ -50,7 +57,7 @@ export default function Ebook() {
         <div className="container" style={{maxWidth: '760px'}}>
           <h2>¿Y si querés ver cómo aparece todo esto en vos?</h2>
           <p>Ahí entra el Test EJE®. La guía te ayuda a comprender la mirada de EJE®; el Test te da una lectura personalizada de tus respuestas actuales.</p>
-          <p>A partir de tus respuestas recibís tu propio Mapa Estructural: cuatro porcentajes, uno por área, que juntos suman 100%, patrones que podés reconocer y posibles puntos ciegos.</p>
+          <p>A partir de tus respuestas recibís tu propio Mapa Estructural: el patrón que más se repite, cuánto pesa en cada una de tus cuatro áreas, y posibles puntos ciegos.</p>
           <p>Descargás tu Mapa en PDF y escuchás la lectura de tu resultado, grabada con la voz de Sol. Pagás una sola vez y podés volver a hacer el Test cuando quieras.</p>
           <p><strong>Primero conocés EJE®. Después, si querés, conocés tu propio Mapa.</strong></p>
           <p style={{marginTop: '1.5rem'}}><a href="/test" className="btn btn-secondary">Conocé el Test EJE®</a></p>
