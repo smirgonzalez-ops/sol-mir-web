@@ -86,7 +86,17 @@ const PREGUNTAS = [
 
     "a": [
 
-      "Sí: $ 40.000 por Mercado Pago, con tarjeta o en efectivo por Pago Fácil o Rapipago. El botón está junto al de la tarjeta internacional, arriba y al final de esta página.",
+      "Sí: $ 40.000 por Mercado Pago, con tarjeta o en efectivo por Pago Fácil o Rapipago. El botón está junto al de la tarjeta internacional, arriba y al final de esta página."
+
+    ]
+
+  },
+
+  {
+
+    "q": "¿Compraste el Test EJE® por Mercado Pago?",
+
+    "a": [
 
       "Para recibir tu Test, pedí el acceso por correo electrónico. Lo envío yo a mano, cuando se acredita el pago. Si pagás de noche, te llega a la mañana siguiente."
 
