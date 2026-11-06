@@ -198,7 +198,7 @@ const BotonesDePago = ({ lugar, titulo = "Comprar y empezar ahora · USD 27" }) 
     </a>
     <a href={PESOS} className="btn btn-secondary btn-pago">
       <span className="btn-pago-titulo">Pagar en pesos · $ 40.000</span>
-      <span className="btn-pago-nota">Mercado Pago · te mando el acceso por correo</span>
+      <span className="btn-pago-nota">Mercado Pago · pedime el acceso por correo</span>
     </a>
   </div>
 );
