@@ -88,7 +88,7 @@ const PREGUNTAS = [
 
       "Sí: $ 40.000 por Mercado Pago, con tarjeta o en efectivo por Pago Fácil o Rapipago. El botón está junto al de la tarjeta internacional, arriba y al final de esta página.",
 
-      "En ese caso el acceso no llega solo: te lo mando yo por correo cuando se acredita el pago. Si pagás de noche, te llega a la mañana siguiente."
+      "Para recibir tu Test, pedí el acceso por correo electrónico. Lo envío yo a mano, cuando se acredita el pago. Si pagás de noche, te llega a la mañana siguiente."
 
     ]
 
