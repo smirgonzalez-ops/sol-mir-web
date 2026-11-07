@@ -442,7 +442,9 @@ section.accent {
 .authority-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1.5rem; }
 .authority-grid div { display: flex; flex-direction: column; gap: 0.15rem; }
 .authority-grid strong { font-family: 'Fraunces', Georgia, serif; font-size: 1.08rem; }
-.authority-grid span { color: var(--grey); font-size: 0.8rem; }
+/* 0.8rem eran 12,8 px: las cuatro credenciales, que son la prueba de
+   autoridad de la pagina, eran lo mas chico que habia en ella. */
+.authority-grid span { color: var(--grey); font-size: 0.875rem; }
 
 .test-proof { display: flex; flex-wrap: wrap; gap: 0.45rem 1rem; max-width: 38rem; margin-top: 1.2rem; padding-top: 1rem; border-top: 1px solid var(--light-grey); }
 .test-proof span { color: var(--ink); font-size: 0.82rem; font-weight: 600; }
@@ -992,10 +994,26 @@ footer .muted,
   }
 }
 
-@media (max-width: 768px) {
-  h1 { font-size: 2.5rem; }
-  h2 { font-size: 1.75rem; }
+/* ── CUANDO EL HEADER DEJA DE ENTRAR ───────────────────────────────────
+   El header de escritorio necesita 973 px de ancho para entrar entero.
+   El menu hamburguesa vivia dentro del media de 768, asi que entre 769
+   y 972 px el nav completo se desplegaba en un espacio que no lo
+   contiene y TODA la pagina se desplazaba de lado: 220 px de desborde
+   medidos a 768, 168 a 820, 88 a 900 (07/11/2026, en el sitio en vivo).
+   Eso agarraba el iPad y el iPad Air en vertical, el iPad Mini, el
+   telefono grande en horizontal y cualquier ventana a media pantalla.
 
+   Detalle que lo empeoraba: a 768 px exactos el media de max-width 768
+   NO disparaba, porque el ancho real del viewport es fraccionario. El
+   iPad vertical clasico caia justo del lado roto.
+
+   El corte va a 1000 y no a 973 a proposito: 27 px de aire. Un header
+   apretado contra su propio limite se vuelve a romper en cuanto cambie
+   una palabra del menu o cargue otra fuente.
+
+   El breakpoint del header es suyo y no tiene por que coincidir con el
+   del contenido, que sigue en 768. */
+@media (max-width: 1000px) {
   header {
     position: static;
     padding: 1rem 1.25rem;
@@ -1040,15 +1058,21 @@ footer .muted,
     font-size: 0.95rem;
   }
 
+  .btn-nav {
+    margin-top: 0.35rem;
+    padding: 0.7rem 1.4rem;
+  }
+
+}
+
+@media (max-width: 768px) {
+  h1 { font-size: 2.5rem; }
+  h2 { font-size: 1.75rem; }
+
   footer a {
     display: inline-block;
     min-height: 44px;
     line-height: 44px;
-  }
-
-  .btn-nav {
-    margin-top: 0.35rem;
-    padding: 0.7rem 1.4rem;
   }
 
   .bio-grid {
@@ -1150,7 +1174,11 @@ footer .muted,
 .btn-pago-nota {
   display: block;
   margin-top: 0.2rem;
-  font-size: 0.76rem;
+  /* Estaba en 0.76rem = 12,2 px, el texto mas chico de todo el sitio.
+     Es el que dice que la pantalla de pago va en ingles y que el acceso
+     llega por correo: la informacion que resuelve la objecion del dolar,
+     escrita mas chica que cualquier otra cosa. Sube a 14 px (07/11). */
+  font-size: 0.875rem;
   font-weight: 400;
 }
 
@@ -1160,9 +1188,16 @@ footer .muted,
 .btn-primary .btn-pago-nota { color: var(--linen); }
 .btn-secondary .btn-pago-nota { color: var(--grey); }
 
+/* Iban lado a lado desde 700 px de VENTANA, que es el dato equivocado:
+   lo que manda es el ancho del CONTENEDOR. En el heroe de /test la
+   columna izquierda mide 325 px a 820 px de ventana, asi que los dos
+   botones quedaban a 157 px cada uno, con el titulo partido en tres
+   lineas y la nota en cuatro: 166 px de alto de texto apretado.
+   Con flex-wrap y una base de 15rem se apilan solos cuando no entran,
+   en cualquier ventana. Medido el 07/11/2026. */
 @media (min-width: 700px) {
-  .pagos { flex-direction: row; }
-  .btn-pago { flex: 1 1 0; }
+  .pagos { flex-direction: row; flex-wrap: wrap; }
+  .btn-pago { flex: 1 1 15rem; }
 }
 
 /* ── LO QUE TE LLEVÁS ──────────────────────────────────────────────────
