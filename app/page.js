@@ -15,7 +15,20 @@ export default function Home() {
           <div className="cta-group">
             <a href="/test" className="btn btn-primary">Quiero ver mi Mapa personal</a>
           </div>
-            <p className="hero-meta">USD 27 · pago único · acceso inmediato<br />42 preguntas · 15 minutos · Mapa de 4 páginas al terminar</p>
+            {/* El precio en dólares era la única señal de pago de la portada,
+                y la portada no menciona Mercado Pago en ningún lado. Medido el
+                29/09: de 418 visitantes a /test, 3 eran de Argentina; el resto
+                llegó de Paraguay, Colombia, Perú, Chile, Uruguay y Costa Rica.
+                Quien lee «USD 27» y no sabe que hay otra forma puede irse antes
+                de llegar a /test, que es donde está el botón en pesos.
+
+                Va como texto y no como enlace a propósito. El botón de arriba
+                ya lleva a /test; un segundo enlace acá compite con él, y como
+                texto en línea medía 18 px de alto —por debajo del mínimo
+                táctil de 44— y sin subrayado señalaba sólo por color. La línea
+                no necesita ser tocable: necesita sacar la objeción del dólar
+                antes de que la persona cierre. */}
+            <p className="hero-meta">USD 27 · pago único · acceso inmediato<br />42 preguntas · 15 minutos · Mapa de 4 páginas al terminar<br />También se puede pagar en pesos.</p>
           </div>
           <figure className="home-map-proof">
             <Image src="/mapa-1b.jpg" width={880} height={1243} sizes="(max-width: 768px) 78vw, 430px" priority alt="Ejemplo de Mapa Estructural EJE® con porcentajes personales." />
