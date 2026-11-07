@@ -129,8 +129,18 @@ export default function Home() {
               <h3>Diario de Emociones EJE®</h3>
               <p>Elegilo si querés una práctica breve para registrar lo que sentís y empezar a reconocer patrones en el momento.</p>
               <p className="choice-meta">7 días · cuadernillo de 31 páginas · 11 audios · USD 15</p>
-              <a href="https://smirgo.gumroad.com/l/diario-emociones-eje" className="btn btn-primary">Comprar el Diario · USD 15</a>
-              <a href="/diario" className="choice-detail-link">Ver qué incluye</a>
+              {/* Decía «Comprar el Diario · USD 15» y llevaba directo al
+                  checkout de Gumroad. Era el único botón de toda la portada
+                  que iba a pagar, y quedaba al lado del del Test, que dice
+                  «Conocé» y lleva a una página: en la misma pantalla, el
+                  producto de 15 tenía el camino corto a la caja y el de 27
+                  daba una vuelta más. Además ese checkout va en dólares, sin
+                  la opción en pesos que el resto del sitio ya ofrece.
+                  Sol, 07/11: emparejar los botones. Ahora las dos tarjetas
+                  hacen lo mismo y se elige por interés, no por cuál cobra
+                  antes. El «Ver qué incluye» sale: iba a /diario, que es
+                  adonde lleva este botón ahora. */}
+              <a href="/diario" className="btn btn-primary">Conocé el Diario</a>
             </article>
 
             <article className="choice-card choice-card-featured">
