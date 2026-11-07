@@ -346,12 +346,20 @@ export default function Test() {
             <p style={{marginBottom: 0}}>EJE® es un complemento, nunca un reemplazo.</p>
           </div>
 
-          <div className="test-authority">
-            <p className="choice-eyebrow">Creado por Sol Mir</p>
-            <h3>Una metodología nacida de observar la distancia entre entender y dejar de repetir.</h3>
-            <p>Durante más de una década trabajé en empresas como Coca-Cola y Citibank, y después fundé mi propia inmobiliaria en Chile. Creé EJE® para nombrar estructuras aprendidas que pueden gobernar nuestras decisiones sin que nos demos cuenta.</p>
-            <a href="/sobre-sol" className="text-link">Conocé mi trayectoria</a>
-          </div>
+          {/* Acá había un bloque de biografía de 494 px: eyebrow, titular y
+              el párrafo de Coca-Cola, Citibank y la inmobiliaria. Era la
+              tercera vez que esa historia aparecía en el sitio —está
+              completa en /sobre-sol y resumida en la portada— y caía a
+              cinco pantallas de scroll, donde quien llegó ya sabe quién
+              sos. Sol lo aprobó el 07/11 para acortar la página.
+
+              Queda la línea con el enlace, que no es un resto: es la única
+              señal de autoría que tiene la página donde alguien decide
+              pagarle a una desconocida. Sacarla entera habría ahorrado
+              otros 30 px y costado la prueba de quién firma el método. */}
+          <p className="test-firma">
+            El Test EJE® lo creó <a href="/sobre-sol">Sol Mir</a>, a partir de más de una década en empresas como Coca-Cola y Citibank y de los años siguientes acompañando personas.
+          </p>
         </div>
       </section>
 

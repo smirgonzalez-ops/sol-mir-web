@@ -584,16 +584,24 @@ section.accent {
   background: var(--sand);
 }
 
-.test-authority {
-  margin-top: 4rem;
-  padding-top: 2.5rem;
+/* Aca vivia .test-authority, el bloque de biografia de /test: 494px,
+   la tercera aparicion de la misma historia en el sitio. Salio el
+   07/11 para acortar la pagina y lo reemplaza una sola linea, que
+   conserva la firma sin el bloque. */
+.test-firma {
+  max-width: 38rem;
+  margin-top: 3rem;
+  padding-top: 2rem;
   border-top: 1px solid var(--light-grey);
+  font-size: 0.95rem;
+  color: var(--grey);
 }
 
-/* Sus parrafos quedaban a 736px y 81 caracteres por linea: estan dentro
-   de un div propio, asi que la regla de columna de lectura, que pide
-   hijo directo del container, no los alcanzaba. 07/11/2026. */
-.test-authority p { max-width: 38rem; }
+.test-firma a {
+  color: var(--olive);
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
 
 /* Nota al pie de caracter legal. Antes vivia como estilo en linea en
    app/sobre-sol/page.js y daba 91 caracteres por linea, la peor medida
