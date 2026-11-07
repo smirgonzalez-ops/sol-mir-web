@@ -5,7 +5,12 @@
   --olive-soft: #85886A;
   --terra: #BE6E4B;
   --terra-dark: #98482D;
-  --linen: #F7F2EA;
+  /* Era #F7F2EA. Sol, 07/11: la queria blanca. Este es el punto medio
+     que eligio: se lee blanco, sin el amarillo del linen, pero sigue
+     siendo calido, asi que el cream, la arena y la foto del Mapa siguen
+     perteneciendo. Blanco puro habria dejado esos acentos como manchas
+     amarillas sobre un fondo frio, y habria deshecho BD-031. */
+  --linen: #FDFCFA;
   --cream: #EFE4CD;
   --sand: #E1D0B4;
   --ink: #221F1B;
