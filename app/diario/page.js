@@ -78,7 +78,8 @@ export default function Diario() {
         </div>
       </section>
 
-      <section className="accent">
+      {/* Ancla oscura, mismo tratamiento que el resto del sitio (07/11). */}
+      <section className="revelacion">
         <div className="container centrado" style={{maxWidth: '700px', textAlign: 'center'}}>
           <h2>Empezá a observar</h2>
           <p>El Diario es tu primera puerta. Después, el Test EJE® te muestra toda tu estructura.</p>

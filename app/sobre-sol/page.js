@@ -70,7 +70,8 @@ export default function SobreSol() {
         </div>
       </section>
 
-      <section className="accent cierre">
+      {/* Ancla oscura, mismo tratamiento que el resto del sitio (07/11). */}
+      <section className="revelacion cierre">
         <div className="container centrado" style={{maxWidth: "740px", textAlign: "center"}}>
           <h2>¿Y vos, cómo estás hoy?</h2>
           <div className="cierre-test">
@@ -86,7 +87,10 @@ export default function SobreSol() {
             <p>Te llevás tu Mapa en PDF, la lectura de tu resultado grabada con mi voz, una imagen de tu resultado y un certificado.</p>
             <p>Y podés volver a hacerlo cuando quieras, para comparar con tu lectura anterior y ver qué se movió.</p>
           </div>
-          <p style={{fontSize: "0.9rem", color: "var(--grey)"}}>Es una herramienta de autoconocimiento, no un diagnóstico psicológico ni un reemplazo de la terapia.</p>
+          {/* El color va en línea y por eso le gana al CSS del bloque oscuro:
+              tiene que ser el claro a mano. El gris del sitio da 2,79:1 sobre
+              el negro y no pasa; el beige smoke da 8,56:1. */}
+          <p style={{fontSize: "0.9rem", color: "var(--light-grey)"}}>Es una herramienta de autoconocimiento, no un diagnóstico psicológico ni un reemplazo de la terapia.</p>
           <div className="cta-group" style={{justifyContent: "center", marginTop: "2rem"}}>
             <a href="/test" className="btn btn-primary">Conocer el Test EJE®</a>
             <a href="/que-es-eje" className="btn btn-secondary">Descubrir qué es EJE®</a>
