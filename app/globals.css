@@ -1259,3 +1259,47 @@ footer .muted,
 .revelacion .choice-card .choice-meta {
   color: var(--grey);
 }
+
+/* ── BOTONES DENTRO DE UN BLOQUE DE REVELACIÓN ─────────────────────────
+   Sin esto, el cierre de /test no podía ir a oscuro.
+
+   El botón secundario —el de Mercado Pago— es texto oliva sobre
+   transparente. El oliva sobre el negro opal da 3,08:1 y no pasa para
+   texto normal. En oscuro pasa a linen: 14,72:1.
+
+   El primario conserva el oliva, que es el color del pedido según el
+   manual, y como superficie da 3,08:1 contra el negro — el mínimo que
+   WCAG pide para el borde de un control. La jerarquía entre los dos
+   sigue siendo relleno contra contorno, no color.
+
+   Los hover: el primario viraba a terra-dark, que sobre negro da 2,0:1 y
+   desaparece. En oscuro los dos se encienden en linen. */
+.revelacion .btn-secondary {
+  color: var(--linen);
+  border-color: var(--linen);
+}
+
+.revelacion .btn-primary:hover,
+.revelacion .btn-secondary:hover {
+  background-color: var(--linen);
+  color: var(--ink);
+}
+
+/* La nota chica de cada botón de pago sigue al fondo que tiene debajo:
+   sobre el negro va en beige smoke (8,56:1) y, cuando el botón se
+   enciende en linen al pasar el mouse, vuelve al gris (5,28:1). */
+.revelacion .btn-secondary .btn-pago-nota {
+  color: var(--light-grey);
+}
+
+.revelacion .btn-primary:hover .btn-pago-nota,
+.revelacion .btn-secondary:hover .btn-pago-nota {
+  color: var(--grey);
+}
+
+/* Los tres pasos de compra usan --ink y quedaban negro sobre negro
+   dentro del bloque oscuro: 1,00:1, invisibles. Lo atrapo la medicion,
+   no la vista. */
+.revelacion .test-proof span {
+  color: var(--linen);
+}

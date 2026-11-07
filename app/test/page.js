@@ -356,7 +356,12 @@ export default function Test() {
         </div>
       </section>
 
-      <section className="ancla test-closing" id="comprar">
+      {/* Segunda ancla de la página. Entra ahora porque el botón secundario
+          ya tiene su versión para fondo oscuro: antes su texto oliva daba
+          3,08:1 sobre el negro. Medido el 07/11: de acá al final había
+          3.614 px sin un solo cambio de tono, y el cierre de compra estaba
+          justo adentro de ese tramo. */}
+      <section className="ancla test-closing revelacion" id="comprar">
         <div className="container reading-width">
           <p className="choice-eyebrow">Tu punto de partida</p>
           <h2>Ver la estructura antes de seguir sosteniéndola.</h2>
