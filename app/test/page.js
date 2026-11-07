@@ -1,4 +1,3 @@
-import { Fragment } from "react";
 
 import Image from "next/image";
 
@@ -382,11 +381,17 @@ export default function Test() {
         <div className="container" style={{maxWidth: '760px'}}>
           <h2>Preguntas frecuentes</h2>
           <div className="faq">
+            {/* Desplegadas median 2.040px: 2,9 de las 13,8 pantallas que
+                tiene esta pagina en telefono. Nadie lee siete respuestas
+                seguidas, busca la suya. Plegadas ocupan ~390px y no se
+                saco ni una palabra. <details> es nativo: anda sin
+                JavaScript, lo abre el teclado y el lector de pantalla
+                dice si esta abierta o cerrada. 07/11/2026. */}
             {PREGUNTAS.map(({ q, a }) => (
-              <Fragment key={q}>
-                <h3>{q}</h3>
+              <details key={q}>
+                <summary><h3>{q}</h3></summary>
                 {a.map((parrafo) => <p key={parrafo}>{parrafo}</p>)}
-              </Fragment>
+              </details>
             ))}
           </div>
           {/* Las preguntas cerraban la página sin nada para tocar. Medido en
