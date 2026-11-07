@@ -97,6 +97,11 @@ export default function RootLayout({ children }) {
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        {/* Estaba como @import en la linea 1 de globals.css, que es la
+            forma mas lenta: el navegador no sabe que necesita estas
+            fuentes hasta terminar de parsear la hoja entera. Aca las
+            descubre en el HTML y las pide en paralelo. 07/11/2026. */}
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" />
       </head>
       <body>
         <JsonLd data={SITIO} />

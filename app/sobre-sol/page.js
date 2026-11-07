@@ -87,10 +87,12 @@ export default function SobreSol() {
             <p>Te llevás tu Mapa en PDF, la lectura de tu resultado grabada con mi voz, una imagen de tu resultado y un certificado.</p>
             <p>Y podés volver a hacerlo cuando quieras, para comparar con tu lectura anterior y ver qué se movió.</p>
           </div>
-          {/* El color va en línea y por eso le gana al CSS del bloque oscuro:
-              tiene que ser el claro a mano. El gris del sitio da 2,79:1 sobre
-              el negro y no pasa; el beige smoke da 8,56:1. */}
-          <p style={{fontSize: "0.9rem", color: "var(--grey)"}}>Es una herramienta de autoconocimiento, no un diagnóstico psicológico ni un reemplazo de la terapia.</p>
+          {/* El color iba en línea porque este bloque era oscuro y había que
+              ganarle al CSS. El bloque oscuro salió el 07/11 y con él el
+              motivo. Ahora va por clase: .nota-legal le pone el gris del
+              sitio —5,28:1 sobre el fondo— y, sobre todo, un ancho máximo.
+              Sin él la línea llegaba a 91 caracteres, la peor del sitio. */}
+          <p className="nota-legal">Es una herramienta de autoconocimiento, no un diagnóstico psicológico ni un reemplazo de la terapia.</p>
           <div className="cta-group" style={{justifyContent: "center", marginTop: "2rem"}}>
             <a href="/test" className="btn btn-primary">Conocer el Test EJE®</a>
             <a href="/que-es-eje" className="btn btn-secondary">Descubrir qué es EJE®</a>

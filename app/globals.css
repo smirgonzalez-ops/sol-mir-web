@@ -1,4 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap');
+/* Las fuentes ya NO se piden desde aca. Un @import obliga al navegador
+   a bajar y parsear TODO este archivo antes de enterarse de que las
+   necesita: dos viajes en serie en vez de dos en paralelo. Con el 100%
+   del trafico real entrando desde la app de Facebook en el telefono,
+   eso es un parpadeo de texto sin estilo en cada visita. Pasaron a un
+   <link rel="stylesheet"> en app/layout.js, junto a los preconnect.
+   07/11/2026. */
 
 :root {
   --olive: #6B6D54;
@@ -71,7 +77,13 @@ body {
   color: var(--ink);
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   line-height: 1.6;
-  font-size: 16px;
+  /* Eran 16px, que es el valor por defecto del navegador: el sitio no
+     habia tomado ninguna decision sobre su propio cuerpo de texto. La
+     audiencia declarada es de 35 a 60 anos (BD-022 y BD-024) y la
+     presbicia empieza alrededor de los 40. Medido el 07/11 con el mismo
+     instrumento: 16personalities usa 20px y brenebrown.com 26px.
+     Esto lo heredan li, td y todo lo que no declare lo suyo. */
+  font-size: 1.125rem;
 }
 
 h1 {
@@ -100,8 +112,10 @@ h3 {
 }
 
 p {
-  font-size: 1rem;
-  line-height: 1.7;
+  font-size: 1.125rem;
+  /* Baja de 1.7 a 1.65: cuando la letra crece, el interlineado relativo
+     puede aflojarse un poco sin perder aire. 18 x 1.65 = 29,7px. */
+  line-height: 1.65;
   margin-bottom: 1.25rem;
 }
 
@@ -174,7 +188,11 @@ a:hover {
 .container:not(.centrado) > p,
 .container:not(.centrado) > ul,
 .faq p {
-  max-width: 34rem;
+  /* Eran 34rem. Con el cuerpo a 16px daban ~65 caracteres por linea, que
+     es el optimo; con el cuerpo a 18px la misma caja cayo a 57, por
+     debajo del minimo legible de 55-60. 38rem devuelve ~64. Medido el
+     07/11/2026, no estimado. */
+  max-width: 38rem;
 }
 
 header {
@@ -566,6 +584,23 @@ section.accent {
   border-top: 1px solid var(--light-grey);
 }
 
+/* Sus parrafos quedaban a 736px y 81 caracteres por linea: estan dentro
+   de un div propio, asi que la regla de columna de lectura, que pide
+   hijo directo del container, no los alcanzaba. 07/11/2026. */
+.test-authority p { max-width: 38rem; }
+
+/* Nota al pie de caracter legal. Antes vivia como estilo en linea en
+   app/sobre-sol/page.js y daba 91 caracteres por linea, la peor medida
+   del sitio: letra chica dentro de un bloque ancho y centrado, que es
+   la combinacion que mas alarga la linea. 07/11/2026. */
+.nota-legal {
+  max-width: 34rem;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 0.95rem;
+  color: var(--grey);
+}
+
 .text-link {
   font-weight: 700;
   text-decoration: underline;
@@ -679,6 +714,11 @@ section.accent {
 }
 
 .choice-note {
+  /* Medido el 07/11: una sola linea de 97 caracteres. El rango legible
+     es 45-75. Estaba fuera del tope general porque vive dentro de un
+     .container.centrado, al que la regla de columna de lectura no llega
+     a proposito. Se le pone el suyo. */
+  max-width: 38rem;
   margin: 2rem auto 0;
   color: var(--grey);
   text-align: center;
@@ -919,7 +959,9 @@ footer .muted,
 }
 
 .relato {
-  max-width: 34rem;
+  /* 34 -> 38rem por el cuerpo a 18px. Ver la nota de la columna de
+     lectura mas arriba. */
+  max-width: 38rem;
 }
 
 .relato p {
@@ -1228,7 +1270,7 @@ footer .muted,
    El bloque del Test eran seis párrafos centrados y sueltos, y los dos
    botones quedaban pegados y de distinto ancho en el teléfono. */
 .cierre-test {
-  max-width: 34rem;
+  max-width: 38rem;
   margin: 0 auto;
 }
 .cierre-test p { margin-bottom: 0.85rem; }
