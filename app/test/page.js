@@ -86,12 +86,127 @@ const PREGUNTAS = [
 
     "a": [
 
-      "Sí: $ 40.000 por Mercado Pago, con tarjeta o en efectivo por Pago Fácil o Rapipago. El botón está junto al de la tarjeta internacional, arriba y al final de esta página.",
-
-      "En ese caso el acceso no llega solo: te lo mando yo por correo cuando se acredita el pago. Si pagás de noche, te llega a la mañana siguiente."
+      "Sí: $ 40.000 por Mercado Pago, con tarjeta o en efectivo por Pago Fácil o Rapipago. El botón está junto al de la tarjeta internacional, arriba y al final de esta página."
 
     ]
 
+  },
+
+  {
+
+    "q": "¿Compraste el Test EJE® por Mercado Pago?",
+
+    "a": [
+
+      "Para recibir tu Test, pedí el acceso por correo electrónico. Lo envío yo a mano, cuando se acredita el pago. Si pagás de noche, te llega a la mañana siguiente."
+
+    ]
+
+  },
+
+  {
+    "q": "¿Qué es el Test EJE® y cómo funciona?",
+    "a": [
+      "Es una herramienta digital de autoconocimiento que mira cómo estás hoy en cuatro áreas: vínculos, trabajo, dinero e identidad. Respondés un cuestionario guiado y te devuelve una lectura clara de tus patrones actuales y del área que está cargando más.",
+    ]
+  },
+
+  {
+    "q": "¿En qué se diferencia de un test psicológico o un diagnóstico médico?",
+    "a": [
+      "El Test EJE® no es una evaluación clínica ni un diagnóstico médico o psicológico. Es una herramienta de claridad práctica y autoobservación estructurada, para identificar en qué área hay un desequilibrio y decidir con más información.",
+    ]
+  },
+
+  {
+    "q": "¿Cómo sé si este test es para mí?",
+    "a": [
+      "Es para vos si sentís estancamiento, insatisfacción repetida en tus vínculos, tensión constante con el dinero o la sensación de estar desafinada en tu vida cotidiana sin entender bien por qué.",
+    ]
+  },
+
+  {
+    "q": "¿Por qué evalúa cuatro áreas y no solo mi problema principal?",
+    "a": [
+      "Porque las cuatro áreas están conectadas. Un problema en tus vínculos suele afectar tu trabajo o tu relación con el dinero. Mirar el conjunto ayuda a no quedarte solo con los síntomas y a ver qué hay detrás.",
+    ]
+  },
+
+  {
+    "q": "¿Qué pasa si las cuatro áreas están desafinadas a la vez?",
+    "a": [
+      "Es más común de lo que creés. Cuando una dimensión se desordena, suele arrastrar a las demás. El test te muestra cuál conviene ordenar primero, sin abrumarte.",
+    ]
+  },
+
+  {
+    "q": "¿El test me da una solución mágica?",
+    "a": [
+      "No. El test no cambia tus patrones ni resuelve tus conflictos por sí solo. Te da un punto de partida y datos concretos sobre tu situación actual, para que dejes de adivinar.",
+    ]
+  },
+
+  {
+    "q": "¿Existe el eje perfecto?",
+    "a": [
+      "No. Estar en eje de forma permanente es una expectativa irreal: la vida cambia y el equilibrio perfecto no existe. El objetivo es registrar tus desvíos y corregir el rumbo con autonomía.",
+    ]
+  },
+
+  {
+    "q": "¿Es un pago único o una suscripción?",
+    "a": [
+      "Es un pago único. No hay mensualidades ni cargos ocultos.",
+    ]
+  },
+
+  {
+    "q": "¿Puedo volver a hacerlo o tengo que pagarlo de nuevo?",
+    "a": [
+      "Una vez que lo adquirís, el acceso es tuyo y podés volver a hacerlo cuando quieras, sin pagar de nuevo.",
+    ]
+  },
+
+  {
+    "q": "¿Cada cuánto conviene repetirlo?",
+    "a": [
+      "El test es una fotografía de tu momento. Te sirve repetirlo cada tres o seis meses, o después de un cambio importante, para comparar tus resultados y ver tu evolución.",
+    ]
+  },
+
+  {
+    "q": "¿Cuánto tiempo me lleva?",
+    "a": [
+      "Son 42 preguntas, unos 15 minutos de atención. Ves tu resultado al terminar el cuestionario.",
+    ]
+  },
+
+  {
+    "q": "¿Qué hago con mi resultado?",
+    "a": [
+      "Con tu Mapa en la mano tenés claridad sobre tu prioridad actual. Podés usarlo para hacer ajustes en tu día a día o, si querés profundizar, como base para un proceso de acompañamiento individual.",
+    ]
+  },
+
+  {
+    "q": "¿Necesito alguna preparación previa?",
+    "a": [
+      "Ninguna. Solo necesitás un espacio tranquilo y la disposición de responder con honestidad sobre tu realidad actual.",
+    ]
+  },
+
+  {
+    "q": "¿Mis respuestas son confidenciales?",
+    "a": [
+      "Sí. Tus respuestas y tu resultado se guardan solo en el navegador de tu dispositivo, no en un servidor. Si pedís tu Mapa por correo, el PDF pasa por el servidor del Test y sale por Resend, el servicio que envía ese correo.",
+    ]
+  },
+
+  {
+    "q": "¿Y si mi situación es muy compleja para un test digital?",
+    "a": [
+      "El test justamente ordena la complejidad. Cuando todo parece un caos, la lectura separa los hilos para que veas qué corresponde a cada área y por dónde empezar.",
+    ]
   }
 
 ];
@@ -198,7 +313,7 @@ const BotonesDePago = ({ lugar, titulo = "Comprar y empezar ahora · USD 27" }) 
     </a>
     <a href={PESOS} className="btn btn-secondary btn-pago">
       <span className="btn-pago-titulo">Pagar en pesos · $ 40.000</span>
-      <span className="btn-pago-nota">Mercado Pago · te mando el acceso por correo</span>
+      <span className="btn-pago-nota">Mercado Pago · pedime el acceso por correo</span>
     </a>
   </div>
 );
