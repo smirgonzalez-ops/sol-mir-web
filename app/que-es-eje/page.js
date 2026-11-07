@@ -37,7 +37,11 @@ export default function QueEsEJE() {
           <p>Tiene cuatro patas: <strong>Vínculos, Trabajo, Dinero e Identidad.</strong></p>
           <svg className="silla" viewBox="0 0 460 420" role="img" aria-labelledby="silla-titulo">
             <title id="silla-titulo">Una silla de cuatro patas: Vínculos, Trabajo, Dinero e Identidad. El respaldo representa estar en eje para tomar decisiones con mayor claridad.</title>
-            <rect width="460" height="420" fill="var(--cream)" />
+            {/* Acá había un rectángulo en cream de fondo. Sol, 07/11: ese
+                fondo no le gusta. Contra el linen viejo se fundía; contra el
+                casi blanco de hoy se leía como una mancha tostada, y era lo
+                más grande del cuadro. El dibujo queda al aire sobre el fondo
+                de la página: con un fondo tan claro no necesita marco. */}
             {/* El trazo era #5A4334, un marrón elegido por BD-032 para que el
                 dibujo fuera cálido sin tocar la terracota, que está reservada
                 al eje. Sol, 07/11: ese marrón no le gusta. Pasa al negro opal,
