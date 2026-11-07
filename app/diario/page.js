@@ -24,7 +24,7 @@ export default function Diario() {
             <p className="hero-trust">Compra segura y acceso inmediato al cuadernillo y los 11 audios.</p>
           </div>
           <figure className="product-visual">
-            <Image src="/diario-producto.png" width={1024} height={1536} sizes="(max-width: 768px) 82vw, 390px" priority alt="Presentación del Diario de Emociones EJE y sus audios guiados" />
+            <Image src="/diario-producto.jpg" width={1024} height={1536} sizes="(max-width: 768px) 82vw, 390px" priority alt="Presentación del Diario de Emociones EJE y sus audios guiados" />
             <figcaption>Cuadernillo de 31 páginas + 11 audios guiados</figcaption>
           </figure>
         </div>

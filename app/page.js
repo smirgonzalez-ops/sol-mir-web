@@ -128,7 +128,7 @@ export default function Home() {
               <p className="choice-eyebrow">Para empezar a observarte</p>
               <Image
                 className="choice-product-image"
-                src="/diario-producto.png"
+                src="/diario-producto.jpg"
                 width={1024}
                 height={1536}
                 sizes="(max-width: 768px) 76vw, 360px"

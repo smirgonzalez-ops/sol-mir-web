@@ -22,7 +22,10 @@
   --ink: #221F1B;
   --grey: #696459;
   --light-grey: #CBB99C;
-  --marron: #5A4334;
+  /* Aca estaba --marron #5A4334, el derivado que BD-031 habia creado
+     para dibujar la silla. El 07/11 Sol pidio que la silla pasara a
+     negro opal y el token quedo sin un solo uso. La decision esta
+     anotada en la adenda a BD-032; el token se va. */
 }
 
 * {
@@ -302,6 +305,27 @@ section {
   max-width: 100%;
 }
 
+/* ── RESPIRO DESIGUAL ──────────────────────────────────────────────────
+   Todas las secciones median 5rem arriba y 5rem abajo, en todas las
+   paginas: una pagina que respira parejo se lee como una hoja de
+   calculo, no como una pieza editorial.
+
+   No se alterna por posicion par o impar, porque eso es un patron
+   mecanico y se nota. Se le da mas aire a la ULTIMA seccion de cada
+   pagina, que es siempre donde se decide: la eleccion de la portada,
+   el cierre de compra de /test, el «conoce el Test» de /que-es-eje.
+   Entrar en ese bloque con mas silencio adelante es lo que lo separa
+   del argumento que viene antes. 07/11/2026. */
+main > section:last-of-type {
+  padding-top: 7rem;
+}
+
+/* El punto separador ya puso su propio margen debajo; si ademas entra
+   el aire de arriba, el hueco se vuelve un agujero. */
+main > section:last-of-type::before {
+  margin-bottom: 2.25rem;
+}
+
 section.accent {
   background-color: var(--cream);
   border-left: 0;
@@ -333,15 +357,6 @@ section.accent {
   line-height: 1.55;
 }
 
-.pago-pesos {
-  max-width: 34rem;
-  margin-top: 0.65rem;
-  color: var(--ink);
-  font-size: 0.92rem;
-  line-height: 1.6;
-}
-
-.pago-pesos a,
 .hero-trust a {
   color: inherit;
   font-weight: 600;
@@ -615,12 +630,6 @@ section.accent {
   color: var(--grey);
 }
 
-.text-link {
-  font-weight: 700;
-  text-decoration: underline;
-  text-underline-offset: 0.25em;
-}
-
 .test-closing .container {
   text-align: left;
 }
@@ -699,14 +708,6 @@ section.accent {
   object-position: center 38%;
   border-radius: 2px;
   margin-bottom: 1.25rem;
-}
-
-.choice-detail-link {
-  margin-top: 1rem;
-  color: var(--ink);
-  font-size: 0.9rem;
-  text-decoration: underline;
-  text-underline-offset: 0.25rem;
 }
 
 .choice-eyebrow {
@@ -1077,16 +1078,7 @@ main section + section::before {
   font-style: italic;
 }
 
-.separador {
-  width: 0.5rem;
-  height: 0.5rem;
-  margin: 2.5rem 0;
-  border: 0;
-  border-radius: 50%;
-  background: var(--terra);
-}
-
-@media (max-width: 768px) {
+@media (max-width: 768.98px) {
   .remate { font-size: 1.2rem; }
 }
 
@@ -1211,7 +1203,13 @@ main section + section::before {
 
 }
 
-@media (max-width: 768px) {
+/* 768.98 y no 768: el ancho del viewport es fraccionario, asi que
+   max-width:768px NO dispara en una pantalla de exactamente 768 -- el
+   iPad vertical clasico caia del lado de escritorio y quedaba, por
+   ejemplo, con las cuatro credenciales de /sobre-sol en una fila de
+   138px cada una. Comprobado con matchMedia el 07/11/2026. Los otros
+   dos media de este archivo llevan el mismo valor por el mismo motivo. */
+@media (max-width: 768.98px) {
   h1 { font-size: 2.5rem; }
   h2 { font-size: 1.75rem; }
 
@@ -1248,6 +1246,7 @@ main section + section::before {
   .product-visual img { height: auto; }
   .authority-grid { grid-template-columns: 1fr 1fr; }
   section { padding: 3rem 0; }
+  main > section:last-of-type { padding-top: 4.25rem; }
   .hero .cta-group { flex-direction: column; }
   .card { padding: 1.5rem; }
   .choice-grid { grid-template-columns: 1fr; }
@@ -1391,7 +1390,7 @@ main section + section::before {
   gap: 1rem;
   justify-content: center;
 }
-@media (max-width: 768px) {
+@media (max-width: 768.98px) {
   .cierre .cta-group {
     flex-direction: column;
     align-items: stretch;
