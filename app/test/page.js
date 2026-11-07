@@ -256,7 +256,13 @@ export default function Test() {
         </div>
       </section>
 
-      <section className="test-recognition">
+      {/* El ancla oscura de esta página, mismo tratamiento que la portada
+          (07/11). Va acá y no en el cierre porque esta sección no tiene
+          botones: el botón secundario del pago es texto oliva, y el oliva
+          sobre el negro da 3,08:1, que no pasa. Mover un ancla al bloque de
+          compra obliga a reestilar los botones de pago, y eso toca el camino
+          de compra — decisión aparte, no se mete acá de prepo. */}
+      <section className="test-recognition revelacion">
         <div className="container reading-width">
           <h2>Entender lo que te pasa no siempre alcanza para dejar de repetirlo.</h2>
           <div className="recognition-lines">
@@ -269,7 +275,7 @@ export default function Test() {
         </div>
       </section>
 
-      <section className="accent">
+      <section>
         <div className="container reading-width">
           <p className="choice-eyebrow">Por qué el resultado es personal</p>
           <h2>Nadie responde exactamente como vos.</h2>
@@ -350,7 +356,7 @@ export default function Test() {
         </div>
       </section>
 
-      <section className="accent ancla test-closing" id="comprar">
+      <section className="ancla test-closing" id="comprar">
         <div className="container reading-width">
           <p className="choice-eyebrow">Tu punto de partida</p>
           <h2>Ver la estructura antes de seguir sosteniéndola.</h2>
