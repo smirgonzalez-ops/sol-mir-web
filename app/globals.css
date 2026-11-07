@@ -1204,3 +1204,58 @@ footer .muted,
     margin-right: auto;
   }
 }
+
+/* ── BLOQUE DE REVELACIÓN ──────────────────────────────────────────────
+   Alternativa B, aprobada por Sol el 07/11/2026 sobre capturas reales.
+
+   Qué resolvía. La portada alternaba linen #F7F2EA y cream #EFE4CD, que
+   están a 1,13:1 entre sí; un borde se empieza a percibir a partir de 3:1.
+   La página hacía el gesto de cambiar de sección sin llegar a cambiar. Y
+   las dos últimas secciones eran las dos cream: 1.738 px del mismo tono
+   seguidos, el 35% de la página, justo donde está la decisión de compra.
+   El negro opal, al que el manual asigna «portadas y bloques de
+   revelación», sólo aparecía en el pie.
+
+   Qué hace. La base de la portada pasa a linen pareja y dos secciones van
+   a negro opal: la escena «Son las diez de la noche» y la elección final.
+   Contraste 14,72:1 en los dos sentidos.
+
+   Por qué es una clase nueva y no un cambio a .accent: esa clase se usa en
+   seis páginas y repintarla cambiaría todo el sitio. Esto es sólo la
+   portada. */
+.revelacion {
+  background: var(--ink);
+  color: var(--linen);
+}
+
+.revelacion h1,
+.revelacion h2,
+.revelacion h3,
+.revelacion p,
+.revelacion li {
+  color: var(--linen);
+}
+
+/* El gris del sitio da 2,79:1 sobre el negro y no pasa. El beige smoke da
+   8,56:1 y conserva la jerarquía de texto secundario. */
+.revelacion .choice-heading p,
+.revelacion .choice-note,
+.revelacion .subtitle {
+  color: var(--light-grey);
+}
+
+/* Las tarjetas mantienen su fondo claro dentro del bloque oscuro, así que
+   su texto tiene que volver al oscuro: sin esto hereda el linen del padre
+   y queda linen sobre linen, invisible. */
+.revelacion .choice-card,
+.revelacion .choice-card h2,
+.revelacion .choice-card h3,
+.revelacion .choice-card p,
+.revelacion .choice-card li {
+  color: var(--ink);
+}
+
+.revelacion .choice-card .choice-eyebrow,
+.revelacion .choice-card .choice-meta {
+  color: var(--grey);
+}

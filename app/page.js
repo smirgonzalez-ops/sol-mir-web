@@ -37,7 +37,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="accent">
+      <section>
         <div className="container" style={{maxWidth: '800px'}}>
           <h2>Un Mapa tan personal como tus respuestas</h2>
           <p>El Test EJE® interpreta tus 42 respuestas y construye una fotografía de este momento: qué patrones están activos, qué porcentaje ocupa cada uno y cómo se expresan en tus vínculos, el trabajo, el dinero y tu identidad.</p>
@@ -46,7 +46,14 @@ export default function Home() {
         </div>
       </section>
 
-      <section>
+      {/* Bloque de revelación. La portada alternaba linen y cream, dos tonos
+          a 1,13:1 entre sí — por debajo del 3:1 en que un borde se percibe—,
+          así que la página hacía el gesto de cambiar de sección sin llegar a
+          cambiar. Y el negro opal, al que el manual asigna «portadas y
+          bloques de revelación», sólo se usaba en el pie. Ahora la base es
+          linen pareja y hay dos anclas oscuras: esta escena y la elección
+          del final. Aprobado por Sol el 07/11 sobre capturas reales. */}
+      <section className="revelacion">
         <div className="container" style={{maxWidth: '800px'}}>
           <h2>Son las diez de la noche.</h2>
           <p>Terminaste el día sin energía y mañana ya está lleno antes de empezar. Quizás pensás: «¿Por qué acepté todo esto?».</p>
@@ -57,7 +64,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="accent">
+      <section>
         <div className="container" style={{maxWidth: '800px'}}>
           <h2>Metodología EJE®</h2>
           <p>EJE® es una metodología para distinguir lo que no podés cambiar de lo que sí puede tener margen y encontrar un punto más consciente desde donde decidir.</p>
@@ -93,7 +100,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="accent">
+      <section>
         <div className="container" style={{maxWidth: '700px'}}>
           <h2>Ebook Gratuito</h2>
           <p><strong>Tu vida, tus respuestas, tu mapa</strong></p>
@@ -108,7 +115,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="choice-section">
+      {/* Segunda ancla oscura: donde se elige. */}
+      <section className="choice-section revelacion">
         <div className="container centrado" style={{maxWidth: '1000px'}}>
           <div className="choice-heading">
             <h2>Elegí tu punto de partida</h2>
