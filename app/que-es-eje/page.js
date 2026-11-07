@@ -38,7 +38,12 @@ export default function QueEsEJE() {
           <svg className="silla" viewBox="0 0 460 420" role="img" aria-labelledby="silla-titulo">
             <title id="silla-titulo">Una silla de cuatro patas: Vínculos, Trabajo, Dinero e Identidad. El respaldo representa estar en eje para tomar decisiones con mayor claridad.</title>
             <rect width="460" height="420" fill="var(--cream)" />
-            <g fill="none" stroke="var(--marron)" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
+            {/* El trazo era #5A4334, un marrón elegido por BD-032 para que el
+                dibujo fuera cálido sin tocar la terracota, que está reservada
+                al eje. Sol, 07/11: ese marrón no le gusta. Pasa al negro opal,
+                el mismo del texto, y así el único color de la ilustración
+                queda siendo el eje — que es lo que el manual quiere. */}
+            <g fill="none" stroke="var(--ink)" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
               <path d="M166 205 L166 74" /><path d="M346 205 L346 74" /><path d="M166 74 L346 74" /><path d="M166 116 L346 116" />
               <path d="M120 235 L300 235 L346 205 L166 205 Z" /><path d="M120 235 L120 356" /><path d="M300 235 L300 356" />
               <path d="M166 205 L166 326" /><path d="M346 205 L346 326" /><path d="M120 316 L300 316" /><path d="M166 286 L346 286" />
