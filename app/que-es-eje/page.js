@@ -23,7 +23,7 @@ export default function QueEsEJE() {
       <section className="hero">
         <div className="container">
           <p className="choice-eyebrow">Metodología EJE®</p>
-          <h1>Una forma de mirar cómo está organizada hoy <span className="text-terra">tu estructura.</span></h1>
+          <h1>Una forma de mirar cómo está organizada hoy tu estructura.</h1>
           <p className="subtitle">EJE® te ayuda a distinguir lo que no podés cambiar de aquello frente a lo que todavía existe un margen de respuesta.</p>
         </div>
       </section>

@@ -727,10 +727,6 @@ footer .muted,
   font-size: 0.85rem;
 }
 
-.text-terra {
-  color: var(--terra);
-}
-
 .muted {
   color: var(--grey);
 }
