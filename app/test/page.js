@@ -310,7 +310,12 @@ export default function Test() {
             <BotonesDePago lugar="test_muestra" />
           </div>
 
-          <h3 className="section-subheading">Todo lo que te llevás</h3>
+          {/* El 04/11 subí los cinco componentes al encabezado y no busqué el
+              bloque viejo, así que la página pasó a listarlos dos veces con el
+              mismo título. No sobra ninguno de los dos: arriba están nombrados
+              antes del precio, que era el punto, y acá están explicados, que es
+              lo que vende. Lo que sobraba era que se presentaran igual. */}
+          <h3 className="section-subheading">Qué es cada una</h3>
           <p>El Mapa es la pieza central, pero no es lo único que queda en tu poder cuando terminás.</p>
           <ul className="lista-eje">
             <li><strong>Tu Mapa Estructural EJE® en PDF.</strong> Cuatro páginas que descargás apenas terminás: qué patrón está sosteniendo hoy tu estructura y con cuánto peso, cómo se arma el loop que se repite, dónde genera más fricción y por dónde es posible empezar.</li>
@@ -321,7 +326,13 @@ export default function Test() {
           </ul>
           <p>Todo se descarga y queda tuyo.</p>
 
-          <div style={{marginTop: '2rem'}}><BotonesDePago lugar="test_cuerpo" /></div>
+          {/* Acá había un cuarto bloque de botones. Medido en un teléfono, caía
+              en la pantalla 7,1 y el anterior en la 6,0: bajabas un poco, veías
+              los botones, bajabas otro poco y estaban otra vez. Los puse yo el
+              04/11 al dejar los cinco puntos de compra con el mismo componente.
+              Sin él quedan en 1,0 · 6,0 · 9,3 · 12,3, repartidos. El de la
+              muestra se queda porque va después de la única imagen que muestra
+              qué se compra. */}
 
           <h3 className="section-subheading">Qué es —y qué no es— el Test</h3>
           <div className="responsible-note">
