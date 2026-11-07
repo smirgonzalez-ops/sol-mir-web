@@ -54,7 +54,7 @@ export default function Ebook() {
       </section>
 
       {/* Ancla oscura, mismo tratamiento que el resto del sitio (07/11). */}
-      <section className="revelacion">
+      <section>
         <div className="container" style={{maxWidth: '760px'}}>
           <h2>¿Y si querés ver cómo aparece todo esto en vos?</h2>
           <p>Ahí entra el Test EJE®. La guía te ayuda a comprender la mirada de EJE®; el Test te da una lectura personalizada de tus respuestas actuales.</p>

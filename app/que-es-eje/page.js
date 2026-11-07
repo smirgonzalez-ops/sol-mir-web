@@ -88,7 +88,7 @@ export default function QueEsEJE() {
       {/* Ancla oscura de esta página, mismo tratamiento que la portada y
           /test (07/11). Va en el cierre porque el cuerpo entero es una sola
           sección: no hay dónde más cortar sin partir el marcado. */}
-      <section className="revelacion">
+      <section>
         <div className="container centrado" style={{maxWidth: "800px", textAlign: "center"}}>
           <h2>Primero mirá la estructura.</h2>
           <p>El Test EJE® transforma tus respuestas en un Mapa personal, expresado en porcentajes, para mostrarte qué está teniendo más peso hoy.</p>

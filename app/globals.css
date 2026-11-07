@@ -584,7 +584,10 @@ section.accent {
 }
 
 .choice-section {
-  background-color: var(--cream);
+  /* Era cream. Quedó en linen el 07/11 al sacar los bloques oscuros: con
+     el resto de la portada pareja, una sola sección en crema se leía como
+     un resto y no como una decisión. */
+  background-color: var(--linen);
   border-left: 0;
   border-top: 1px solid rgba(203, 185, 156, 0.55);
   padding-top: 2.5rem;
@@ -1205,101 +1208,3 @@ footer .muted,
   }
 }
 
-/* ── BLOQUE DE REVELACIÓN ──────────────────────────────────────────────
-   Alternativa B, aprobada por Sol el 07/11/2026 sobre capturas reales.
-
-   Qué resolvía. La portada alternaba linen #F7F2EA y cream #EFE4CD, que
-   están a 1,13:1 entre sí; un borde se empieza a percibir a partir de 3:1.
-   La página hacía el gesto de cambiar de sección sin llegar a cambiar. Y
-   las dos últimas secciones eran las dos cream: 1.738 px del mismo tono
-   seguidos, el 35% de la página, justo donde está la decisión de compra.
-   El negro opal, al que el manual asigna «portadas y bloques de
-   revelación», sólo aparecía en el pie.
-
-   Qué hace. La base de la portada pasa a linen pareja y dos secciones van
-   a negro opal: la escena «Son las diez de la noche» y la elección final.
-   Contraste 14,72:1 en los dos sentidos.
-
-   Por qué es una clase nueva y no un cambio a .accent: esa clase se usa en
-   seis páginas y repintarla cambiaría todo el sitio. Esto es sólo la
-   portada. */
-.revelacion {
-  background: var(--ink);
-  color: var(--linen);
-}
-
-.revelacion h1,
-.revelacion h2,
-.revelacion h3,
-.revelacion p,
-.revelacion li {
-  color: var(--linen);
-}
-
-/* El gris del sitio da 2,79:1 sobre el negro y no pasa. El beige smoke da
-   8,56:1 y conserva la jerarquía de texto secundario. */
-.revelacion .choice-heading p,
-.revelacion .choice-note,
-.revelacion .subtitle {
-  color: var(--light-grey);
-}
-
-/* Las tarjetas mantienen su fondo claro dentro del bloque oscuro, así que
-   su texto tiene que volver al oscuro: sin esto hereda el linen del padre
-   y queda linen sobre linen, invisible. */
-.revelacion .choice-card,
-.revelacion .choice-card h2,
-.revelacion .choice-card h3,
-.revelacion .choice-card p,
-.revelacion .choice-card li {
-  color: var(--ink);
-}
-
-.revelacion .choice-card .choice-eyebrow,
-.revelacion .choice-card .choice-meta {
-  color: var(--grey);
-}
-
-/* ── BOTONES DENTRO DE UN BLOQUE DE REVELACIÓN ─────────────────────────
-   Sin esto, el cierre de /test no podía ir a oscuro.
-
-   El botón secundario —el de Mercado Pago— es texto oliva sobre
-   transparente. El oliva sobre el negro opal da 3,08:1 y no pasa para
-   texto normal. En oscuro pasa a linen: 14,72:1.
-
-   El primario conserva el oliva, que es el color del pedido según el
-   manual, y como superficie da 3,08:1 contra el negro — el mínimo que
-   WCAG pide para el borde de un control. La jerarquía entre los dos
-   sigue siendo relleno contra contorno, no color.
-
-   Los hover: el primario viraba a terra-dark, que sobre negro da 2,0:1 y
-   desaparece. En oscuro los dos se encienden en linen. */
-.revelacion .btn-secondary {
-  color: var(--linen);
-  border-color: var(--linen);
-}
-
-.revelacion .btn-primary:hover,
-.revelacion .btn-secondary:hover {
-  background-color: var(--linen);
-  color: var(--ink);
-}
-
-/* La nota chica de cada botón de pago sigue al fondo que tiene debajo:
-   sobre el negro va en beige smoke (8,56:1) y, cuando el botón se
-   enciende en linen al pasar el mouse, vuelve al gris (5,28:1). */
-.revelacion .btn-secondary .btn-pago-nota {
-  color: var(--light-grey);
-}
-
-.revelacion .btn-primary:hover .btn-pago-nota,
-.revelacion .btn-secondary:hover .btn-pago-nota {
-  color: var(--grey);
-}
-
-/* Los tres pasos de compra usan --ink y quedaban negro sobre negro
-   dentro del bloque oscuro: 1,00:1, invisibles. Lo atrapo la medicion,
-   no la vista. */
-.revelacion .test-proof span {
-  color: var(--linen);
-}

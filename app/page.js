@@ -53,7 +53,7 @@ export default function Home() {
           bloques de revelación», sólo se usaba en el pie. Ahora la base es
           linen pareja y hay dos anclas oscuras: esta escena y la elección
           del final. Aprobado por Sol el 07/11 sobre capturas reales. */}
-      <section className="revelacion">
+      <section>
         <div className="container" style={{maxWidth: '800px'}}>
           <h2>Son las diez de la noche.</h2>
           <p>Terminaste el día sin energía y mañana ya está lleno antes de empezar. Quizás pensás: «¿Por qué acepté todo esto?».</p>
@@ -116,7 +116,7 @@ export default function Home() {
       </section>
 
       {/* Segunda ancla oscura: donde se elige. */}
-      <section className="choice-section revelacion">
+      <section className="choice-section">
         <div className="container centrado" style={{maxWidth: '1000px'}}>
           <div className="choice-heading">
             <h2>Elegí tu punto de partida</h2>

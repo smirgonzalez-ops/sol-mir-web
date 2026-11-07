@@ -262,7 +262,7 @@ export default function Test() {
           sobre el negro da 3,08:1, que no pasa. Mover un ancla al bloque de
           compra obliga a reestilar los botones de pago, y eso toca el camino
           de compra — decisión aparte, no se mete acá de prepo. */}
-      <section className="test-recognition revelacion">
+      <section className="test-recognition">
         <div className="container reading-width">
           <h2>Entender lo que te pasa no siempre alcanza para dejar de repetirlo.</h2>
           <div className="recognition-lines">
@@ -361,7 +361,7 @@ export default function Test() {
           3,08:1 sobre el negro. Medido el 07/11: de acá al final había
           3.614 px sin un solo cambio de tono, y el cierre de compra estaba
           justo adentro de ese tramo. */}
-      <section className="ancla test-closing revelacion" id="comprar">
+      <section className="ancla test-closing" id="comprar">
         <div className="container reading-width">
           <p className="choice-eyebrow">Tu punto de partida</p>
           <h2>Ver la estructura antes de seguir sosteniéndola.</h2>
