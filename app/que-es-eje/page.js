@@ -30,10 +30,13 @@ export default function QueEsEJE() {
 
       <section>
         <div className="container" style={{maxWidth: "760px"}}>
-          <h2>Una silla común. Cuatro patas.</h2>
-          <p>Cada pata representa un territorio de tu vida. No funcionan por separado: la manera en que distribuís el peso entre ellas forma tu estructura.</p>
+          <h2>¿Cuánto tiempo más vas a seguir sosteniendo todo, menos a vos?</h2>
+          <p>Quizás en el trabajo resolvés cualquier problema, pero en tus vínculos aceptás cosas que te hacen mal. O te ocupás de todos, mientras tus propias necesidades quedan para después.</p>
+          <p>Y un día te das cuenta de que estás agotado, que algo no funciona o que tomaste decisiones que hoy te pesan.</p>
+          <p><strong>Tu vida se parece a una silla.</strong></p>
+          <p>Tiene cuatro patas: <strong>Vínculos, Trabajo, Dinero e Identidad.</strong></p>
           <svg className="silla" viewBox="0 0 460 420" role="img" aria-labelledby="silla-titulo">
-            <title id="silla-titulo">Una silla de cuatro patas: vínculos, trabajo, dinero e identidad. El eje marca el punto donde se apoya el peso.</title>
+            <title id="silla-titulo">Una silla de cuatro patas: Vínculos, Trabajo, Dinero e Identidad. El respaldo representa estar en eje para tomar decisiones con mayor claridad.</title>
             <rect width="460" height="420" fill="var(--cream)" />
             <g fill="none" stroke="var(--marron)" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
               <path d="M166 205 L166 74" /><path d="M346 205 L346 74" /><path d="M166 74 L346 74" /><path d="M166 116 L346 116" />
@@ -51,22 +54,13 @@ export default function QueEsEJE() {
             <div className="card"><h3>Identidad</h3><p>Cómo experimentás, sentís y registrás lo que te pasa. Tu verdad emocional.</p></div>
           </div>
 
-          <h2 style={{marginTop: "4rem"}}>Estar en eje no significa que todo pese lo mismo.</h2>
-          <p>Hay momentos en los que el trabajo necesita más. Otros en los que una relación ocupa más espacio. La vida se mueve.</p>
-          <p>El problema aparece cuando una pata empieza a sostener casi todo y las demás se acortan. Durante un tiempo, la silla puede seguir pareciendo estable.</p>
-          <p>Te acomodás. Compensás. Te acostumbrás. Ponés debajo un cartón, una explicación, una costumbre.</p>
-          <p className="remate">Como la silla no se cae, no siempre advertís que sos vos quien la está sosteniendo.</p>
+          <p>No siempre están igual de firmes. A veces una sostiene demasiado mientras otra necesita atención.</p>
+          <p>Y tiene un respaldo: <strong>tu eje</strong>, ese lugar desde donde podés apoyarte en vos y tomar decisiones con más claridad.</p>
 
-          <h2 style={{marginTop: "4rem"}}>Qué hace EJE®</h2>
-          <p><strong>EJE® muestra cómo está distribuido hoy el peso en tu estructura y qué respuestas aparecen con más fuerza.</strong></p>
-          <p>No busca definir quién sos. Observa cómo estás respondiendo en este momento, en vínculos, trabajo, dinero e identidad.</p>
-          <p>También distingue algo fundamental: hay situaciones inevitables, otras negociables y otras en las que sí podés elegir. EJE® no convierte una limitación real en culpa personal.</p>
-          <p>La pregunta deja de ser «¿qué tengo mal?» y pasa a ser más concreta:</p>
-          <ul className="lista-eje">
-            <li>¿Dónde estoy poniendo demasiado peso?</li>
-            <li>¿Qué área está sosteniendo sola a las demás?</li>
-            <li>¿Dónde existe hoy un margen de respuesta?</li>
-          </ul>
+          <h2 style={{marginTop: "3rem"}}>¿Qué te muestra el Test EJE®?</h2>
+          <p>A través de 42 preguntas, recibís un Mapa personalizado que te permite observar cómo respondés en esas cuatro áreas, qué patrones podrían estar repitiéndose y dónde convendría prestar más atención.</p>
+          <p>Porque cuando empezás a reconocer qué parte de tu vida necesita más apoyo, podés ocuparte de ella antes de que el desgaste sea mayor.</p>
+          <p className="remate">No hace falta esperar a que todo se venga abajo para empezar a mirar qué necesita sostén.</p>
           <p style={{marginTop: "2rem"}}><a href="/test" className="btn btn-secondary">Ver cómo funciona el Test</a></p>
 
           <h2 style={{marginTop: "4rem"}}>Qué diferencia a EJE®</h2>
