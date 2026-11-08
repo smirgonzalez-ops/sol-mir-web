@@ -9,9 +9,14 @@ export default function Home() {
           <div className="home-hero-copy">
           <p className="choice-eyebrow">Test EJE® · Tu Mapa Estructural personal</p>
           <h1>Podés sostener a todos y no saber qué necesitás vos.</h1>
-          <p className="subtitle">Podés anticiparte, controlar y evitar el conflicto, incluso cuando ya no das más.</p>
-          <p>Como la silla no se cae, parece firme. Hasta que aparece otra pregunta: ¿te sostiene a vos, o la sostenés vos?</p>
-          <p>El Test EJE® te muestra qué patrones están sosteniendo hoy tu estructura, cuánto pesa cada uno y por dónde conviene empezar a mirar.</p>
+          {/* Texto de Sol, de Web_Landing_Test_EJE-v2.docx (08/11). Reemplaza
+              el subtítulo y los dos párrafos anteriores. Lo que gana: abre con
+              una escena que se puede ver —mensajes fuera de hora, anticipar los
+              problemas de los demás— en vez de con una abstracción, que es la
+              primera regla de voz. Y nombra la silla como la nombra BD-038:
+              una pata haciendo el esfuerzo de las demás. */}
+          <p className="subtitle">Contestás mensajes fuera de hora, anticipás los problemas de los demás y evitás el conflicto antes de que empiece. Desde afuera tu vida se ve resuelta; por dentro, sentís que si soltás un minuto, todo se cae.</p>
+          <p>El agotamiento no es falta de capacidad ni mala organización. Es que tu vida es como una silla de cuatro patas —vínculos, trabajo, dinero e identidad— y una de ellas está haciendo el esfuerzo de las demás.</p>
           <div className="cta-group">
             <a href="/test" className="btn btn-primary">Quiero ver mi Mapa personal</a>
           </div>
