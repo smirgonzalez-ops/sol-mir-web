@@ -122,7 +122,9 @@ export default function Home() {
               · «la distribución actual de tu peso» se había cambiado por
                 «dónde se apoya hoy más peso», porque «distribución» dice
                 que hay un total que se reparte y en el TEST los cuatro
-                porcentajes no se reparten nada. Sol confirmó el 08/11 que
+                números de las patas no se reparten nada — desde el 08/11
+                son fracciones («3 de 8»), una por área sobre sus propias
+                preguntas, justamente para que no se lean como un reparto. Sol confirmó el 08/11 que
                 el ejercicio del EBOOK sí reparte: ahí la palabra es
                 correcta y volvió la suya. Ojo con no cruzarlas: el ebook
                 reparte un total entre las cuatro áreas, el Mapa del Test
@@ -193,7 +195,7 @@ export default function Home() {
                 alt="Ejemplo del Mapa Estructural personal del Test EJE®"
               />
               <h3>Test EJE®</h3>
-              <p>Elegilo si querés una fotografía personal, expresada en porcentajes, de cómo se combinan hoy tus respuestas.</p>
+              <p>Elegilo si querés una fotografía personal y medida de cómo se combinan hoy tus respuestas.</p>
               <p className="choice-meta">42 preguntas · 15 minutos · Mapa en PDF</p>
               {/* Decía «Conocé el Test» y llevaba a /test. Pero esta tarjeta
                   está al final de la portada: quien llega acá bajó diez
