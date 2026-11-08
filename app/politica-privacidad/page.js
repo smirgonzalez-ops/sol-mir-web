@@ -28,7 +28,7 @@ export default function PoliticaPrivacidad() {
           <li><strong>Cuando comprás el Test:</strong> la compra se realiza en Gumroad, no en este sitio. Gumroad me informa tu correo y, si lo proporcionaste, tu nombre. Los datos necesarios para procesar el pago son tratados por Gumroad y sus proveedores de pago; Sol Mir no recibe el número completo de tu tarjeta.</li>
           <li><strong>Cuando hacés el Test:</strong> tus respuestas y tu resultado se guardan sólo en el navegador de tu dispositivo, no en un servidor. Si borrás los datos de navegación o cambiás de dispositivo, se pierden.</li>
           <li><strong>Si pedís tu Mapa por correo:</strong> tu correo y el PDF de tu Mapa pasan por el servidor del Test y salen por Resend, el servicio que manda ese correo. No los guardo en ninguna base propia.</li>
-          <li><strong>Estadísticas:</strong> en este sitio cuento las visitas de cada página, sin cookies (Vercel Web Analytics). En el Test cuento cuántas personas lo empiezan y lo terminan y qué Macrofamilia aparece más. Nada de eso incluye tu nombre, tu correo ni tus respuestas.</li>
+          <li><strong>Estadísticas:</strong> en este sitio cuento las visitas de cada página (Vercel Web Analytics) y, desde el 8 de noviembre de 2026, cuántas veces se toca cada botón de compra y cuál de los dos medios de pago se elige (Google Analytics). <strong>Ninguna de las dos cosas guarda cookies en tu dispositivo:</strong> Google Analytics está configurado con el almacenamiento desactivado, así que cuenta los hechos pero no te sigue entre visitas ni te identifica. En el Test cuento cuántas personas lo empiezan y lo terminan y qué patrón aparece más. Nada de eso incluye tu nombre, tu correo ni tus respuestas.</li>
         </ul>
 
         <h2 style={{marginTop: '1.5rem'}}>3. Quién más procesa tus datos</h2>
@@ -38,7 +38,7 @@ export default function PoliticaPrivacidad() {
           <li><strong>Gumroad y sus proveedores de pago:</strong> la compra, el pago, la prevención del fraude y el cumplimiento de obligaciones legales.</li>
           <li><strong>Resend:</strong> el envío del Mapa por correo.</li>
           <li><strong>Vercel:</strong> el alojamiento del sitio y del Test.</li>
-          <li><strong>Google:</strong> las tipografías del sitio se cargan desde sus servidores, que reciben la dirección de conexión de tu dispositivo.</li>
+          <li><strong>Google:</strong> las tipografías del sitio se cargan desde sus servidores, que reciben la dirección de conexión de tu dispositivo. Google Analytics, además, recibe la cuenta de visitas y de clics en los botones de compra, con la dirección de conexión recortada y sin cookies.</li>
         </ul>
         <p>Cada una trata los datos según su propia política de privacidad.</p>
 

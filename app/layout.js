@@ -4,6 +4,7 @@ import SiteHeader from "./components/SiteHeader";
 import JsonLd from "./components/JsonLd";
 import { tarjeta } from "./compartir";
 import { Analytics } from "@vercel/analytics/next";
+import Medicion from "./components/Medicion";
 
 const title = "Entendés lo que te pasa y lo seguís repitiendo | EJE®";
 const description =
@@ -151,6 +152,10 @@ export default function RootLayout({ children }) {
         </footer>
         {/* Visitas por página, sin cookies (Vercel Web Analytics). */}
         <Analytics />
+        {/* GA4 sin cookies, para contar los clics en los botones de pago.
+            Vercel Analytics cuenta visitas y nada más: hasta hoy no había
+            forma de saber cuánta gente llegaba a tocar comprar. */}
+        <Medicion />
       </body>
     </html>
   );
