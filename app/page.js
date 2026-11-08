@@ -37,8 +37,8 @@ export default function Home() {
             <p className="hero-meta">USD 27 · pago único · acceso inmediato<br />42 preguntas · 15 minutos · Mapa de 4 páginas al terminar<br />También se puede pagar en pesos.</p>
           </div>
           <figure className="home-map-proof">
-            <Image src="/mapa-1b.jpg" width={880} height={1243} sizes="(max-width: 768px) 78vw, 430px" priority alt="Ejemplo de Mapa Estructural EJE® con porcentajes personales." />
-            <figcaption>Ejemplo de Mapa Estructural · Página 1 de 4</figcaption>
+            <Image src="/mapa-silla.jpg" width={880} height={1243} sizes="(max-width: 768px) 78vw, 430px" priority alt="Ejemplo del Mapa Estructural EJE®: tu silla dibujada, con cuántas de tus respuestas de cada área —vínculos, trabajo, dinero e identidad— eligieron tu salida más frecuente." />
+            <figcaption>Ejemplo de Mapa Estructural · Página 3 de 4</figcaption>
           </figure>
         </div>
       </section>
@@ -188,11 +188,11 @@ export default function Home() {
               <p className="choice-eyebrow">Para ordenar una lectura más completa</p>
               <Image
                 className="choice-product-image"
-                src="/mapa-1b.jpg"
+                src="/mapa-silla.jpg"
                 width={880}
                 height={1243}
                 sizes="(max-width: 768px) 76vw, 360px"
-                alt="Ejemplo del Mapa Estructural personal del Test EJE®"
+                alt="Ejemplo del Mapa Estructural personal del Test EJE®: la silla con las cuatro áreas."
               />
               <h3>Test EJE®</h3>
               <p>Elegilo si querés una fotografía personal y medida de cómo se combinan hoy tus respuestas.</p>
