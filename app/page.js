@@ -107,13 +107,37 @@ export default function Home() {
 
       <section>
         <div className="container" style={{maxWidth: '700px'}}>
+          {/* Texto de Sol, de Web_Bloque_Ebook_Gratuito-Final.docx (08/11).
+              Lo que gana: abre con una escena —terminar el día sin energía—
+              en vez de con el dato de cuántas páginas tiene, y los tres
+              puntos se escanean mejor que dos párrafos seguidos.
+
+              Cuatro cosas del original no se publicaron:
+              · Los emojis 📄 🗺️ 🔒. No hay uno solo en todo el sitio y el
+                del candado es lenguaje de carrito de compras.
+              · «vas a descubrir exactamente cómo respondés» → «vas a ver».
+                «Exactamente» promete una precisión que catorce páginas de
+                introducción no dan, y prometer resultado está prohibido.
+              · «la distribución actual de tu peso» → «dónde se apoya hoy
+                más peso». «Distribución» dice que hay un total que se
+                reparte; es la misma palabra que hubo que corregir en el
+                documento del Test. Si el ejercicio del ebook sí reparte
+                100 entre las cuatro áreas, la palabra es correcta y se
+                puede volver atrás — no se pudo verificar porque el ebook
+                nuevo no está en la carpeta, sólo el anterior.
+              · «¡Quiero mi guía gratuita y armar mi mapa!» → sin signos de
+                exclamación, que la marca no usa en ninguna pieza. */}
           <h2>Ebook Gratuito</h2>
           <p><strong>Tu vida, tus respuestas, tu mapa</strong></p>
-          <p>Catorce páginas para mirar cómo respondés en tus vínculos, tu trabajo, el dinero y tu identidad. Incluye un ejercicio para armar tu primer mapa.</p>
-          <p>Te llega un correo para confirmar que sos vos. Después recibís el ebook. Sin secuencia de ventas.</p>
+          <p>Dejá de adivinar por qué terminás el día sin energía. En catorce páginas vas a ver cómo respondés en tus vínculos, tu trabajo, el dinero y tu identidad, con un ejercicio paso a paso para armar tu primer mapa hoy mismo.</p>
+          <ul className="lista-eje">
+            <li>Catorce páginas de lectura directa, enfocadas en las formas de responder que se repiten.</li>
+            <li>Un ejercicio paso a paso para ver dónde se apoya hoy más peso.</li>
+            <li>Te llega un correo para confirmar que sos vos. Después, el ebook. Sin secuencia de ventas.</li>
+          </ul>
           <KitSignupForm
             origin="web_home"
-            buttonLabel="Quiero recibir mi guía gratuita"
+            buttonLabel="Quiero mi guía y armar mi mapa"
             nameOptional
             showPrivacy
           />
