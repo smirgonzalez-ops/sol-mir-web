@@ -11,6 +11,16 @@ import { pagina, IMAGEN_TEST } from "../compartir";
 const PREGUNTAS = [
 
   {
+    // De Web_Landing_Test_EJE-v2.docx (Sol, 08/11). La pagina no decia en
+    // ningun lado cuanto tarda ni desde donde se contesta, y es la primera
+    // duda de cualquiera. Lo de «desde tu celular» no es un detalle: el 100%
+    // del trafico real entra desde la app de Facebook en el telefono.
+    "q": "¿Cuánto tarda y cómo se responde?",
+    "a": [
+      "Son 42 preguntas simples que respondés desde tu celular o tu computadora, en unos 15 minutos. No hace falta preparar nada ni tener tiempo seguido: podés frenar y seguir después."
+    ]
+  },
+  {
 
     "q": "¿Qué recibo?",
 
@@ -91,6 +101,17 @@ const PREGUNTAS = [
 
     ]
 
+  },
+  {
+    // BD-043 (Sol, 08/11). La pagina no lo decia en ningun lado y es un
+    // argumento de venta: lo que se paga no es un resultado, es el acceso.
+    // Se evita «a los 3 o 6 meses» como plazo, que sonaria a que antes no
+    // se puede: es una sugerencia de cuando se nota, no una regla.
+    "q": "¿Lo puedo volver a hacer?",
+    "a": [
+      "Sí, y no cuesta nada: pagás una sola vez y el acceso queda tuyo.",
+      "Volver a hacerlo a los tres o seis meses es cuando más se nota, porque el Mapa compara con tu lectura anterior y vas a ver qué se movió. Pero podés repetirlo cuando quieras."
+    ]
   }
 
 ];
