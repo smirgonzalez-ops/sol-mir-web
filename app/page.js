@@ -118,13 +118,14 @@ export default function Home() {
               · «vas a descubrir exactamente cómo respondés» → «vas a ver».
                 «Exactamente» promete una precisión que catorce páginas de
                 introducción no dan, y prometer resultado está prohibido.
-              · «la distribución actual de tu peso» → «dónde se apoya hoy
-                más peso». «Distribución» dice que hay un total que se
-                reparte; es la misma palabra que hubo que corregir en el
-                documento del Test. Si el ejercicio del ebook sí reparte
-                100 entre las cuatro áreas, la palabra es correcta y se
-                puede volver atrás — no se pudo verificar porque el ebook
-                nuevo no está en la carpeta, sólo el anterior.
+              · «la distribución actual de tu peso» se había cambiado por
+                «dónde se apoya hoy más peso», porque «distribución» dice
+                que hay un total que se reparte y en el TEST los cuatro
+                porcentajes no se reparten nada. Sol confirmó el 08/11 que
+                el ejercicio del EBOOK sí reparte: ahí la palabra es
+                correcta y volvió la suya. Ojo con no cruzarlas: el ebook
+                reparte un total entre las cuatro áreas, el Mapa del Test
+                calcula cada área sobre su propio denominador.
               · «¡Quiero mi guía gratuita y armar mi mapa!» → sin signos de
                 exclamación, que la marca no usa en ninguna pieza. */}
           <h2>Ebook Gratuito</h2>
@@ -132,7 +133,7 @@ export default function Home() {
           <p>Dejá de adivinar por qué terminás el día sin energía. En catorce páginas vas a ver cómo respondés en tus vínculos, tu trabajo, el dinero y tu identidad, con un ejercicio paso a paso para armar tu primer mapa hoy mismo.</p>
           <ul className="lista-eje">
             <li>Catorce páginas de lectura directa, enfocadas en las formas de responder que se repiten.</li>
-            <li>Un ejercicio paso a paso para ver dónde se apoya hoy más peso.</li>
+            <li>Un ejercicio paso a paso para trazar la distribución actual de tu peso.</li>
             <li>Te llega un correo para confirmar que sos vos. Después, el ebook. Sin secuencia de ventas.</li>
           </ul>
           <KitSignupForm
