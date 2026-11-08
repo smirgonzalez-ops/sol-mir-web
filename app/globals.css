@@ -728,6 +728,21 @@ section.accent {
   font-weight: 600;
 }
 
+/* El enlace de escape de la tarjeta del Test: quien no esta decidido
+   todavia puede ir a leer. Va debajo de los botones y en segundo
+   plano, para no competir con ellos. 08/11/2026. */
+.choice-detalle {
+  margin-top: 0.85rem;
+  margin-bottom: 0;
+  font-size: 0.95rem;
+}
+
+.choice-detalle a {
+  color: var(--grey);
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
 .choice-note {
   /* Medido el 07/11: una sola linea de 97 caracteres. El rango legible
      es 45-75. Estaba fuera del tope general porque vive dentro de un

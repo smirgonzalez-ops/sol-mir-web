@@ -1,4 +1,5 @@
 import Image from "next/image";
+import BotonesDePago from "./components/BotonesDePago";
 import KitSignupForm from "./components/KitSignupForm";
 
 export default function Home() {
@@ -193,8 +194,21 @@ export default function Home() {
               />
               <h3>Test EJE®</h3>
               <p>Elegilo si querés una fotografía personal, expresada en porcentajes, de cómo se combinan hoy tus respuestas.</p>
-              <p className="choice-meta">42 preguntas · 15 minutos · Mapa en PDF · USD 27</p>
-              <a href="/test" className="btn btn-primary">Conocé el Test</a>
+              <p className="choice-meta">42 preguntas · 15 minutos · Mapa en PDF</p>
+              {/* Decía «Conocé el Test» y llevaba a /test. Pero esta tarjeta
+                  está al final de la portada: quien llega acá bajó diez
+                  pantallas y ya eligió. Mandarla a leer otra vez es la vuelta
+                  que Sol señaló el 08/11 recorriéndolo en su teléfono.
+                  Ahora puede pagar desde acá, en la moneda que le sirva.
+
+                  El héroe sigue sin botón de compra a propósito: quien recién
+                  entra todavía no sabe qué es EJE®, y un «comprar» antes de
+                  explicar nada espanta más de lo que convierte.
+
+                  El precio sale del choice-meta porque ahora está en los
+                  botones, en las dos monedas. */}
+              <BotonesDePago lugar="portada_eleccion" />
+              <p className="choice-detalle"><a href="/test">Ver cómo funciona antes de decidir</a></p>
             </article>
           </div>
 

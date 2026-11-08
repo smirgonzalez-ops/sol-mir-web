@@ -1,5 +1,6 @@
 
 import Image from "next/image";
+import BotonesDePago from "../components/BotonesDePago";
 
 import JsonLd from "../components/JsonLd";
 import OrigenCompra from "../components/OrigenCompra";
@@ -185,43 +186,10 @@ const FAQ = {
 // las estadísticas de Gumroad, que sólo cuentan visitas al producto. Con el
 // enlace directo al carrito, el tramo entre esta página y la compra no se
 // podía medir — 134 visitas el 22 y 23/09 y ningún dato de cuántas tocaron.
-// utm_medium=organic es el valor por defecto, para quien llega sin origen.
-// OrigenCompra lo reescribe en el navegador cuando la visita trae UTM o
-// viene de otro sitio, así el tramo hasta Gumroad se puede atribuir.
-const comprar = (lugar) =>
-  `https://smirgo.gumroad.com/l/ozvrmy?utm_source=web&utm_medium=organic&utm_campaign=lanzamiento_22_9&utm_content=${lugar}`;
-
-// Gumroad no cobra en pesos argentinos (verificado el 12/10 en el checkout
-// real) y la audiencia propia es argentina. Link de Mercado Pago creado por
-// Sol el 19/10. Ese pago no entrega el acceso solo: Sol lo manda a mano.
-// No lleva UTM porque Mercado Pago no los muestra; estas ventas se cuentan
-// desde el panel de Mercado Pago, no desde Gumroad.
-const PESOS = "https://mpago.la/1Gjzh2t";
-
-// Los dos caminos de pago, del mismo peso y los dos tocables.
-//
-// Antes Gumroad tenía cinco botones de 58 px y Mercado Pago dos enlaces de
-// texto de 18 y 42 px —por debajo del mínimo táctil de 44—, detrás de la
-// pregunta «¿Estás en Argentina?». El 29/09 entraron 418 personas a esta
-// página: Paraguay 132, Colombia 97, Perú 84, Chile 60, Uruguay 27, Costa
-// Rica 14 y Argentina 3. Esa pregunta excluía de entrada al 99% de quienes
-// llegaban, y el único pago con forma de botón es el que no cobra en la
-// moneda de casi ninguno de esos países.
-//
-// Por eso ahora se nombran por la MONEDA y no por el país: cada quien elige
-// sin que la página le diga antes si es para él.
-const BotonesDePago = ({ lugar, titulo = "Comprar y empezar ahora · USD 27" }) => (
-  <div className="pagos">
-    <a href={comprar(lugar)} className="btn btn-primary btn-pago">
-      <span className="btn-pago-titulo">{titulo}</span>
-      <span className="btn-pago-nota">Tarjeta internacional · la pantalla de pago está en inglés</span>
-    </a>
-    <a href={PESOS} className="btn btn-secondary btn-pago">
-      <span className="btn-pago-titulo">Pagar en pesos · $ 40.000</span>
-      <span className="btn-pago-nota">Mercado Pago · te mando el acceso por correo</span>
-    </a>
-  </div>
-);
+// El par de botones de pago, el precio y los dos enlaces se mudaron a
+// app/components/BotonesDePago.js el 08/11/2026, para que la portada
+// pudiera usarlos sin copiarlos. Duplicar el precio significa que el
+// dia que cambie haya que acordarse de dos lugares.
 
 // Los cinco componentes estaban en la pantalla 5,8 de 13,4 y el precio en la
 // 0,7: quien llegaba sin conocer la marca veía cuánto cuesta antes de saber
