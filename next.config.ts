@@ -27,10 +27,22 @@ const CSP = [
   // NO VA form-action. Se puso el 08/11 con app.kit.com y *.kit.com listados,
   // y aun asi Chrome bloqueaba el alta del ebook: el POST a Kit responde 302 y
   // Chrome vuelve a evaluar form-action en la redireccion, informando la URL
-  // original como bloqueada. El destino real de ese salto no se puede leer
-  // desde el navegador —Kit no habilita CORS— asi que cualquier dominio que
-  // se agregue aca es una adivinanza, y si falla el formulario queda roto
-  // otra vez, en silencio y sin que nadie se entere.
+  // original como bloqueada. La cadena completa, medida despues de sacar la
+  // directiva, es:
+  //
+  //   app.kit.com/forms/9738047/subscriptions
+  //     -> app.kit.com/forms/guards/<uuid>
+  //       -> drive.google.com/file/d/<id>/view     (el PDF del ebook)
+  //
+  // drive.google.com nunca estuvo en la lista, y ese es el salto que fallaba.
+  //
+  // NO se vuelve a poner form-action con drive.google.com agregado, y el
+  // motivo importa: ese destino final es la "redireccion despues de
+  // suscribirse" que se configura DENTRO de Kit. Sol puede cambiarla desde el
+  // panel, sin tocar el codigo, el dia que mueva el ebook a otro lado. Si eso
+  // pasa, el formulario se rompe de nuevo igual de silencioso que esta vez.
+  // Una directiva que depende de una opcion que vive en otro sistema no se
+  // sostiene.
   //
   // Encontrado el 16/11 porque Sol puso su correo y no pasaba nada. Estuvo
   // roto ocho dias: del 08/11 al 16/11 ninguna alta del ebook llego a Kit.
