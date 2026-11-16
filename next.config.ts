@@ -24,8 +24,23 @@ const CSP = [
   "font-src 'self' https://fonts.gstatic.com data:",
   "img-src 'self' data: blob: https://www.googletagmanager.com https://www.google-analytics.com",
   "connect-src 'self' https://www.google-analytics.com https://*.google-analytics.com https://va.vercel-scripts.com https://vitals.vercel-insights.com https://app.kit.com https://*.kit.com",
-  // El formulario del ebook postea a Kit.
-  "form-action 'self' https://app.kit.com https://*.kit.com",
+  // NO VA form-action. Se puso el 08/11 con app.kit.com y *.kit.com listados,
+  // y aun asi Chrome bloqueaba el alta del ebook: el POST a Kit responde 302 y
+  // Chrome vuelve a evaluar form-action en la redireccion, informando la URL
+  // original como bloqueada. El destino real de ese salto no se puede leer
+  // desde el navegador —Kit no habilita CORS— asi que cualquier dominio que
+  // se agregue aca es una adivinanza, y si falla el formulario queda roto
+  // otra vez, en silencio y sin que nadie se entere.
+  //
+  // Encontrado el 16/11 porque Sol puso su correo y no pasaba nada. Estuvo
+  // roto ocho dias: del 08/11 al 16/11 ninguna alta del ebook llego a Kit.
+  // Es la boca del embudo.
+  //
+  // Lo que se pierde al sacarla: un atacante que YA logro inyectar HTML podria
+  // mandar los datos de un formulario a su propio servidor. Para inyectar
+  // necesita pasar script-src, que sigue cerrado, igual que object-src,
+  // base-uri y frame-ancestors. El riesgo que cubria es chico; el costo de
+  // equivocarse es que nadie se suscriba nunca.
   // Nadie puede meter este sitio dentro de un marco. Es el equivalente
   // moderno de X-Frame-Options, que se deja igual por navegadores viejos.
   "frame-ancestors 'none'",
