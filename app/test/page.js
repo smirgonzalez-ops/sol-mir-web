@@ -235,7 +235,7 @@ export default function Test() {
             <p>El Test EJE® ordena tus respuestas y te devuelve una lectura personalizada de cómo se reparten hoy entre tus vínculos, tu trabajo, el dinero y tu identidad.</p>
             <LoQueTeLlevas />
             <BotonesDePago lugar="test_hero" />
-            <p className="hero-meta">Pago único, sin suscripción. Acceso inmediato.</p>
+            <p className="hero-meta">Pago único, sin suscripción. Acceso inmediato con tarjeta internacional. Por Mercado Pago, te envío el acceso por correo.</p>
           </div>
           <figure className="mapa-hero">
             <Image src="/mapa-1b.jpg" width={880} height={1243} sizes="(max-width: 768px) 82vw, 390px" priority alt="Ejemplo de la primera página de un Mapa Estructural EJE®, con un patrón dominante y porcentajes personales." />
@@ -369,7 +369,7 @@ export default function Test() {
             <span>3 · Descargás tu Mapa</span>
           </div>
           <BotonesDePago lugar="test_cierre" />
-          <p className="hero-meta">Pago único, acceso inmediato. Completás 42 preguntas y descargás tu Mapa de 4 páginas, tu lectura en voz y tu certificado.</p>
+          <p className="hero-meta">Pago único. Con tarjeta internacional, acceso inmediato. Por Mercado Pago, te envío el acceso por correo. Completás 42 preguntas y descargás tu Mapa de 4 páginas, tu lectura en voz y tu certificado.</p>
           <aside className="purchase-note" aria-label="Información sobre el pago y el acceso">Vas a completar el pago seguro en Gumroad. Después, tocá «View content» para acceder al Test. Tus respuestas quedan en tu dispositivo y Sol no recibe el número completo de tu tarjeta. Gumroad también te envía un recibo en inglés con el mismo acceso.</aside>
         </div>
       </section>
@@ -398,7 +398,7 @@ export default function Test() {
           <div style={{marginTop: '2.5rem'}}>
             <BotonesDePago lugar="test_faq" titulo="Ya entendí, quiero el mío · USD 27" />
           </div>
-          <p className="hero-meta">Pago único, acceso inmediato.</p>
+          <p className="hero-meta">Pago único. Acceso inmediato con tarjeta internacional; por Mercado Pago, te envío el acceso por correo.</p>
         </div>
       </section>
     </>
