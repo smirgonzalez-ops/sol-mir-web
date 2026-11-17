@@ -238,7 +238,7 @@ export default function Test() {
             <p className="hero-meta">Pago único, sin suscripción. Acceso inmediato con tarjeta internacional. Por Mercado Pago, te envío el acceso por correo.</p>
           </div>
           <figure className="mapa-hero">
-            <Image src="/mapa-1b.jpg" width={880} height={1243} sizes="(max-width: 768px) 82vw, 390px" priority alt="Ejemplo de la primera página de un Mapa Estructural EJE®, con un patrón dominante y porcentajes personales." />
+            <a href="/mapa-1b.jpg" target="_blank" rel="noopener noreferrer" aria-label="Abrir primera página del Mapa en tamaño completo"><Image src="/mapa-1b.jpg" width={880} height={1243} sizes="(max-width: 768px) 82vw, 390px" priority alt="Ejemplo de la primera página de un Mapa Estructural EJE®, con un patrón dominante y porcentajes personales." /></a>
             <figcaption>Muestra real del formato que descargás. Tu contenido y tus números serán diferentes.</figcaption>
           </figure>
         </div>
@@ -286,7 +286,7 @@ export default function Test() {
           <p>No es una pantalla de resultados. Es un documento de cuatro páginas en PDF que descargás apenas terminás y podés guardar.</p>
           <p>El patrón, los números y el texto cambian según lo que respondas.</p>
 
-          <Image className="mapa-muestra" src="/mapa-1b.jpg" width={880} height={1243} sizes="(max-width: 700px) 100vw, 620px" alt="Primera página del Mapa Estructural EJE®: el patrón dominante con su nombre, tu Pulso con los cinco porcentajes, y lo que podés, lo que te cuesta y qué movimiento es posible." />
+          <a href="/mapa-1b.jpg" target="_blank" rel="noopener noreferrer" aria-label="Abrir muestra de la primera página del Mapa en tamaño completo"><Image className="mapa-muestra" src="/mapa-1b.jpg" width={880} height={1243} sizes="(max-width: 700px) 100vw, 620px" alt="Primera página del Mapa Estructural EJE®: el patrón dominante con su nombre, tu Pulso con los cinco porcentajes, y lo que podés, lo que te cuesta y qué movimiento es posible." /></a>
           <p className="muted" style={{textAlign: 'center'}}>Página 1 de 4 — lo que está activo hoy</p>
 
           <div className="mapa-tiras">
