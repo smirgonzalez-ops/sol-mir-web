@@ -291,18 +291,18 @@ export default function Test() {
 
           <div className="mapa-silla-destacada">
             <h4>Tu silla: las cuatro áreas de tu vida</h4>
-            <p>Las cuatro patas de la silla representan las áreas de tu vida. En el Mapa vas a ver cómo aparecen tus respuestas en cada una.</p>
-            <ul className="mapa-silla-areas" aria-label="Las cuatro áreas de la silla EJE">
-              <li><strong>Vínculos</strong><span>Tus relaciones con otras personas.</span></li>
-              <li><strong>Trabajo</strong><span>Tu vida laboral y tus responsabilidades.</span></li>
-              <li><strong>Dinero</strong><span>Cómo te vinculás con tus recursos y decisiones económicas.</span></li>
-              <li><strong>Identidad</strong><span>El lugar que te das a vos misma o a vos mismo.</span></li>
+            <p>En este ejemplo, cada pata muestra cuántas respuestas de esa área coincidieron con la forma de responder más frecuente. Un número bajo no significa que el área esté peor: ahí aparecieron otras respuestas.</p>
+            <ul className="mapa-silla-areas" aria-label="Lectura de ejemplo de las cuatro áreas de la silla EJE">
+              <li><strong>Vínculos · 4 de 8</strong><span>Das antes de que te pidan. Cuesta recibir sin sentir que hay que devolver algo a cambio, y delegar activa la sensación de estar perdiendo tu lugar.</span></li>
+              <li><strong>Trabajo · 2 de 8</strong><span>Sos la persona que sostiene lo que nadie más sostiene. El reconocimiento no llega solo, te cuesta pedirlo, y la sobrecarga se acumula en silencio.</span></li>
+              <li><strong>Dinero · 0 de 7</strong><span>Cuesta cobrar lo que tu ayuda vale, o cobrar por ayudar en general. Poner precio se siente como cobrar por algo que «debería» dar gratis.</span></li>
+              <li><strong>Identidad · 2 de 7</strong><span>Tu valor se mide en cuánto resolvés. Cuando no hay nada que arreglar, aparece una inquietud difícil de nombrar.</span></li>
             </ul>
-            <p><strong>El respaldo representa estar en eje.</strong> Las decisiones atraviesan las cuatro áreas.</p>
-            <a href="/mapa-3.jpg" target="_blank" rel="noopener noreferrer" aria-label="Abrir la página de la silla en tamaño completo">
-              <Image src="/mapa-3.jpg" width={420} height={594} sizes="(max-width: 700px) 92vw, 420px" alt="Página 3 del Mapa Estructural EJE®: una silla con cuatro patas que representan Vínculos, Trabajo, Dinero e Identidad." />
+            <p><strong>El respaldo representa estar en eje.</strong> Las decisiones atraviesan las cuatro áreas. Estos números y textos pertenecen a una muestra; los tuyos dependerán de tus respuestas.</p>
+            <a href="/mapa-3-hd.jpg" target="_blank" rel="noopener noreferrer" aria-label="Abrir la página de ejemplo de la silla en alta resolución">
+              <Image src="/mapa-3-hd.jpg" width={1489} height={2105} sizes="(max-width: 700px) 92vw, 420px" alt="Página 3 de ejemplo del Mapa Estructural EJE® con una silla y la lectura de Vínculos, Trabajo, Dinero e Identidad." />
             </a>
-            <p className="muted">Página 3 de 4 — tu silla y las cuatro áreas</p>
+            <p className="muted">Página 3 de 4 — muestra en alta resolución. Tocá la imagen para ampliarla.</p>
           </div>
           <div className="mapa-tiras mapa-tiras-dos">
             <Image src="/mapa-2b.jpg" width={420} height={594} sizes="(max-width: 700px) 45vw, 196px" alt="Vista parcial de la página 2 del Mapa Estructural" />
