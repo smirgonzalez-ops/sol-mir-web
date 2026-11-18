@@ -289,12 +289,19 @@ export default function Test() {
           <a href="/mapa-1b.jpg" target="_blank" rel="noopener noreferrer" aria-label="Abrir muestra de la primera página del Mapa en tamaño completo"><Image className="mapa-muestra" src="/mapa-1b.jpg" width={880} height={1243} sizes="(max-width: 700px) 100vw, 620px" alt="Primera página del Mapa Estructural EJE®: el patrón dominante con su nombre, tu Pulso con los cinco porcentajes, y lo que podés, lo que te cuesta y qué movimiento es posible." /></a>
           <p className="muted" style={{textAlign: 'center'}}>Página 1 de 4 — lo que está activo hoy</p>
 
-          <div className="mapa-tiras">
-            <Image src="/mapa-2b.jpg" width={420} height={594} sizes="(max-width: 700px) 30vw, 196px" alt="Vista parcial de la página 2 del Mapa Estructural" />
-            <Image src="/mapa-3.jpg" width={420} height={594} sizes="(max-width: 700px) 30vw, 196px" alt="Página 3 del Mapa Estructural EJE®: tu silla, con cuántas de tus respuestas de cada área eligieron tu salida más frecuente." />
-            <Image src="/mapa-4.jpg" width={420} height={594} sizes="(max-width: 700px) 30vw, 196px" alt="Vista parcial de la página 4 del Mapa Estructural" />
+          <div className="mapa-silla-destacada">
+            <h4>Tu silla: las cuatro áreas de tu vida</h4>
+            <p>Vínculos, Trabajo, Dinero e Identidad. Esta página muestra cómo aparecen tus respuestas en cada área. Las decisiones atraviesan las cuatro.</p>
+            <a href="/mapa-3.jpg" target="_blank" rel="noopener noreferrer" aria-label="Abrir la página de la silla en tamaño completo">
+              <Image src="/mapa-3.jpg" width={420} height={594} sizes="(max-width: 700px) 92vw, 420px" alt="Página 3 del Mapa Estructural EJE®: una silla con cuatro patas que representan Vínculos, Trabajo, Dinero e Identidad." />
+            </a>
+            <p className="muted">Página 3 de 4 — tu silla y las cuatro áreas</p>
           </div>
-          <p className="muted" style={{textAlign: 'center', marginTop: '0.75rem'}}>Las otras tres muestran cómo se organiza el patrón, tu silla con las cuatro áreas, y por dónde empezar.</p>
+          <div className="mapa-tiras mapa-tiras-dos">
+            <Image src="/mapa-2b.jpg" width={420} height={594} sizes="(max-width: 700px) 45vw, 196px" alt="Vista parcial de la página 2 del Mapa Estructural" />
+            <Image src="/mapa-4.jpg" width={420} height={594} sizes="(max-width: 700px) 45vw, 196px" alt="Vista parcial de la página 4 del Mapa Estructural" />
+          </div>
+          <p className="muted" style={{textAlign: 'center', marginTop: '0.75rem'}}>Las otras páginas muestran cómo se organiza el patrón y por dónde empezar.</p>
 
           {/* Entre el botón del comienzo y el del cuerpo había seis pantallas
               de teléfono sin ninguno, y acá adentro estaba lo único que muestra
