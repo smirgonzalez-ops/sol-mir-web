@@ -894,6 +894,36 @@ footer .muted,
   margin-right: auto;
 }
 
+.mapa-silla-destacada {
+  margin: 2.5rem auto 1rem;
+  text-align: center;
+  max-width: 620px;
+}
+
+.mapa-silla-destacada h4 {
+  margin-bottom: 0.75rem;
+}
+
+.mapa-silla-destacada p {
+  max-width: 540px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mapa-silla-destacada img {
+  display: block;
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  margin: 1.25rem auto 0.75rem;
+  border: 1px solid var(--light-grey);
+}
+
+.mapa-tiras-dos {
+  grid-template-columns: repeat(2, minmax(0, 196px));
+  justify-content: center;
+}
+
 .mapa-tiras img {
   width: 100%;
   height: auto;
