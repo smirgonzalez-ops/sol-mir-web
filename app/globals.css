@@ -919,6 +919,41 @@ footer .muted,
   border: 1px solid var(--light-grey);
 }
 
+.mapa-silla-areas {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+  padding: 0;
+  margin: 1.5rem auto;
+  list-style: none;
+  text-align: left;
+}
+
+.mapa-silla-areas li {
+  padding: 1rem;
+  border: 1px solid var(--light-grey);
+  background: #fff;
+}
+
+.mapa-silla-areas strong,
+.mapa-silla-areas span {
+  display: block;
+}
+
+.mapa-silla-areas strong {
+  font-size: 1.1rem;
+  margin-bottom: 0.35rem;
+}
+
+.mapa-silla-areas span {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 540px) {
+  .mapa-silla-areas { grid-template-columns: 1fr; }
+}
+
 .mapa-tiras-dos {
   grid-template-columns: repeat(2, minmax(0, 196px));
   justify-content: center;
