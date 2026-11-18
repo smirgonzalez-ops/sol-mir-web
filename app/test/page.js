@@ -291,7 +291,14 @@ export default function Test() {
 
           <div className="mapa-silla-destacada">
             <h4>Tu silla: las cuatro áreas de tu vida</h4>
-            <p>Vínculos, Trabajo, Dinero e Identidad. Esta página muestra cómo aparecen tus respuestas en cada área. Las decisiones atraviesan las cuatro.</p>
+            <p>Las cuatro patas de la silla representan las áreas de tu vida. En el Mapa vas a ver cómo aparecen tus respuestas en cada una.</p>
+            <ul className="mapa-silla-areas" aria-label="Las cuatro áreas de la silla EJE">
+              <li><strong>Vínculos</strong><span>Tus relaciones con otras personas.</span></li>
+              <li><strong>Trabajo</strong><span>Tu vida laboral y tus responsabilidades.</span></li>
+              <li><strong>Dinero</strong><span>Cómo te vinculás con tus recursos y decisiones económicas.</span></li>
+              <li><strong>Identidad</strong><span>El lugar que te das a vos misma o a vos mismo.</span></li>
+            </ul>
+            <p><strong>El respaldo representa estar en eje.</strong> Las decisiones atraviesan las cuatro áreas.</p>
             <a href="/mapa-3.jpg" target="_blank" rel="noopener noreferrer" aria-label="Abrir la página de la silla en tamaño completo">
               <Image src="/mapa-3.jpg" width={420} height={594} sizes="(max-width: 700px) 92vw, 420px" alt="Página 3 del Mapa Estructural EJE®: una silla con cuatro patas que representan Vínculos, Trabajo, Dinero e Identidad." />
             </a>
