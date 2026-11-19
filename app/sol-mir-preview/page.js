@@ -30,8 +30,8 @@ export default function SolMirPreview() {
             <div className="sol-hero-copy">
               <p className="sol-eyebrow">SOL MIR · CREADORA DEL SISTEMA EJE®</p>
               <h1>Entender lo que te pasa no siempre alcanza para cambiarlo.</h1>
-              <p className="sol-lead">Podés resolver problemas enormes en el trabajo y, al mismo tiempo, sentirte insegura al poner un límite. Saber mucho de números y tener miedo de mirar tus propias cuentas.</p>
-              <p>Durante años me pregunté por qué podíamos ser tan capaces en una parte de la vida y sentirnos tan perdidos en otra. Esa pregunta también fue parte de mi historia.</p>
+              <p className="sol-lead">A veces sabés muy bien lo que te pasa, pero cuando llega el momento de decidir, volvés a hacer lo mismo.</p>
+              <p>Me hice esa pregunta durante años. Mi propia historia me llevó a mirar lo que ocurría en distintas partes de mi vida.</p>
               <div className="sol-actions">
                 <Link className="sol-button" href="/eje">Conocer el Sistema EJE®</Link>
                 <a className="sol-text-link" href="#historia">Conocer mi historia</a>
@@ -64,14 +64,10 @@ export default function SolMirPreview() {
             <div>
               <p className="sol-eyebrow">EL SISTEMA QUE CREÉ</p>
               <h2>Así nació EJE®.</h2>
-              <p>Podés sentirte muy segura en el trabajo y, sin embargo, dudar de vos cada vez que tenés que poner un límite.</p>
-              <p>O trabajar muchísimo y seguir tomando decisiones con tu plata que después te complican.</p>
               <p className="sol-pullquote">¿Y si eso que te pasa en una parte de tu vida también aparece en otras, pero nunca lo miraste todo junto?</p>
               <p>Esa fue una de las preguntas que me llevaron a crear el Sistema EJE®.</p>
-              <h3>¿Qué podés descubrir con el Test?</h3>
-              <p>A través de 42 preguntas, el Test reúne tus respuestas sobre Vínculos, Trabajo, Dinero e Identidad.</p>
-              <p>Con ellas se elabora tu Mapa Estructural EJE®, una lectura personalizada que muestra cómo se distribuyen tus respuestas, qué repeticiones aparecen y qué aspectos podrías revisar.</p>
-              <p>Es una fotografía de cómo estás hoy. Podés volver a hacerlo en otro momento y observar qué cambió en tus respuestas.</p>
+              <p>EJE® propone observar tus respuestas en cuatro áreas: Vínculos, Trabajo, Dinero e Identidad. Las decisiones atraviesan todas.</p>
+              <p>El Test lleva esa mirada a tus propias respuestas y las reúne en un Mapa de tu momento actual.</p>
               <Link className="sol-button" href="/test">Conocer el Test EJE®</Link>
             </div>
             <div className="sol-four">
