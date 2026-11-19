@@ -74,12 +74,14 @@ export default function EjeHomeEditorial() {
             <p>Imaginá tu vida como una silla. Sus cuatro patas son Vínculos, Trabajo, Dinero e Identidad. El respaldo representa estar en eje.</p>
             <p>Las decisiones atraviesan las cuatro áreas. No son una quinta pata.</p>
           </div>
-          <figure className="eje-chair-figure">
-            <a href="/mapa-silla.jpg" target="_blank" rel="noopener noreferrer" aria-label="Ver la silla real de un Mapa Estructural EJE en tamaño completo">
-              <Image src="/mapa-silla.jpg" alt="Ejemplo real de la silla del Mapa Estructural EJE®" width={880} height={1243} sizes="(max-width: 768px) 82vw, 380px" />
-            </a>
-            <figcaption>Muestra real del Mapa Estructural. Ampliar para leer.</figcaption>
-          </figure>
+          <div className="eje-chair-concept" aria-label="Las cuatro áreas de EJE y el respaldo de estar en eje">
+            <p className="eje-chair-concept-label">UNA SOLA VIDA · CUATRO ÁREAS</p>
+            <div className="eje-chair-concept-areas">
+              <span>Vínculos</span><span>Trabajo</span><span>Dinero</span><span>Identidad</span>
+            </div>
+            <div className="eje-chair-concept-back">Estar en eje</div>
+            <p className="eje-chair-concept-note">Las decisiones atraviesan las cuatro áreas.</p>
+          </div>
         </div>
       </section>
 
@@ -115,7 +117,7 @@ export default function EjeHomeEditorial() {
 
       <section className="eje-founder-section" aria-labelledby="founder-heading">
         <div className="eje-wrap eje-founder-grid">
-          <div className="eje-photo-placeholder" aria-label="Espacio reservado para fotografía real de Sol Mir">Fotografía de Sol Mir</div>
+          <div className="eje-founder-signature" aria-hidden="true"><span>SM</span><small>CREADORA DE EJE®</small></div>
           <div>
             <p className="eje-kicker">SOL MIR</p>
             <h2 id="founder-heading" className="eje-section-title">La creadora de EJE®.</h2>
@@ -127,7 +129,7 @@ export default function EjeHomeEditorial() {
 
       <section className="eje-ebook-section" aria-labelledby="ebook-heading">
         <div className="eje-wrap eje-ebook-grid">
-          <div className="eje-ebook-placeholder">Portada original<br />del eBook</div>
+          <div className="eje-ebook-art" aria-hidden="true"><span>EJE®</span><strong>Tu vida,<br />tus respuestas,<br />tu mapa.</strong><small>eBOOK</small></div>
           <div>
             <p className="eje-kicker">RECURSO GRATUITO</p>
             <h2 id="ebook-heading" className="eje-section-title">Tu vida, tus respuestas, tu mapa.</h2>
