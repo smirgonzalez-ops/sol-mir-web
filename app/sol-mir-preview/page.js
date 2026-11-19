@@ -48,10 +48,13 @@ export default function SolMirPreview() {
           <div className="sol-shell sol-narrow">
             <p className="sol-eyebrow">MI HISTORIA</p>
             <h2>Me creía independiente. Hasta que tuve que empezar de nuevo.</h2>
-            <p>Estudié Marketing y Administración, trabajé en Coca-Cola y Citibank y tuve mi propia inmobiliaria en Chile. Sabía organizar, liderar y resolver.</p>
-            <p>Después de una separación me encontré con poca plata, la autoestima por el piso y decisiones que me daban miedo. Me costaba entender cómo había llegado a ese lugar.</p>
-            <p className="sol-pullquote">Había aprendido a resolver muchas cosas. Lo que no sabía era cómo volver a elegirme a mí.</p>
-            <p>Con el tiempo empecé a reconocer algo que también escuchaba en las personas a las que acompañaba: lo que nos pasa en un área de la vida puede influir en las demás.</p>
+            <p>Había trabajado en Coca-Cola y Citibank. Tenía dos carreras universitarias y mi propia inmobiliaria en Chile.</p>
+            <p>Me iba bien. Sabía trabajar, organizar, resolver problemas y tomar decisiones.</p>
+            <p>Cuando trasladaron a mi entonces marido a Argentina, cerré mi inmobiliaria.</p>
+            <p>Años después me separé.</p>
+            <p>Y me encontré con poca plata, la autoestima por el piso y miedo de tomar decisiones que antes jamás hubiera imaginado que me costarían tanto.</p>
+            <p className="sol-pullquote">¿Cómo podía ser que una mujer que había resuelto tantas cosas no supiera por dónde empezar con su propia vida?</p>
+            <p>Esa contradicción fue una de las experiencias que, con el tiempo, me llevaron a crear EJE®.</p>
             <Link className="sol-text-link" href="/sobre-sol">Leer mi historia completa</Link>
           </div>
         </section>
