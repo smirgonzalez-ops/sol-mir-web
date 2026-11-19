@@ -98,7 +98,7 @@ const PREGUNTAS = [
 
       "Sí: $ 40.000 por Mercado Pago, con tarjeta o en efectivo por Pago Fácil o Rapipago. El botón está junto al de la tarjeta internacional, arriba y al final de esta página.",
 
-      "En ese caso el acceso no llega solo: te lo mando yo por correo cuando se acredita el pago. Si pagás de noche, te llega a la mañana siguiente."
+      "En ese caso el acceso no llega automáticamente. Después de pagar, escribime a hola@solmir.co para pedírmelo por correo, indicando el correo que usaste al pagar."
 
     ]
 
@@ -111,7 +111,7 @@ const PREGUNTAS = [
     "q": "¿Lo puedo volver a hacer?",
     "a": [
       "Sí, y no cuesta nada: pagás una sola vez y el acceso queda tuyo.",
-      "Volver a hacerlo a los tres o seis meses es cuando más se nota, porque el Mapa compara con tu lectura anterior y vas a ver qué se movió. Pero podés repetirlo cuando quieras."
+      "Cada vez que lo hacés recibís un nuevo Mapa según tus respuestas de ese momento. El Test no compara automáticamente resultados anteriores; si guardás tus mapas, podés revisarlos por tu cuenta."
     ]
   }
 
@@ -235,7 +235,7 @@ export default function Test() {
             <p>El Test EJE® ordena tus respuestas y te devuelve una lectura personalizada de cómo se reparten hoy entre tus vínculos, tu trabajo, el dinero y tu identidad.</p>
             <LoQueTeLlevas />
             <BotonesDePago lugar="test_hero" />
-            <p className="hero-meta">Pago único, sin suscripción. Acceso inmediato con tarjeta internacional. Por Mercado Pago, te envío el acceso por correo.</p>
+            <p className="hero-meta">Pago único, sin suscripción. Acceso inmediato con tarjeta internacional. Si pagás por Mercado Pago, pedime el acceso por correo.</p>
           </div>
           <figure className="mapa-hero">
             <a href="/mapa-1b.jpg" target="_blank" rel="noopener noreferrer" aria-label="Abrir primera página del Mapa en tamaño completo"><Image src="/mapa-1b.jpg" width={880} height={1243} sizes="(max-width: 768px) 82vw, 390px" priority alt="Ejemplo de la primera página de un Mapa Estructural EJE®, con un patrón dominante y porcentajes personales." /></a>
@@ -383,7 +383,7 @@ export default function Test() {
             <span>3 · Descargás tu Mapa</span>
           </div>
           <BotonesDePago lugar="test_cierre" />
-          <p className="hero-meta">Pago único. Con tarjeta internacional, acceso inmediato. Por Mercado Pago, te envío el acceso por correo. Completás 42 preguntas y descargás tu Mapa de 4 páginas, tu lectura en voz y tu certificado.</p>
+          <p className="hero-meta">Pago único. Con tarjeta internacional, acceso inmediato. Si pagás por Mercado Pago, pedime el acceso por correo. Completás 42 preguntas y descargás tu Mapa de 4 páginas, tu lectura en voz y tu certificado.</p>
           <aside className="purchase-note" aria-label="Información sobre el pago y el acceso">Vas a completar el pago seguro en Gumroad. Después, tocá «View content» para acceder al Test. Tus respuestas quedan en tu dispositivo y Sol no recibe el número completo de tu tarjeta. Gumroad también te envía un recibo en inglés con el mismo acceso.</aside>
         </div>
       </section>
@@ -412,7 +412,7 @@ export default function Test() {
           <div style={{marginTop: '2.5rem'}}>
             <BotonesDePago lugar="test_faq" titulo="Ya entendí, quiero el mío · USD 27" />
           </div>
-          <p className="hero-meta">Pago único. Acceso inmediato con tarjeta internacional; por Mercado Pago, te envío el acceso por correo.</p>
+          <p className="hero-meta">Pago único. Acceso inmediato con tarjeta internacional; si pagás por Mercado Pago, pedime el acceso por correo.</p>
         </div>
       </section>
     </>
