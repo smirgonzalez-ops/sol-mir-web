@@ -71,7 +71,7 @@ export default function EjeHomeEditorial() {
           <div>
             <p className="eje-kicker">LA SILLA EJE®</p>
             <h2 id="chair-heading" className="eje-section-title">¿En qué te estás apoyando hoy?</h2>
-            <p>Imaginá tu vida como una silla de cuatro patas. Cada una representa un área: Vínculos, Trabajo, Dinero e Identidad. No siempre cargan el mismo peso. EJE® te propone mirar cómo se distribuye ese peso y qué lugar ocupa cada área en tu momento actual.</p>
+            <p>Imaginá tu vida como una silla de cuatro patas: Vínculos, Trabajo, Dinero e Identidad. No siempre cargan el mismo peso. A veces una termina sosteniendo más que las otras.</p>
             <p>El respaldo representa estar en eje. Las decisiones atraviesan las cuatro áreas.</p>
           </div>
           <figure className="eje-original-chair">
@@ -86,7 +86,7 @@ export default function EjeHomeEditorial() {
           <div>
             <p className="eje-kicker">TEST EJE®</p>
             <h2 id="test-heading" className="eje-section-title">Tu Mapa Estructural EJE®</h2>
-            <p>Observá cómo se distribuyen tus respuestas entre vínculos, trabajo, dinero e identidad y recibí un Mapa Estructural personalizado de tu momento actual.</p>
+            <p>Al terminar el Test, recibís un Mapa Estructural personalizado de cuatro páginas.</p><p>Tu Mapa muestra qué formas de responder tuvieron más peso en tus respuestas y cómo aparecen en Vínculos, Trabajo, Dinero e Identidad. Es una foto de este momento. No define quién sos.</p>
             <div className="eje-map-preview">
               <a href="/mapa-silla.jpg" target="_blank" rel="noopener noreferrer" aria-label="Ampliar muestra real del Mapa EJE">
                 <Image src="/mapa-silla.jpg" alt="Muestra real de una página del Mapa Estructural EJE®" width={880} height={1243} sizes="(max-width: 768px) 76vw, 300px" />
@@ -95,14 +95,15 @@ export default function EjeHomeEditorial() {
             </div>
           </div>
           <div className="eje-offer">
-            <p className="eje-offer-label">QUÉ INCLUYE</p>
+            <p className="eje-offer-label">CÓMO ES</p>
+            <p className="eje-offer-process">42 preguntas · aproximadamente 15 minutos</p>
+            <p className="eje-offer-label">QUÉ RECIBÍS</p>
             <ul>
-              <li>42 preguntas, aproximadamente 15 minutos</li>
-              <li>Mapa personalizado de 4 páginas en PDF</li>
-              <li>Lectura grabada con la voz de Sol</li>
-              <li>Certificado personalizado</li>
-              <li>Imagen del resultado</li>
-              <li>Envío del Mapa por correo</li>
+              <li>Tu Mapa Estructural de 4 páginas en PDF</li>
+              <li>La lectura de tu resultado, grabada con la voz de Sol</li>
+              <li>Un certificado personalizado</li>
+              <li>La imagen de tu resultado</li>
+              <li>La opción de enviarte el Mapa por correo</li>
             </ul>
             <p className="eje-price">USD 27 <span>· Pago único</span></p>
             <Link className="eje-btn eje-btn-wide" href="/test">Conocer el Test EJE®</Link>
@@ -140,8 +141,8 @@ export default function EjeHomeEditorial() {
           <h2 id="faq-heading" className="eje-section-title">Preguntas frecuentes.</h2>
           <div>
             <details><summary>¿Qué es EJE®?</summary><p>Es un sistema de autoconocimiento que propone mirar en conjunto cuatro áreas de tu vida: Vínculos, Trabajo, Dinero e Identidad.</p></details>
-            <details><summary>¿Qué muestra el Test?</summary><p>Una lectura de cómo se distribuyen tus respuestas entre Vínculos, Trabajo, Dinero e Identidad. Es una fotografía del momento, no una etiqueta fija.</p></details>
-            <details><summary>¿Qué recibo al hacer el Test?</summary><p>Tu Mapa Estructural personalizado de cuatro páginas en PDF, la lectura grabada con la voz de Sol, certificado, imagen del resultado y envío del Mapa por correo.</p></details>
+            <details><summary>¿Qué muestra el Test?</summary><p>Qué formas de responder tuvieron más peso en tus respuestas y en qué áreas aparecen. Es una lectura de ese momento, no una etiqueta sobre quién sos.</p></details>
+            <details><summary>¿Qué recibo al hacer el Test?</summary><p>Tu Mapa Estructural de cuatro páginas en PDF, la lectura grabada con la voz de Sol, un certificado personalizado y la imagen de tu resultado. También podés enviarte el Mapa por correo.</p></details>
             <details><summary>¿Puedo volver a hacerlo?</summary><p>Sí. Pagás una sola vez y podés repetir el Test cuando quieras, sin otro cargo.</p></details>
             <details><summary>¿Es una evaluación psicológica?</summary><p>No. Es una herramienta de autoconocimiento, no un test psicológico validado, diagnóstico ni tratamiento. No reemplaza el acompañamiento profesional cuando lo necesitás.</p></details>
           </div>
