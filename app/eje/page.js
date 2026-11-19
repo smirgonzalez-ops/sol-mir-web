@@ -5,6 +5,7 @@ import "./eje-editorial.css";
 export const metadata = {
   title: "EJE® | Cuatro áreas, una mirada a tu vida",
   description: "Conocé EJE® y el Test EJE®: 42 preguntas, unos 15 minutos y un Mapa Estructural personal para mirar vínculos, trabajo, dinero e identidad.",
+  alternates: { canonical: "/eje" },
 };
 
 const areas = [
@@ -16,7 +17,7 @@ const areas = [
 
 export default function EjeHomeEditorial() {
   return (
-    <main className="eje-site" id="inicio">
+    <div className="eje-site" id="inicio">
       <section className="eje-dark-hero">
         <div className="eje-wrap">
           <div className="eje-brand-row">
@@ -29,6 +30,15 @@ export default function EjeHomeEditorial() {
               <a href="#test">El Test</a>
               <Link href="/sobre-sol">Sol Mir</Link>
             </nav>
+            <details className="eje-mobile-nav">
+              <summary aria-label="Abrir menú de EJE">Menú</summary>
+              <nav aria-label="Secciones de EJE en móvil">
+                <a href="#areas">Las cuatro áreas</a>
+                <a href="#silla">La silla</a>
+                <a href="#test">El Test</a>
+                <Link href="/sobre-sol">Sol Mir</Link>
+              </nav>
+            </details>
             <Link href="/test" className="eje-top-cta">Conocer el Test</Link>
           </div>
           <div className="eje-hero-body">
@@ -141,9 +151,9 @@ export default function EjeHomeEditorial() {
       <footer className="eje-footer">
         <div className="eje-wrap eje-footer-grid">
           <div><Image src="/eje-logotipo-oficial-oscuro.svg" alt="EJE®" width={108} height={79}/><p>Una mirada a las cuatro áreas de tu vida.</p></div>
-          <div><Link href="/que-es-eje">Qué es EJE®</Link><Link href="/test">Test EJE®</Link><Link href="/sobre-sol">Sol Mir</Link><Link href="/contacto">Contacto</Link></div>
+          <div><Link href="/que-es-eje">Qué es EJE®</Link><Link href="/test">Test EJE®</Link><Link href="/sobre-sol">Sol Mir</Link><Link href="/contacto">Contacto</Link><Link href="/politica-privacidad">Privacidad</Link><Link href="/terminos">Términos</Link></div>
         </div>
       </footer>
-    </main>
+    </div>
   );
 }
