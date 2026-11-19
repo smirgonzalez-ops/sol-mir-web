@@ -87,10 +87,30 @@ export default function SolMirPreview() {
           <div className="sol-shell sol-test-grid">
             <div>
               <p className="sol-eyebrow">TEST EJE®</p>
-              <h2>Tu propia lectura. No una etiqueta.</h2>
-              <p>Respondés 42 preguntas en unos 15 minutos. Recibís tu Mapa Estructural EJE® de cuatro páginas en PDF, una lectura grabada con mi voz, un certificado y una imagen de tu resultado.</p>
-              <p>Es una fotografía de tus respuestas actuales, no una evaluación psicológica validada.</p>
-              <Link className="sol-button" href="/test">Conocer el Test · USD 27</Link>
+              <h2>Tu Mapa Estructural EJE®</h2>
+              <p>Respondé 42 preguntas sobre Vínculos, Trabajo, Dinero e Identidad y recibí un Mapa personalizado de cómo estás respondiendo hoy.</p>
+              <h3>¿Qué vas a encontrar en tu Mapa?</h3>
+              <ul>
+                <li>Cómo se distribuyen tus respuestas entre las cuatro áreas.</li>
+                <li>Qué repeticiones aparecen en esa lectura.</li>
+                <li>Dónde se observan posibles puntos de fricción.</li>
+                <li>Un aspecto para revisar y una propuesta para reflexionar.</li>
+              </ul>
+              <p>No es una definición de quién sos. Es una lectura de tus respuestas en este momento.</p>
+              <h3>¿Qué incluye?</h3>
+              <ul>
+                <li>Test de 42 preguntas. Aproximadamente 15 minutos.</li>
+                <li>Mapa Estructural personalizado de cuatro páginas en PDF.</li>
+                <li>Lectura grabada con la voz de Sol.</li>
+                <li>Certificado personalizado.</li>
+                <li>Imagen de tu resultado.</li>
+                <li>Envío del Mapa por correo.</li>
+              </ul>
+              <p className="sol-test-price"><strong>USD 27 · Pago único</strong></p>
+              <p><strong>También disponible en Argentina por ARS 40.000.</strong></p>
+              <p>Podés volver a realizar el Test sin pagar nuevamente por cada intento.</p>
+              <Link className="sol-button" href="/test">Conocer el Test EJE®</Link>
+              <p className="sol-disclaimer">El Test EJE® no constituye un diagnóstico ni una evaluación psicológica validada.</p>
             </div>
             <figure className="sol-map-figure">
               <Image src="/mapa-1b.jpg" width={880} height={1243} sizes="(max-width:760px) 65vw, 300px" alt="Ejemplo real de un Mapa Estructural EJE®" />
