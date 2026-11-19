@@ -122,10 +122,12 @@ export default function SolMirPreview() {
         <section className="sol-free" id="guia">
           <div className="sol-shell sol-free-grid">
             <div>
-              <p className="sol-eyebrow">PARA EMPEZAR SIN COSTO</p>
-              <h2>Tu vida, tus respuestas, tu mapa.</h2>
-              <p>Una guía gratuita para empezar a observar qué respuestas repetís y dónde te pesan más.</p>
-              <Link className="sol-button" href="/ebook">Quiero leer la guía</Link>
+              <p className="sol-eyebrow">UNA GUÍA GRATUITA PARA EMPEZAR</p>
+              <h2>Tu vida, tus respuestas, tu mapa</h2>
+              <p>¿Alguna vez te preguntaste por qué hay situaciones que parecen repetirse en tu vida?</p>
+              <p>Preparé esta guía para que empieces a mirar cómo respondés en tus vínculos, en el trabajo, con tu dinero y con vos.</p>
+              <p>Podés leerla a tu ritmo, sin tener que saber nada de EJE®.</p>
+              <Link className="sol-button" href="/ebook">Quiero recibir la guía gratuita</Link>
             </div>
             <Image src="/ebook-tu-vida.jpg" width={1024} height={1280} sizes="(max-width:760px) 55vw, 250px" alt="Portada real del ebook Tu vida, tus respuestas, tu mapa" />
           </div>
