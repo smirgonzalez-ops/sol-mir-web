@@ -34,7 +34,8 @@
 .eje-original-chair { margin:0; text-align:center; }
 .eje-original-chair img { width:min(100%,500px); height:auto; display:block; margin:auto; border:1px solid #CBB99C; }
 .eje-original-chair figcaption { margin-top:11px; font-size:13px; color:var(--eje-muted); line-height:1.55; }
-.eje-original-chair figcaption span { display:block; }
+.eje-original-chair .eje-chair-caption-line { display:block; max-width:460px; margin-inline:auto; }
+.eje-original-chair .eje-chair-caption-line + .eje-chair-caption-line { margin-top:12px; }
 .eje-test-section { background:var(--eje-sand); padding:94px 0; }
 .eje-test-grid { display:grid; grid-template-columns:1.1fr .9fr; gap:90px; }
 .eje-test-grid > div > p { font-size:17px; }
