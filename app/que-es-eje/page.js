@@ -57,10 +57,10 @@ export default function QueEsEJE() {
           </svg>
 
           <div className="grid grid-2" style={{marginTop: "2rem"}}>
-            <div className="card"><h3>Vínculos</h3><p>Cómo te vinculás, cómo te presentás y qué sostenés en tus relaciones.</p></div>
-            <div className="card"><h3>Trabajo</h3><p>Cómo te ubicás frente a la productividad, el reconocimiento y la contribución.</p></div>
-            <div className="card"><h3>Dinero</h3><p>Tu relación con el valor, la abundancia y la seguridad material.</p></div>
-            <div className="card"><h3>Identidad</h3><p>Cómo experimentás, sentís y registrás lo que te pasa. Tu verdad emocional.</p></div>
+            <div className="card"><h3>Vínculos</h3><p>Cómo respondés con las personas que te importan.</p></div>
+            <div className="card"><h3>Trabajo</h3><p>Cómo respondés frente a lo que te piden y las responsabilidades que asumís.</p></div>
+            <div className="card"><h3>Dinero</h3><p>Cómo respondés cuando tenés que tomar decisiones sobre tu plata.</p></div>
+            <div className="card"><h3>Identidad</h3><p>Cómo te tratás, qué lugar te das y qué decisiones tomás respecto de vos.</p></div>
           </div>
 
           <p>No siempre están igual de firmes. A veces una sostiene demasiado mientras otra necesita atención.</p>
@@ -72,23 +72,14 @@ export default function QueEsEJE() {
           <p className="remate">No hace falta esperar a que todo se venga abajo para empezar a mirar qué necesita sostén.</p>
           <p style={{marginTop: "2rem"}}><a href="/test" className="btn btn-secondary">Ver cómo funciona el Test</a></p>
 
-          <h2 style={{marginTop: "4rem"}}>Qué diferencia a EJE®</h2>
-          <div className="tabla-scroll">
-            <table className="tabla-diferencial">
-              <thead><tr><th scope="col">Enfoque habitual</th><th scope="col">EJE®</th></tr></thead>
-              <tbody>
-                <tr><td>Busca explicarte cómo sos</td><td>Mira cómo respondés en un momento determinado</td></tr>
-                <tr><td>Trabaja un problema aislado</td><td>Observa la combinación de cuatro territorios</td></tr>
-                <tr><td>Identifica un patrón</td><td>Muestra también su peso y su contexto</td></tr>
-                <tr><td>Puede terminar en una etiqueta</td><td>Construye un mapa, no una identidad</td></tr>
-              </tbody>
-            </table>
-          </div>
+          <h2 style={{marginTop: "4rem"}}>Qué vas a encontrar en EJE®</h2>
+          <p>Una lectura de tus respuestas de este momento en cuatro áreas: Vínculos, Trabajo, Dinero e Identidad.</p>
+          <p>El Mapa muestra qué formas de responder aparecen y cómo se distribuyen en tus resultados. No define tu personalidad ni te dice qué decisión tomar.</p>
 
           <h2 style={{marginTop: "4rem"}}>Lo que EJE® no es</h2>
           <ul style={{listStyle: "none", marginTop: "1.5rem"}}>
             <li style={{marginBottom: "1rem"}}><strong>No es terapia.</strong> No trata patologías ni reemplaza atención profesional.</li>
-            <li style={{marginBottom: "1rem"}}><strong>No es tarot ni astrología.</strong> El Mapa se construye con tus respuestas al Test.</li>
+            
             <li><strong>No es una fórmula rápida.</strong> No promete una transformación garantizada.</li>
           </ul>
         </div>
