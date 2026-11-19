@@ -43,7 +43,8 @@
 .eje-map-preview a { flex:0 0 150px; }
 .eje-map-preview img { width:150px; height:195px; object-fit:cover; object-position:top; border:1px solid #CBB99C; }
 .eje-offer { background:var(--eje-linen); padding:36px; border:1px solid #CBB99C; align-self:start; }
-.eje-offer-label { font-size:12px !important; letter-spacing:.15em; font-weight:700; margin:0 0 20px; }
+.eje-offer-label { font-size:12px !important; letter-spacing:.15em; font-weight:700; margin:0 0 14px; }
+.eje-offer-process { font-size:16px !important; line-height:1.5 !important; margin:0 0 24px; }
 .eje-offer ul { margin:0; padding-left:21px; }
 .eje-offer li { margin-bottom:14px; font-size:16px; line-height:1.45; }
 .eje-price { font-family:Fraunces,Georgia,serif; font-size:34px !important; line-height:1.2 !important; margin:26px 0 18px; }
