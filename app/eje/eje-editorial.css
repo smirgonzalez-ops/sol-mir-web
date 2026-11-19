@@ -31,12 +31,9 @@
 .eje-chair-section { background:var(--eje-cream); padding:88px 0; }
 .eje-chair-grid { display:grid; grid-template-columns:1.03fr .97fr; align-items:center; gap:78px; }
 .eje-chair-grid p { font-size:17px; max-width:500px; }
-.eje-chair-concept { border:1px solid #B9A98F; padding:36px; background:rgba(247,242,234,.62); }
-.eje-chair-concept-label { margin:0 0 28px !important; font:600 11px/1.5 Inter,Arial,sans-serif !important; letter-spacing:.16em; color:var(--eje-muted); }
-.eje-chair-concept-areas { display:grid; grid-template-columns:1fr 1fr; gap:10px; }
-.eje-chair-concept-areas span { padding:22px 9px; background:var(--eje-linen); border:1px solid #CBB99C; text-align:center; font:400 clamp(19px,2vw,25px)/1.2 Fraunces,Georgia,serif; }
-.eje-chair-concept-back { margin-top:12px; padding:16px; background:var(--eje-ink); color:var(--eje-linen); font:400 23px/1.25 Fraunces,Georgia,serif; text-align:center; }
-.eje-chair-concept-note { font-size:13px !important; color:var(--eje-muted); margin:18px 0 0; text-align:center; }
+.eje-original-chair { margin:0; text-align:center; }
+.eje-original-chair img { width:min(100%,420px); height:auto; display:block; margin:auto; border:1px solid #CBB99C; }
+.eje-original-chair figcaption { margin-top:11px; font-size:13px; color:var(--eje-muted); }
 .eje-test-section { background:var(--eje-sand); padding:94px 0; }
 .eje-test-grid { display:grid; grid-template-columns:1.1fr .9fr; gap:90px; }
 .eje-test-grid > div > p { font-size:17px; }
@@ -50,19 +47,18 @@
 .eje-price { font-family:Fraunces,Georgia,serif; font-size:39px !important; line-height:1.2 !important; margin:30px 0 20px; }
 .eje-price span { font:400 16px/1.4 Inter,Arial,sans-serif; }
 .eje-btn-wide { width:100%; }
+.eje-repeat { font-size:14px !important; margin:16px 0 0; font-weight:600; line-height:1.5 !important; }
 .eje-disclaimer { font-size:13px !important; color:var(--eje-muted); margin:16px 0 0; }
 .eje-founder-section { background:var(--eje-linen); padding:90px 0; }
 .eje-founder-grid { display:grid; grid-template-columns:280px 1fr; gap:75px; align-items:center; }
-.eje-founder-signature { min-height:280px; border:1px solid #B9A98F; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:30px; }
-.eje-founder-signature span { font:400 88px/1 Fraunces,Georgia,serif; letter-spacing:-.08em; }
-.eje-founder-signature small { letter-spacing:.18em; font:600 10px/1.5 Inter,Arial,sans-serif; color:var(--eje-muted); }
+.eje-founder-photo-reserved { min-height:280px; border:1px solid #B9A98F; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:14px; text-align:center; color:var(--eje-muted); background:var(--eje-cream); }
+.eje-founder-photo-reserved span { font:400 34px/1.2 Fraunces,Georgia,serif; }
+.eje-founder-photo-reserved small { font:500 11px/1.4 Inter,Arial,sans-serif; letter-spacing:.08em; }
 .eje-founder-grid p,.eje-ebook-grid p { max-width:590px; font-size:17px; }
 .eje-text-link { display:inline-block; color:var(--eje-ink); text-underline-offset:5px; margin-top:10px; font-weight:600; }
 .eje-ebook-section { background:var(--eje-cream); padding:80px 0; }
 .eje-ebook-grid { display:grid; grid-template-columns:190px 1fr; align-items:center; gap:70px; }
-.eje-ebook-art { min-height:260px; display:flex; flex-direction:column; justify-content:space-between; background:var(--eje-ink); color:var(--eje-linen); padding:22px 20px; box-shadow:12px 12px 0 rgba(34,31,27,.10); }
-.eje-ebook-art span,.eje-ebook-art small { font:600 11px/1.2 Inter,Arial,sans-serif; letter-spacing:.17em; }
-.eje-ebook-art strong { font:400 23px/1.13 Fraunces,Georgia,serif; letter-spacing:-.03em; }
+.eje-ebook-cover { display:block; width:190px; max-width:100%; height:auto; border:1px solid #CBB99C; }
 .eje-faq-section { background:var(--eje-linen); padding:90px 0; }
 .eje-faq-grid { display:grid; grid-template-columns:.8fr 1.2fr; gap:80px; }
 .eje-faq-grid details { border-top:1px solid #CBB99C; padding:19px 0; }
@@ -103,12 +99,12 @@
  .eje-area:first-child { border-top:none; }
  .eje-area h3 { font-size:29px; margin:10px 0 5px; }
  .eje-area p { font-size:16px; }
- .eje-chair-concept { padding:22px; }
+ .eje-original-chair img { width:min(100%,390px); }
  .eje-test-grid { gap:32px; }
  .eje-offer { padding:24px; }
  .eje-founder-grid,.eje-ebook-grid { grid-template-columns:1fr; gap:26px; }
- .eje-founder-signature { min-height:190px; }
- .eje-ebook-art { width:190px; min-height:245px; }
+ .eje-founder-photo-reserved { min-height:190px; }
+ .eje-ebook-cover { width:160px; }
  .eje-footer-grid { display:block; }
  .eje-footer-grid > div:last-child { margin-top:28px; display:grid; grid-template-columns:1fr 1fr; gap:15px; }
 }
