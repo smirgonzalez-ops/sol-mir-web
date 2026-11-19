@@ -203,7 +203,7 @@ const LoQueTeLlevas = () => (
       <li><strong>La lectura de tu resultado en mi voz</strong></li>
       <li>Tu certificado con tu nombre</li>
       <li>La imagen de tu resultado</li>
-      <li>Todo, a tu correo</li>
+      <li>Podés enviarte el Mapa por correo desde la pantalla del resultado</li>
     </ul>
   </div>
 );
@@ -332,7 +332,7 @@ export default function Test() {
             <li><strong>La imagen de tu resultado.</strong> Para guardarla o compartirla, si querés.</li>
             <li><strong>Tu Mapa en tu correo.</strong> Desde la misma pantalla podés enviártelo por email y tenerlo también ahí.</li>
           </ul>
-          <p>Todo se descarga y queda tuyo.</p>
+          <p>Al terminar podés descargar el Mapa, el certificado y la imagen. La lectura en voz se escucha en esa misma pantalla. Si querés, también podés enviarte el Mapa por correo.</p>
 
           {/* Acá había un cuarto bloque de botones. Medido en un teléfono, caía
               en la pantalla 7,1 y el anterior en la 6,0: bajabas un poco, veías
