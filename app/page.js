@@ -34,7 +34,7 @@ export default function Home() {
                 táctil de 44— y sin subrayado señalaba sólo por color. La línea
                 no necesita ser tocable: necesita sacar la objeción del dólar
                 antes de que la persona cierre. */}
-            <p className="hero-meta">USD 27 · pago único · acceso inmediato con tarjeta internacional<br />42 preguntas · 15 minutos · Mapa de 4 páginas al terminar<br />Si pagás en pesos, te envío el acceso por correo.</p>
+            <p className="hero-meta">USD 27 · pago único · acceso inmediato con tarjeta internacional<br />42 preguntas · 15 minutos · Mapa de 4 páginas al terminar<br />Si pagás por Mercado Pago, pedime el acceso por correo.</p>
           </div>
           <figure className="home-map-proof">
             <a href="/mapa-silla.jpg" target="_blank" rel="noopener noreferrer" aria-label="Abrir ejemplo de la silla del Mapa en tamaño completo"><Image src="/mapa-silla.jpg" width={880} height={1243} sizes="(max-width: 768px) 78vw, 430px" priority alt="Ejemplo del Mapa Estructural EJE®: tu silla dibujada, con cuántas de tus respuestas de cada área —vínculos, trabajo, dinero e identidad— eligieron tu salida más frecuente." /></a>
