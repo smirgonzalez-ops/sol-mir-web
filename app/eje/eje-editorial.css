@@ -32,7 +32,7 @@
 .eje-chair-grid { display:grid; grid-template-columns:1.03fr .97fr; align-items:center; gap:78px; }
 .eje-chair-grid p { font-size:17px; max-width:500px; }
 .eje-original-chair { margin:0; text-align:center; }
-.eje-original-chair img { width:min(100%,420px); height:auto; display:block; margin:auto; border:1px solid #CBB99C; }
+.eje-original-chair img { width:min(100%,500px); height:auto; display:block; margin:auto; border:1px solid #CBB99C; }
 .eje-original-chair figcaption { margin-top:11px; font-size:13px; color:var(--eje-muted); }
 .eje-test-section { background:var(--eje-sand); padding:94px 0; }
 .eje-test-grid { display:grid; grid-template-columns:1.1fr .9fr; gap:90px; }
@@ -99,7 +99,7 @@
  .eje-area:first-child { border-top:none; }
  .eje-area h3 { font-size:29px; margin:10px 0 5px; }
  .eje-area p { font-size:16px; }
- .eje-original-chair img { width:min(100%,390px); }
+ .eje-original-chair img { width:100%; max-width:390px; }
  .eje-test-grid { gap:32px; }
  .eje-offer { padding:24px; }
  .eje-founder-grid,.eje-ebook-grid { grid-template-columns:1fr; gap:26px; }
