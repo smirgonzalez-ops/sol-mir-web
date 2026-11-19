@@ -24,7 +24,7 @@ export default function SolMirPreview() {
         </div>
       </header>
 
-      <main>
+      <div className="sol-content">
         <section className="sol-hero">
           <div className="sol-shell sol-hero-grid">
             <div className="sol-hero-copy">
@@ -128,7 +128,7 @@ export default function SolMirPreview() {
             <Image src="/ebook-tu-vida.jpg" width={1024} height={1280} sizes="(max-width:760px) 55vw, 250px" alt="Portada real del ebook Tu vida, tus respuestas, tu mapa" />
           </div>
         </section>
-      </main>
+      </div>
       <footer className="sol-footer">
         <div className="sol-shell sol-footer-grid">
           <div><strong>SOL MIR</strong><p>Creadora del Sistema EJE®</p></div>
