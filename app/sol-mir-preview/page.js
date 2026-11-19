@@ -100,7 +100,7 @@ export default function SolMirPreview() {
                 <li>Lectura grabada con la voz de Sol.</li>
                 <li>Certificado personalizado.</li>
                 <li>Imagen de tu resultado.</li>
-                <li>Envío del Mapa por correo.</li>
+                <li>Opción de enviarte el Mapa por correo desde el resultado.</li>
               </ul>
               <p className="sol-test-price"><strong>USD 27 · Pago único</strong></p>
               <p><strong>También disponible en Argentina por ARS 40.000.</strong></p>
