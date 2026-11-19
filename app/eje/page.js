@@ -76,7 +76,6 @@ export default function EjeHomeEditorial() {
           </div>
           <figure className="eje-original-chair">
             <Image src="/eje-silla-editorial-aprobada.webp" alt="Silla editorial EJE® de cuatro patas, con Vínculos, Trabajo, Dinero e Identidad y el respaldo Estar en eje." width={1312} height={1199} sizes="(max-width: 800px) 90vw, 500px" />
-            <figcaption><div className="eje-chair-caption-line">Las cuatro patas representan Vínculos, Trabajo, Dinero e Identidad.</div><div className="eje-chair-caption-line">El respaldo representa estar en eje.</div></figcaption>
           </figure>
         </div>
       </section>
@@ -107,6 +106,11 @@ export default function EjeHomeEditorial() {
             </ul>
             <p className="eje-price">USD 27 <span>· Pago único</span></p>
             <Link className="eje-btn eje-btn-wide" href="/test">Conocer el Test EJE®</Link>
+            <div className="eje-pesos-payment">
+              <p><strong>¿Preferís pagar en pesos argentinos?</strong></p>
+              <a className="eje-pesos-link" href="https://mpago.la/1Gjzh2t" target="_blank" rel="noopener noreferrer">Pagar ARS 40.000 con Mercado Pago</a>
+              <p>El acceso no se envía automáticamente. Después de pagar, <a href="mailto:hola@solmir.co?subject=Acceso%20Test%20EJE%20por%20Mercado%20Pago">pedímelo por correo</a> indicando el correo que usaste en el pago.</p>
+            </div>
             <p className="eje-repeat">Pagás una sola vez. Podés volver a hacer el Test cuando quieras.</p><p className="eje-disclaimer">No es un diagnóstico ni una evaluación psicológica validada.</p>
           </div>
         </div>
