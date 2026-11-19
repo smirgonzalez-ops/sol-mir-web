@@ -9,10 +9,10 @@ export const metadata = {
 };
 
 const areas = [
-  { num: "01", title: "Vínculos", copy: "Cómo te vinculás, qué lugar ocupás y qué respuestas se repiten en tus relaciones." },
-  { num: "02", title: "Trabajo", copy: "Qué sostenés, cuánto te exigís y qué lugar tiene el trabajo en tu vida." },
-  { num: "03", title: "Dinero", copy: "Cómo tomás decisiones económicas y qué se repite cuando necesitás seguridad." },
-  { num: "04", title: "Identidad", copy: "Qué elegís para vos y qué parte de tu vida queda a veces en segundo plano." },
+  { num: "01", title: "Vínculos", copy: "Cómo respondés con las personas que te importan." },
+  { num: "02", title: "Trabajo", copy: "Cómo respondés frente a lo que te piden y las responsabilidades que asumís." },
+  { num: "03", title: "Dinero", copy: "Cómo respondés cuando tenés que tomar decisiones sobre tu plata." },
+  { num: "04", title: "Identidad", copy: "Cómo te tratás, qué lugar te das y qué decisiones tomás respecto de vos." },
 ];
 
 export default function EjeHomeEditorial() {
@@ -39,12 +39,12 @@ export default function EjeHomeEditorial() {
                 <Link href="/sobre-sol">Sol Mir</Link>
               </nav>
             </details>
-            <Link href="/test" className="eje-top-cta">Conocer el Test</Link>
+            <Link href="/test" className="eje-top-cta">Conocer el Test EJE®</Link>
           </div>
           <div className="eje-hero-body">
             <p className="eje-kicker eje-light-kicker">SISTEMA EJE®</p>
             <h1>Entendés por qué lo hacés.<br />Igual volvés a hacerlo.</h1>
-            <p className="eje-hero-intro">Hay cosas que se repiten en tus vínculos, trabajo, dinero e identidad. EJE® te propone mirarlas en conjunto.</p>
+            <p className="eje-hero-intro">Una manera de observar cómo se repiten tus respuestas en vínculos, trabajo, dinero e identidad.</p>
             <Link className="eje-btn" href="/test">Conocer el Test EJE®</Link>
           </div>
         </div>
@@ -70,18 +70,14 @@ export default function EjeHomeEditorial() {
         <div className="eje-wrap eje-chair-grid">
           <div>
             <p className="eje-kicker">LA SILLA EJE®</p>
-            <h2 id="chair-heading" className="eje-section-title">Cuatro patas.<br />Una manera de mirar tu vida.</h2>
-            <p>Imaginá tu vida como una silla. Sus cuatro patas son Vínculos, Trabajo, Dinero e Identidad. El respaldo representa estar en eje.</p>
-            <p>Las decisiones atraviesan las cuatro áreas. No son una quinta pata.</p>
+            <h2 id="chair-heading" className="eje-section-title">¿En qué te estás apoyando hoy?</h2>
+            <p>Imaginá tu vida como una silla de cuatro patas. Cada una representa un área: Vínculos, Trabajo, Dinero e Identidad. No siempre cargan el mismo peso. EJE® te propone mirar cómo se distribuye ese peso y qué lugar ocupa cada área en tu momento actual.</p>
+            <p>El respaldo representa estar en eje. Las decisiones atraviesan las cuatro áreas.</p>
           </div>
-          <div className="eje-chair-concept" aria-label="Las cuatro áreas de EJE y el respaldo de estar en eje">
-            <p className="eje-chair-concept-label">UNA SOLA VIDA · CUATRO ÁREAS</p>
-            <div className="eje-chair-concept-areas">
-              <span>Vínculos</span><span>Trabajo</span><span>Dinero</span><span>Identidad</span>
-            </div>
-            <div className="eje-chair-concept-back">Estar en eje</div>
-            <p className="eje-chair-concept-note">Las decisiones atraviesan las cuatro áreas.</p>
-          </div>
+          <figure className="eje-original-chair">
+            <Image src="/eje-silla-ebook-original.png" alt="Ilustración original del eBook EJE®: silla de cuatro patas, Vínculos, Trabajo, Dinero e Identidad, y respaldo estar en eje." width={720} height={900} sizes="(max-width: 800px) 90vw, 420px" />
+            <figcaption>Representación original del eBook EJE®.</figcaption>
+          </figure>
         </div>
       </section>
 
@@ -89,8 +85,8 @@ export default function EjeHomeEditorial() {
         <div className="eje-wrap eje-test-grid">
           <div>
             <p className="eje-kicker">TEST EJE®</p>
-            <h2 id="test-heading" className="eje-section-title">Tu Mapa Estructural EJE®.</h2>
-            <p>42 preguntas para observar qué se repite en tu vida y cómo aparece en tus vínculos, trabajo, dinero e identidad.</p>
+            <h2 id="test-heading" className="eje-section-title">Tu Mapa Estructural EJE®</h2>
+            <p>Observá cómo se distribuyen tus respuestas entre vínculos, trabajo, dinero e identidad y recibí un Mapa Estructural personalizado de tu momento actual.</p>
             <div className="eje-map-preview">
               <a href="/mapa-silla.jpg" target="_blank" rel="noopener noreferrer" aria-label="Ampliar muestra real del Mapa EJE">
                 <Image src="/mapa-silla.jpg" alt="Muestra real de una página del Mapa Estructural EJE®" width={880} height={1243} sizes="(max-width: 768px) 76vw, 300px" />
@@ -106,22 +102,22 @@ export default function EjeHomeEditorial() {
               <li>Lectura grabada con la voz de Sol</li>
               <li>Certificado personalizado</li>
               <li>Imagen del resultado</li>
-              <li>Opción de recibir el Mapa por correo</li>
+              <li>Envío del Mapa por correo</li>
             </ul>
-            <p className="eje-price">USD 27 <span>· pago único</span></p>
+            <p className="eje-price">USD 27 <span>· Pago único</span></p>
             <Link className="eje-btn eje-btn-wide" href="/test">Conocer el Test EJE®</Link>
-            <p className="eje-disclaimer">Podés repetirlo sin pagar nuevamente. No es un diagnóstico ni una evaluación psicológica validada.</p>
+            <p className="eje-repeat">Pagás una sola vez. Podés volver a hacer el Test cuando quieras.</p><p className="eje-disclaimer">No es un diagnóstico ni una evaluación psicológica validada.</p>
           </div>
         </div>
       </section>
 
       <section className="eje-founder-section" aria-labelledby="founder-heading">
         <div className="eje-wrap eje-founder-grid">
-          <div className="eje-founder-signature" aria-hidden="true"><span>SM</span><small>CREADORA DE EJE®</small></div>
+          <div className="eje-founder-photo-reserved" role="img" aria-label="Espacio reservado para una fotografía real de Sol Mir"><span>Sol Mir</span><small>Fotografía original pendiente</small></div>
           <div>
             <p className="eje-kicker">SOL MIR</p>
-            <h2 id="founder-heading" className="eje-section-title">La creadora de EJE®.</h2>
-            <p>Soy Sol Mir. Creé EJE® para mirar cómo se conectan distintas áreas de nuestra vida y reconocer aquello que repetimos.</p>
+            <h2 id="founder-heading" className="eje-section-title">Sol Mir · Creadora de EJE®</h2>
+            <p>Creé EJE® porque entender lo que me pasaba no me alcanzaba para dejar de repetirlo.</p>
             <Link className="eje-text-link" href="/sobre-sol">Conocé mi historia</Link>
           </div>
         </div>
@@ -129,11 +125,11 @@ export default function EjeHomeEditorial() {
 
       <section className="eje-ebook-section" aria-labelledby="ebook-heading">
         <div className="eje-wrap eje-ebook-grid">
-          <div className="eje-ebook-art" aria-hidden="true"><span>EJE®</span><strong>Tu vida,<br />tus respuestas,<br />tu mapa.</strong><small>eBOOK</small></div>
+          <Image className="eje-ebook-cover" src="/eje-ebook-portada-original.png" alt="Portada original del eBook Tu vida, tus respuestas, tu mapa" width={680} height={850} sizes="(max-width: 540px) 190px, 220px" />
           <div>
             <p className="eje-kicker">RECURSO GRATUITO</p>
             <h2 id="ebook-heading" className="eje-section-title">Tu vida, tus respuestas, tu mapa.</h2>
-            <p>Conocé la idea de la silla y empezá a mirar las cuatro áreas de tu vida.</p>
+            <p>Una guía para ver qué repetís y dónde te pesa más.</p>
             <Link className="eje-text-link" href="/ebook">Conocer el eBook</Link>
           </div>
         </div>
@@ -144,8 +140,10 @@ export default function EjeHomeEditorial() {
           <h2 id="faq-heading" className="eje-section-title">Preguntas frecuentes.</h2>
           <div>
             <details><summary>¿Qué es EJE®?</summary><p>Es un sistema de autoconocimiento que propone mirar en conjunto cuatro áreas de tu vida: Vínculos, Trabajo, Dinero e Identidad.</p></details>
-            <details><summary>¿Qué recibo al hacer el Test?</summary><p>Un Mapa Estructural personalizado de cuatro páginas, además de los recursos incluidos en la oferta.</p></details>
-            <details><summary>¿Cómo funciona la compra?</summary><p>El Test cuesta USD 27, en un único pago. Encontrás las opciones de pago y acceso en la página del Test.</p></details>
+            <details><summary>¿Qué muestra el Test?</summary><p>Una lectura de cómo se distribuyen tus respuestas entre Vínculos, Trabajo, Dinero e Identidad. Es una fotografía del momento, no una etiqueta fija.</p></details>
+            <details><summary>¿Qué recibo al hacer el Test?</summary><p>Tu Mapa Estructural personalizado de cuatro páginas en PDF, la lectura grabada con la voz de Sol, certificado, imagen del resultado y envío del Mapa por correo.</p></details>
+            <details><summary>¿Puedo volver a hacerlo?</summary><p>Sí. Pagás una sola vez y podés repetir el Test cuando quieras, sin otro cargo.</p></details>
+            <details><summary>¿Es una evaluación psicológica?</summary><p>No. Es una herramienta de autoconocimiento, no un test psicológico validado, diagnóstico ni tratamiento. No reemplaza el acompañamiento profesional cuando lo necesitás.</p></details>
           </div>
         </div>
       </section>
