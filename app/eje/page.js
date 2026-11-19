@@ -75,8 +75,8 @@ export default function EjeHomeEditorial() {
             <p>El respaldo representa estar en eje. Las decisiones atraviesan las cuatro áreas.</p>
           </div>
           <figure className="eje-original-chair">
-            <Image src="/eje-silla-ebook-original.png" alt="Ilustración original del eBook EJE®: silla de cuatro patas, Vínculos, Trabajo, Dinero e Identidad, y respaldo estar en eje." width={720} height={900} sizes="(max-width: 800px) 90vw, 420px" />
-            <figcaption>Representación original del eBook EJE®.</figcaption>
+            <Image src="/eje-silla-editorial-aprobada.webp" alt="Silla editorial EJE® de cuatro patas, con Vínculos, Trabajo, Dinero e Identidad y el respaldo Estar en eje." width={1312} height={1199} sizes="(max-width: 800px) 90vw, 500px" />
+            <figcaption>Las cuatro patas representan Vínculos, Trabajo, Dinero e Identidad. El respaldo, estar en eje.</figcaption>
           </figure>
         </div>
       </section>
