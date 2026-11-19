@@ -108,3 +108,18 @@
  .eje-footer-grid > div:last-child { margin-top:28px; display:grid; grid-template-columns:1fr 1fr; gap:15px; }
 }
 @media(prefers-reduced-motion:reduce){ .eje-site * { transition:none !important; } }
+
+/* La landing /eje tiene navegación y pie propios; la cabecera global sigue en el resto del sitio. */
+body:has(.eje-site) > header,
+body:has(.eje-site) > footer { display:none; }
+.eje-brand-row { position:relative; }
+.eje-mobile-nav { display:none; }
+.eje-mobile-nav summary { cursor:pointer; color:#F7F2EA; font:600 14px Inter,Arial,sans-serif; min-height:44px; display:flex; align-items:center; }
+.eje-mobile-nav nav { position:absolute; top:calc(100% - 4px); right:0; width:min(290px,calc(100vw - 40px)); background:#221F1B; z-index:20; border:1px solid #CBB99C; padding:12px; display:grid; }
+.eje-mobile-nav nav a { display:block; color:#F7F2EA; text-decoration:none; padding:12px 10px; border-bottom:1px solid rgba(247,242,234,.14); }
+.eje-mobile-nav nav a:last-child { border-bottom:0; }
+.eje-mobile-nav nav a:focus-visible { outline:2px solid #F7F2EA; }
+@media(max-width:800px) {
+  .eje-mobile-nav { display:block; margin-left:auto; }
+  .eje-top-cta { margin-left:0; }
+}
