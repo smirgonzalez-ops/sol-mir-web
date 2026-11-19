@@ -27,7 +27,7 @@ export default function Terminos() {
         <p>Si estás atravesando una crisis, buscá ayuda profesional o contactá a los servicios de emergencia de tu país.</p>
 
         <h2 style={{marginTop: '1.5rem'}}>4. Compra y acceso</h2>
-        <p>El Test se compra en Gumroad. Se entra con la contraseña que recibís al comprar, y el acceso es personal: no está pensado para compartirse ni publicarse. Las condiciones de compra están en la <a href="/politica-compra">Política de Compra</a> y el tratamiento de tus datos, en la <a href="/politica-privacidad">Política de Privacidad</a>.</p>
+        <p>El Test se puede comprar por Gumroad o Mercado Pago. Si pagás por Gumroad, el recibo incluye un enlace «View content» para acceder. Si pagás por Mercado Pago, el acceso no llega automáticamente: después de pagar, escribí a hola@solmir.co para pedirlo por correo. El acceso es personal y no está pensado para compartirse ni publicarse. Las condiciones de compra están en la <a href="/politica-compra">Política de Compra</a> y el tratamiento de tus datos, en la <a href="/politica-privacidad">Política de Privacidad</a>.</p>
 
         <h2 style={{marginTop: '1.5rem'}}>5. Cambios</h2>
         <p>Si cambio estos términos, actualizo la fecha de arriba. La versión vigente es siempre la que está en esta página.</p>

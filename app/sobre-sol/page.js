@@ -85,7 +85,7 @@ export default function SobreSol() {
             <p>Son 42 preguntas que respondés en unos 15 minutos. Recibís tu propio Mapa Estructural: el patrón que más se repite en tus respuestas y cuánto pesa en cada una de las cuatro áreas de tu vida.</p>
             <p>También podés observar qué respuestas se repiten y cómo pueden influir en tus decisiones.</p>
             <p>Te llevás tu Mapa en PDF, la lectura de tu resultado grabada con mi voz, una imagen de tu resultado y un certificado.</p>
-            <p>Y podés volver a hacerlo cuando quieras, para comparar con tu lectura anterior y ver qué se movió.</p>
+            <p>Y podés volver a hacerlo cuando quieras. Cada vez recibís un Mapa según tus respuestas de ese momento; si guardás los anteriores, podés revisarlos por tu cuenta.</p>
           </div>
           {/* El color iba en línea porque este bloque era oscuro y había que
               ganarle al CSS. El bloque oscuro salió el 07/11 y con él el
