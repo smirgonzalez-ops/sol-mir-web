@@ -76,7 +76,7 @@ export default function EjeHomeEditorial() {
           </div>
           <figure className="eje-original-chair">
             <Image src="/eje-silla-editorial-aprobada.webp" alt="Silla editorial EJE® de cuatro patas, con Vínculos, Trabajo, Dinero e Identidad y el respaldo Estar en eje." width={1312} height={1199} sizes="(max-width: 800px) 90vw, 500px" />
-            <figcaption><span>Las cuatro patas representan Vínculos, Trabajo, Dinero e Identidad.</span><span>El respaldo representa estar en eje.</span></figcaption>
+            <figcaption><div className="eje-chair-caption-line">Las cuatro patas representan Vínculos, Trabajo, Dinero e Identidad.</div><div className="eje-chair-caption-line">El respaldo representa estar en eje.</div></figcaption>
           </figure>
         </div>
       </section>
