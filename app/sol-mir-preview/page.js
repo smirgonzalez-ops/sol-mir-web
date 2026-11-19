@@ -64,9 +64,15 @@ export default function SolMirPreview() {
             <div>
               <p className="sol-eyebrow">EL SISTEMA QUE CREÉ</p>
               <h2>Así nació EJE®.</h2>
-              <p>Una manera de observar cómo respondés hoy en cuatro áreas de tu vida: Vínculos, Trabajo, Dinero e Identidad.</p>
-              <p>La idea no es decirte quién sos ni qué decisión tomar. Es ofrecerte una lectura de tus respuestas para que puedas mirarlas con más claridad.</p>
-              <Link className="sol-button" href="/eje">Descubrir EJE®</Link>
+              <p>Podés sentirte muy segura en el trabajo y, sin embargo, dudar de vos cada vez que tenés que poner un límite.</p>
+              <p>O trabajar muchísimo y seguir tomando decisiones con tu plata que después te complican.</p>
+              <p className="sol-pullquote">¿Y si eso que te pasa en una parte de tu vida también aparece en otras, pero nunca lo miraste todo junto?</p>
+              <p>Esa fue una de las preguntas que me llevaron a crear el Sistema EJE®.</p>
+              <h3>¿Qué podés descubrir con el Test?</h3>
+              <p>A través de 42 preguntas, el Test reúne tus respuestas sobre Vínculos, Trabajo, Dinero e Identidad.</p>
+              <p>Con ellas se elabora tu Mapa Estructural EJE®, una lectura personalizada que muestra cómo se distribuyen tus respuestas, qué repeticiones aparecen y qué aspectos podrías revisar.</p>
+              <p>Es una fotografía de cómo estás hoy. Podés volver a hacerlo en otro momento y observar qué cambió en tus respuestas.</p>
+              <Link className="sol-button" href="/test">Conocer el Test EJE®</Link>
             </div>
             <div className="sol-four">
               <div><span>01</span><strong>Vínculos</strong><p>Las personas que te importan.</p></div>
