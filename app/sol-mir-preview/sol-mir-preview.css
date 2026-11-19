@@ -41,8 +41,14 @@
 .sol-four p{font-size:14px;margin-bottom:0}
 .sol-test{padding:100px 0;background:var(--linen)}
 .sol-test-grid>div:first-child{max-width:590px}
+.sol-test h3{font-family:Fraunces,Georgia,serif;font-size:clamp(25px,2.5vw,32px);font-weight:400;line-height:1.2;margin:30px 0 14px}
+.sol-test ul{padding-left:22px;margin:0 0 22px}
+.sol-test li{font-size:16px;line-height:1.55;margin-bottom:10px;padding-left:3px}
+.sol-test-price{font-family:Fraunces,Georgia,serif;font-size:clamp(29px,3.2vw,42px)!important;line-height:1.15!important;margin:28px 0 8px}
+.sol-test-price strong{font-weight:500}
+.sol-disclaimer{font-size:13px!important;line-height:1.5!important;color:var(--muted);margin-top:20px}
 .sol-map-figure{text-align:center;margin:0}
-.sol-map-figure img{width:min(100%,300px);height:auto;box-shadow:0 8px 28px rgba(36,36,32,.09)}
+.sol-map-figure img{width:min(100%,390px);height:auto;border:1px solid #DCD5CA}
 .sol-map-figure figcaption{font-size:13px;color:var(--muted);margin-top:12px}
 .sol-free{background:var(--cream);padding:95px 0}
 .sol-free-grid{grid-template-columns:1.25fr .75fr}
