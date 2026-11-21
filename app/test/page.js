@@ -415,6 +415,34 @@ export default function Test() {
           <p className="hero-meta">Pago único. Acceso inmediato con tarjeta internacional; si pagás por Mercado Pago, pedime el acceso por correo.</p>
         </div>
       </section>
+
+      {/* EL DIARIO, AL FINAL Y NO ANTES. Sol, 21/11: «si agregalo». Quien
+          entra directo a esta pagina -por un enlace, por la pauta- no se
+          enteraba de que el Diario existe: estaba solo en la portada.
+
+          VA DESPUES DEL ULTIMO BOTON DE COMPRA a proposito. Puesto antes,
+          seria ofrecerle una alternativa mas barata a alguien que ya venia
+          decidido a comprar el Test. Puesto aca, lo ve quien bajo las doce
+          pantallas, leyo las preguntas frecuentes y aun asi no compro.
+
+          BOTON SECUNDARIO, no primario: en la pagina de venta del Test el
+          Diario es la otra puerta, no el llamado principal. Y lleva a
+          /diario y no al checkout, que es la decision de Sol del 07/11
+          -cuando iba directo a pagar, el producto de 15 tenia el camino
+          corto a la caja y el de 27 daba una vuelta mas-.
+
+          BD-011, enmendada el 07/11: el Diario se comunica, como ENTRADA
+          ALTERNATIVA y no como escalon de la escalera. Por eso el texto
+          dice que no hace falta hacer los dos. */}
+      <section>
+        <div className="container reading-width">
+          <p className="choice-eyebrow">¿Y si hoy no es el Test?</p>
+          <h2>También está el Diario de Emociones EJE®</h2>
+          <p>Si lo que buscás es una práctica breve para registrar lo que sentís mientras pasa, en vez de una lectura de cómo venís respondiendo, el Diario es la otra puerta de entrada.</p>
+          <p><strong>No necesitás hacer los dos.</strong> Son 7 días, un cuadernillo de 31 páginas y 11 audios guiados, por USD 15.</p>
+          <p><a className="btn btn-secondary" href="/diario">Conocé el Diario</a></p>
+        </div>
+      </section>
     </>
   );
 }
