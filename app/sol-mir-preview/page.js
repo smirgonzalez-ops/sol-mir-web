@@ -130,13 +130,29 @@ export default function SolMirPreview() {
         </section>
       </div>
       <footer className="sol-footer">
+        {/* El pie lleva Terminos y Compra, y el correo, porque esta portada
+            oculta el pie del sitio con la regla `body:has(.sol-preview)>footer`
+            de sol-mir-preview.css. Hasta el 21/11 eso dejaba la pagina de
+            entrada de un sitio que cobra USD 27 sin ninguna via a las
+            condiciones de compra ni a una direccion de contacto directa:
+            estaban en el HTML pero en display:none, asi que no las veia nadie
+            —tampoco un lector de pantalla—. En /test si estaban, pero /test no
+            es por donde entra la gente. */}
         <div className="sol-shell sol-footer-grid">
-          <div><strong>SOL MIR</strong><p>Creadora del Sistema EJE®</p></div>
+          <div>
+            <strong>SOL MIR</strong>
+            <p>Creadora del Sistema EJE®</p>
+            <p><a href="mailto:hola@solmir.co">hola@solmir.co</a></p>
+          </div>
           <nav aria-label="Enlaces de la página">
             <Link href="/eje">Sistema EJE®</Link>
             <Link href="/test">Test EJE®</Link>
             <Link href="/contacto">Contacto</Link>
+          </nav>
+          <nav aria-label="Enlaces legales">
             <Link href="/politica-privacidad">Privacidad</Link>
+            <Link href="/terminos">Términos</Link>
+            <Link href="/politica-compra">Compra</Link>
           </nav>
         </div>
       </footer>
