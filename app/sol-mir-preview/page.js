@@ -11,20 +11,6 @@ export const metadata = {
 export default function SolMirPreview() {
   return (
     <div className="sol-preview" id="inicio">
-      <header className="sol-header">
-        <div className="sol-shell sol-header-row">
-          <a className="sol-wordmark" href="#inicio" aria-label="Sol Mir, volver al inicio">SOL MIR</a>
-          <nav aria-label="Navegación de Sol Mir" className="sol-nav">
-            <a href="#historia">Mi historia</a>
-            <a href="#eje">Sistema EJE®</a>
-            <a href="#productos">Test y Diario</a>
-            <a href="#guia">Guía gratuita</a>
-            <Link href="/contacto">Contacto</Link>
-          </nav>
-          <Link href="/que-es-eje" className="sol-header-link">Conocer EJE®</Link>
-        </div>
-      </header>
-
       <div className="sol-content">
         <section className="sol-hero">
           <div className="sol-shell sol-hero-grid">
@@ -130,7 +116,7 @@ export default function SolMirPreview() {
                 </ul>
                 <p className="sol-card-nota">No es una definición de quién sos. Es una lectura de tus respuestas en este momento.</p>
                 <p className="sol-card-price"><strong>USD 27 · Pago único</strong></p>
-                <p className="sol-card-nota">También disponible en Argentina por ARS 40.000. Podés volver a hacerlo sin pagar de nuevo.</p>
+                <p className="sol-card-nota">También disponible en Argentina por ARS 40.000. Podés volver a hacerlo <strong>gratis a los 3 o 6 meses</strong>, para comparar qué cambió.</p>
                 <Link className="sol-button" href="/test">Conocé el Test EJE®</Link>
               </article>
               <article className="sol-card">

@@ -7,13 +7,7 @@
 .sol-preview h2{font-size:clamp(36px,4.2vw,56px);line-height:1.15;margin:12px 0 28px}
 .sol-preview p{font-size:17px;line-height:1.65}
 .sol-preview a:focus-visible{outline:3px solid var(--olive);outline-offset:4px}
-.sol-header{background:var(--linen);border-bottom:1px solid #DCD5CA}
-.sol-header-row{display:flex;align-items:center;min-height:88px;gap:30px}
-.sol-wordmark{font-family:Fraunces,Georgia,serif;color:var(--ink);text-decoration:none;font-size:27px;white-space:nowrap;letter-spacing:.015em}
-.sol-nav{display:flex;align-items:center;gap:28px;margin-left:auto}
-.sol-nav a,.sol-header-link{font-size:14px;color:var(--ink);text-decoration:none}
-.sol-nav a:hover,.sol-text-link:hover{text-decoration:underline;text-underline-offset:5px}
-.sol-header-link{border:1px solid var(--olive);padding:12px 18px;white-space:nowrap}
+.sol-text-link:hover{text-decoration:underline;text-underline-offset:5px}
 .sol-hero{background:var(--linen);padding:88px 0 105px}
 .sol-hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:85px;align-items:center}
 .sol-eyebrow{font-size:12px!important;letter-spacing:.16em;font-weight:700;color:var(--muted);margin:0 0 18px}
@@ -76,7 +70,17 @@
 .sol-footer p{font-size:14px}
 .sol-footer nav{display:flex;gap:22px;align-items:start;flex-wrap:wrap}
 .sol-footer a{font-size:14px;color:var(--linen)}
-body:has(.sol-preview)>header,body:has(.sol-preview)>footer{display:none}
-@media(max-width:900px){.sol-nav{display:none}.sol-hero-grid,.sol-eje-grid,.sol-free-grid,.sol-elegir-grid{gap:42px}.sol-hero{padding:65px 0}.sol-hero-grid{grid-template-columns:1.1fr .9fr}}
-@media(max-width:700px){.sol-preview .sol-shell{width:calc(100% - 40px)}.sol-header-row{min-height:74px}.sol-wordmark{font-size:24px}.sol-header-link{margin-left:auto}.sol-hero-grid,.sol-eje-grid,.sol-free-grid,.sol-elegir-grid{grid-template-columns:1fr;gap:34px}.sol-card{padding:32px 26px 34px}.sol-hero{padding:58px 0 70px}.sol-preview h1{font-size:clamp(39px,10vw,49px)}.sol-preview h2{font-size:clamp(33px,8vw,43px)}.sol-preview p{font-size:16px}.sol-lead{font-size:18px!important}.sol-portrait{max-width:340px}.sol-story,.sol-eje,.sol-free,.sol-elegir{padding:70px 0}.sol-four strong{font-size:25px}.sol-free-grid img{justify-self:start}.sol-footer-grid{display:block}.sol-footer nav{margin-top:24px}}
+/* La portada usa LA CABECERA DEL SITIO, no una propia. Tenia la suya y eso
+   dejaba tres problemas: no nombraba la categoria -Inteligencia Estructural
+   Humana, BD-017-, no tenia menu en telefono -el boton de menu pertenecia a
+   la cabecera escondida- y el sitio quedaba con dos cabeceras distintas. La
+   del sitio resuelve las tres: lleva la categoria bajo la marca, trae un menu
+   con aria-expanded que funciona, y enlaza a todas las paginas. Lo que se
+   pierde son los enlaces internos a las secciones de esta portada, que se
+   alcanzan bajando -y cuyos destinos cubre mejor la del sitio: «Sobre Sol»
+   por la historia, «Ebook gratis» por la guia, «Que es EJE®» por el sistema-.
+   El PIE propio si se conserva, porque ya lleva el correo y los tres legales. */
+body:has(.sol-preview)>footer{display:none}
+@media(max-width:900px){.sol-hero-grid,.sol-eje-grid,.sol-free-grid,.sol-elegir-grid{gap:42px}.sol-hero{padding:65px 0}.sol-hero-grid{grid-template-columns:1.1fr .9fr}}
+@media(max-width:700px){.sol-preview .sol-shell{width:calc(100% - 40px)}.sol-hero-grid,.sol-eje-grid,.sol-free-grid,.sol-elegir-grid{grid-template-columns:1fr;gap:34px}.sol-card{padding:32px 26px 34px}.sol-hero{padding:58px 0 70px}.sol-preview h1{font-size:clamp(39px,10vw,49px)}.sol-preview h2{font-size:clamp(33px,8vw,43px)}.sol-preview p{font-size:16px}.sol-lead{font-size:18px!important}.sol-portrait{max-width:340px}.sol-story,.sol-eje,.sol-free,.sol-elegir{padding:70px 0}.sol-four strong{font-size:25px}.sol-free-grid img{justify-self:start}.sol-footer-grid{display:block}.sol-footer nav{margin-top:24px}}
 @media(prefers-reduced-motion:reduce){.sol-preview *{transition:none!important}}
