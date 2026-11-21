@@ -31,7 +31,7 @@
 .sol-story p{max-width:750px}
 .sol-pullquote{font-family:Fraunces,Georgia,serif;font-size:clamp(25px,3vw,35px)!important;line-height:1.35!important;margin:38px 0;padding-left:24px;border-left:3px solid var(--olive)}
 .sol-eje{background:var(--smoke);padding:105px 0}
-.sol-eje-grid,.sol-test-grid,.sol-free-grid{display:grid;grid-template-columns:1fr 1fr;gap:90px;align-items:center}
+.sol-eje-grid,.sol-free-grid{display:grid;grid-template-columns:1fr 1fr;gap:90px;align-items:center}
 .sol-eje-grid>div:first-child{max-width:520px}
 .sol-four{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid #8F9F98}
 .sol-four div{padding:26px 22px 22px 0;border-bottom:1px solid #8F9F98}
@@ -39,25 +39,34 @@
 .sol-four span{font-size:12px;display:block;color:var(--muted);margin-bottom:15px}
 .sol-four strong{font-family:Fraunces,Georgia,serif;font-size:29px;font-weight:400}
 .sol-four p{font-size:14px;margin-bottom:0}
-.sol-test{padding:100px 0;background:var(--linen)}
-.sol-test-grid>div:first-child{max-width:590px}
-.sol-test h3{font-family:Fraunces,Georgia,serif;font-size:clamp(25px,2.5vw,32px);font-weight:400;line-height:1.2;margin:30px 0 14px}
-.sol-test ul{padding-left:22px;margin:0 0 22px}
-.sol-test li{font-size:16px;line-height:1.55;margin-bottom:10px;padding-left:3px}
-.sol-test-price{font-family:Fraunces,Georgia,serif;font-size:clamp(29px,3.2vw,42px)!important;line-height:1.15!important;margin:28px 0 8px}
-.sol-test-price strong{font-weight:500}
 .sol-disclaimer{font-size:13px!important;line-height:1.5!important;color:var(--muted);margin-top:20px}
 .sol-map-figure{text-align:center;margin:0}
 .sol-map-figure img{width:min(100%,390px);height:auto;border:1px solid #DCD5CA}
 .sol-map-figure figcaption{font-size:13px;color:var(--muted);margin-top:12px}
-/* El Diario. Fondo en --smoke para no dejar dos cremas seguidas: la
-   secuencia de la portada es lino (hero) · crema (historia) · smoke (EJE) ·
-   lino (Test) · smoke (Diario) · crema (guia). La imagen a la izquierda,
-   alternando con el Test y la guia, que llevan el texto a la izquierda. */
-.sol-diario{background:var(--smoke);padding:95px 0}
-.sol-diario-grid{display:grid;grid-template-columns:.78fr 1.22fr;gap:80px;align-items:center}
-.sol-diario-grid img{order:-1;width:min(100%,275px);height:auto;justify-self:center;display:block}
-.sol-diario-meta{font-size:15px!important;color:var(--muted);margin:24px 0 30px}
+/* LA SECCION DE ELECCION. Dos tarjetas del mismo ancho, con el precio en el
+   mismo lugar y el mismo tipo de boton: apiladas no competian -el de arriba
+   se lee como el principal y el de abajo como la alternativa barata- y Sol
+   pidio el 21/11 que compitieran. `align-items:stretch` en la grilla y
+   `margin-top:auto` en el boton hacen que las dos tarjetas midan igual y que
+   los dos botones queden a la misma altura aunque el Test tenga mas texto. */
+.sol-elegir{background:var(--linen);padding:100px 0}
+.sol-elegir-head{max-width:860px;margin-bottom:52px}
+.sol-elegir-grid{display:grid;grid-template-columns:1fr 1fr;gap:46px;align-items:stretch}
+/* Con borde: blanco sobre lino son dos tonos del mismo hueso y las tarjetas
+   no se despegaban del fondo. #DCD5CA es el borde que el sitio ya usa en la
+   cabecera y en la muestra del Mapa. */
+.sol-card{background:#FFF;border:1px solid #DCD5CA;padding:40px 36px 42px;display:flex;flex-direction:column}
+.sol-card .sol-map-figure{margin:0 0 28px}
+.sol-card .sol-map-figure img{width:min(100%,240px)}
+.sol-card-eyebrow{font-size:12px!important;letter-spacing:.16em;font-weight:700;color:var(--muted);margin:0 0 12px}
+.sol-card h3{font-family:Fraunces,Georgia,serif;font-size:clamp(26px,2.6vw,33px);font-weight:400;line-height:1.15;margin:0 0 14px}
+.sol-card-sub{font-weight:700;font-size:15px!important;margin:24px 0 10px}
+.sol-card ul{padding-left:20px;margin:0}
+.sol-card li{font-size:15px;line-height:1.55;margin-bottom:8px}
+.sol-card-nota{font-size:15px!important;margin:16px 0 0}
+.sol-card-price{font-family:Fraunces,Georgia,serif;font-size:clamp(26px,2.8vw,34px)!important;line-height:1.15!important;margin:26px 0 8px}
+.sol-card-price strong{font-weight:500}
+.sol-card .sol-button{align-self:start;margin-top:auto}
 .sol-free{background:var(--cream);padding:95px 0}
 .sol-free-grid{grid-template-columns:1.25fr .75fr}
 .sol-free-grid img{width:min(100%,230px);height:auto;justify-self:center}
@@ -68,6 +77,6 @@
 .sol-footer nav{display:flex;gap:22px;align-items:start;flex-wrap:wrap}
 .sol-footer a{font-size:14px;color:var(--linen)}
 body:has(.sol-preview)>header,body:has(.sol-preview)>footer{display:none}
-@media(max-width:900px){.sol-nav{display:none}.sol-hero-grid,.sol-eje-grid,.sol-test-grid,.sol-free-grid,.sol-diario-grid{gap:42px}.sol-hero{padding:65px 0}.sol-hero-grid{grid-template-columns:1.1fr .9fr}}
-@media(max-width:700px){.sol-preview .sol-shell{width:calc(100% - 40px)}.sol-header-row{min-height:74px}.sol-wordmark{font-size:24px}.sol-header-link{margin-left:auto}.sol-hero-grid,.sol-eje-grid,.sol-test-grid,.sol-free-grid,.sol-diario-grid{grid-template-columns:1fr;gap:34px}.sol-diario-grid img{order:0;justify-self:start}.sol-hero{padding:58px 0 70px}.sol-preview h1{font-size:clamp(39px,10vw,49px)}.sol-preview h2{font-size:clamp(33px,8vw,43px)}.sol-preview p{font-size:16px}.sol-lead{font-size:18px!important}.sol-portrait{max-width:340px}.sol-story,.sol-eje,.sol-test,.sol-free,.sol-diario{padding:70px 0}.sol-four strong{font-size:25px}.sol-free-grid img{justify-self:start}.sol-footer-grid{display:block}.sol-footer nav{margin-top:24px}}
+@media(max-width:900px){.sol-nav{display:none}.sol-hero-grid,.sol-eje-grid,.sol-free-grid,.sol-elegir-grid{gap:42px}.sol-hero{padding:65px 0}.sol-hero-grid{grid-template-columns:1.1fr .9fr}}
+@media(max-width:700px){.sol-preview .sol-shell{width:calc(100% - 40px)}.sol-header-row{min-height:74px}.sol-wordmark{font-size:24px}.sol-header-link{margin-left:auto}.sol-hero-grid,.sol-eje-grid,.sol-free-grid,.sol-elegir-grid{grid-template-columns:1fr;gap:34px}.sol-card{padding:32px 26px 34px}.sol-hero{padding:58px 0 70px}.sol-preview h1{font-size:clamp(39px,10vw,49px)}.sol-preview h2{font-size:clamp(33px,8vw,43px)}.sol-preview p{font-size:16px}.sol-lead{font-size:18px!important}.sol-portrait{max-width:340px}.sol-story,.sol-eje,.sol-free,.sol-elegir{padding:70px 0}.sol-four strong{font-size:25px}.sol-free-grid img{justify-self:start}.sol-footer-grid{display:block}.sol-footer nav{margin-top:24px}}
 @media(prefers-reduced-motion:reduce){.sol-preview *{transition:none!important}}

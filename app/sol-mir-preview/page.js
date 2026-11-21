@@ -17,7 +17,7 @@ export default function SolMirPreview() {
           <nav aria-label="Navegación de Sol Mir" className="sol-nav">
             <a href="#historia">Mi historia</a>
             <a href="#eje">Sistema EJE®</a>
-            <a href="#diario">Diario</a>
+            <a href="#productos">Test y Diario</a>
             <a href="#guia">Guía gratuita</a>
             <Link href="/contacto">Contacto</Link>
           </nav>
@@ -80,76 +80,79 @@ export default function SolMirPreview() {
           </div>
         </section>
 
-        <section className="sol-test">
-          <div className="sol-shell sol-test-grid">
-            <div>
-              <p className="sol-eyebrow">TEST EJE®</p>
-              <h2>Tu Mapa Estructural EJE®</h2>
-              <p>Respondé 42 preguntas sobre Vínculos, Trabajo, Dinero e Identidad y recibí un Mapa personalizado de cómo estás respondiendo hoy.</p>
-              <h3>¿Qué vas a encontrar en tu Mapa?</h3>
-              <ul>
-                <li>Cómo se distribuyen tus respuestas entre las cuatro áreas.</li>
-                <li>Qué repeticiones aparecen en esa lectura.</li>
-                <li>Dónde se observan posibles puntos de fricción.</li>
-                <li>Un aspecto para revisar y una propuesta para reflexionar.</li>
-              </ul>
-              <p>No es una definición de quién sos. Es una lectura de tus respuestas en este momento.</p>
-              <h3>¿Qué incluye?</h3>
-              <ul>
-                <li>Test de 42 preguntas. Aproximadamente 15 minutos.</li>
-                <li>Mapa Estructural personalizado de cuatro páginas en PDF.</li>
-                <li>Lectura grabada con la voz de Sol.</li>
-                <li>Certificado personalizado.</li>
-                <li>Imagen de tu resultado.</li>
-                <li>Opción de enviarte el Mapa por correo desde el resultado.</li>
-              </ul>
-              <p className="sol-test-price"><strong>USD 27 · Pago único</strong></p>
-              <p><strong>También disponible en Argentina por ARS 40.000.</strong></p>
-              <p>Podés volver a realizar el Test sin pagar nuevamente por cada intento.</p>
-              <Link className="sol-button" href="/test">Conocer el Test EJE®</Link>
-              <p className="sol-disclaimer">El Test EJE® no constituye un diagnóstico ni una evaluación psicológica validada.</p>
+        {/* UNA SOLA SECCION DE ELECCION, DOS TARJETAS IGUALES.
+
+            Antes habia dos secciones apiladas: el Test con todo su detalle y,
+            debajo, el Diario. Sol, 21/11: «si que compita». Apilados no
+            compiten -el de arriba se lee como el principal y el de abajo como
+            la alternativa barata-, asi que van al lado, del mismo ancho, con
+            el mismo tipo de boton y el precio en el mismo lugar. Se elige por
+            interes, que es lo que pide BD-011 enmendada el 07/11: el Diario es
+            una ENTRADA ALTERNATIVA, no un escalon de la escalera.
+
+            QUE SE MOVIO A /test: la lista «¿Que vas a encontrar en tu Mapa?»,
+            de cuatro puntos. No cabia junto a «¿Que incluye?» sin que la
+            tarjeta del Test doblara en alto a la del Diario, que es justo lo
+            que esta seccion viene a corregir. Se eligio conservar «¿Que
+            incluye?» porque son las cinco entregas de BD-035 -y la voz
+            grabada es el unico componente que nadie puede copiar, asi que se
+            nombra siempre-. La otra lista ya vive completa en /test.
+
+            LOS DOS BOTONES LLEVAN A UNA PAGINA, no al checkout. Decision de
+            Sol del 07/11: cuando el del Diario iba directo a pagar era el
+            unico de la portada que llegaba a la caja, al lado del Test que
+            mandaba a leer, y el de 15 tenia el camino corto mientras el de 27
+            daba una vuelta mas. */}
+        <section className="sol-elegir" id="productos">
+          <div className="sol-shell">
+            <div className="sol-elegir-head">
+              <p className="sol-eyebrow">DOS FORMAS DE EMPEZAR</p>
+              <h2>Elegí tu punto de partida</h2>
+              <p className="sol-lead">No necesitás hacer los dos. Depende de qué querés ver hoy: el Test te devuelve una lectura de cómo venís respondiendo; el Diario te da una práctica para registrarlo mientras pasa.</p>
             </div>
-            <figure className="sol-map-figure">
-              <Image src="/mapa-1b.jpg" width={880} height={1243} sizes="(max-width:760px) 65vw, 300px" alt="Ejemplo real de un Mapa Estructural EJE®" />
-              <figcaption>Muestra del formato. Tus resultados serán diferentes.</figcaption>
-            </figure>
-          </div>
-        </section>
-
-        {/* EL DIARIO VUELVE A LA PORTADA. Sol lo decidio el 07/11: preguntada
-            si el Diario debia comunicarse desde la portada o no, respondio
-            «desde la portada». Quedo asentado como enmienda a BD-011, que
-            hasta entonces decia «nada mas se comunica». La portada del 19/11
-            lo dejo afuera sin querer.
-
-            NO ES UN ESCALON de la escalera -ebook gratis -> Test EJE® ->
-            trabajo personalizado-: es una ENTRADA ALTERNATIVA. Por eso la
-            seccion dice que no hace falta hacer los dos, en vez de ordenarlos.
-
-            EL BOTON LLEVA A /diario Y NO AL CHECKOUT, por decision de Sol del
-            07/11. Cuando llevaba directo a pagar era el unico boton de toda la
-            portada que iba a la caja, y quedaba al lado del Test, que manda a
-            leer una pagina: en la misma pantalla, el producto de 15 tenia el
-            camino corto y el de 27 daba una vuelta mas. Ahora se elige por
-            interes y no por cual cobra antes. Ademas ese checkout va solo en
-            dolares, sin la opcion en pesos que el resto del sitio ofrece.
-
-            La imagen va con `order:-1` en escritorio en vez de ir primera en
-            el HTML: asi se ve a la izquierda -alternando con el Test y la
-            guia, que llevan el texto a la izquierda- pero quien usa lector de
-            pantalla, y quien entra por telefono, lee primero el encabezado y
-            despues la foto. */}
-        <section className="sol-diario" id="diario">
-          <div className="sol-shell sol-diario-grid">
-            <div>
-              <p className="sol-eyebrow">OTRA FORMA DE EMPEZAR</p>
-              <h2>Diario de Emociones EJE®</h2>
-              <p>Si querés una práctica breve para registrar lo que sentís y empezar a reconocer tus patrones en el momento, el Diario es por donde se entra.</p>
-              <p><strong>No necesitás hacer los dos.</strong> Depende de qué querés ver hoy: el Test te devuelve una lectura de cómo venís respondiendo; el Diario te da una práctica para registrarlo mientras pasa.</p>
-              <p className="sol-diario-meta">7 días · cuadernillo de 31 páginas · 11 audios · USD 15</p>
-              <Link className="sol-button" href="/diario">Conocé el Diario</Link>
+            <div className="sol-elegir-grid">
+              <article className="sol-card">
+                <figure className="sol-map-figure">
+                  <Image src="/mapa-1b.jpg" width={880} height={1243} sizes="(max-width:760px) 65vw, 260px" alt="Ejemplo real de un Mapa Estructural EJE®" />
+                  <figcaption>Muestra del formato. Tus resultados serán diferentes.</figcaption>
+                </figure>
+                <p className="sol-card-eyebrow">PARA UNA LECTURA DE CÓMO RESPONDÉS</p>
+                <h3>Test EJE®</h3>
+                <p>Respondé 42 preguntas sobre Vínculos, Trabajo, Dinero e Identidad y recibí un Mapa personalizado de cómo estás respondiendo hoy.</p>
+                <p className="sol-card-sub">Qué incluye</p>
+                <ul>
+                  <li>Test de 42 preguntas. Aproximadamente 15 minutos.</li>
+                  <li>Mapa Estructural personalizado de cuatro páginas en PDF.</li>
+                  <li>Lectura grabada con la voz de Sol.</li>
+                  <li>Certificado personalizado.</li>
+                  <li>Imagen de tu resultado.</li>
+                  <li>Opción de enviarte el Mapa por correo desde el resultado.</li>
+                </ul>
+                <p className="sol-card-nota">No es una definición de quién sos. Es una lectura de tus respuestas en este momento.</p>
+                <p className="sol-card-price"><strong>USD 27 · Pago único</strong></p>
+                <p className="sol-card-nota">También disponible en Argentina por ARS 40.000. Podés volver a hacerlo sin pagar de nuevo.</p>
+                <Link className="sol-button" href="/test">Conocé el Test EJE®</Link>
+              </article>
+              <article className="sol-card">
+                <figure className="sol-map-figure">
+                  <Image src="/diario-producto.jpg" width={1024} height={1536} sizes="(max-width:760px) 65vw, 260px" alt="Diario de Emociones EJE®: el cuadernillo impreso, con sus audios guiados" />
+                  <figcaption>El cuadernillo y los audios que recibís.</figcaption>
+                </figure>
+                <p className="sol-card-eyebrow">PARA EMPEZAR A OBSERVARTE</p>
+                <h3>Diario de Emociones EJE®</h3>
+                <p>Una práctica breve para registrar lo que sentís y empezar a reconocer tus patrones en el momento, mientras pasan.</p>
+                <p className="sol-card-sub">Qué incluye</p>
+                <ul>
+                  <li>Una práctica de 7 días.</li>
+                  <li>Cuadernillo de 31 páginas.</li>
+                  <li>11 audios guiados.</li>
+                </ul>
+                <p className="sol-card-nota">No hace falta saber nada de EJE® para empezarlo.</p>
+                <p className="sol-card-price"><strong>USD 15 · Pago único</strong></p>
+                <Link className="sol-button" href="/diario">Conocé el Diario</Link>
+              </article>
             </div>
-            <Image src="/diario-producto.jpg" width={1024} height={1536} sizes="(max-width:760px) 60vw, 280px" alt="Diario de Emociones EJE®: el cuadernillo impreso, con sus audios guiados" />
+            <p className="sol-disclaimer">El Test EJE® no constituye un diagnóstico ni una evaluación psicológica validada.</p>
           </div>
         </section>
 
