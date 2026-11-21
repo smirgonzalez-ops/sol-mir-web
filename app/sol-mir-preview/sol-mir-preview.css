@@ -50,6 +50,14 @@
 .sol-map-figure{text-align:center;margin:0}
 .sol-map-figure img{width:min(100%,390px);height:auto;border:1px solid #DCD5CA}
 .sol-map-figure figcaption{font-size:13px;color:var(--muted);margin-top:12px}
+/* El Diario. Fondo en --smoke para no dejar dos cremas seguidas: la
+   secuencia de la portada es lino (hero) · crema (historia) · smoke (EJE) ·
+   lino (Test) · smoke (Diario) · crema (guia). La imagen a la izquierda,
+   alternando con el Test y la guia, que llevan el texto a la izquierda. */
+.sol-diario{background:var(--smoke);padding:95px 0}
+.sol-diario-grid{display:grid;grid-template-columns:.78fr 1.22fr;gap:80px;align-items:center}
+.sol-diario-grid img{order:-1;width:min(100%,275px);height:auto;justify-self:center;display:block}
+.sol-diario-meta{font-size:15px!important;color:var(--muted);margin:24px 0 30px}
 .sol-free{background:var(--cream);padding:95px 0}
 .sol-free-grid{grid-template-columns:1.25fr .75fr}
 .sol-free-grid img{width:min(100%,230px);height:auto;justify-self:center}
@@ -60,6 +68,6 @@
 .sol-footer nav{display:flex;gap:22px;align-items:start;flex-wrap:wrap}
 .sol-footer a{font-size:14px;color:var(--linen)}
 body:has(.sol-preview)>header,body:has(.sol-preview)>footer{display:none}
-@media(max-width:900px){.sol-nav{display:none}.sol-hero-grid,.sol-eje-grid,.sol-test-grid,.sol-free-grid{gap:42px}.sol-hero{padding:65px 0}.sol-hero-grid{grid-template-columns:1.1fr .9fr}}
-@media(max-width:700px){.sol-preview .sol-shell{width:calc(100% - 40px)}.sol-header-row{min-height:74px}.sol-wordmark{font-size:24px}.sol-header-link{margin-left:auto}.sol-hero-grid,.sol-eje-grid,.sol-test-grid,.sol-free-grid{grid-template-columns:1fr;gap:34px}.sol-hero{padding:58px 0 70px}.sol-preview h1{font-size:clamp(39px,10vw,49px)}.sol-preview h2{font-size:clamp(33px,8vw,43px)}.sol-preview p{font-size:16px}.sol-lead{font-size:18px!important}.sol-portrait{max-width:340px}.sol-story,.sol-eje,.sol-test,.sol-free{padding:70px 0}.sol-four strong{font-size:25px}.sol-free-grid img{justify-self:start}.sol-footer-grid{display:block}.sol-footer nav{margin-top:24px}}
+@media(max-width:900px){.sol-nav{display:none}.sol-hero-grid,.sol-eje-grid,.sol-test-grid,.sol-free-grid,.sol-diario-grid{gap:42px}.sol-hero{padding:65px 0}.sol-hero-grid{grid-template-columns:1.1fr .9fr}}
+@media(max-width:700px){.sol-preview .sol-shell{width:calc(100% - 40px)}.sol-header-row{min-height:74px}.sol-wordmark{font-size:24px}.sol-header-link{margin-left:auto}.sol-hero-grid,.sol-eje-grid,.sol-test-grid,.sol-free-grid,.sol-diario-grid{grid-template-columns:1fr;gap:34px}.sol-diario-grid img{order:0;justify-self:start}.sol-hero{padding:58px 0 70px}.sol-preview h1{font-size:clamp(39px,10vw,49px)}.sol-preview h2{font-size:clamp(33px,8vw,43px)}.sol-preview p{font-size:16px}.sol-lead{font-size:18px!important}.sol-portrait{max-width:340px}.sol-story,.sol-eje,.sol-test,.sol-free,.sol-diario{padding:70px 0}.sol-four strong{font-size:25px}.sol-free-grid img{justify-self:start}.sol-footer-grid{display:block}.sol-footer nav{margin-top:24px}}
 @media(prefers-reduced-motion:reduce){.sol-preview *{transition:none!important}}

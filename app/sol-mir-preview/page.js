@@ -17,6 +17,7 @@ export default function SolMirPreview() {
           <nav aria-label="Navegación de Sol Mir" className="sol-nav">
             <a href="#historia">Mi historia</a>
             <a href="#eje">Sistema EJE®</a>
+            <a href="#diario">Diario</a>
             <a href="#guia">Guía gratuita</a>
             <Link href="/contacto">Contacto</Link>
           </nav>
@@ -112,6 +113,43 @@ export default function SolMirPreview() {
               <Image src="/mapa-1b.jpg" width={880} height={1243} sizes="(max-width:760px) 65vw, 300px" alt="Ejemplo real de un Mapa Estructural EJE®" />
               <figcaption>Muestra del formato. Tus resultados serán diferentes.</figcaption>
             </figure>
+          </div>
+        </section>
+
+        {/* EL DIARIO VUELVE A LA PORTADA. Sol lo decidio el 07/11: preguntada
+            si el Diario debia comunicarse desde la portada o no, respondio
+            «desde la portada». Quedo asentado como enmienda a BD-011, que
+            hasta entonces decia «nada mas se comunica». La portada del 19/11
+            lo dejo afuera sin querer.
+
+            NO ES UN ESCALON de la escalera -ebook gratis -> Test EJE® ->
+            trabajo personalizado-: es una ENTRADA ALTERNATIVA. Por eso la
+            seccion dice que no hace falta hacer los dos, en vez de ordenarlos.
+
+            EL BOTON LLEVA A /diario Y NO AL CHECKOUT, por decision de Sol del
+            07/11. Cuando llevaba directo a pagar era el unico boton de toda la
+            portada que iba a la caja, y quedaba al lado del Test, que manda a
+            leer una pagina: en la misma pantalla, el producto de 15 tenia el
+            camino corto y el de 27 daba una vuelta mas. Ahora se elige por
+            interes y no por cual cobra antes. Ademas ese checkout va solo en
+            dolares, sin la opcion en pesos que el resto del sitio ofrece.
+
+            La imagen va con `order:-1` en escritorio en vez de ir primera en
+            el HTML: asi se ve a la izquierda -alternando con el Test y la
+            guia, que llevan el texto a la izquierda- pero quien usa lector de
+            pantalla, y quien entra por telefono, lee primero el encabezado y
+            despues la foto. */}
+        <section className="sol-diario" id="diario">
+          <div className="sol-shell sol-diario-grid">
+            <div>
+              <p className="sol-eyebrow">OTRA FORMA DE EMPEZAR</p>
+              <h2>Diario de Emociones EJE®</h2>
+              <p>Si querés una práctica breve para registrar lo que sentís y empezar a reconocer tus patrones en el momento, el Diario es por donde se entra.</p>
+              <p><strong>No necesitás hacer los dos.</strong> Depende de qué querés ver hoy: el Test te devuelve una lectura de cómo venís respondiendo; el Diario te da una práctica para registrarlo mientras pasa.</p>
+              <p className="sol-diario-meta">7 días · cuadernillo de 31 páginas · 11 audios · USD 15</p>
+              <Link className="sol-button" href="/diario">Conocé el Diario</Link>
+            </div>
+            <Image src="/diario-producto.jpg" width={1024} height={1536} sizes="(max-width:760px) 60vw, 280px" alt="Diario de Emociones EJE®: el cuadernillo impreso, con sus audios guiados" />
           </div>
         </section>
 
