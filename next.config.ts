@@ -75,9 +75,43 @@ const CABECERAS = [
   { key: "Permissions-Policy", value: "camera=(), microphone=(), geolocation=(), interest-cohort=()" },
 ];
 
+// ── UNA SOLA PÁGINA DE «QUÉ ES EJE®» ───────────────────────────────────
+// Había dos vivas, con títulos distintos, y a cuál llegabas dependía de por
+// dónde hubieras entrado: la portada mandaba a /eje y /test mandaba a
+// /que-es-eje. Sol, 21/11: «dejemos una página de qué es EJE, la que más se
+// entienda».
+//
+// Queda /que-es-eje, por dos motivos y el segundo pesa más que el primero:
+//
+//   1. Explica mejor. Arranca por la experiencia de quien lee —«¿cuánto
+//      tiempo más vas a seguir sosteniendo todo, menos a vos?»— con escenas
+//      concretas, construye la silla paso a paso (las cuatro patas, que no
+//      siempre están igual de firmes, y recién después el respaldo) y cierra
+//      con «Lo que EJE® no es», que /eje no tiene.
+//
+//   2. /eje define mal la marca justo donde hay que definirla bien: a la
+//      pregunta «¿Qué es EJE®?» responde «un sistema de AUTOCONOCIMIENTO», y
+//      no nombra la categoría en ningún lado de la página. La categoría
+//      oficial es Inteligencia Estructural Humana (BD-017), y /que-es-eje sí
+//      la lleva.
+//
+// Lo que /eje tenía de más —las entregas, los dos precios, los dos medios de
+// pago, la muestra del Mapa— vive en /test, que es su lugar. La biografía
+// está en /sobre-sol y la guía en /ebook: no se pierde nada.
+//
+// 307 Y NO 308 a propósito: el 308 lo cachean los navegadores para siempre y
+// volver atrás se vuelve molesto para quien ya lo visitó. Como /eje es del
+// 19/11 y apenas está indexada, el costo de SEO de un temporal es bajo y la
+// marcha atrás sale gratis. Si dentro de un tiempo la decisión se confirma,
+// se cambia `permanent` a true. El archivo app/eje/page.js NO se borró: las
+// redirecciones se evalúan antes que el sistema de archivos, así que alcanza
+// con sacar esta regla para que vuelva a verse.
 const nextConfig: NextConfig = {
   async headers() {
     return [{ source: "/:path*", headers: CABECERAS }];
+  },
+  async redirects() {
+    return [{ source: "/eje", destination: "/que-es-eje", permanent: false }];
   },
 };
 

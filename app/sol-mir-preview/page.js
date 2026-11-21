@@ -21,7 +21,7 @@ export default function SolMirPreview() {
             <a href="#guia">Guía gratuita</a>
             <Link href="/contacto">Contacto</Link>
           </nav>
-          <Link href="/eje" className="sol-header-link">Conocer EJE®</Link>
+          <Link href="/que-es-eje" className="sol-header-link">Conocer EJE®</Link>
         </div>
       </header>
 
@@ -34,7 +34,7 @@ export default function SolMirPreview() {
               <p className="sol-lead">A veces sabés muy bien lo que te pasa, pero cuando llega el momento de decidir, volvés a hacer lo mismo.</p>
               <p>Me hice esa pregunta durante años. Mi propia historia me llevó a mirar lo que ocurría en distintas partes de mi vida.</p>
               <div className="sol-actions">
-                <Link className="sol-button" href="/eje">Conocer el Sistema EJE®</Link>
+                <Link className="sol-button" href="/que-es-eje">Conocer el Sistema EJE®</Link>
                 <a className="sol-text-link" href="#historia">Conocer mi historia</a>
               </div>
             </div>
@@ -186,7 +186,7 @@ export default function SolMirPreview() {
             <p><a href="mailto:hola@solmir.co">hola@solmir.co</a></p>
           </div>
           <nav aria-label="Enlaces de la página">
-            <Link href="/eje">Sistema EJE®</Link>
+            <Link href="/que-es-eje">Sistema EJE®</Link>
             <Link href="/test">Test EJE®</Link>
             <Link href="/contacto">Contacto</Link>
           </nav>
