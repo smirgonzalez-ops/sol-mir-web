@@ -16,6 +16,14 @@
 export const comprar = (lugar) =>
   `https://smirgo.gumroad.com/l/ozvrmy?utm_source=web&utm_medium=organic&utm_campaign=lanzamiento_22_9&utm_content=${lugar}`;
 
+// El Diario no llevaba ninguna etiqueta: si vendía, no se sabía de dónde
+// venía la venta, mientras que el Test sí lo decía. Misma forma que
+// `comprar`, con su propia campaña —el Diario no es parte del lanzamiento
+// del 22/9— y el mismo utm_content por posición del botón, que es lo que
+// Medicion mira para saber cuál se tocó.
+export const comprarDiario = (lugar) =>
+  `https://smirgo.gumroad.com/l/diario-emociones-eje?utm_source=web&utm_medium=organic&utm_campaign=diario&utm_content=${lugar}`;
+
 // Gumroad no cobra en pesos argentinos (verificado el 12/10 en el checkout
 // real) y la audiencia propia es argentina. Link de Mercado Pago creado por
 // Sol el 19/10. Ese pago no entrega el acceso solo: Sol lo manda a mano.

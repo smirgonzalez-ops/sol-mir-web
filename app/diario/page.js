@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { pagina } from "../compartir";
-
-const COMPRA_DIARIO = "https://smirgo.gumroad.com/l/diario-emociones-eje";
+import { comprarDiario } from "../components/BotonesDePago";
+import OrigenCompra from "../components/OrigenCompra";
 
 export const metadata = pagina({
   title: "Diario de emociones: 7 días para ver tus patrones",
@@ -12,6 +12,9 @@ export const metadata = pagina({
 export default function Diario() {
   return (
     <>
+      {/* Reescribe los enlaces a Gumroad con el origen real de la visita.
+          Estaba sólo en /test, así que el Diario perdía esa precisión. */}
+      <OrigenCompra />
       <section className="hero product-hero">
         <div className="container product-hero-grid">
           <div>
@@ -19,7 +22,7 @@ export default function Diario() {
             <h1>Diario de Emociones EJE®</h1>
             <p className="subtitle">Siete días para reconocer qué se activa en vos antes de que la reacción vuelva a decidir.</p>
             <p>Recibís un cuadernillo de 31 páginas y 11 audios guiados. No necesitás haber hecho el Test ni saber nada de EJE®.</p>
-            <a href={COMPRA_DIARIO} className="btn btn-primary">Quiero empezar el Diario</a>
+            <a href={comprarDiario("hero")} className="btn btn-primary">Quiero empezar el Diario</a>
             <p className="hero-meta">USD 15 · lo descargás y queda tuyo · empezás cuando vos decidís</p>
             <p className="hero-trust">Compra segura y acceso inmediato al cuadernillo y los 11 audios.</p>
           </div>
@@ -85,7 +88,7 @@ export default function Diario() {
           <p>El Diario es tu primera puerta. Después, el Test EJE® te muestra toda tu estructura.</p>
           <p className="muted" style={{marginTop: '1.5rem'}}>Compra segura y acceso inmediato al cuadernillo y los 11 audios.</p>
           <div className="cta-group" style={{justifyContent: 'center', marginTop: '1.5rem'}}>
-            <a href={COMPRA_DIARIO} className="btn btn-primary">Comprar el Diario</a>
+            <a href={comprarDiario("cierre")} className="btn btn-primary">Comprar el Diario</a>
           </div>
         </div>
       </section>
